@@ -1,0 +1,191 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2017-03-14",
+    "modality": "US",
+    "body_region": "ABDOMEN",
+    "exam_type": "US Abdomen",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "24558-9",
+      "display": "US Abdomen"
+    },
+    "setting": "Outpatient",
+    "indication": "Cirrhosis surveillance"
+  },
+  "findings": [
+    {
+      "finding_name": "Abdominal aortic aneurysm",
+      "finding_id": "F01",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MSFT_134126",
+        "display": "abdominal aortic aneurysm"
+      },
+      "anatomic_site": "infrarenal aorta",
+      "attributes": {
+        "presence": "present",
+        "measurement": "3.2 cm"
+      },
+      "text": "The infrarenal aorta measures 3.2 cm, mildly dilated."
+    },
+    {
+      "finding_name": "Cholelithiasis",
+      "finding_id": "F12",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "gallstone"
+      },
+      "anatomic_site": "gallbladder",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cholelithiasis."
+    },
+    {
+      "finding_name": "Cirrhotic liver morphology",
+      "finding_id": "F10",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022460",
+        "display": "cirrhosis"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Coarsened echotexture with nodular liver surface, cirrhosis."
+    },
+    {
+      "finding_name": "Nephrolithiasis",
+      "finding_id": "F14",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "kidney stone"
+      },
+      "anatomic_site": "left kidney lower pole",
+      "attributes": {
+        "presence": "present",
+        "measurement": "punctate"
+      },
+      "text": "Punctate left lower pole calculus."
+    },
+    {
+      "finding_name": "Simple renal cysts",
+      "finding_id": "F13",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_016773",
+        "display": "cystic renal mass"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "attributes": {
+        "presence": "present",
+        "measurement": "left 1.4 cm, right 0.8 cm"
+      },
+      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm."
+    },
+    {
+      "finding_name": "Splenomegaly",
+      "finding_id": "F11",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly"
+      },
+      "anatomic_site": "spleen",
+      "attributes": {
+        "presence": "present",
+        "measurement": "13.2 cm"
+      },
+      "text": "Spleen measures 13.2 cm, mildly enlarged."
+    },
+    {
+      "finding_name": "Ascites",
+      "finding_id": "F03",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No ascites."
+    },
+    {
+      "finding_name": "Biliary ductal dilation",
+      "finding_id": "F29",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "dilated bile ducts"
+      },
+      "anatomic_site": "biliary tree",
+      "attributes": {
+        "presence": "absent",
+        "measurement": "common bile duct 4 mm"
+      },
+      "text": "Common bile duct 4 mm, normal. No biliary dilation."
+    },
+    {
+      "finding_name": "Hepatic lesion",
+      "finding_id": "F02",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "hepatic segment 6",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No focal hepatic lesion."
+    },
+    {
+      "finding_name": "Hepatic mass (other than segment 6 lesion)",
+      "finding_id": "F31",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No focal hepatic lesion."
+    },
+    {
+      "finding_name": "Hydronephrosis",
+      "finding_id": "F28",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No hydronephrosis bilaterally."
+    },
+    {
+      "finding_name": "Portal vein thrombus",
+      "finding_id": "F04",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_035534",
+        "display": "portal vein thrombosis"
+      },
+      "anatomic_site": "main portal vein",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Portal vein is patent with hepatopetal flow."
+    }
+  ]
+}

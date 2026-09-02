@@ -1,0 +1,525 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2022-01-15",
+    "modality": "CT",
+    "body_region": "CHEST_ABDOMEN_PELVIS",
+    "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "72254-6",
+      "display": "CT Chest and Abdomen and Pelvis W contrast IV"
+    },
+    "setting": "ED",
+    "indication": "Fall, trauma workup"
+  },
+  "findings": [
+    {
+      "finding_name": "Abdominal aortic aneurysm",
+      "finding_id": "F01",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MSFT_134126",
+        "display": "abdominal aortic aneurysm"
+      },
+      "anatomic_site": "infrarenal aorta",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "increased",
+        "measurement": "4.5 cm"
+      },
+      "text": "There is a 4.5 cm infrarenal abdominal aortic aneurysm, slightly increased from 4.3 cm on July 2021 CT. No surrounding stranding to suggest contained leak."
+    },
+    {
+      "finding_name": "Ascites",
+      "finding_id": "F03",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "present",
+        "characterization": "moderate"
+      },
+      "text": "Moderate abdominal ascites."
+    },
+    {
+      "finding_name": "Atherosclerotic calcification",
+      "finding_id": "F17",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_847217",
+        "display": "aortic calcification"
+      },
+      "anatomic_site": "aorta",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Atherosclerotic calcifications of the thoracic and abdominal aorta."
+    },
+    {
+      "finding_name": "Cholelithiasis",
+      "finding_id": "F12",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "gallstone"
+      },
+      "anatomic_site": "gallbladder",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cholelithiasis."
+    },
+    {
+      "finding_name": "Cirrhotic liver morphology",
+      "finding_id": "F10",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022460",
+        "display": "cirrhosis"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cirrhotic liver morphology."
+    },
+    {
+      "finding_name": "Compression fracture",
+      "finding_id": "F08",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000230",
+        "display": "vertebral compression fracture"
+      },
+      "anatomic_site": "L4 superior endplate",
+      "attributes": {
+        "presence": "present",
+        "characterization": "acute",
+        "measurement": "20% height loss"
+      },
+      "text": "Acute superior endplate compression fracture of L4 with approximately 20% height loss."
+    },
+    {
+      "finding_name": "Degenerative changes",
+      "finding_id": "F15",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_675673",
+        "display": "degenerative change of the thoracic spine"
+      },
+      "anatomic_site": "thoracic spine",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Multilevel degenerative changes of the thoracic spine with anterior osteophytes."
+    },
+    {
+      "finding_name": "Degenerative changes",
+      "finding_id": "F16",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_481402",
+        "display": "lumbar spine degenerative change"
+      },
+      "anatomic_site": "lumbar spine",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Multilevel lumbar degenerative changes, chronic."
+    },
+    {
+      "finding_name": "Enlarged prostate",
+      "finding_id": "F18",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_017620",
+        "display": "enlarged prostate"
+      },
+      "anatomic_site": "prostate",
+      "attributes": {
+        "presence": "present",
+        "measurement": "4.8 cm"
+      },
+      "text": "Enlarged prostate, 4.8 cm."
+    },
+    {
+      "finding_name": "Esophageal varices",
+      "finding_id": "F09",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices"
+      },
+      "anatomic_site": "distal esophagus",
+      "attributes": {
+        "presence": "present",
+        "characterization": "moderate"
+      },
+      "text": "Moderate esophageal varices."
+    },
+    {
+      "finding_name": "Hepatic lesion",
+      "finding_id": "F02",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "hepatic segment 6",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "measurement": "1.7 cm"
+      },
+      "text": "Known hepatic segment 6 lesion, stable at 1.7 cm."
+    },
+    {
+      "finding_name": "Nephrolithiasis",
+      "finding_id": "F14",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "kidney stone"
+      },
+      "anatomic_site": "left kidney lower pole",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "measurement": "3 mm"
+      },
+      "text": "3 mm left renal calculus, stable."
+    },
+    {
+      "finding_name": "Portal vein thrombus",
+      "finding_id": "F04",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_035534",
+        "display": "portal vein thrombosis"
+      },
+      "anatomic_site": "main portal vein",
+      "attributes": {
+        "presence": "present",
+        "characterization": "acute, non-occlusive"
+      },
+      "text": "New non-occlusive thrombus in the main portal vein, hypodense, acute."
+    },
+    {
+      "finding_name": "Residual scarring",
+      "finding_id": "F41",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_745898",
+        "display": "pulmonary scar"
+      },
+      "anatomic_site": "right lower lobe",
+      "attributes": {
+        "presence": "present",
+        "characterization": "linear"
+      },
+      "text": "Linear scarring in the right lower lobe, sequela of prior pneumonia."
+    },
+    {
+      "finding_name": "Rib fractures",
+      "finding_id": "F07",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture"
+      },
+      "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+      "attributes": {
+        "presence": "present",
+        "characterization": "acute"
+      },
+      "text": "Acute fractures of the left 7th and 8th ribs, confirmed. Minimal displacement."
+    },
+    {
+      "finding_name": "Side-branch IPMN",
+      "finding_id": "F05",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_774223",
+        "display": "IPMN"
+      },
+      "anatomic_site": "pancreatic body",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "measurement": "1.2 cm"
+      },
+      "text": "Stable 1.2 cm pancreatic body IPMN."
+    },
+    {
+      "finding_name": "Simple renal cysts",
+      "finding_id": "F13",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_016773",
+        "display": "cystic renal mass"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Bilateral simple renal cysts, stable."
+    },
+    {
+      "finding_name": "Splenomegaly",
+      "finding_id": "F11",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly"
+      },
+      "anatomic_site": "spleen",
+      "attributes": {
+        "presence": "present",
+        "measurement": "15.2 cm"
+      },
+      "text": "Splenomegaly, 15.2 cm."
+    },
+    {
+      "finding_name": "Status post appendectomy",
+      "finding_id": "F20",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_285678",
+        "display": "prior appendectomy"
+      },
+      "anatomic_site": "right lower quadrant",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Prior appendectomy."
+    },
+    {
+      "finding_name": "Total hip arthroplasty",
+      "finding_id": "F19",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_169189",
+        "display": "total hip arthroplasty"
+      },
+      "anatomic_site": "left hip",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Left total hip arthroplasty, stable."
+    },
+    {
+      "finding_name": "Biliary ductal dilation",
+      "finding_id": "F29",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "dilated bile ducts"
+      },
+      "anatomic_site": "biliary tree",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No biliary dilation."
+    },
+    {
+      "finding_name": "Bowel obstruction",
+      "finding_id": "F33",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022484",
+        "display": "intestinal obstruction"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No bowel obstruction or perforation."
+    },
+    {
+      "finding_name": "Cardiomegaly",
+      "finding_id": "F26",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly"
+      },
+      "anatomic_site": "heart",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Normal heart size."
+    },
+    {
+      "finding_name": "Free air",
+      "finding_id": "F34",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000228",
+        "display": "pneumoperitoneum"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No free air."
+    },
+    {
+      "finding_name": "Hepatic mass (other than segment 6 lesion)",
+      "finding_id": "F31",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No new hepatic mass."
+    },
+    {
+      "finding_name": "Hydronephrosis",
+      "finding_id": "F28",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No hydronephrosis."
+    },
+    {
+      "finding_name": "Lymphadenopathy",
+      "finding_id": "F32",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003106",
+        "display": "abdominal lymphadenopathy"
+      },
+      "anatomic_site": "abdomen",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No abdominal lymphadenopathy."
+    },
+    {
+      "finding_name": "Pancreatic ductal dilation",
+      "finding_id": "F30",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_002674",
+        "display": "dilated pancreatic duct"
+      },
+      "anatomic_site": "main pancreatic duct",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pancreatic ductal dilation."
+    },
+    {
+      "finding_name": "Pelvic fracture",
+      "finding_id": "F38",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_437803",
+        "display": "pelvic fracture"
+      },
+      "anatomic_site": "pelvis",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pelvic fracture."
+    },
+    {
+      "finding_name": "Pleural effusion",
+      "finding_id": "F24",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pleural effusion."
+    },
+    {
+      "finding_name": "Pneumothorax",
+      "finding_id": "F27",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_023339",
+        "display": "pneumothorax"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pneumothorax."
+    },
+    {
+      "finding_name": "Pulmonary nodule",
+      "finding_id": "F25",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000195",
+        "display": "pulmonary nodule"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pulmonary nodule."
+    },
+    {
+      "finding_name": "Solid organ injury",
+      "finding_id": "F37",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_987895",
+        "display": "solid organ injury"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No solid organ laceration or active hemorrhage."
+    },
+    {
+      "finding_name": "Sternal fracture",
+      "finding_id": "F39",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_969524",
+        "display": "sternal fracture"
+      },
+      "anatomic_site": "sternum",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No sternal fracture."
+    },
+    {
+      "finding_name": "Thoracic spine fracture",
+      "finding_id": "F40",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_735619",
+        "display": "thoracic spine fracture"
+      },
+      "anatomic_site": "thoracic spine",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No acute thoracic spine fracture."
+    }
+  ]
+}

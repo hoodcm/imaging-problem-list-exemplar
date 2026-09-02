@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: If you use this dataset, cite the Imaging Problem List framework paper.
+type: dataset
+title: Imaging Problem List exemplar
+version: 1.0.0
+date-released: 2026-09-02
+license: CC-BY-4.0
+repository-code: https://github.com/hoodcm/imaging-problem-list-exemplar
+authors:
+  - family-names: Hood
+    given-names: Michael
+    orcid: https://orcid.org/0009-0005-8708-1118
+    affiliation: Mass General Brigham
+  - family-names: Sippo
+    given-names: Dorothy A.
+    affiliation: Columbia University Irving Medical Center
+  - family-names: O'Connor
+    given-names: Stacy D.
+    affiliation: University of Rochester Medical Center
+  - family-names: Bhatia
+    given-names: Neil
+    affiliation: Mass General Brigham
+  - family-names: Samuel
+    given-names: Joel K. R.
+    affiliation: Mass General Brigham
+  - family-names: O'Donnell
+    given-names: Kevin
+    affiliation: Canon Medical Research USA
+  - family-names: Alkasab
+    given-names: Tarik
+    affiliation: Mass General Brigham
+preferred-citation:
+  type: article
+  title: "The Imaging Problem List: A Standards-Based Framework for Longitudinal Tracking of Imaging Findings"
+  doi: 10.5281/zenodo.21689078
+  year: 2026
+  authors:
+    - family-names: Hood
+      given-names: Michael
+    - family-names: Sippo
+      given-names: Dorothy A.
+    - family-names: O'Connor
+      given-names: Stacy D.
+    - family-names: Bhatia
+      given-names: Neil
+    - family-names: Samuel
+      given-names: Joel K. R.
+    - family-names: O'Donnell
+      given-names: Kevin
+    - family-names: Alkasab
+      given-names: Tarik

@@ -1,0 +1,5057 @@
+{
+  "metadata": {
+    "patient": {
+      "id": "IPL-EXEMPLAR-001",
+      "name": "Synthetic Patient 001",
+      "age_at_start": 64,
+      "clinical_profile": "NASH cirrhosis with portal hypertension, abdominal aortic aneurysm under surveillance",
+      "surgical_history": [
+        "Appendectomy (remote)",
+        "Left total hip arthroplasty (2014)"
+      ]
+    },
+    "compiled_date": "2026-03-18",
+    "total_examinations": 15,
+    "total_ipl_entries": 41,
+    "total_observations": 223,
+    "date_range": {
+      "first": "2017-03-14",
+      "last": "2024-07-16"
+    },
+    "modalities": [
+      "CT",
+      "MRI",
+      "US",
+      "XR"
+    ]
+  },
+  "exams": [
+    {
+      "id": "E01",
+      "date": "2017-03-14",
+      "type": "US Abdomen",
+      "modality": "US",
+      "body_region": "ABDOMEN",
+      "setting": "Outpatient",
+      "indication": "Cirrhosis surveillance",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "24558-9",
+        "display": "US Abdomen"
+      }
+    },
+    {
+      "id": "E02",
+      "date": "2018-02-06",
+      "type": "CT Abdomen/Pelvis with contrast",
+      "modality": "CT",
+      "body_region": "ABDOMEN_PELVIS",
+      "setting": "Outpatient",
+      "indication": "Elevated AFP, hepatic lesion workup",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "36813-4",
+        "display": "CT Abdomen and Pelvis W contrast IV"
+      }
+    },
+    {
+      "id": "E03",
+      "date": "2018-05-22",
+      "type": "MRI Abdomen with contrast (LI-RADS)",
+      "modality": "MRI",
+      "body_region": "ABDOMEN",
+      "setting": "Outpatient",
+      "indication": "Hepatic lesion characterization",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "36134-5",
+        "display": "MR Abdomen W contrast IV"
+      }
+    },
+    {
+      "id": "E04",
+      "date": "2019-09-12",
+      "type": "CXR (PA and lateral)",
+      "modality": "XR",
+      "body_region": "CHEST",
+      "setting": "Urgent care",
+      "indication": "Cough and fever, rule out pneumonia",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "42272-5",
+        "display": "XR Chest PA and Lateral"
+      }
+    },
+    {
+      "id": "E05",
+      "date": "2019-10-29",
+      "type": "CXR (PA and lateral)",
+      "modality": "XR",
+      "body_region": "CHEST",
+      "setting": "Outpatient",
+      "indication": "Follow-up pneumonia",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "42272-5",
+        "display": "XR Chest PA and Lateral"
+      }
+    },
+    {
+      "id": "E06",
+      "date": "2020-06-18",
+      "type": "CTA Abdomen/Pelvis",
+      "modality": "CT",
+      "body_region": "ABDOMEN_PELVIS",
+      "setting": "Outpatient",
+      "indication": "Abdominal aortic aneurysm surveillance, cirrhosis follow-up",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "87854-6",
+        "display": "CT Abdomen and Pelvis and CT angiogram Abdominal aorta W contrast IV"
+      }
+    },
+    {
+      "id": "E07",
+      "date": "2021-03-09",
+      "type": "MRI Abdomen with contrast (LI-RADS)",
+      "modality": "MRI",
+      "body_region": "ABDOMEN",
+      "setting": "Outpatient",
+      "indication": "Hepatic lesion follow-up, >2 yr from initial",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "36134-5",
+        "display": "MR Abdomen W contrast IV"
+      }
+    },
+    {
+      "id": "E08",
+      "date": "2021-07-22",
+      "type": "CT Abdomen/Pelvis with contrast",
+      "modality": "CT",
+      "body_region": "ABDOMEN_PELVIS",
+      "setting": "Outpatient",
+      "indication": "Cirrhosis follow-up, worsening LFTs",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "36813-4",
+        "display": "CT Abdomen and Pelvis W contrast IV"
+      }
+    },
+    {
+      "id": "E09",
+      "date": "2022-01-15",
+      "type": "XR Chest (portable, supine)",
+      "modality": "XR",
+      "body_region": "CHEST",
+      "setting": "ED",
+      "indication": "Fall, trauma screening",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "36589-0",
+        "display": "Portable XR Chest AP single view"
+      }
+    },
+    {
+      "id": "E10",
+      "date": "2022-01-15",
+      "type": "XR Pelvis (AP)",
+      "modality": "XR",
+      "body_region": "PELVIS",
+      "setting": "ED",
+      "indication": "Fall, trauma screening",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "37622-8",
+        "display": "XR Pelvis AP"
+      }
+    },
+    {
+      "id": "E11",
+      "date": "2022-01-15",
+      "type": "CT Chest/Abdomen/Pelvis with contrast",
+      "modality": "CT",
+      "body_region": "CHEST_ABDOMEN_PELVIS",
+      "setting": "ED",
+      "indication": "Fall, trauma workup",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "72254-6",
+        "display": "CT Chest and Abdomen and Pelvis W contrast IV"
+      }
+    },
+    {
+      "id": "E12",
+      "date": "2022-01-15",
+      "type": "CT Head without contrast",
+      "modality": "CT",
+      "body_region": "HEAD",
+      "setting": "ED",
+      "indication": "Fall, rule out intracranial hemorrhage",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "30799-1",
+        "display": "CT Head WO contrast"
+      }
+    },
+    {
+      "id": "E13",
+      "date": "2022-04-10",
+      "type": "US Abdomen with Doppler",
+      "modality": "US",
+      "body_region": "ABDOMEN",
+      "setting": "Outpatient",
+      "indication": "Cirrhosis surveillance, portal vein assessment",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "24558-9",
+        "display": "US Abdomen"
+      }
+    },
+    {
+      "id": "E14",
+      "date": "2023-03-28",
+      "type": "CT Abdomen/Pelvis with contrast",
+      "modality": "CT",
+      "body_region": "ABDOMEN_PELVIS",
+      "setting": "Outpatient",
+      "indication": "Abdominal aortic aneurysm and cirrhosis surveillance",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "36813-4",
+        "display": "CT Abdomen and Pelvis W contrast IV"
+      }
+    },
+    {
+      "id": "E15",
+      "date": "2024-07-16",
+      "type": "CTA Abdomen/Pelvis",
+      "modality": "CT",
+      "body_region": "ABDOMEN_PELVIS",
+      "setting": "Outpatient",
+      "indication": "Abdominal aortic aneurysm pre-surgical evaluation",
+      "procedure_code": {
+        "system": "LOINC",
+        "code": "87854-6",
+        "display": "CT Abdomen and Pelvis and CT angiogram Abdominal aorta W contrast IV"
+      }
+    }
+  ],
+  "ipl": [
+    {
+      "ipl_key": "F01:Abdominal aortic aneurysm",
+      "finding_id": "F01",
+      "canonical_name": "Abdominal aortic aneurysm",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MSFT_134126",
+        "display": "abdominal aortic aneurysm"
+      },
+      "anatomic_site": "infrarenal aorta",
+      "body_region": "Abdomen",
+      "category": "showcase",
+      "status": "active",
+      "total_observations": 8,
+      "present_count": 8,
+      "absent_count": 0,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "measurement": "3.2 cm"
+          },
+          "text": "The infrarenal aorta measures 3.2 cm, mildly dilated.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "3.5 cm"
+          },
+          "text": "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "3.9 cm"
+          },
+          "text": "Known infrarenal AAA now measures 3.9 cm, previously 3.5 cm. No evidence of rupture or dissection.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "4.3 cm"
+          },
+          "text": "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "4.5 cm"
+          },
+          "text": "There is a 4.5 cm infrarenal abdominal aortic aneurysm, slightly increased from 4.3 cm on July 2021 CT. No surrounding stranding to suggest contained leak.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "4.5 cm"
+          },
+          "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "4.8 cm"
+          },
+          "text": "Interval increase in the infrarenal aortic aneurysm, now measuring 4.8 cm compared to 4.5 cm previously.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Abdominal aortic aneurysm",
+          "anatomic_site": "infrarenal aorta",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "5.1 cm"
+          },
+          "text": "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study. Approaching surgical threshold.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F02:Hepatic lesion",
+      "finding_id": "F02",
+      "canonical_name": "Hepatic lesion",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "hepatic segment 6",
+      "body_region": "Abdomen",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 10,
+      "present_count": 9,
+      "absent_count": 1,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No focal hepatic lesion.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "characterization": "LR-3",
+            "measurement": "1.8 cm"
+          },
+          "text": "1.8 cm arterially enhancing segment 6 lesion. LI-RADS 3. MRI recommended.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "characterization": "LR-3",
+            "measurement": "1.8 cm"
+          },
+          "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, no washout or capsule appearance. LI-RADS 3, unchanged.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.7 cm"
+          },
+          "text": "Segment 6 hepatic lesion measures 1.7 cm, stable.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "LR-2",
+            "measurement": "1.7 cm"
+          },
+          "text": "Segment 6 lesion 1.7 cm, stable >2 years. Downgraded to LI-RADS 2.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "LR-2",
+            "measurement": "1.7 cm"
+          },
+          "text": "Segment 6 lesion stable at 1.7 cm. LI-RADS 2.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.7 cm"
+          },
+          "text": "Known hepatic segment 6 lesion, stable at 1.7 cm.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.7 cm"
+          },
+          "text": "Segment 6 hepatic lesion measures 1.7 cm, stable.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "LR-2",
+            "measurement": "1.6 cm"
+          },
+          "text": "Segment 6 hepatic lesion measures 1.6 cm, stable. LI-RADS 2.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic lesion",
+          "anatomic_site": "hepatic segment 6",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.6 cm"
+          },
+          "text": "Segment 6 lesion stable at 1.6 cm.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F03:Ascites",
+      "finding_id": "F03",
+      "canonical_name": "Ascites",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites"
+      },
+      "anatomic_site": null,
+      "body_region": "Abdomen",
+      "category": "showcase",
+      "status": "active",
+      "total_observations": 10,
+      "present_count": 6,
+      "absent_count": 4,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No ascites.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No free fluid.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No ascites.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "present",
+            "characterization": "small volume"
+          },
+          "text": "Small volume ascites in the pelvis and perihepatic space, new.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "present",
+            "characterization": "small volume"
+          },
+          "text": "Small volume ascites, similar to prior.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "characterization": "moderate"
+          },
+          "text": "Moderate ascites, increased from prior.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "present",
+            "characterization": "moderate"
+          },
+          "text": "Moderate abdominal ascites.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "decreased",
+            "characterization": "small volume"
+          },
+          "text": "Small volume ascites, decreased from prior.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Ascites has resolved.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Ascites",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "present",
+            "characterization": "trace"
+          },
+          "text": "Trace perihepatic ascites, recurrent.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F04:Portal vein thrombus",
+      "finding_id": "F04",
+      "canonical_name": "Portal vein thrombus",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_035534",
+        "display": "portal vein thrombosis"
+      },
+      "anatomic_site": "main portal vein",
+      "body_region": "Abdomen",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 8,
+      "present_count": 4,
+      "absent_count": 4,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Portal vein is patent with hepatopetal flow.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Portal vein is patent.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Patent portal vein.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Portal vein is patent.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "present",
+            "characterization": "acute, non-occlusive"
+          },
+          "text": "New non-occlusive thrombus in the main portal vein, hypodense, acute.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "present",
+            "characterization": "organizing"
+          },
+          "text": "Portal vein thrombus with peripheral enhancement, organizing. Flow maintained around thrombus.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "present",
+            "characterization": "chronic, stable"
+          },
+          "text": "Chronic non-occlusive portal vein thrombus, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Portal vein thrombus",
+          "anatomic_site": "main portal vein",
+          "attributes": {
+            "presence": "present",
+            "characterization": "chronic, stable"
+          },
+          "text": "Chronic portal vein thrombus, unchanged.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F05:Side-branch IPMN",
+      "finding_id": "F05",
+      "canonical_name": "Side-branch IPMN",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_774223",
+        "display": "IPMN"
+      },
+      "anatomic_site": "pancreatic body",
+      "body_region": "Abdomen",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 8,
+      "present_count": 8,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "measurement": "1.2 cm"
+          },
+          "text": "1.2 cm pancreatic body cyst communicating with main pancreatic duct, side-branch IPMN.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.2 cm"
+          },
+          "text": "Pancreatic body IPMN measures 1.2 cm, stable.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.2 cm"
+          },
+          "text": "Known side-branch IPMN in the pancreatic body, 1.2 cm, stable.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.2 cm"
+          },
+          "text": "Pancreatic body IPMN stable at 1.2 cm.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.2 cm"
+          },
+          "text": "Stable 1.2 cm pancreatic body IPMN.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "confidence": {
+              "presence": "hedged"
+            }
+          },
+          "text": "Probable side-branch IPMN in the pancreatic body, incompletely evaluated due to overlying bowel gas.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.2 cm"
+          },
+          "text": "Pancreatic body IPMN measures 1.2 cm, unchanged.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Side-branch IPMN",
+          "anatomic_site": "pancreatic body",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "1.2 cm"
+          },
+          "text": "Stable 1.2 cm side-branch IPMN, pancreatic body.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F06:Pneumonia",
+      "finding_id": "F06",
+      "canonical_name": "Pneumonia",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000076",
+        "display": "pneumonia"
+      },
+      "anatomic_site": "right lower lobe",
+      "body_region": "Chest",
+      "category": "showcase",
+      "status": "resolved",
+      "total_observations": 2,
+      "present_count": 1,
+      "absent_count": 1,
+      "first_observed": "2019-09-12",
+      "last_observed": "2019-10-29",
+      "modalities": [
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2019-09-12",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2019-09-12",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pneumonia",
+          "anatomic_site": "right lower lobe",
+          "attributes": {
+            "presence": "present",
+            "characterization": "consolidation"
+          },
+          "text": "Right lower lobe consolidation, pneumonia.",
+          "source_exam": "E04"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pneumonia",
+          "anatomic_site": "right lower lobe",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Prior right lower lobe consolidation has resolved. Lungs clear.",
+          "source_exam": "E05"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F07:Rib fractures",
+      "finding_id": "F07",
+      "canonical_name": "Rib fractures",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture"
+      },
+      "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+      "body_region": "Chest",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 4,
+      "present_count": 4,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Chest (portable, supine)",
+          "exam_modality": "XR",
+          "finding_name": "Rib fractures",
+          "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+          "attributes": {
+            "presence": "present",
+            "characterization": "acute"
+          },
+          "text": "Acute nondisplaced fractures of the left 7th and 8th ribs along the posterior axillary line.",
+          "source_exam": "E09"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Rib fractures",
+          "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+          "attributes": {
+            "presence": "present",
+            "characterization": "acute"
+          },
+          "text": "Acute fractures of the left 7th and 8th ribs, confirmed. Minimal displacement.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Rib fractures",
+          "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+          "attributes": {
+            "presence": "present",
+            "chronicity": "healed",
+            "characterization": "healed with callus"
+          },
+          "text": "Previously acute left 7th and 8th rib fractures are now healed with callus formation.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Rib fractures",
+          "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "healed"
+          },
+          "text": "Healed left 7th and 8th rib fractures, unchanged.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F08:Compression fracture",
+      "finding_id": "F08",
+      "canonical_name": "Compression fracture",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000230",
+        "display": "vertebral compression fracture"
+      },
+      "anatomic_site": "L4 superior endplate",
+      "body_region": "Spine",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 4,
+      "present_count": 4,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Pelvis (AP)",
+          "exam_modality": "XR",
+          "finding_name": "Compression fracture",
+          "anatomic_site": "L4 superior endplate",
+          "attributes": {
+            "presence": "present",
+            "characterization": "acute",
+            "measurement": "20% height loss"
+          },
+          "text": "Acute L4 superior endplate compression fracture, approximately 20% height loss.",
+          "source_exam": "E10"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Compression fracture",
+          "anatomic_site": "L4 superior endplate",
+          "attributes": {
+            "presence": "present",
+            "characterization": "acute",
+            "measurement": "20% height loss"
+          },
+          "text": "Acute superior endplate compression fracture of L4 with approximately 20% height loss.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Compression fracture",
+          "anatomic_site": "L4 superior endplate",
+          "attributes": {
+            "presence": "present",
+            "chronicity": "healed",
+            "characterization": "healed, chronic deformity",
+            "measurement": "20% height loss"
+          },
+          "text": "Previously acute L4 compression fracture is now healed, with chronic superior endplate deformity and stable 20% height loss.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Compression fracture",
+          "anatomic_site": "L4 superior endplate",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "chronic deformity",
+            "measurement": "20% height loss"
+          },
+          "text": "Chronic L4 compression deformity, stable.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F09:Esophageal varices",
+      "finding_id": "F09",
+      "canonical_name": "Esophageal varices",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices"
+      },
+      "anatomic_site": "distal esophagus",
+      "body_region": "Abdomen",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 8,
+      "present_count": 8,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "characterization": "small"
+          },
+          "text": "Small esophageal varices.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "small"
+          },
+          "text": "Small esophageal varices, unchanged.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "small"
+          },
+          "text": "Small esophageal varices, unchanged.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "small"
+          },
+          "text": "Small esophageal varices, stable.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "characterization": "moderate"
+          },
+          "text": "Esophageal varices, now moderate, increased from small on prior.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "characterization": "moderate"
+          },
+          "text": "Moderate esophageal varices.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "characterization": "large"
+          },
+          "text": "Large esophageal varices, increased.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Esophageal varices",
+          "anatomic_site": "distal esophagus",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "characterization": "large"
+          },
+          "text": "Large esophageal varices, stable.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F41:Residual scarring",
+      "finding_id": "F41",
+      "canonical_name": "Residual scarring",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_745898",
+        "display": "pulmonary scar"
+      },
+      "anatomic_site": "right lower lobe",
+      "body_region": "Chest",
+      "category": "showcase",
+      "status": "stable",
+      "total_observations": 3,
+      "present_count": 3,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Residual scarring",
+          "anatomic_site": "right lower lobe",
+          "attributes": {
+            "presence": "present",
+            "characterization": "linear"
+          },
+          "text": "Linear scarring in the right lower lobe, sequela of prior pneumonia.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Residual scarring",
+          "anatomic_site": "right lower lobe",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable"
+          },
+          "text": "Right lower lobe scarring, unchanged.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Residual scarring",
+          "anatomic_site": "right lower lobe",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable"
+          },
+          "text": "Right lower lobe scarring, stable.",
+          "source_exam": "E15"
+        }
+      ],
+      "linkages": [
+        {
+          "relation": "sequela_of",
+          "target_finding_id": "F06"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F10:Cirrhotic liver morphology",
+      "finding_id": "F10",
+      "canonical_name": "Cirrhotic liver morphology",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022460",
+        "display": "cirrhosis"
+      },
+      "anatomic_site": "liver",
+      "body_region": "Abdomen",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 10,
+      "present_count": 10,
+      "absent_count": 0,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Coarsened echotexture with nodular liver surface, cirrhosis.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Nodular liver contour and capsular retraction, cirrhosis.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver morphology with nodular contour.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver morphology, unchanged.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver morphology.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver, unchanged.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver morphology.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Coarsened echotexture, nodular surface. Known cirrhosis.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver morphology, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Cirrhotic liver morphology",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cirrhotic liver, unchanged.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F11:Splenomegaly",
+      "finding_id": "F11",
+      "canonical_name": "Splenomegaly",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly"
+      },
+      "anatomic_site": "spleen",
+      "body_region": "Abdomen",
+      "category": "chronic",
+      "status": "active",
+      "total_observations": 10,
+      "present_count": 10,
+      "absent_count": 0,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "13.2 cm"
+          },
+          "text": "Spleen measures 13.2 cm, mildly enlarged.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "13.8 cm"
+          },
+          "text": "Splenomegaly, 13.8 cm.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "14.0 cm"
+          },
+          "text": "Splenomegaly, 14.0 cm.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "14.5 cm"
+          },
+          "text": "Splenomegaly, now 14.5 cm, mildly increased.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "14.8 cm"
+          },
+          "text": "Splenomegaly, 14.8 cm.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "15.0 cm"
+          },
+          "text": "Splenomegaly, 15.0 cm, mildly increased.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "15.2 cm"
+          },
+          "text": "Splenomegaly, 15.2 cm.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "15.4 cm"
+          },
+          "text": "Spleen measures 15.4 cm, enlarged.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "measurement": "15.8 cm"
+          },
+          "text": "Splenomegaly, 15.8 cm.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Splenomegaly",
+          "anatomic_site": "spleen",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "16.1 cm"
+          },
+          "text": "Splenomegaly, 16.1 cm, increased.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F12:Cholelithiasis",
+      "finding_id": "F12",
+      "canonical_name": "Cholelithiasis",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "gallstone"
+      },
+      "anatomic_site": "gallbladder",
+      "body_region": "Abdomen",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 10,
+      "present_count": 10,
+      "absent_count": 0,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present",
+            "measurement": "largest 8 mm"
+          },
+          "text": "Cholelithiasis, largest stone 8 mm. No gallbladder wall thickening.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis, noted.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis, unchanged.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis, unchanged.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Multiple gallstones, unchanged.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Cholelithiasis",
+          "anatomic_site": "gallbladder",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Cholelithiasis.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F13:Simple renal cysts",
+      "finding_id": "F13",
+      "canonical_name": "Simple renal cysts",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_016773",
+        "display": "cystic renal mass"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "body_region": "Abdomen",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 8,
+      "present_count": 8,
+      "absent_count": 0,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present",
+            "measurement": "left 1.4 cm, right 0.8 cm"
+          },
+          "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present",
+            "measurement": "left 1.5 cm, right 0.8 cm"
+          },
+          "text": "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present",
+            "measurement": "left 1.5 cm, right 0.9 cm"
+          },
+          "text": "Bilateral simple renal cysts, stable.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present",
+            "measurement": "left 1.6 cm, right 0.9 cm"
+          },
+          "text": "Bilateral renal cysts, stable.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Bilateral simple renal cysts, stable.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present",
+            "measurement": "left 1.6 cm, right 0.9 cm"
+          },
+          "text": "Bilateral simple renal cysts, stable.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present",
+            "measurement": "left 1.6 cm, right 1.0 cm"
+          },
+          "text": "Bilateral simple renal cysts, unchanged.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Simple renal cysts",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Stable bilateral simple renal cysts.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F14:Nephrolithiasis",
+      "finding_id": "F14",
+      "canonical_name": "Nephrolithiasis",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "kidney stone"
+      },
+      "anatomic_site": "left kidney lower pole",
+      "body_region": "Abdomen",
+      "category": "chronic",
+      "status": "active",
+      "total_observations": 8,
+      "present_count": 8,
+      "absent_count": 0,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "measurement": "punctate"
+          },
+          "text": "Punctate left lower pole calculus.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "measurement": "2 mm"
+          },
+          "text": "2 mm left lower pole renal calculus.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "2 mm"
+          },
+          "text": "2 mm left lower pole renal calculus, stable.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "3 mm"
+          },
+          "text": "Left lower pole calculus now measures 3 mm, slightly increased.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "3 mm"
+          },
+          "text": "3 mm left renal calculus, stable.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "3 mm"
+          },
+          "text": "Left lower pole renal calculus, 3 mm, stable.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "3 mm"
+          },
+          "text": "Left lower pole renal calculus, 3 mm, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Nephrolithiasis",
+          "anatomic_site": "left kidney lower pole",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "increased",
+            "measurement": "4 mm"
+          },
+          "text": "Left renal calculus now 4 mm, mildly increased.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F15:Degenerative changes",
+      "finding_id": "F15",
+      "canonical_name": "Degenerative changes",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_675673",
+        "display": "degenerative change of the thoracic spine"
+      },
+      "anatomic_site": "thoracic spine",
+      "body_region": "Spine",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 3,
+      "present_count": 3,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "thoracic spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Multilevel degenerative changes of the thoracic spine with anterior osteophytes.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "thoracic spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Degenerative changes of the thoracic spine, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "thoracic spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Thoracic spine degenerative changes, unchanged.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F16:Degenerative changes",
+      "finding_id": "F16",
+      "canonical_name": "Degenerative changes",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_481402",
+        "display": "lumbar spine degenerative change"
+      },
+      "anatomic_site": "lumbar spine",
+      "body_region": "Spine",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 7,
+      "present_count": 7,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Multilevel lumbar degenerative disc disease and facet arthropathy.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Lumbar degenerative changes, unchanged.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Degenerative changes of the lumbar spine.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Pelvis (AP)",
+          "exam_modality": "XR",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Degenerative changes of the lumbar spine.",
+          "source_exam": "E10"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Multilevel lumbar degenerative changes, chronic.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Lumbar degenerative changes, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Degenerative changes",
+          "anatomic_site": "lumbar spine",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Degenerative lumbar spine changes, unchanged.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F17:Atherosclerotic calcification",
+      "finding_id": "F17",
+      "canonical_name": "Atherosclerotic calcification",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_847217",
+        "display": "aortic calcification"
+      },
+      "anatomic_site": "aorta",
+      "body_region": "Abdomen",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 9,
+      "present_count": 9,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2019-09-12",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Atherosclerotic calcifications of the abdominal aorta.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2019-09-12",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Atherosclerotic aortic calcifications.",
+          "source_exam": "E04"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Aortic calcifications, unchanged.",
+          "source_exam": "E05"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Atherosclerotic calcification of the aorta.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Aortic atherosclerotic disease.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Chest (portable, supine)",
+          "exam_modality": "XR",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Atherosclerotic aortic calcifications.",
+          "source_exam": "E09"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Atherosclerotic calcifications of the thoracic and abdominal aorta.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Aortic atherosclerotic calcifications.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Atherosclerotic calcification",
+          "anatomic_site": "aorta",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Atherosclerotic calcifications, aorta, stable.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F18:Enlarged prostate",
+      "finding_id": "F18",
+      "canonical_name": "Enlarged prostate",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_017620",
+        "display": "enlarged prostate"
+      },
+      "anatomic_site": "prostate",
+      "body_region": "Pelvis",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 6,
+      "present_count": 6,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Enlarged prostate",
+          "anatomic_site": "prostate",
+          "attributes": {
+            "presence": "present",
+            "measurement": "4.5 cm"
+          },
+          "text": "Enlarged prostate, 4.5 cm.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Enlarged prostate",
+          "anatomic_site": "prostate",
+          "attributes": {
+            "presence": "present",
+            "measurement": "4.6 cm"
+          },
+          "text": "Prostatomegaly, 4.6 cm.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Enlarged prostate",
+          "anatomic_site": "prostate",
+          "attributes": {
+            "presence": "present",
+            "measurement": "4.7 cm"
+          },
+          "text": "Enlarged prostate, 4.7 cm.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Enlarged prostate",
+          "anatomic_site": "prostate",
+          "attributes": {
+            "presence": "present",
+            "measurement": "4.8 cm"
+          },
+          "text": "Enlarged prostate, 4.8 cm.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Enlarged prostate",
+          "anatomic_site": "prostate",
+          "attributes": {
+            "presence": "present",
+            "temporal_status": "stable",
+            "measurement": "4.8 cm"
+          },
+          "text": "Enlarged prostate, 4.8 cm, stable.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Enlarged prostate",
+          "anatomic_site": "prostate",
+          "attributes": {
+            "presence": "present",
+            "measurement": "4.9 cm"
+          },
+          "text": "Prostatomegaly, 4.9 cm.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F19:Total hip arthroplasty",
+      "finding_id": "F19",
+      "canonical_name": "Total hip arthroplasty",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_169189",
+        "display": "total hip arthroplasty"
+      },
+      "anatomic_site": "left hip",
+      "body_region": "MSK",
+      "category": "surgical_history",
+      "status": "stable",
+      "total_observations": 7,
+      "present_count": 7,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty in expected position.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty, unchanged.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty in place.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Pelvis (AP)",
+          "exam_modality": "XR",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty, stable positioning. No periprosthetic fracture.",
+          "source_exam": "E10"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty, stable.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty, unchanged.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Total hip arthroplasty",
+          "anatomic_site": "left hip",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Left total hip arthroplasty, stable positioning.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F20:Status post appendectomy",
+      "finding_id": "F20",
+      "canonical_name": "Status post appendectomy",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_285678",
+        "display": "prior appendectomy"
+      },
+      "anatomic_site": "right lower quadrant",
+      "body_region": "Abdomen",
+      "category": "surgical_history",
+      "status": "stable",
+      "total_observations": 6,
+      "present_count": 6,
+      "absent_count": 0,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "present"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Status post appendectomy",
+          "anatomic_site": "right lower quadrant",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Prior appendectomy.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Status post appendectomy",
+          "anatomic_site": "right lower quadrant",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Post-appendectomy changes.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Status post appendectomy",
+          "anatomic_site": "right lower quadrant",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Status post appendectomy.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Status post appendectomy",
+          "anatomic_site": "right lower quadrant",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Prior appendectomy.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Status post appendectomy",
+          "anatomic_site": "right lower quadrant",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Status post appendectomy.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Status post appendectomy",
+          "anatomic_site": "right lower quadrant",
+          "attributes": {
+            "presence": "present"
+          },
+          "text": "Post-appendectomy changes.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F21:Lacunar infarcts",
+      "finding_id": "F21",
+      "canonical_name": "Lacunar infarcts",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_251340",
+        "display": "lacunar infarct"
+      },
+      "anatomic_site": "bilateral basal ganglia",
+      "body_region": "Head",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 1,
+      "present_count": 1,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Head without contrast",
+          "exam_modality": "CT",
+          "finding_name": "Lacunar infarcts",
+          "anatomic_site": "bilateral basal ganglia",
+          "attributes": {
+            "presence": "present",
+            "characterization": "chronic"
+          },
+          "text": "Chronic lacunar infarcts in bilateral basal ganglia.",
+          "source_exam": "E12"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F22:Small vessel ischemic disease",
+      "finding_id": "F22",
+      "canonical_name": "Small vessel ischemic disease",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_093125",
+        "display": "cerebral small vessel disease"
+      },
+      "anatomic_site": "periventricular white matter",
+      "body_region": "Head",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 1,
+      "present_count": 1,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Head without contrast",
+          "exam_modality": "CT",
+          "finding_name": "Small vessel ischemic disease",
+          "anatomic_site": "periventricular white matter",
+          "attributes": {
+            "presence": "present",
+            "characterization": "chronic, moderate"
+          },
+          "text": "Moderate periventricular and subcortical white matter hypodensities, chronic small vessel ischemic disease.",
+          "source_exam": "E12"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F23:Orbital wall fracture",
+      "finding_id": "F23",
+      "canonical_name": "Orbital wall fracture",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_444719",
+        "display": "medial orbital wall fracture"
+      },
+      "anatomic_site": "right medial orbital wall",
+      "body_region": "Head",
+      "category": "chronic",
+      "status": "stable",
+      "total_observations": 1,
+      "present_count": 1,
+      "absent_count": 0,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "present"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Head without contrast",
+          "exam_modality": "CT",
+          "finding_name": "Orbital wall fracture",
+          "anatomic_site": "right medial orbital wall",
+          "attributes": {
+            "presence": "present",
+            "characterization": "old, corticated margins"
+          },
+          "text": "Old right medial orbital wall fracture with smooth corticated margins.",
+          "source_exam": "E12"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F24:Pleural effusion",
+      "finding_id": "F24",
+      "canonical_name": "Pleural effusion",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion"
+      },
+      "anatomic_site": null,
+      "body_region": "Chest",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 4,
+      "present_count": 0,
+      "absent_count": 4,
+      "first_observed": "2019-09-12",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2019-09-12",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2019-09-12",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pleural effusion",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pleural effusion.",
+          "source_exam": "E04"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pleural effusion",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pleural effusion.",
+          "source_exam": "E05"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Chest (portable, supine)",
+          "exam_modality": "XR",
+          "finding_name": "Pleural effusion",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pleural effusion.",
+          "source_exam": "E09"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pleural effusion",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pleural effusion.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F25:Pulmonary nodule",
+      "finding_id": "F25",
+      "canonical_name": "Pulmonary nodule",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000195",
+        "display": "pulmonary nodule"
+      },
+      "anatomic_site": null,
+      "body_region": "Chest",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 3,
+      "present_count": 0,
+      "absent_count": 3,
+      "first_observed": "2019-09-12",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2019-09-12",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2019-09-12",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pulmonary nodule",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pulmonary nodule.",
+          "source_exam": "E04"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pulmonary nodule",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pulmonary nodule.",
+          "source_exam": "E05"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pulmonary nodule",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pulmonary nodule.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F26:Cardiomegaly",
+      "finding_id": "F26",
+      "canonical_name": "Cardiomegaly",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly"
+      },
+      "anatomic_site": "heart",
+      "body_region": "Chest",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 4,
+      "present_count": 0,
+      "absent_count": 4,
+      "first_observed": "2019-09-12",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2019-09-12",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2019-09-12",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Cardiomegaly",
+          "anatomic_site": "heart",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Normal heart size.",
+          "source_exam": "E04"
+        },
+        {
+          "exam_date": "2019-10-29",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Cardiomegaly",
+          "anatomic_site": "heart",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Normal cardiac silhouette.",
+          "source_exam": "E05"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Chest (portable, supine)",
+          "exam_modality": "XR",
+          "finding_name": "Cardiomegaly",
+          "anatomic_site": "heart",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Normal heart size, limited on supine film.",
+          "source_exam": "E09"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Cardiomegaly",
+          "anatomic_site": "heart",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Normal heart size.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F27:Pneumothorax",
+      "finding_id": "F27",
+      "canonical_name": "Pneumothorax",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_023339",
+        "display": "pneumothorax"
+      },
+      "anatomic_site": null,
+      "body_region": "Chest",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 3,
+      "present_count": 0,
+      "absent_count": 3,
+      "first_observed": "2019-09-12",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2019-09-12",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2019-09-12",
+          "exam_type": "CXR (PA and lateral)",
+          "exam_modality": "XR",
+          "finding_name": "Pneumothorax",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pneumothorax.",
+          "source_exam": "E04"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Chest (portable, supine)",
+          "exam_modality": "XR",
+          "finding_name": "Pneumothorax",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pneumothorax.",
+          "source_exam": "E09"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pneumothorax",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pneumothorax.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F28:Hydronephrosis",
+      "finding_id": "F28",
+      "canonical_name": "Hydronephrosis",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 8,
+      "present_count": 0,
+      "absent_count": 8,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis bilaterally.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis bilaterally.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Hydronephrosis",
+          "anatomic_site": "bilateral kidneys",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No hydronephrosis.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F29:Biliary ductal dilation",
+      "finding_id": "F29",
+      "canonical_name": "Biliary ductal dilation",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "dilated bile ducts"
+      },
+      "anatomic_site": "biliary tree",
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 8,
+      "present_count": 0,
+      "absent_count": 8,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent",
+            "measurement": "common bile duct 4 mm"
+          },
+          "text": "Common bile duct 4 mm, normal. No biliary dilation.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent",
+            "measurement": "common bile duct 4 mm"
+          },
+          "text": "No intrahepatic or extrahepatic biliary dilation. Common bile duct 4 mm.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No biliary dilation.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Bile ducts are normal in caliber.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No biliary dilation.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent",
+            "measurement": "common bile duct 5 mm"
+          },
+          "text": "Common bile duct 5 mm, normal. No biliary dilation.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No biliary ductal dilation.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Biliary ductal dilation",
+          "anatomic_site": "biliary tree",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Biliary tree is normal.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F30:Pancreatic ductal dilation",
+      "finding_id": "F30",
+      "canonical_name": "Pancreatic ductal dilation",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_002674",
+        "display": "dilated pancreatic duct"
+      },
+      "anatomic_site": "main pancreatic duct",
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 6,
+      "present_count": 0,
+      "absent_count": 6,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pancreatic ductal dilation",
+          "anatomic_site": "main pancreatic duct",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Main pancreatic duct is normal in caliber.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Pancreatic ductal dilation",
+          "anatomic_site": "main pancreatic duct",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pancreatic ductal dilation.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pancreatic ductal dilation",
+          "anatomic_site": "main pancreatic duct",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Main pancreatic duct is normal.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pancreatic ductal dilation",
+          "anatomic_site": "main pancreatic duct",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pancreatic ductal dilation.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pancreatic ductal dilation",
+          "anatomic_site": "main pancreatic duct",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "Pancreatic duct normal in caliber.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Pancreatic ductal dilation",
+          "anatomic_site": "main pancreatic duct",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pancreatic ductal dilation.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F31:Hepatic mass (other than segment 6 lesion)",
+      "finding_id": "F31",
+      "canonical_name": "Hepatic mass (other than segment 6 lesion)",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "liver",
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 10,
+      "present_count": 0,
+      "absent_count": 10,
+      "first_observed": "2017-03-14",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT",
+        "MRI",
+        "US"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2017-03-14",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2017-03-14",
+          "exam_type": "US Abdomen",
+          "exam_modality": "US",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No focal hepatic lesion.",
+          "source_exam": "E01"
+        },
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No other focal hepatic lesion.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2018-05-22",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No additional hepatic lesion.",
+          "source_exam": "E03"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new hepatic lesion.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-03-09",
+          "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+          "exam_modality": "MRI",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new hepatic lesion.",
+          "source_exam": "E07"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new focal hepatic lesion.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new hepatic mass.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2022-04-10",
+          "exam_type": "US Abdomen with Doppler",
+          "exam_modality": "US",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new focal hepatic lesion.",
+          "source_exam": "E13"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new hepatic lesion.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Hepatic mass (other than segment 6 lesion)",
+          "anatomic_site": "liver",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No new focal hepatic lesion.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F32:Lymphadenopathy",
+      "finding_id": "F32",
+      "canonical_name": "Lymphadenopathy",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003106",
+        "display": "abdominal lymphadenopathy"
+      },
+      "anatomic_site": "abdomen",
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 6,
+      "present_count": 0,
+      "absent_count": 6,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Lymphadenopathy",
+          "anatomic_site": "abdomen",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pathologic abdominal lymphadenopathy.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Lymphadenopathy",
+          "anatomic_site": "abdomen",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No lymphadenopathy.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Lymphadenopathy",
+          "anatomic_site": "abdomen",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pathologic lymphadenopathy.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Lymphadenopathy",
+          "anatomic_site": "abdomen",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No abdominal lymphadenopathy.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Lymphadenopathy",
+          "anatomic_site": "abdomen",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No lymphadenopathy.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Lymphadenopathy",
+          "anatomic_site": "abdomen",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pathologic lymphadenopathy.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F33:Bowel obstruction",
+      "finding_id": "F33",
+      "canonical_name": "Bowel obstruction",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022484",
+        "display": "intestinal obstruction"
+      },
+      "anatomic_site": null,
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 6,
+      "present_count": 0,
+      "absent_count": 6,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Bowel obstruction",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No bowel obstruction.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Bowel obstruction",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No small or large bowel obstruction.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Bowel obstruction",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No bowel obstruction.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Bowel obstruction",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No bowel obstruction or perforation.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Bowel obstruction",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No bowel obstruction.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Bowel obstruction",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No obstruction.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F34:Free air",
+      "finding_id": "F34",
+      "canonical_name": "Free air",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000228",
+        "display": "pneumoperitoneum"
+      },
+      "anatomic_site": null,
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 6,
+      "present_count": 0,
+      "absent_count": 6,
+      "first_observed": "2018-02-06",
+      "last_observed": "2024-07-16",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2018-02-06",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2018-02-06",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Free air",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pneumoperitoneum.",
+          "source_exam": "E02"
+        },
+        {
+          "exam_date": "2020-06-18",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Free air",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No free air.",
+          "source_exam": "E06"
+        },
+        {
+          "exam_date": "2021-07-22",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Free air",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pneumoperitoneum.",
+          "source_exam": "E08"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Free air",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No free air.",
+          "source_exam": "E11"
+        },
+        {
+          "exam_date": "2023-03-28",
+          "exam_type": "CT Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Free air",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pneumoperitoneum.",
+          "source_exam": "E14"
+        },
+        {
+          "exam_date": "2024-07-16",
+          "exam_type": "CTA Abdomen/Pelvis",
+          "exam_modality": "CT",
+          "finding_name": "Free air",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No free air.",
+          "source_exam": "E15"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F35:Intracranial hemorrhage",
+      "finding_id": "F35",
+      "canonical_name": "Intracranial hemorrhage",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000194",
+        "display": "acute intracranial hemorrhage"
+      },
+      "anatomic_site": null,
+      "body_region": "Head",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 1,
+      "present_count": 0,
+      "absent_count": 1,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Head without contrast",
+          "exam_modality": "CT",
+          "finding_name": "Intracranial hemorrhage",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No acute intracranial hemorrhage.",
+          "source_exam": "E12"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F36:Acute intracranial mass or mass effect",
+      "finding_id": "F36",
+      "canonical_name": "Acute intracranial mass or mass effect",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_119725",
+        "display": "intracranial mass"
+      },
+      "anatomic_site": null,
+      "body_region": "Head",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 1,
+      "present_count": 0,
+      "absent_count": 1,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Head without contrast",
+          "exam_modality": "CT",
+          "finding_name": "Acute intracranial mass or mass effect",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No mass, midline shift, or hydrocephalus.",
+          "source_exam": "E12"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F37:Solid organ injury",
+      "finding_id": "F37",
+      "canonical_name": "Solid organ injury",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_987895",
+        "display": "solid organ injury"
+      },
+      "anatomic_site": null,
+      "body_region": "Abdomen",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 1,
+      "present_count": 0,
+      "absent_count": 1,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Solid organ injury",
+          "anatomic_site": null,
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No solid organ laceration or active hemorrhage.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F38:Pelvic fracture",
+      "finding_id": "F38",
+      "canonical_name": "Pelvic fracture",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_437803",
+        "display": "pelvic fracture"
+      },
+      "anatomic_site": "pelvis",
+      "body_region": "Pelvis",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 2,
+      "present_count": 0,
+      "absent_count": 2,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT",
+        "XR"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "XR Pelvis (AP)",
+          "exam_modality": "XR",
+          "finding_name": "Pelvic fracture",
+          "anatomic_site": "pelvis",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pelvic fracture. Bones are diffusely osteopenic.",
+          "source_exam": "E10"
+        },
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Pelvic fracture",
+          "anatomic_site": "pelvis",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No pelvic fracture.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F39:Sternal fracture",
+      "finding_id": "F39",
+      "canonical_name": "Sternal fracture",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_969524",
+        "display": "sternal fracture"
+      },
+      "anatomic_site": "sternum",
+      "body_region": "Chest",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 1,
+      "present_count": 0,
+      "absent_count": 1,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Sternal fracture",
+          "anatomic_site": "sternum",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No sternal fracture.",
+          "source_exam": "E11"
+        }
+      ]
+    },
+    {
+      "ipl_key": "F40:Thoracic spine fracture",
+      "finding_id": "F40",
+      "canonical_name": "Thoracic spine fracture",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_735619",
+        "display": "thoracic spine fracture"
+      },
+      "anatomic_site": "thoracic spine",
+      "body_region": "Spine",
+      "category": "excluded",
+      "status": "excluded",
+      "total_observations": 1,
+      "present_count": 0,
+      "absent_count": 1,
+      "first_observed": "2022-01-15",
+      "last_observed": "2022-01-15",
+      "modalities": [
+        "CT"
+      ],
+      "presence_timeline": [
+        {
+          "exam_date": "2022-01-15",
+          "presence": "absent"
+        }
+      ],
+      "observations": [
+        {
+          "exam_date": "2022-01-15",
+          "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
+          "exam_modality": "CT",
+          "finding_name": "Thoracic spine fracture",
+          "anatomic_site": "thoracic spine",
+          "attributes": {
+            "presence": "absent"
+          },
+          "text": "No acute thoracic spine fracture.",
+          "source_exam": "E11"
+        }
+      ]
+    }
+  ]
+}

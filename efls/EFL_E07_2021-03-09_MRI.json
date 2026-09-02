@@ -1,0 +1,139 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2021-03-09",
+    "modality": "MRI",
+    "body_region": "ABDOMEN",
+    "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36134-5",
+      "display": "MR Abdomen W contrast IV"
+    },
+    "setting": "Outpatient",
+    "indication": "Hepatic lesion follow-up, >2 yr from initial"
+  },
+  "findings": [
+    {
+      "finding_name": "Ascites",
+      "finding_id": "F03",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "present",
+        "characterization": "small volume"
+      },
+      "text": "Small volume ascites, similar to prior."
+    },
+    {
+      "finding_name": "Cholelithiasis",
+      "finding_id": "F12",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "gallstone"
+      },
+      "anatomic_site": "gallbladder",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cholelithiasis, unchanged."
+    },
+    {
+      "finding_name": "Cirrhotic liver morphology",
+      "finding_id": "F10",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022460",
+        "display": "cirrhosis"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cirrhotic liver morphology."
+    },
+    {
+      "finding_name": "Esophageal varices",
+      "finding_id": "F09",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices"
+      },
+      "anatomic_site": "distal esophagus",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "characterization": "small"
+      },
+      "text": "Small esophageal varices, stable."
+    },
+    {
+      "finding_name": "Hepatic lesion",
+      "finding_id": "F02",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "hepatic segment 6",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "characterization": "LR-2",
+        "measurement": "1.7 cm"
+      },
+      "text": "Segment 6 lesion 1.7 cm, stable >2 years. Downgraded to LI-RADS 2."
+    },
+    {
+      "finding_name": "Side-branch IPMN",
+      "finding_id": "F05",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_774223",
+        "display": "IPMN"
+      },
+      "anatomic_site": "pancreatic body",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "measurement": "1.2 cm"
+      },
+      "text": "Known side-branch IPMN in the pancreatic body, 1.2 cm, stable."
+    },
+    {
+      "finding_name": "Splenomegaly",
+      "finding_id": "F11",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly"
+      },
+      "anatomic_site": "spleen",
+      "attributes": {
+        "presence": "present",
+        "measurement": "14.8 cm"
+      },
+      "text": "Splenomegaly, 14.8 cm."
+    },
+    {
+      "finding_name": "Hepatic mass (other than segment 6 lesion)",
+      "finding_id": "F31",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No new hepatic lesion."
+    }
+  ]
+}

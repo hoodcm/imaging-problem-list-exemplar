@@ -1,0 +1,121 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2018-05-22",
+    "modality": "MRI",
+    "body_region": "ABDOMEN",
+    "exam_type": "MRI Abdomen with contrast (LI-RADS)",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36134-5",
+      "display": "MR Abdomen W contrast IV"
+    },
+    "setting": "Outpatient",
+    "indication": "Hepatic lesion characterization"
+  },
+  "findings": [
+    {
+      "finding_name": "Cholelithiasis",
+      "finding_id": "F12",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "gallstone"
+      },
+      "anatomic_site": "gallbladder",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cholelithiasis, noted."
+    },
+    {
+      "finding_name": "Cirrhotic liver morphology",
+      "finding_id": "F10",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022460",
+        "display": "cirrhosis"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cirrhotic liver morphology with nodular contour."
+    },
+    {
+      "finding_name": "Esophageal varices",
+      "finding_id": "F09",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices"
+      },
+      "anatomic_site": "distal esophagus",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "characterization": "small"
+      },
+      "text": "Small esophageal varices, unchanged."
+    },
+    {
+      "finding_name": "Hepatic lesion",
+      "finding_id": "F02",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "hepatic segment 6",
+      "attributes": {
+        "presence": "present",
+        "characterization": "LR-3",
+        "measurement": "1.8 cm"
+      },
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, no washout or capsule appearance. LI-RADS 3, unchanged."
+    },
+    {
+      "finding_name": "Splenomegaly",
+      "finding_id": "F11",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly"
+      },
+      "anatomic_site": "spleen",
+      "attributes": {
+        "presence": "present",
+        "measurement": "14.0 cm"
+      },
+      "text": "Splenomegaly, 14.0 cm."
+    },
+    {
+      "finding_name": "Ascites",
+      "finding_id": "F03",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No ascites."
+    },
+    {
+      "finding_name": "Hepatic mass (other than segment 6 lesion)",
+      "finding_id": "F31",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No additional hepatic lesion."
+    }
+  ]
+}

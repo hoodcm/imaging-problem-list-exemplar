@@ -1,0 +1,187 @@
+{
+  "oifm_id": "OIFM_MGB_987895",
+  "name": "solid organ injury",
+  "description": "Traumatic injury to a solid abdominal organ, such as laceration or contusion of the liver, spleen, or kidney.",
+  "synonyms": [
+    "solid organ laceration",
+    "abdominal organ injury"
+  ],
+  "tags": [
+    "abdomen",
+    "trauma",
+    "CT"
+  ],
+  "contributors": [
+    {
+      "github_username": "hoodcm",
+      "email": "chood@mgh.harvard.edu",
+      "name": "C. Michael Hood, MD",
+      "organization_code": "MGB"
+    }
+  ],
+  "attributes": [
+    {
+      "oifma_id": "OIFMA_MGB_585040",
+      "name": "presence",
+      "description": "Presence or absence of solid organ injury",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_585040.0",
+          "name": "absent",
+          "description": "Solid organ injury is absent",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28473",
+              "display": "absent"
+            },
+            {
+              "system": "SNOMED",
+              "code": "2667000",
+              "display": "Absent (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_585040.1",
+          "name": "present",
+          "description": "Solid organ injury is present",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID28472",
+              "display": "present"
+            },
+            {
+              "system": "SNOMED",
+              "code": "52101004",
+              "display": "Present (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_585040.2",
+          "name": "indeterminate",
+          "description": "Presence of solid organ injury cannot be determined",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39110",
+              "display": "indeterminate"
+            },
+            {
+              "system": "SNOMED",
+              "code": "82334004",
+              "display": "Indeterminate (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_585040.3",
+          "name": "unknown",
+          "description": "Presence of solid organ injury is unknown",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5655",
+              "display": "unknown"
+            },
+            {
+              "system": "SNOMED",
+              "code": "261665006",
+              "display": "Unknown (qualifier value)"
+            }
+          ]
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "SNOMED",
+          "code": "705057003",
+          "display": "Presence (property) (qualifier value)"
+        }
+      ]
+    },
+    {
+      "oifma_id": "OIFMA_MGB_820962",
+      "name": "change from prior",
+      "description": "Whether and how solid organ injury has changed over time",
+      "type": "choice",
+      "values": [
+        {
+          "value_code": "OIFMA_MGB_820962.0",
+          "name": "unchanged",
+          "description": "Solid organ injury is unchanged",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID39268",
+              "display": "unchanged"
+            },
+            {
+              "system": "SNOMED",
+              "code": "260388006",
+              "display": "No status change (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_820962.1",
+          "name": "stable",
+          "description": "Solid organ injury is stable",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5734",
+              "display": "stable"
+            },
+            {
+              "system": "SNOMED",
+              "code": "58158008",
+              "display": "Stable (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_820962.2",
+          "name": "new",
+          "description": "Solid organ injury is new",
+          "index_codes": [
+            {
+              "system": "RADLEX",
+              "code": "RID5720",
+              "display": "new"
+            },
+            {
+              "system": "SNOMED",
+              "code": "7147002",
+              "display": "New (qualifier value)"
+            }
+          ]
+        },
+        {
+          "value_code": "OIFMA_MGB_820962.3",
+          "name": "resolved",
+          "description": "Solid organ injury seen on a prior exam has resolved"
+        }
+      ],
+      "required": false,
+      "max_selected": 1,
+      "index_codes": [
+        {
+          "system": "RADLEX",
+          "code": "RID49896",
+          "display": "change"
+        },
+        {
+          "system": "SNOMED",
+          "code": "263703002",
+          "display": "Changed status (qualifier value)"
+        }
+      ]
+    }
+  ]
+}

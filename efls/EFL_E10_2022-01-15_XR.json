@@ -1,0 +1,76 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2022-01-15",
+    "modality": "XR",
+    "body_region": "PELVIS",
+    "exam_type": "XR Pelvis (AP)",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "37622-8",
+      "display": "XR Pelvis AP"
+    },
+    "setting": "ED",
+    "indication": "Fall, trauma screening"
+  },
+  "findings": [
+    {
+      "finding_name": "Compression fracture",
+      "finding_id": "F08",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000230",
+        "display": "vertebral compression fracture"
+      },
+      "anatomic_site": "L4 superior endplate",
+      "attributes": {
+        "presence": "present",
+        "characterization": "acute",
+        "measurement": "20% height loss"
+      },
+      "text": "Acute L4 superior endplate compression fracture, approximately 20% height loss."
+    },
+    {
+      "finding_name": "Degenerative changes",
+      "finding_id": "F16",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_481402",
+        "display": "lumbar spine degenerative change"
+      },
+      "anatomic_site": "lumbar spine",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Degenerative changes of the lumbar spine."
+    },
+    {
+      "finding_name": "Total hip arthroplasty",
+      "finding_id": "F19",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_169189",
+        "display": "total hip arthroplasty"
+      },
+      "anatomic_site": "left hip",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Left total hip arthroplasty, stable positioning. No periprosthetic fracture."
+    },
+    {
+      "finding_name": "Pelvic fracture",
+      "finding_id": "F38",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_437803",
+        "display": "pelvic fracture"
+      },
+      "anatomic_site": "pelvis",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pelvic fracture. Bones are diffusely osteopenic."
+    }
+  ]
+}

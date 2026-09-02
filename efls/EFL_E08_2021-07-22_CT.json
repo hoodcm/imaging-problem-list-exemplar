@@ -1,0 +1,356 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2021-07-22",
+    "modality": "CT",
+    "body_region": "ABDOMEN_PELVIS",
+    "exam_type": "CT Abdomen/Pelvis with contrast",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36813-4",
+      "display": "CT Abdomen and Pelvis W contrast IV"
+    },
+    "setting": "Outpatient",
+    "indication": "Cirrhosis follow-up, worsening LFTs"
+  },
+  "findings": [
+    {
+      "finding_name": "Abdominal aortic aneurysm",
+      "finding_id": "F01",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MSFT_134126",
+        "display": "abdominal aortic aneurysm"
+      },
+      "anatomic_site": "infrarenal aorta",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "increased",
+        "measurement": "4.3 cm"
+      },
+      "text": "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA."
+    },
+    {
+      "finding_name": "Ascites",
+      "finding_id": "F03",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "increased",
+        "characterization": "moderate"
+      },
+      "text": "Moderate ascites, increased from prior."
+    },
+    {
+      "finding_name": "Atherosclerotic calcification",
+      "finding_id": "F17",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_847217",
+        "display": "aortic calcification"
+      },
+      "anatomic_site": "aorta",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Aortic atherosclerotic disease."
+    },
+    {
+      "finding_name": "Cholelithiasis",
+      "finding_id": "F12",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "gallstone"
+      },
+      "anatomic_site": "gallbladder",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cholelithiasis."
+    },
+    {
+      "finding_name": "Cirrhotic liver morphology",
+      "finding_id": "F10",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022460",
+        "display": "cirrhosis"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Cirrhotic liver, unchanged."
+    },
+    {
+      "finding_name": "Degenerative changes",
+      "finding_id": "F16",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_481402",
+        "display": "lumbar spine degenerative change"
+      },
+      "anatomic_site": "lumbar spine",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Degenerative changes of the lumbar spine."
+    },
+    {
+      "finding_name": "Enlarged prostate",
+      "finding_id": "F18",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_017620",
+        "display": "enlarged prostate"
+      },
+      "anatomic_site": "prostate",
+      "attributes": {
+        "presence": "present",
+        "measurement": "4.7 cm"
+      },
+      "text": "Enlarged prostate, 4.7 cm."
+    },
+    {
+      "finding_name": "Esophageal varices",
+      "finding_id": "F09",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices"
+      },
+      "anatomic_site": "distal esophagus",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "increased",
+        "characterization": "moderate"
+      },
+      "text": "Esophageal varices, now moderate, increased from small on prior."
+    },
+    {
+      "finding_name": "Hepatic lesion",
+      "finding_id": "F02",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "hepatic segment 6",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "characterization": "LR-2",
+        "measurement": "1.7 cm"
+      },
+      "text": "Segment 6 lesion stable at 1.7 cm. LI-RADS 2."
+    },
+    {
+      "finding_name": "Nephrolithiasis",
+      "finding_id": "F14",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "kidney stone"
+      },
+      "anatomic_site": "left kidney lower pole",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "increased",
+        "measurement": "3 mm"
+      },
+      "text": "Left lower pole calculus now measures 3 mm, slightly increased."
+    },
+    {
+      "finding_name": "Side-branch IPMN",
+      "finding_id": "F05",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_774223",
+        "display": "IPMN"
+      },
+      "anatomic_site": "pancreatic body",
+      "attributes": {
+        "presence": "present",
+        "temporal_status": "stable",
+        "measurement": "1.2 cm"
+      },
+      "text": "Pancreatic body IPMN stable at 1.2 cm."
+    },
+    {
+      "finding_name": "Simple renal cysts",
+      "finding_id": "F13",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_016773",
+        "display": "cystic renal mass"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "attributes": {
+        "presence": "present",
+        "measurement": "left 1.6 cm, right 0.9 cm"
+      },
+      "text": "Bilateral renal cysts, stable."
+    },
+    {
+      "finding_name": "Splenomegaly",
+      "finding_id": "F11",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly"
+      },
+      "anatomic_site": "spleen",
+      "attributes": {
+        "presence": "present",
+        "measurement": "15.0 cm"
+      },
+      "text": "Splenomegaly, 15.0 cm, mildly increased."
+    },
+    {
+      "finding_name": "Status post appendectomy",
+      "finding_id": "F20",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_285678",
+        "display": "prior appendectomy"
+      },
+      "anatomic_site": "right lower quadrant",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Status post appendectomy."
+    },
+    {
+      "finding_name": "Total hip arthroplasty",
+      "finding_id": "F19",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_169189",
+        "display": "total hip arthroplasty"
+      },
+      "anatomic_site": "left hip",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Left total hip arthroplasty in place."
+    },
+    {
+      "finding_name": "Biliary ductal dilation",
+      "finding_id": "F29",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "dilated bile ducts"
+      },
+      "anatomic_site": "biliary tree",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Bile ducts are normal in caliber."
+    },
+    {
+      "finding_name": "Bowel obstruction",
+      "finding_id": "F33",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022484",
+        "display": "intestinal obstruction"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No bowel obstruction."
+    },
+    {
+      "finding_name": "Free air",
+      "finding_id": "F34",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000228",
+        "display": "pneumoperitoneum"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pneumoperitoneum."
+    },
+    {
+      "finding_name": "Hepatic mass (other than segment 6 lesion)",
+      "finding_id": "F31",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion"
+      },
+      "anatomic_site": "liver",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No new focal hepatic lesion."
+    },
+    {
+      "finding_name": "Hydronephrosis",
+      "finding_id": "F28",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis"
+      },
+      "anatomic_site": "bilateral kidneys",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No hydronephrosis bilaterally."
+    },
+    {
+      "finding_name": "Lymphadenopathy",
+      "finding_id": "F32",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003106",
+        "display": "abdominal lymphadenopathy"
+      },
+      "anatomic_site": "abdomen",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pathologic lymphadenopathy."
+    },
+    {
+      "finding_name": "Pancreatic ductal dilation",
+      "finding_id": "F30",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_002674",
+        "display": "dilated pancreatic duct"
+      },
+      "anatomic_site": "main pancreatic duct",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Main pancreatic duct is normal."
+    },
+    {
+      "finding_name": "Portal vein thrombus",
+      "finding_id": "F04",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_035534",
+        "display": "portal vein thrombosis"
+      },
+      "anatomic_site": "main portal vein",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Portal vein is patent."
+    }
+  ]
+}

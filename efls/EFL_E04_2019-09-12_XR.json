@@ -1,0 +1,103 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2019-09-12",
+    "modality": "XR",
+    "body_region": "CHEST",
+    "exam_type": "CXR (PA and lateral)",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "42272-5",
+      "display": "XR Chest PA and Lateral"
+    },
+    "setting": "Urgent care",
+    "indication": "Cough and fever, rule out pneumonia"
+  },
+  "findings": [
+    {
+      "finding_name": "Atherosclerotic calcification",
+      "finding_id": "F17",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_847217",
+        "display": "aortic calcification"
+      },
+      "anatomic_site": "aorta",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Atherosclerotic aortic calcifications."
+    },
+    {
+      "finding_name": "Pneumonia",
+      "finding_id": "F06",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000076",
+        "display": "pneumonia"
+      },
+      "anatomic_site": "right lower lobe",
+      "attributes": {
+        "presence": "present",
+        "characterization": "consolidation"
+      },
+      "text": "Right lower lobe consolidation, pneumonia."
+    },
+    {
+      "finding_name": "Cardiomegaly",
+      "finding_id": "F26",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly"
+      },
+      "anatomic_site": "heart",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Normal heart size."
+    },
+    {
+      "finding_name": "Pleural effusion",
+      "finding_id": "F24",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pleural effusion."
+    },
+    {
+      "finding_name": "Pneumothorax",
+      "finding_id": "F27",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_023339",
+        "display": "pneumothorax"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pneumothorax."
+    },
+    {
+      "finding_name": "Pulmonary nodule",
+      "finding_id": "F25",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000195",
+        "display": "pulmonary nodule"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pulmonary nodule."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2022-01-15",
+    "modality": "CT",
+    "body_region": "HEAD",
+    "exam_type": "CT Head without contrast",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "30799-1",
+      "display": "CT Head WO contrast"
+    },
+    "setting": "ED",
+    "indication": "Fall, rule out intracranial hemorrhage"
+  },
+  "findings": [
+    {
+      "finding_name": "Lacunar infarcts",
+      "finding_id": "F21",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_251340",
+        "display": "lacunar infarct"
+      },
+      "anatomic_site": "bilateral basal ganglia",
+      "attributes": {
+        "presence": "present",
+        "characterization": "chronic"
+      },
+      "text": "Chronic lacunar infarcts in bilateral basal ganglia."
+    },
+    {
+      "finding_name": "Orbital wall fracture",
+      "finding_id": "F23",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_444719",
+        "display": "medial orbital wall fracture"
+      },
+      "anatomic_site": "right medial orbital wall",
+      "attributes": {
+        "presence": "present",
+        "characterization": "old, corticated margins"
+      },
+      "text": "Old right medial orbital wall fracture with smooth corticated margins."
+    },
+    {
+      "finding_name": "Small vessel ischemic disease",
+      "finding_id": "F22",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_093125",
+        "display": "cerebral small vessel disease"
+      },
+      "anatomic_site": "periventricular white matter",
+      "attributes": {
+        "presence": "present",
+        "characterization": "chronic, moderate"
+      },
+      "text": "Moderate periventricular and subcortical white matter hypodensities, chronic small vessel ischemic disease."
+    },
+    {
+      "finding_name": "Acute intracranial mass or mass effect",
+      "finding_id": "F36",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_119725",
+        "display": "intracranial mass"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No mass, midline shift, or hydrocephalus."
+    },
+    {
+      "finding_name": "Intracranial hemorrhage",
+      "finding_id": "F35",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000194",
+        "display": "acute intracranial hemorrhage"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No acute intracranial hemorrhage."
+    }
+  ]
+}

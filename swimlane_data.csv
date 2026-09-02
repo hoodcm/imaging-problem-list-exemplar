@@ -1,0 +1,153 @@
+finding_id,finding_name,body_region,category,exam_id,exam_date,modality,presence,confidence,measurement,characterization
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E01,2017-03-14,US,present,,3.2 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E02,2018-02-06,CT,present,,3.5 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E06,2020-06-18,CT,present,,3.9 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E08,2021-07-22,CT,present,,4.3 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E11,2022-01-15,CT,present,,4.5 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E13,2022-04-10,US,present,,4.5 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E14,2023-03-28,CT,present,,4.8 cm,
+F01,Abdominal aortic aneurysm,Abdomen,showcase,E15,2024-07-16,CT,present,,5.1 cm,
+F02,Hepatic lesion,Abdomen,showcase,E01,2017-03-14,US,absent,,,
+F02,Hepatic lesion,Abdomen,showcase,E02,2018-02-06,CT,present,,1.8 cm,LR-3
+F02,Hepatic lesion,Abdomen,showcase,E03,2018-05-22,MRI,present,,1.8 cm,LR-3
+F02,Hepatic lesion,Abdomen,showcase,E06,2020-06-18,CT,present,,1.7 cm,
+F02,Hepatic lesion,Abdomen,showcase,E07,2021-03-09,MRI,present,,1.7 cm,LR-2
+F02,Hepatic lesion,Abdomen,showcase,E08,2021-07-22,CT,present,,1.7 cm,LR-2
+F02,Hepatic lesion,Abdomen,showcase,E11,2022-01-15,CT,present,,1.7 cm,
+F02,Hepatic lesion,Abdomen,showcase,E13,2022-04-10,US,present,,1.7 cm,
+F02,Hepatic lesion,Abdomen,showcase,E14,2023-03-28,CT,present,,1.6 cm,LR-2
+F02,Hepatic lesion,Abdomen,showcase,E15,2024-07-16,CT,present,,1.6 cm,
+F03,Ascites,Abdomen,showcase,E01,2017-03-14,US,absent,,,
+F03,Ascites,Abdomen,showcase,E02,2018-02-06,CT,absent,,,
+F03,Ascites,Abdomen,showcase,E03,2018-05-22,MRI,absent,,,
+F03,Ascites,Abdomen,showcase,E06,2020-06-18,CT,present,,,small volume
+F03,Ascites,Abdomen,showcase,E07,2021-03-09,MRI,present,,,small volume
+F03,Ascites,Abdomen,showcase,E08,2021-07-22,CT,present,,,moderate
+F03,Ascites,Abdomen,showcase,E11,2022-01-15,CT,present,,,moderate
+F03,Ascites,Abdomen,showcase,E13,2022-04-10,US,present,,,small volume
+F03,Ascites,Abdomen,showcase,E14,2023-03-28,CT,absent,,,
+F03,Ascites,Abdomen,showcase,E15,2024-07-16,CT,present,,,trace
+F04,Portal vein thrombus,Abdomen,showcase,E01,2017-03-14,US,absent,,,
+F04,Portal vein thrombus,Abdomen,showcase,E02,2018-02-06,CT,absent,,,
+F04,Portal vein thrombus,Abdomen,showcase,E06,2020-06-18,CT,absent,,,
+F04,Portal vein thrombus,Abdomen,showcase,E08,2021-07-22,CT,absent,,,
+F04,Portal vein thrombus,Abdomen,showcase,E11,2022-01-15,CT,present,,,"acute, non-occlusive"
+F04,Portal vein thrombus,Abdomen,showcase,E13,2022-04-10,US,present,,,organizing
+F04,Portal vein thrombus,Abdomen,showcase,E14,2023-03-28,CT,present,,,"chronic, stable"
+F04,Portal vein thrombus,Abdomen,showcase,E15,2024-07-16,CT,present,,,"chronic, stable"
+F05,Side-branch IPMN,Abdomen,showcase,E02,2018-02-06,CT,present,,1.2 cm,
+F05,Side-branch IPMN,Abdomen,showcase,E06,2020-06-18,CT,present,,1.2 cm,
+F05,Side-branch IPMN,Abdomen,showcase,E07,2021-03-09,MRI,present,,1.2 cm,
+F05,Side-branch IPMN,Abdomen,showcase,E08,2021-07-22,CT,present,,1.2 cm,
+F05,Side-branch IPMN,Abdomen,showcase,E11,2022-01-15,CT,present,,1.2 cm,
+F05,Side-branch IPMN,Abdomen,showcase,E13,2022-04-10,US,present,hedged,,
+F05,Side-branch IPMN,Abdomen,showcase,E14,2023-03-28,CT,present,,1.2 cm,
+F05,Side-branch IPMN,Abdomen,showcase,E15,2024-07-16,CT,present,,1.2 cm,
+F06,Pneumonia,Chest,showcase,E04,2019-09-12,XR,present,,,consolidation
+F06,Pneumonia,Chest,showcase,E05,2019-10-29,XR,absent,,,
+F07,Rib fractures,Chest,showcase,E09,2022-01-15,XR,present,,,acute
+F07,Rib fractures,Chest,showcase,E11,2022-01-15,CT,present,,,acute
+F07,Rib fractures,Chest,showcase,E14,2023-03-28,CT,present,,,healed with callus
+F07,Rib fractures,Chest,showcase,E15,2024-07-16,CT,present,,,healed
+F08,Compression fracture,Spine,showcase,E10,2022-01-15,XR,present,,20% height loss,acute
+F08,Compression fracture,Spine,showcase,E11,2022-01-15,CT,present,,20% height loss,acute
+F08,Compression fracture,Spine,showcase,E14,2023-03-28,CT,present,,20% height loss,"healed, chronic deformity"
+F08,Compression fracture,Spine,showcase,E15,2024-07-16,CT,present,,20% height loss,chronic deformity
+F09,Esophageal varices,Abdomen,showcase,E02,2018-02-06,CT,present,,,small
+F09,Esophageal varices,Abdomen,showcase,E03,2018-05-22,MRI,present,,,small
+F09,Esophageal varices,Abdomen,showcase,E06,2020-06-18,CT,present,,,small
+F09,Esophageal varices,Abdomen,showcase,E07,2021-03-09,MRI,present,,,small
+F09,Esophageal varices,Abdomen,showcase,E08,2021-07-22,CT,present,,,moderate
+F09,Esophageal varices,Abdomen,showcase,E11,2022-01-15,CT,present,,,moderate
+F09,Esophageal varices,Abdomen,showcase,E14,2023-03-28,CT,present,,,large
+F09,Esophageal varices,Abdomen,showcase,E15,2024-07-16,CT,present,,,large
+F41,Residual scarring,Chest,showcase,E11,2022-01-15,CT,present,,,linear
+F41,Residual scarring,Chest,showcase,E14,2023-03-28,CT,present,,,
+F41,Residual scarring,Chest,showcase,E15,2024-07-16,CT,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E01,2017-03-14,US,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E02,2018-02-06,CT,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E03,2018-05-22,MRI,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E06,2020-06-18,CT,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E07,2021-03-09,MRI,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E08,2021-07-22,CT,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E11,2022-01-15,CT,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E13,2022-04-10,US,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E14,2023-03-28,CT,present,,,
+F10,Cirrhotic liver morphology,Abdomen,chronic,E15,2024-07-16,CT,present,,,
+F11,Splenomegaly,Abdomen,chronic,E01,2017-03-14,US,present,,13.2 cm,
+F11,Splenomegaly,Abdomen,chronic,E02,2018-02-06,CT,present,,13.8 cm,
+F11,Splenomegaly,Abdomen,chronic,E03,2018-05-22,MRI,present,,14.0 cm,
+F11,Splenomegaly,Abdomen,chronic,E06,2020-06-18,CT,present,,14.5 cm,
+F11,Splenomegaly,Abdomen,chronic,E07,2021-03-09,MRI,present,,14.8 cm,
+F11,Splenomegaly,Abdomen,chronic,E08,2021-07-22,CT,present,,15.0 cm,
+F11,Splenomegaly,Abdomen,chronic,E11,2022-01-15,CT,present,,15.2 cm,
+F11,Splenomegaly,Abdomen,chronic,E13,2022-04-10,US,present,,15.4 cm,
+F11,Splenomegaly,Abdomen,chronic,E14,2023-03-28,CT,present,,15.8 cm,
+F11,Splenomegaly,Abdomen,chronic,E15,2024-07-16,CT,present,,16.1 cm,
+F12,Cholelithiasis,Abdomen,chronic,E01,2017-03-14,US,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E02,2018-02-06,CT,present,,largest 8 mm,
+F12,Cholelithiasis,Abdomen,chronic,E03,2018-05-22,MRI,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E06,2020-06-18,CT,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E07,2021-03-09,MRI,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E08,2021-07-22,CT,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E11,2022-01-15,CT,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E13,2022-04-10,US,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E14,2023-03-28,CT,present,,,
+F12,Cholelithiasis,Abdomen,chronic,E15,2024-07-16,CT,present,,,
+F13,Simple renal cysts,Abdomen,chronic,E01,2017-03-14,US,present,,"left 1.4 cm, right 0.8 cm",
+F13,Simple renal cysts,Abdomen,chronic,E02,2018-02-06,CT,present,,"left 1.5 cm, right 0.8 cm",
+F13,Simple renal cysts,Abdomen,chronic,E06,2020-06-18,CT,present,,"left 1.5 cm, right 0.9 cm",
+F13,Simple renal cysts,Abdomen,chronic,E08,2021-07-22,CT,present,,"left 1.6 cm, right 0.9 cm",
+F13,Simple renal cysts,Abdomen,chronic,E11,2022-01-15,CT,present,,,
+F13,Simple renal cysts,Abdomen,chronic,E13,2022-04-10,US,present,,"left 1.6 cm, right 0.9 cm",
+F13,Simple renal cysts,Abdomen,chronic,E14,2023-03-28,CT,present,,"left 1.6 cm, right 1.0 cm",
+F13,Simple renal cysts,Abdomen,chronic,E15,2024-07-16,CT,present,,,
+F14,Nephrolithiasis,Abdomen,chronic,E01,2017-03-14,US,present,,punctate,
+F14,Nephrolithiasis,Abdomen,chronic,E02,2018-02-06,CT,present,,2 mm,
+F14,Nephrolithiasis,Abdomen,chronic,E06,2020-06-18,CT,present,,2 mm,
+F14,Nephrolithiasis,Abdomen,chronic,E08,2021-07-22,CT,present,,3 mm,
+F14,Nephrolithiasis,Abdomen,chronic,E11,2022-01-15,CT,present,,3 mm,
+F14,Nephrolithiasis,Abdomen,chronic,E13,2022-04-10,US,present,,3 mm,
+F14,Nephrolithiasis,Abdomen,chronic,E14,2023-03-28,CT,present,,3 mm,
+F14,Nephrolithiasis,Abdomen,chronic,E15,2024-07-16,CT,present,,4 mm,
+F15,Degenerative changes,Spine,chronic,E11,2022-01-15,CT,present,,,
+F15,Degenerative changes,Spine,chronic,E14,2023-03-28,CT,present,,,
+F15,Degenerative changes,Spine,chronic,E15,2024-07-16,CT,present,,,
+F16,Degenerative changes,Spine,chronic,E02,2018-02-06,CT,present,,,
+F16,Degenerative changes,Spine,chronic,E06,2020-06-18,CT,present,,,
+F16,Degenerative changes,Spine,chronic,E08,2021-07-22,CT,present,,,
+F16,Degenerative changes,Spine,chronic,E10,2022-01-15,XR,present,,,
+F16,Degenerative changes,Spine,chronic,E11,2022-01-15,CT,present,,,
+F16,Degenerative changes,Spine,chronic,E14,2023-03-28,CT,present,,,
+F16,Degenerative changes,Spine,chronic,E15,2024-07-16,CT,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E02,2018-02-06,CT,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E04,2019-09-12,XR,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E05,2019-10-29,XR,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E06,2020-06-18,CT,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E08,2021-07-22,CT,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E09,2022-01-15,XR,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E11,2022-01-15,CT,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E14,2023-03-28,CT,present,,,
+F17,Atherosclerotic calcification,Abdomen,chronic,E15,2024-07-16,CT,present,,,
+F18,Enlarged prostate,Pelvis,chronic,E02,2018-02-06,CT,present,,4.5 cm,
+F18,Enlarged prostate,Pelvis,chronic,E06,2020-06-18,CT,present,,4.6 cm,
+F18,Enlarged prostate,Pelvis,chronic,E08,2021-07-22,CT,present,,4.7 cm,
+F18,Enlarged prostate,Pelvis,chronic,E11,2022-01-15,CT,present,,4.8 cm,
+F18,Enlarged prostate,Pelvis,chronic,E14,2023-03-28,CT,present,,4.8 cm,
+F18,Enlarged prostate,Pelvis,chronic,E15,2024-07-16,CT,present,,4.9 cm,
+F19,Total hip arthroplasty,MSK,surgical_history,E02,2018-02-06,CT,present,,,
+F19,Total hip arthroplasty,MSK,surgical_history,E06,2020-06-18,CT,present,,,
+F19,Total hip arthroplasty,MSK,surgical_history,E08,2021-07-22,CT,present,,,
+F19,Total hip arthroplasty,MSK,surgical_history,E10,2022-01-15,XR,present,,,
+F19,Total hip arthroplasty,MSK,surgical_history,E11,2022-01-15,CT,present,,,
+F19,Total hip arthroplasty,MSK,surgical_history,E14,2023-03-28,CT,present,,,
+F19,Total hip arthroplasty,MSK,surgical_history,E15,2024-07-16,CT,present,,,
+F20,Status post appendectomy,Abdomen,surgical_history,E02,2018-02-06,CT,present,,,
+F20,Status post appendectomy,Abdomen,surgical_history,E06,2020-06-18,CT,present,,,
+F20,Status post appendectomy,Abdomen,surgical_history,E08,2021-07-22,CT,present,,,
+F20,Status post appendectomy,Abdomen,surgical_history,E11,2022-01-15,CT,present,,,
+F20,Status post appendectomy,Abdomen,surgical_history,E14,2023-03-28,CT,present,,,
+F20,Status post appendectomy,Abdomen,surgical_history,E15,2024-07-16,CT,present,,,
+F21,Lacunar infarcts,Head,chronic,E12,2022-01-15,CT,present,,,chronic
+F22,Small vessel ischemic disease,Head,chronic,E12,2022-01-15,CT,present,,,"chronic, moderate"
+F23,Orbital wall fracture,Head,chronic,E12,2022-01-15,CT,present,,,"old, corticated margins"

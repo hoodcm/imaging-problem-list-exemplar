@@ -1,0 +1,88 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2019-10-29",
+    "modality": "XR",
+    "body_region": "CHEST",
+    "exam_type": "CXR (PA and lateral)",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "42272-5",
+      "display": "XR Chest PA and Lateral"
+    },
+    "setting": "Outpatient",
+    "indication": "Follow-up pneumonia"
+  },
+  "findings": [
+    {
+      "finding_name": "Atherosclerotic calcification",
+      "finding_id": "F17",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_847217",
+        "display": "aortic calcification"
+      },
+      "anatomic_site": "aorta",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Aortic calcifications, unchanged."
+    },
+    {
+      "finding_name": "Cardiomegaly",
+      "finding_id": "F26",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly"
+      },
+      "anatomic_site": "heart",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Normal cardiac silhouette."
+    },
+    {
+      "finding_name": "Pleural effusion",
+      "finding_id": "F24",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pleural effusion."
+    },
+    {
+      "finding_name": "Pneumonia",
+      "finding_id": "F06",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000076",
+        "display": "pneumonia"
+      },
+      "anatomic_site": "right lower lobe",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Prior right lower lobe consolidation has resolved. Lungs clear."
+    },
+    {
+      "finding_name": "Pulmonary nodule",
+      "finding_id": "F25",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000195",
+        "display": "pulmonary nodule"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pulmonary nodule."
+    }
+  ]
+}

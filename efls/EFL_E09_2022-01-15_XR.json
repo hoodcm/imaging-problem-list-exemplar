@@ -1,0 +1,89 @@
+{
+  "report_metadata": {
+    "patient_id": "IPL-EXEMPLAR-001",
+    "study_date": "2022-01-15",
+    "modality": "XR",
+    "body_region": "CHEST",
+    "exam_type": "XR Chest (portable, supine)",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36589-0",
+      "display": "Portable XR Chest AP single view"
+    },
+    "setting": "ED",
+    "indication": "Fall, trauma screening"
+  },
+  "findings": [
+    {
+      "finding_name": "Atherosclerotic calcification",
+      "finding_id": "F17",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_847217",
+        "display": "aortic calcification"
+      },
+      "anatomic_site": "aorta",
+      "attributes": {
+        "presence": "present"
+      },
+      "text": "Atherosclerotic aortic calcifications."
+    },
+    {
+      "finding_name": "Rib fractures",
+      "finding_id": "F07",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture"
+      },
+      "anatomic_site": "left 7th and 8th ribs, posterior axillary line",
+      "attributes": {
+        "presence": "present",
+        "characterization": "acute"
+      },
+      "text": "Acute nondisplaced fractures of the left 7th and 8th ribs along the posterior axillary line."
+    },
+    {
+      "finding_name": "Cardiomegaly",
+      "finding_id": "F26",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly"
+      },
+      "anatomic_site": "heart",
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "Normal heart size, limited on supine film."
+    },
+    {
+      "finding_name": "Pleural effusion",
+      "finding_id": "F24",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pleural effusion."
+    },
+    {
+      "finding_name": "Pneumothorax",
+      "finding_id": "F27",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_023339",
+        "display": "pneumothorax"
+      },
+      "anatomic_site": null,
+      "attributes": {
+        "presence": "absent"
+      },
+      "text": "No pneumothorax."
+    }
+  ]
+}

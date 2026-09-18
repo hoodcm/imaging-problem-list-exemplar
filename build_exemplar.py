@@ -8,7 +8,7 @@ per-examination Exam Finding Lists (efls/), the aggregated Imaging Problem List
 
 All data are synthetic. Each observation records what the report stated:
 presence, any measurement or characterization, the radiologist's stated
-comparison (temporal_status), the stated stage (chronicity), and any hedge
+comparison (temporal_status), the stated time course (chronicity), and any hedge
 (confidence). The entry status in the IPL is derived from the observation
 history and never authored.
 """
@@ -29,7 +29,7 @@ patient = {
     "id": "IPL-EXEMPLAR-001",
     "name": "Synthetic Patient 001",
     "age_at_start": 64,
-    "clinical_profile": "NASH cirrhosis with portal hypertension, abdominal aortic aneurysm under surveillance",
+    "clinical_profile": "MASH cirrhosis with portal hypertension, abdominal aortic aneurysm under surveillance",
     "surgical_history": ["Appendectomy (remote)", "Left total hip arthroplasty (2014)"],
 }
 
@@ -187,7 +187,7 @@ findings.append({
 findings.append({
     "id": "F03",
     "name": "Ascites",
-    "anatomic_site": None,
+    "anatomic_site": "peritoneal cavity",  # SNOMED CT 83670000 (coarse site; the report stated none)
     "body_region": "Abdomen",
     "category": "showcase",
     "trajectory_type": "Waxing and waning (lifecycle transitions)",
@@ -593,7 +593,7 @@ findings.append({
 findings.append({
     "id": "F24",
     "name": "Pleural effusion",
-    "anatomic_site": None,
+    "anatomic_site": "pleural cavity",  # SNOMED CT 91381003 (coarse site; the report stated none)
     "body_region": "Chest",
     "category": "excluded",
     "trajectory_type": "Assessed on chest exams, consistently absent",
@@ -608,7 +608,7 @@ findings.append({
 findings.append({
     "id": "F25",
     "name": "Pulmonary nodule",
-    "anatomic_site": None,
+    "anatomic_site": "both lungs",  # SNOMED CT 74101002 (coarse site; the report stated none)
     "body_region": "Chest",
     "category": "excluded",
     "trajectory_type": "Assessed on chest exams, consistently absent",
@@ -637,7 +637,7 @@ findings.append({
 findings.append({
     "id": "F27",
     "name": "Pneumothorax",
-    "anatomic_site": None,
+    "anatomic_site": "pleural cavity",  # SNOMED CT 91381003 (coarse site; the report stated none)
     "body_region": "Chest",
     "category": "excluded",
     "trajectory_type": "Assessed on chest exams, absent",
@@ -745,7 +745,7 @@ findings.append({
 findings.append({
     "id": "F33",
     "name": "Bowel obstruction",
-    "anatomic_site": None,
+    "anatomic_site": "intestines",  # SNOMED CT 113276009 (coarse site; the report stated none)
     "body_region": "Abdomen",
     "category": "excluded",
     "trajectory_type": "Assessed on abdominal CTs, consistently absent",
@@ -762,7 +762,7 @@ findings.append({
 findings.append({
     "id": "F34",
     "name": "Free air",
-    "anatomic_site": None,
+    "anatomic_site": "peritoneal cavity",  # SNOMED CT 83670000 (coarse site; the report stated none)
     "body_region": "Abdomen",
     "category": "excluded",
     "trajectory_type": "Assessed on abdominal CTs, consistently absent",
@@ -780,7 +780,7 @@ findings.append({
 findings.append({
     "id": "F35",
     "name": "Intracranial hemorrhage",
-    "anatomic_site": None,
+    "anatomic_site": "intracranial",  # SNOMED CT 128319008 (coarse site; the report stated none)
     "body_region": "Head",
     "category": "excluded",
     "trajectory_type": "Assessed on head CT, absent (primary indication)",
@@ -792,7 +792,7 @@ findings.append({
 findings.append({
     "id": "F36",
     "name": "Acute intracranial mass or mass effect",
-    "anatomic_site": None,
+    "anatomic_site": "intracranial",  # SNOMED CT 128319008 (coarse site; the report stated none)
     "body_region": "Head",
     "category": "excluded",
     "trajectory_type": "Assessed on head CT, absent",
@@ -805,7 +805,7 @@ findings.append({
 findings.append({
     "id": "F37",
     "name": "Solid organ injury",
-    "anatomic_site": None,
+    "anatomic_site": "abdominal viscera",  # SNOMED CT 361295005 (coarse site; the report stated none)
     "body_region": "Abdomen",
     "category": "excluded",
     "trajectory_type": "Assessed on trauma CT, absent",

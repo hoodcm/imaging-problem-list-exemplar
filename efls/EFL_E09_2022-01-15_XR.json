@@ -65,7 +65,7 @@
         "code": "OIFM_CDE_000254",
         "display": "pleural effusion"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "attributes": {
         "presence": "absent"
       },
@@ -79,7 +79,7 @@
         "code": "OIFM_GMTS_023339",
         "display": "pneumothorax"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "attributes": {
         "presence": "absent"
       },

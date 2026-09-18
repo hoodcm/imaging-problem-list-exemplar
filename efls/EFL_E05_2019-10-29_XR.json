@@ -50,7 +50,7 @@
         "code": "OIFM_CDE_000254",
         "display": "pleural effusion"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "attributes": {
         "presence": "absent"
       },
@@ -78,7 +78,7 @@
         "code": "OIFM_CDE_000195",
         "display": "pulmonary nodule"
       },
-      "anatomic_site": null,
+      "anatomic_site": "both lungs",
       "attributes": {
         "presence": "absent"
       },

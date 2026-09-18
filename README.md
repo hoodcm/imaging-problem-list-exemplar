@@ -27,7 +27,7 @@ An observation is one documented assessment of a finding on one examination, rec
 - `presence`: `present` or `absent`.
 - `measurement` and `characterization`: the measured value or descriptive terms as stated.
 - `temporal_status`: the radiologist's stated comparison to prior imaging.
-- `chronicity`: the radiologist's stated stage.
+- `chronicity`: the radiologist's stated time course.
 - `confidence`: the attributes the radiologist hedged.
 - `text`: the report sentence.
 

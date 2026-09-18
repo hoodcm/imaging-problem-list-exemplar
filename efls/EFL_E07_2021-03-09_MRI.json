@@ -22,7 +22,7 @@
         "code": "OIFM_GMTS_000480",
         "display": "ascites"
       },
-      "anatomic_site": null,
+      "anatomic_site": "peritoneal cavity",
       "attributes": {
         "presence": "present",
         "characterization": "small volume"

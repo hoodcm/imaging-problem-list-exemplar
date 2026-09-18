@@ -67,7 +67,7 @@
         "code": "OIFM_OIDM_119725",
         "display": "intracranial mass"
       },
-      "anatomic_site": null,
+      "anatomic_site": "intracranial",
       "attributes": {
         "presence": "absent"
       },
@@ -81,7 +81,7 @@
         "code": "OIFM_CDE_000194",
         "display": "acute intracranial hemorrhage"
       },
-      "anatomic_site": null,
+      "anatomic_site": "intracranial",
       "attributes": {
         "presence": "absent"
       },

@@ -38,7 +38,7 @@
         "code": "OIFM_GMTS_000480",
         "display": "ascites"
       },
-      "anatomic_site": null,
+      "anatomic_site": "peritoneal cavity",
       "attributes": {
         "presence": "present",
         "characterization": "moderate"
@@ -333,7 +333,7 @@
         "code": "OIFM_GMTS_022484",
         "display": "intestinal obstruction"
       },
-      "anatomic_site": null,
+      "anatomic_site": "intestines",
       "attributes": {
         "presence": "absent"
       },
@@ -361,7 +361,7 @@
         "code": "OIFM_CDE_000228",
         "display": "pneumoperitoneum"
       },
-      "anatomic_site": null,
+      "anatomic_site": "peritoneal cavity",
       "attributes": {
         "presence": "absent"
       },
@@ -445,7 +445,7 @@
         "code": "OIFM_CDE_000254",
         "display": "pleural effusion"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "attributes": {
         "presence": "absent"
       },
@@ -459,7 +459,7 @@
         "code": "OIFM_GMTS_023339",
         "display": "pneumothorax"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "attributes": {
         "presence": "absent"
       },
@@ -473,7 +473,7 @@
         "code": "OIFM_CDE_000195",
         "display": "pulmonary nodule"
       },
-      "anatomic_site": null,
+      "anatomic_site": "both lungs",
       "attributes": {
         "presence": "absent"
       },
@@ -487,7 +487,7 @@
         "code": "OIFM_MGB_987895",
         "display": "solid organ injury"
       },
-      "anatomic_site": null,
+      "anatomic_site": "abdominal viscera",
       "attributes": {
         "presence": "absent"
       },

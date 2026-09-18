@@ -4,7 +4,7 @@
       "id": "IPL-EXEMPLAR-001",
       "name": "Synthetic Patient 001",
       "age_at_start": 64,
-      "clinical_profile": "NASH cirrhosis with portal hypertension, abdominal aortic aneurysm under surveillance",
+      "clinical_profile": "MASH cirrhosis with portal hypertension, abdominal aortic aneurysm under surveillance",
       "surgical_history": [
         "Appendectomy (remote)",
         "Left total hip arthroplasty (2014)"
@@ -626,7 +626,7 @@
         "code": "OIFM_GMTS_000480",
         "display": "ascites"
       },
-      "anatomic_site": null,
+      "anatomic_site": "peritoneal cavity",
       "body_region": "Abdomen",
       "category": "showcase",
       "status": "active",
@@ -688,7 +688,7 @@
           "exam_type": "US Abdomen",
           "exam_modality": "US",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -700,7 +700,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -712,7 +712,7 @@
           "exam_type": "MRI Abdomen with contrast (LI-RADS)",
           "exam_modality": "MRI",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -724,7 +724,7 @@
           "exam_type": "CTA Abdomen/Pelvis",
           "exam_modality": "CT",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "present",
             "characterization": "small volume"
@@ -737,7 +737,7 @@
           "exam_type": "MRI Abdomen with contrast (LI-RADS)",
           "exam_modality": "MRI",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "present",
             "characterization": "small volume"
@@ -750,7 +750,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "present",
             "temporal_status": "increased",
@@ -764,7 +764,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "present",
             "characterization": "moderate"
@@ -777,7 +777,7 @@
           "exam_type": "US Abdomen with Doppler",
           "exam_modality": "US",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "present",
             "temporal_status": "decreased",
@@ -791,7 +791,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -803,7 +803,7 @@
           "exam_type": "CTA Abdomen/Pelvis",
           "exam_modality": "CT",
           "finding_name": "Ascites",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "present",
             "characterization": "trace"
@@ -3472,7 +3472,7 @@
         "code": "OIFM_CDE_000254",
         "display": "pleural effusion"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "body_region": "Chest",
       "category": "excluded",
       "status": "excluded",
@@ -3509,7 +3509,7 @@
           "exam_type": "CXR (PA and lateral)",
           "exam_modality": "XR",
           "finding_name": "Pleural effusion",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -3521,7 +3521,7 @@
           "exam_type": "CXR (PA and lateral)",
           "exam_modality": "XR",
           "finding_name": "Pleural effusion",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -3533,7 +3533,7 @@
           "exam_type": "XR Chest (portable, supine)",
           "exam_modality": "XR",
           "finding_name": "Pleural effusion",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -3545,7 +3545,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Pleural effusion",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -3563,7 +3563,7 @@
         "code": "OIFM_CDE_000195",
         "display": "pulmonary nodule"
       },
-      "anatomic_site": null,
+      "anatomic_site": "both lungs",
       "body_region": "Chest",
       "category": "excluded",
       "status": "excluded",
@@ -3596,7 +3596,7 @@
           "exam_type": "CXR (PA and lateral)",
           "exam_modality": "XR",
           "finding_name": "Pulmonary nodule",
-          "anatomic_site": null,
+          "anatomic_site": "both lungs",
           "attributes": {
             "presence": "absent"
           },
@@ -3608,7 +3608,7 @@
           "exam_type": "CXR (PA and lateral)",
           "exam_modality": "XR",
           "finding_name": "Pulmonary nodule",
-          "anatomic_site": null,
+          "anatomic_site": "both lungs",
           "attributes": {
             "presence": "absent"
           },
@@ -3620,7 +3620,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Pulmonary nodule",
-          "anatomic_site": null,
+          "anatomic_site": "both lungs",
           "attributes": {
             "presence": "absent"
           },
@@ -3729,7 +3729,7 @@
         "code": "OIFM_GMTS_023339",
         "display": "pneumothorax"
       },
-      "anatomic_site": null,
+      "anatomic_site": "pleural cavity",
       "body_region": "Chest",
       "category": "excluded",
       "status": "excluded",
@@ -3762,7 +3762,7 @@
           "exam_type": "CXR (PA and lateral)",
           "exam_modality": "XR",
           "finding_name": "Pneumothorax",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -3774,7 +3774,7 @@
           "exam_type": "XR Chest (portable, supine)",
           "exam_modality": "XR",
           "finding_name": "Pneumothorax",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -3786,7 +3786,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Pneumothorax",
-          "anatomic_site": null,
+          "anatomic_site": "pleural cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4549,7 +4549,7 @@
         "code": "OIFM_GMTS_022484",
         "display": "intestinal obstruction"
       },
-      "anatomic_site": null,
+      "anatomic_site": "intestines",
       "body_region": "Abdomen",
       "category": "excluded",
       "status": "excluded",
@@ -4593,7 +4593,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Bowel obstruction",
-          "anatomic_site": null,
+          "anatomic_site": "intestines",
           "attributes": {
             "presence": "absent"
           },
@@ -4605,7 +4605,7 @@
           "exam_type": "CTA Abdomen/Pelvis",
           "exam_modality": "CT",
           "finding_name": "Bowel obstruction",
-          "anatomic_site": null,
+          "anatomic_site": "intestines",
           "attributes": {
             "presence": "absent"
           },
@@ -4617,7 +4617,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Bowel obstruction",
-          "anatomic_site": null,
+          "anatomic_site": "intestines",
           "attributes": {
             "presence": "absent"
           },
@@ -4629,7 +4629,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Bowel obstruction",
-          "anatomic_site": null,
+          "anatomic_site": "intestines",
           "attributes": {
             "presence": "absent"
           },
@@ -4641,7 +4641,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Bowel obstruction",
-          "anatomic_site": null,
+          "anatomic_site": "intestines",
           "attributes": {
             "presence": "absent"
           },
@@ -4653,7 +4653,7 @@
           "exam_type": "CTA Abdomen/Pelvis",
           "exam_modality": "CT",
           "finding_name": "Bowel obstruction",
-          "anatomic_site": null,
+          "anatomic_site": "intestines",
           "attributes": {
             "presence": "absent"
           },
@@ -4671,7 +4671,7 @@
         "code": "OIFM_CDE_000228",
         "display": "pneumoperitoneum"
       },
-      "anatomic_site": null,
+      "anatomic_site": "peritoneal cavity",
       "body_region": "Abdomen",
       "category": "excluded",
       "status": "excluded",
@@ -4715,7 +4715,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Free air",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4727,7 +4727,7 @@
           "exam_type": "CTA Abdomen/Pelvis",
           "exam_modality": "CT",
           "finding_name": "Free air",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4739,7 +4739,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Free air",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4751,7 +4751,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Free air",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4763,7 +4763,7 @@
           "exam_type": "CT Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Free air",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4775,7 +4775,7 @@
           "exam_type": "CTA Abdomen/Pelvis",
           "exam_modality": "CT",
           "finding_name": "Free air",
-          "anatomic_site": null,
+          "anatomic_site": "peritoneal cavity",
           "attributes": {
             "presence": "absent"
           },
@@ -4793,7 +4793,7 @@
         "code": "OIFM_CDE_000194",
         "display": "acute intracranial hemorrhage"
       },
-      "anatomic_site": null,
+      "anatomic_site": "intracranial",
       "body_region": "Head",
       "category": "excluded",
       "status": "excluded",
@@ -4817,7 +4817,7 @@
           "exam_type": "CT Head without contrast",
           "exam_modality": "CT",
           "finding_name": "Intracranial hemorrhage",
-          "anatomic_site": null,
+          "anatomic_site": "intracranial",
           "attributes": {
             "presence": "absent"
           },
@@ -4835,7 +4835,7 @@
         "code": "OIFM_OIDM_119725",
         "display": "intracranial mass"
       },
-      "anatomic_site": null,
+      "anatomic_site": "intracranial",
       "body_region": "Head",
       "category": "excluded",
       "status": "excluded",
@@ -4859,7 +4859,7 @@
           "exam_type": "CT Head without contrast",
           "exam_modality": "CT",
           "finding_name": "Acute intracranial mass or mass effect",
-          "anatomic_site": null,
+          "anatomic_site": "intracranial",
           "attributes": {
             "presence": "absent"
           },
@@ -4877,7 +4877,7 @@
         "code": "OIFM_MGB_987895",
         "display": "solid organ injury"
       },
-      "anatomic_site": null,
+      "anatomic_site": "abdominal viscera",
       "body_region": "Abdomen",
       "category": "excluded",
       "status": "excluded",
@@ -4901,7 +4901,7 @@
           "exam_type": "CT Chest/Abdomen/Pelvis with contrast",
           "exam_modality": "CT",
           "finding_name": "Solid organ injury",
-          "anatomic_site": null,
+          "anatomic_site": "abdominal viscera",
           "attributes": {
             "presence": "absent"
           },

@@ -1,0 +1,2305 @@
+{
+  "resourceType": "Bundle",
+  "id": "aneurysm-example",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/Patient/patient",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The synthetic exemplar patient.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001"
+          }
+        ],
+        "name": [
+          {
+            "text": "Synthetic Patient 001"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Device/extraction-model",
+      "resource": {
+        "resourceType": "Device",
+        "id": "extraction-model",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The example extraction model. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "name": [
+          {
+            "value": "example extraction model",
+            "type": "user-friendly-name"
+          }
+        ],
+        "version": [
+          {
+            "value": "1.0"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Device/ipl-compiler",
+      "resource": {
+        "resourceType": "Device",
+        "id": "ipl-compiler",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The IPL compiler, scripts/build_exemplar.py.</div>"
+        },
+        "name": [
+          {
+            "value": "IPL compiler",
+            "type": "user-friendly-name"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Practitioner/radiologist",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "radiologist",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The reviewing radiologist. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "name": [
+          {
+            "text": "Reviewing radiologist"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The anchor that stands for the aneurysm entry on the patient's List.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E01",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2017-03-14 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2017-03-14",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E01-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3.2,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E01-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E01-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2017-03-14 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal abdominal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E01",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2017-03-14 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E01"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "24558-9",
+              "display": "US Abdomen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2017-03-14",
+        "result": [
+          {
+            "reference": "Observation/F01.E01"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E02",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E02",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2018-02-06 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2018-02-06",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E02-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E02-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E02-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2018-02-06 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal abdominal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E02",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E02",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2018-02-06 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E02"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "36813-4",
+              "display": "CT Abdomen and Pelvis W contrast IV"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2018-02-06",
+        "result": [
+          {
+            "reference": "Observation/F01.E02"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E06",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E06",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2020-06-18 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2020-06-18",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E06-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3.9,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E06-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E06-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2020-06-18 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal abdominal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E06",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E06",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2020-06-18 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E06"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "87854-6",
+              "display": "CT Abdomen and Pelvis and CT angiogram Abdominal aorta W contrast IV"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2020-06-18",
+        "result": [
+          {
+            "reference": "Observation/F01.E06"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E08",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E08",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2021-07-22 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2021-07-22",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E08-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.3,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3.9,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E08-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E08-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2021-07-22 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E08",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E08",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2021-07-22 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E08"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "36813-4",
+              "display": "CT Abdomen and Pelvis W contrast IV"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2021-07-22",
+        "result": [
+          {
+            "reference": "Observation/F01.E08"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E11",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E11",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2022-01-15 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2022-01-15",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "There is a 4.5 cm infrarenal abdominal aortic aneurysm, slightly increased from 4.3 cm on July 2021 CT."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E11-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.3,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E11-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E11-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2022-01-15 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "infrarenal abdominal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E11",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E11",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2022-01-15 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E11"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "72254-6",
+              "display": "CT Chest and Abdomen and Pelvis W contrast IV"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2022-01-15",
+        "result": [
+          {
+            "reference": "Observation/F01.E11"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E13",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E13",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2022-04-10 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2022-04-10",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E13-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "unchanged",
+                  "display": "unchanged"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E13-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E13-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2022-04-10 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E13",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E13",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2022-04-10 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E13"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "24558-9",
+              "display": "US Abdomen"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2022-04-10",
+        "result": [
+          {
+            "reference": "Observation/F01.E13"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E14.model",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E14.model",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model's reading of the 2023 sentence as 4.5 cm, rejected. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "status": "entered-in-error",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2023-03-28",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E14-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E14",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E14",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The radiologist's replacement, 4.8 cm. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/observation-replaces",
+            "valueReference": {
+              "reference": "Observation/F01.E14.model"
+            }
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2023-03-28",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E14-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.8,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.5,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E14-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E14-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2023-03-28 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal abdominal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E14",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E14",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2023-03-28 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E14"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "36813-4",
+              "display": "CT Abdomen and Pelvis W contrast IV"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2023-03-28",
+        "result": [
+          {
+            "reference": "Observation/F01.E14.model"
+          },
+          {
+            "reference": "Observation/F01.E14"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Observation/F01.E15",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "F01.E15",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm as the 2024-07-16 report states it.</div>"
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2024-07-16",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "260373001",
+              "display": "Detected"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study."
+          }
+        ],
+        "bodyStructure": {
+          "reference": "BodyStructure/E15-F01"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "measurement",
+                  "display": "current measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 5.1,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 4.8,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "temporal_status",
+                  "display": "change from prior"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "larger",
+                  "display": "larger"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/BodyStructure/E15-F01",
+      "resource": {
+        "resourceType": "BodyStructure",
+        "id": "E15-F01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The aneurysm's site as the 2024-07-16 report gives it.</div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://dicom.nema.org/resources/ontology/DCM",
+                  "code": "112040",
+                  "display": "Tracking Unique Identifier"
+                }
+              ]
+            },
+            "system": "urn:dicom:uid",
+            "value": "urn:oid:2.25.138387885240918818410681028916313277801"
+          }
+        ],
+        "morphology": {
+          "coding": [
+            {
+              "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm",
+              "code": "OIFM_GMTS_014057",
+              "display": "aortic aneurysm"
+            }
+          ]
+        },
+        "includedStructure": [
+          {
+            "structure": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations",
+                  "code": "RID905",
+                  "display": "abdominal aorta"
+                },
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "7832008"
+                }
+              ]
+            }
+          }
+        ],
+        "description": "Infrarenal abdominal aortic",
+        "patient": {
+          "reference": "Patient/patient"
+        }
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/DiagnosticReport/report-E15",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report-E15",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The 2024-07-16 report.</div>"
+        },
+        "identifier": [
+          {
+            "value": "IPL-EXEMPLAR-001-E15"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "87854-6",
+              "display": "CT Abdomen and Pelvis and CT angiogram Abdominal aorta W contrast IV"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient"
+        },
+        "effectiveDateTime": "2024-07-16",
+        "result": [
+          {
+            "reference": "Observation/F01.E15"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E01",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E01",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E01 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E01"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E01"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E02",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E02",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E02 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E02"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E02"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E06",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E06",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E06 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E06"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E06"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E08",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E08",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E08 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E08"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E08"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E11",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E11",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E11 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E11"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E11"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E13",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E13",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E13 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E13"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E13"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E14",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E14",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E14 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E14.model"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E14"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/extract-E15",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "extract-E15",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The model extracts the E15 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E15"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "transform"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "transformer"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/extraction-model"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "reference": "DiagnosticReport/report-E15"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/match",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "match",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The IPL compiler matches the reports' BodyStructures and writes the Tracking UID into each. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "BodyStructure/E01-F01"
+          },
+          {
+            "reference": "BodyStructure/E02-F01"
+          },
+          {
+            "reference": "BodyStructure/E06-F01"
+          },
+          {
+            "reference": "BodyStructure/E08-F01"
+          },
+          {
+            "reference": "BodyStructure/E11-F01"
+          },
+          {
+            "reference": "BodyStructure/E13-F01"
+          },
+          {
+            "reference": "BodyStructure/E14-F01"
+          },
+          {
+            "reference": "BodyStructure/E15-F01"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "link"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "assembler"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Device/ipl-compiler"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/affirm",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "affirm",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The radiologist affirms the 2024 observation. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E15"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "verify"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "verifier"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Practitioner/radiologist"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/reject",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "reject",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The radiologist rejects the model's 2023 reading. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E14.model"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "deprecate"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "verifier"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Practitioner/radiologist"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/Provenance/replace",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "replace",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The radiologist enters the 2023 measurement the report states. Illustrative: no model read the synthetic reports, so this review history shows the structure only.</div>"
+        },
+        "target": [
+          {
+            "reference": "Observation/F01.E14"
+          }
+        ],
+        "recorded": "2026-11-13T00:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle",
+              "code": "amend"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "verifier"
+                }
+              ]
+            },
+            "who": {
+              "reference": "Practitioner/radiologist"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "revision",
+            "what": {
+              "reference": "Observation/F01.E14.model"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://example.org/fhir/List/ipl",
+      "resource": {
+        "resourceType": "List",
+        "id": "ipl",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">The patient's Imaging Problem List, holding the aneurysm entry.</div>"
+        },
+        "status": "current",
+        "mode": "working",
+        "title": "Imaging Problem List",
+        "subject": [
+          {
+            "reference": "Patient/patient"
+          }
+        ],
+        "date": "2026-11-13",
+        "entry": [
+          {
+            "extension": [
+              {
+                "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/StructureDefinition/entry-status-rule",
+                "valueCoding": {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-status-rule",
+                  "code": "stated-change"
+                }
+              }
+            ],
+            "flag": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-status",
+                  "code": "active"
+                }
+              ]
+            },
+            "item": {
+              "reference": "BodyStructure/F01"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

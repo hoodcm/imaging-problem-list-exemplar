@@ -1,0 +1,478 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E01",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E01",
+    "date": "2017-03-14",
+    "modality": "US",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "24558-9",
+      "display": "US Abdomen"
+    },
+    "indication": "Cirrhosis surveillance"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm."
+    },
+    {
+      "number": 2,
+      "text": "No ascites."
+    },
+    {
+      "number": 3,
+      "text": "No portal vein thrombus."
+    },
+    {
+      "number": 4,
+      "text": "Nodular liver surface, cirrhosis."
+    },
+    {
+      "number": 5,
+      "text": "Spleen measures 13.2 cm, mildly enlarged."
+    },
+    {
+      "number": 6,
+      "text": "Cholelithiasis."
+    },
+    {
+      "number": 7,
+      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm."
+    },
+    {
+      "number": 8,
+      "text": "Punctate left renal calculus."
+    },
+    {
+      "number": 9,
+      "text": "No hydronephrosis."
+    },
+    {
+      "number": 10,
+      "text": "No biliary ductal dilation."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F01.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_014057",
+        "display": "aortic aneurysm",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID905",
+        "display": "abdominal aorta",
+        "snomed": "7832008"
+      },
+      "attributes": {
+        "presence": "present",
+        "measurement": [
+          {
+            "value": 3.2,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          1
+        ],
+        "site_words": "Infrarenal abdominal aortic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F11.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID86",
+        "display": "spleen",
+        "snomed": "78961009"
+      },
+      "attributes": {
+        "presence": "present",
+        "severity": "mild",
+        "measurement": [
+          {
+            "value": 13.2,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Spleen measures 13.2 cm, mildly enlarged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          5
+        ],
+        "site_words": "Spleen",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F12.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "attributes": {
+        "presence": "present",
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Cholelithiasis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          6
+        ],
+        "site_words": "Cholelithiasis",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F13.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_210162",
+        "display": "simple renal cyst",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29663",
+        "display": "left kidney",
+        "snomed": "18639004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "measurement": [
+          {
+            "value": 1.4,
+            "unit": "cm",
+            "property": "largest member"
+          }
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          7
+        ],
+        "site_words": "kidneys",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F14.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "renal calculus",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29663",
+        "display": "left kidney",
+        "snomed": "18639004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "features": [
+          "punctate"
+        ]
+      },
+      "interpretations": [],
+      "text": "Punctate left renal calculus.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          8
+        ],
+        "site_words": "left renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F43.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_210162",
+        "display": "simple renal cyst",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29662",
+        "display": "right kidney",
+        "snomed": "9846003"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "right",
+        "measurement": [
+          {
+            "value": 0.8,
+            "unit": "cm",
+            "property": "largest member"
+          }
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          7
+        ],
+        "site_words": "kidneys",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F44.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_816014",
+        "display": "nodular liver contour",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "present"
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022460",
+            "display": "cirrhosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Nodular liver surface, cirrhosis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          4
+        ],
+        "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F03.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID397",
+        "display": "peritoneal cavity",
+        "snomed": "83670000"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No ascites.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          2
+        ],
+        "site_words": "ascites",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F04.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_425154",
+        "display": "portal vein thrombus",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1208",
+        "display": "portal vein",
+        "snomed": "32764006"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No portal vein thrombus.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          3
+        ],
+        "site_words": "portal vein",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F28.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID205",
+        "display": "kidney",
+        "snomed": "64033007"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No hydronephrosis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          9
+        ],
+        "site_words": "hydronephrosis",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F29.E01",
+      "exam_id": "E01",
+      "report_id": "IPL-EXEMPLAR-001-E01",
+      "exam_date": "2017-03-14",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "biliary ductal dilation",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID33652",
+        "display": "biliary tree",
+        "snomed": "34707002"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No biliary ductal dilation.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E01",
+        "sentences": [
+          10
+        ],
+        "site_words": "biliary",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

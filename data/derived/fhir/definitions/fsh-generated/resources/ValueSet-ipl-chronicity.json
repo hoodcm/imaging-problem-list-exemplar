@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "IPLChronicityValueSet",
+  "id": "ipl-chronicity",
+  "title": "IPL chronicity",
+  "description": "The values of the chronicity attribute.",
+  "version": "1.0.0",
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/ValueSet/ipl-chronicity",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "chronicity"
+          }
+        ]
+      }
+    ]
+  }
+}

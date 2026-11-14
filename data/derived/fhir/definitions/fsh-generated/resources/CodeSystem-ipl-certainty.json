@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "IPLCertainty",
+  "id": "ipl-certainty",
+  "title": "IPL certainty",
+  "description": "Whether the radiologist stated an element plainly or hedged it.",
+  "version": "1.0.0",
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-certainty",
+  "concept": [
+    {
+      "code": "definite",
+      "display": "definite",
+      "definition": "The radiologist stated the element plainly."
+    },
+    {
+      "code": "hedged",
+      "display": "hedged",
+      "definition": "The radiologist hedged the element."
+    }
+  ],
+  "caseSensitive": true,
+  "experimental": false,
+  "count": 2
+}

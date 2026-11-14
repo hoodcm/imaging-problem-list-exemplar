@@ -1,0 +1,174 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E05",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E05",
+    "date": "2019-10-29",
+    "modality": "XR",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "42272-5",
+      "display": "XR Chest PA and Lateral"
+    },
+    "indication": "Follow-up pneumonia"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Prior right lower lobe consolidation has resolved."
+    },
+    {
+      "number": 2,
+      "text": "No pleural effusion."
+    },
+    {
+      "number": 3,
+      "text": "No pulmonary nodule."
+    },
+    {
+      "number": 4,
+      "text": "Normal heart size."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F06.E05",
+      "exam_id": "E05",
+      "report_id": "IPL-EXEMPLAR-001-E05",
+      "exam_date": "2019-10-29",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_628702",
+        "display": "consolidation",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1315",
+        "display": "lower lobe of right lung",
+        "snomed": "266005"
+      },
+      "attributes": {
+        "presence": "absent",
+        "temporal_status": [
+          "resolved"
+        ]
+      },
+      "interpretations": [],
+      "text": "Prior right lower lobe consolidation has resolved.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E05",
+        "sentences": [
+          1
+        ],
+        "site_words": "right lower lobe",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F24.E05",
+      "exam_id": "E05",
+      "report_id": "IPL-EXEMPLAR-001-E05",
+      "exam_date": "2019-10-29",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1362",
+        "display": "pleura",
+        "snomed": "3120008"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No pleural effusion.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E05",
+        "sentences": [
+          2
+        ],
+        "site_words": "pleural",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F25.E05",
+      "exam_id": "E05",
+      "report_id": "IPL-EXEMPLAR-001-E05",
+      "exam_date": "2019-10-29",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000195",
+        "display": "pulmonary nodule",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1301",
+        "display": "lung",
+        "snomed": "39607008"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No pulmonary nodule.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E05",
+        "sentences": [
+          3
+        ],
+        "site_words": "pulmonary",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F26.E05",
+      "exam_id": "E05",
+      "report_id": "IPL-EXEMPLAR-001-E05",
+      "exam_date": "2019-10-29",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1385",
+        "display": "heart",
+        "snomed": "80891009"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "Normal heart size.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E05",
+        "sentences": [
+          4
+        ],
+        "site_words": "heart",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

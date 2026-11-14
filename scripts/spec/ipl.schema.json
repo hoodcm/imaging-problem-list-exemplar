@@ -1,0 +1,353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hoodcm/imaging-problem-list-exemplar/schema/ipl.schema.json",
+  "title": "Imaging Problem List",
+  "description": "One patient's findings across examinations, one entry per finding.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0",
+      "description": "The version of this schema the file follows.",
+      "x-fhir-r5": "none",
+      "x-fhir-r6": "none",
+      "x-dicom-sr": "none",
+      "x-representation": "not-representable"
+    },
+    "compiled_date": {
+      "type": "string",
+      "format": "date",
+      "description": "When the record was compiled.",
+      "x-fhir-r5": "List.date",
+      "x-fhir-r6": "List.date",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "patient": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The patient's identifier.",
+          "x-fhir-r5": "Patient.identifier",
+          "x-fhir-r6": "Patient.identifier",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The patient's name.",
+          "x-fhir-r5": "Patient.name",
+          "x-fhir-r6": "Patient.name",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "age_at_start": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Age at the first examination.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        },
+        "clinical_profile": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The patient's clinical background.",
+          "x-fhir-r5": "Condition.code.text",
+          "x-fhir-r6": "Condition.code.text",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "surgical_history": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Prior operations.",
+          "x-fhir-r5": "Procedure.code.text",
+          "x-fhir-r6": "Procedure.code.text",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "age_at_start",
+        "clinical_profile",
+        "surgical_history"
+      ],
+      "additionalProperties": false,
+      "description": "The patient.",
+      "x-fhir-r5": "Patient",
+      "x-fhir-r6": "Patient",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "finding_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]*$",
+            "description": "The entry's local identifier.",
+            "x-fhir-r5": "BodyStructure.id of the entry's anchor",
+            "x-fhir-r6": "BodyStructure.id of the entry's anchor",
+            "x-dicom-sr": "(112039, DCM, \"Tracking Identifier\") in TID 4108, which TID 1410, TID 1411, and TID 1501 include",
+            "x-representation": "core"
+          },
+          "tracking_uid": {
+            "type": "string",
+            "pattern": "^2\\.25\\.[0-9]+$",
+            "description": "The entry's Tracking UID, kept across recompilations.",
+            "x-fhir-r5": "BodyStructure.identifier (type DICOM 112040) on the anchor and each report BodyStructure",
+            "x-fhir-r6": "BodyStructure.identifier (type DICOM 112040) on the anchor and each report BodyStructure",
+            "x-dicom-sr": "(112040, DCM, \"Tracking Unique Identifier\") in TID 4108, which TID 1410, TID 1411, and TID 1501 include",
+            "x-representation": "idr-convention"
+          },
+          "finding_code": {
+            "$ref": "observation.schema.json#/$defs/oifm_coding",
+            "description": "The finding's kind, the most specific term the series uses.",
+            "x-fhir-r5": "BodyStructure.morphology of the anchor",
+            "x-fhir-r6": "BodyStructure.includedStructure.morphology of the anchor",
+            "x-dicom-sr": "(121071, DCM, \"Finding\") in TID 1501",
+            "x-representation": "idr-convention"
+          },
+          "anatomic_site": {
+            "$ref": "observation.schema.json#/$defs/site_coding",
+            "description": "The entry's site.",
+            "x-fhir-r5": "BodyStructure.includedStructure.structure of the anchor",
+            "x-fhir-r6": "BodyStructure.includedStructure.structure of the anchor",
+            "x-dicom-sr": "(363698007, SCT, \"Finding Site\") in TID 1419",
+            "x-representation": "idr-convention"
+          },
+          "laterality": {
+            "enum": [
+              "left",
+              "right",
+              "bilateral"
+            ],
+            "description": "The entry's side, where the finding has one.",
+            "x-fhir-r5": "BodyStructure.includedStructure.laterality of the anchor",
+            "x-fhir-r6": "BodyStructure.includedStructure.laterality of the anchor",
+            "x-dicom-sr": "(272741003, SCT, \"Laterality\"), a modifier of Finding Site in TID 1419",
+            "x-representation": "idr-convention"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "stable",
+              "resolved",
+              "excluded",
+              "closed"
+            ],
+            "description": "The status derived from the observation history.",
+            "x-fhir-r5": "List.entry.flag (ipl-status)",
+            "x-fhir-r6": "List.entry.flag (ipl-status)",
+            "x-dicom-sr": "none",
+            "x-representation": "core"
+          },
+          "status_rule": {
+            "enum": [
+              "absent-never-present",
+              "absent-after-present",
+              "absent-after-resolved",
+              "stated-new",
+              "stated-change",
+              "stated-unchanged",
+              "first-stated-old",
+              "first-observation",
+              "present-after-absence",
+              "attribute-contradicts",
+              "nothing-contradicts",
+              "closed-by-finding-within"
+            ],
+            "description": "The rule that set the status.",
+            "x-fhir-r5": "List.entry extension entry-status-rule",
+            "x-fhir-r6": "List.entry extension entry-status-rule",
+            "x-dicom-sr": "none",
+            "x-representation": "extension"
+          },
+          "closed": {
+            "type": "object",
+            "properties": {
+              "observation_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]*$",
+                "description": "The observation that closed the entry.",
+                "x-fhir-r5": "List.entry extension entry-closed-by (Reference)",
+                "x-fhir-r6": "List.entry extension entry-closed-by (Reference)",
+                "x-dicom-sr": "none",
+                "x-representation": "extension"
+              },
+              "exam_id": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Its examination.",
+                "x-fhir-r5": "ImagingStudy.identifier of that Observation's report",
+                "x-fhir-r6": "ImagingStudy.identifier of that Observation's report",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              }
+            },
+            "required": [
+              "observation_id",
+              "exam_id"
+            ],
+            "additionalProperties": false,
+            "description": "For an entry of only absences, the later finding within its site that closed it.",
+            "x-fhir-r5": "List.entry extension entry-closed-by",
+            "x-fhir-r6": "List.entry extension entry-closed-by",
+            "x-dicom-sr": "none",
+            "x-representation": "extension"
+          },
+          "observations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "observation.schema.json"
+            },
+            "description": "The observation history, in examination order.",
+            "x-fhir-r5": "Observation, each referencing its report's BodyStructure, which carries the entry's Tracking UID",
+            "x-fhir-r6": "Observation, each referencing its report's BodyStructure, which carries the entry's Tracking UID",
+            "x-dicom-sr": "TID 1501 groups in each report's SR document, sharing the Tracking UID",
+            "x-representation": "idr-convention"
+          },
+          "corrections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "action": {
+                  "enum": [
+                    "merge",
+                    "split"
+                  ],
+                  "description": "Whether the correction joins two entries' descriptions or separates one entry's.",
+                  "x-fhir-r5": "Provenance.activity (merge or unmerge)",
+                  "x-fhir-r6": "Provenance.activity (merge or unmerge)",
+                  "x-dicom-sr": "none",
+                  "x-representation": "core"
+                },
+                "tracking_uids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^2\\.25\\.[0-9]+$"
+                  },
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "description": "The Tracking UIDs involved. A merge writes both into the report BodyStructures.",
+                  "x-fhir-r5": "BodyStructure.identifier (type DICOM 112040)",
+                  "x-fhir-r6": "BodyStructure.identifier (type DICOM 112040)",
+                  "x-dicom-sr": "none",
+                  "x-representation": "idr-convention"
+                },
+                "observation_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]*$"
+                  },
+                  "minItems": 1,
+                  "description": "The observations the correction moves.",
+                  "x-fhir-r5": "Provenance.target",
+                  "x-fhir-r6": "Provenance.target",
+                  "x-dicom-sr": "none",
+                  "x-representation": "core"
+                },
+                "reviewer": {
+                  "type": "string",
+                  "minLength": 1,
+                  "description": "Who made the correction.",
+                  "x-fhir-r5": "Provenance.agent.who (type verifier)",
+                  "x-fhir-r6": "Provenance.agent.who (type verifier)",
+                  "x-dicom-sr": "none",
+                  "x-representation": "core"
+                },
+                "date": {
+                  "type": "string",
+                  "format": "date",
+                  "description": "When.",
+                  "x-fhir-r5": "Provenance.recorded",
+                  "x-fhir-r6": "Provenance.recorded",
+                  "x-dicom-sr": "none",
+                  "x-representation": "core"
+                },
+                "note": {
+                  "type": "string",
+                  "description": "Why, in the reviewer's words.",
+                  "x-fhir-r5": "none",
+                  "x-fhir-r6": "Provenance.why",
+                  "x-dicom-sr": "none",
+                  "x-representation": "not-representable"
+                }
+              },
+              "required": [
+                "action",
+                "tracking_uids",
+                "observation_ids",
+                "reviewer",
+                "date"
+              ],
+              "additionalProperties": false
+            },
+            "description": "Merges and splits, appended and never edited.",
+            "x-fhir-r5": "Provenance, one per correction",
+            "x-fhir-r6": "Provenance, one per correction",
+            "x-dicom-sr": "none",
+            "x-representation": "core"
+          }
+        },
+        "required": [
+          "finding_id",
+          "tracking_uid",
+          "finding_code",
+          "anatomic_site",
+          "status",
+          "status_rule",
+          "observations",
+          "corrections"
+        ],
+        "additionalProperties": false,
+        "if": {
+          "properties": {
+            "status": {
+              "const": "closed"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "closed"
+          ]
+        },
+        "else": {
+          "not": {
+            "required": [
+              "closed"
+            ]
+          }
+        }
+      },
+      "description": "One entry per finding.",
+      "x-fhir-r5": "List.entry",
+      "x-fhir-r6": "List.entry",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    }
+  },
+  "required": [
+    "schema_version",
+    "compiled_date",
+    "patient",
+    "entries"
+  ],
+  "additionalProperties": false
+}

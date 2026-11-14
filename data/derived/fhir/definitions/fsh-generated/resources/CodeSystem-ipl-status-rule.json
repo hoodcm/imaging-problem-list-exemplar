@@ -1,0 +1,76 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "IPLStatusRule",
+  "id": "ipl-status-rule",
+  "title": "IPL status rule",
+  "description": "The rule that set an IPL entry's status.",
+  "version": "1.0.0",
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-status-rule",
+  "concept": [
+    {
+      "code": "absent-never-present",
+      "display": "absent never present",
+      "definition": "An absence, and the finding has not been present."
+    },
+    {
+      "code": "absent-after-present",
+      "display": "absent after present",
+      "definition": "An absence follows a presence."
+    },
+    {
+      "code": "absent-after-resolved",
+      "display": "absent after resolved",
+      "definition": "An absence follows a resolution."
+    },
+    {
+      "code": "stated-new",
+      "display": "stated new",
+      "definition": "The radiologist called the finding new."
+    },
+    {
+      "code": "stated-change",
+      "display": "stated change",
+      "definition": "The radiologist stated a change."
+    },
+    {
+      "code": "stated-unchanged",
+      "display": "stated unchanged",
+      "definition": "The radiologist stated no change."
+    },
+    {
+      "code": "first-stated-old",
+      "display": "first stated old",
+      "definition": "First observation, or present after an absence, stated chronic, old, or healed."
+    },
+    {
+      "code": "first-observation",
+      "display": "first observation",
+      "definition": "First observation, with no comparison wording and no stated age that predates it."
+    },
+    {
+      "code": "present-after-absence",
+      "display": "present after absence",
+      "definition": "Present after an absence, with no comparison wording and no stated age that predates it."
+    },
+    {
+      "code": "attribute-contradicts",
+      "display": "attribute contradicts",
+      "definition": "No comparison wording, and a stated attribute contradicts its last stated value."
+    },
+    {
+      "code": "nothing-contradicts",
+      "display": "nothing contradicts",
+      "definition": "No comparison wording, and nothing stated contradicts the entry's last stated values."
+    },
+    {
+      "code": "closed-by-finding-within",
+      "display": "closed by finding within",
+      "definition": "Only absences, and a finding of its kind was later reported present within its site, so that finding's entry carries the status."
+    }
+  ],
+  "caseSensitive": true,
+  "experimental": false,
+  "count": 12
+}

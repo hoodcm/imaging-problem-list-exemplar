@@ -1,0 +1,380 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E03",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E03",
+    "date": "2018-05-22",
+    "modality": "MRI",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36134-5",
+      "display": "MR Abdomen W contrast IV"
+    },
+    "indication": "Hepatic lesion characterization"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule appearance."
+    },
+    {
+      "number": 2,
+      "text": "LI-RADS 3."
+    },
+    {
+      "number": 3,
+      "text": "No ascites."
+    },
+    {
+      "number": 4,
+      "text": "Small esophageal varices, unchanged."
+    },
+    {
+      "number": 5,
+      "text": "Cirrhotic liver morphology with nodular contour and capsular retraction."
+    },
+    {
+      "number": 6,
+      "text": "Splenomegaly, 14.0 cm."
+    },
+    {
+      "number": 7,
+      "text": "Cholelithiasis."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F02.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID33242",
+        "display": "segment VI of liver",
+        "snomed": null
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 1.8,
+            "unit": "cm"
+          }
+        ],
+        "features": [
+          "arterial phase hyperenhancement",
+          "no washout",
+          "no capsule appearance"
+        ]
+      },
+      "interpretations": [
+        {
+          "assessment": {
+            "system": "ACR LI-RADS v2018",
+            "code": "LR-3"
+          }
+        }
+      ],
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule appearance. LI-RADS 3.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          1,
+          2
+        ],
+        "site_words": "segment 6",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F09.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID95",
+        "display": "esophagus",
+        "snomed": "32849002"
+      },
+      "attributes": {
+        "presence": "present",
+        "extent": "small",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Small esophageal varices, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          4
+        ],
+        "site_words": "esophageal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F10.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_433540",
+        "display": "cirrhotic liver morphology",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "present"
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022460",
+            "display": "cirrhosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Cirrhotic liver morphology with nodular contour and capsular retraction.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          5
+        ],
+        "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F11.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID86",
+        "display": "spleen",
+        "snomed": "78961009"
+      },
+      "attributes": {
+        "presence": "present",
+        "measurement": [
+          {
+            "value": 14.0,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Splenomegaly, 14.0 cm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          6
+        ],
+        "site_words": "Splenomegaly",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F12.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "attributes": {
+        "presence": "present",
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Cholelithiasis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          7
+        ],
+        "site_words": "Cholelithiasis",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F44.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_816014",
+        "display": "nodular liver contour",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "present"
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022460",
+            "display": "cirrhosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Cirrhotic liver morphology with nodular contour and capsular retraction.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          5
+        ],
+        "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F45.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_137592",
+        "display": "hepatic capsular retraction",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "present"
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022460",
+            "display": "cirrhosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Cirrhotic liver morphology with nodular contour and capsular retraction.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          5
+        ],
+        "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F03.E03",
+      "exam_id": "E03",
+      "report_id": "IPL-EXEMPLAR-001-E03",
+      "exam_date": "2018-05-22",
+      "exam_modality": "MRI",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID397",
+        "display": "peritoneal cavity",
+        "snomed": "83670000"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No ascites.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E03",
+        "sentences": [
+          3
+        ],
+        "site_words": "ascites",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

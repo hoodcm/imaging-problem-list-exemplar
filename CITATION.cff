@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: If you use this dataset, cite the Imaging Problem List framework paper.
+message: If you use this dataset or the specification, cite the Imaging Problem List paper.
 type: dataset
 title: Imaging Problem List exemplar
-version: 1.1.0
-date-released: 2026-09-18
+version: 2.0.0
+date-released: 2026-11-14
 license: CC-BY-4.0
 repository-code: https://github.com/hoodcm/imaging-problem-list-exemplar
 authors:
@@ -31,7 +31,7 @@ authors:
     affiliation: Mass General Brigham
 preferred-citation:
   type: article
-  title: "The Imaging Problem List: A Standards-Based Framework for Longitudinal Tracking of Imaging Findings"
+  title: "The Imaging Problem List: A Data Model for Longitudinal Tracking of Imaging Findings"
   doi: 10.5281/zenodo.21689078
   year: 2026
   authors:

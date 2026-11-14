@@ -1,0 +1,852 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hoodcm/imaging-problem-list-exemplar/schema/observation.schema.json",
+  "title": "IPL observation",
+  "description": "One documented assessment of a finding on one examination, as the radiologist stated it. The Exam Finding List and the Imaging Problem List share this definition, and only the IPL adds derived.",
+  "type": "object",
+  "properties": {
+    "observation_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]*$",
+      "description": "The observation's identifier.",
+      "x-fhir-r5": "Observation.id",
+      "x-fhir-r6": "Observation.id",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "exam_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The examination the observation comes from.",
+      "x-fhir-r5": "ImagingStudy.identifier",
+      "x-fhir-r6": "ImagingStudy.identifier",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "report_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The report that holds the observation.",
+      "x-fhir-r5": "DiagnosticReport.identifier, whose result references the Observation",
+      "x-fhir-r6": "DiagnosticReport.identifier, whose result references the Observation",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "exam_date": {
+      "type": "string",
+      "format": "date",
+      "description": "The examination's date.",
+      "x-fhir-r5": "Observation.effectiveDateTime",
+      "x-fhir-r6": "Observation.effectiveDateTime",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "exam_modality": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The examination's modality.",
+      "x-fhir-r5": "ImagingStudy.modality",
+      "x-fhir-r6": "ImagingStudy.modality",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "finding_code": {
+      "$ref": "#/$defs/oifm_coding",
+      "description": "What the radiologist observed.",
+      "x-fhir-r5": "Observation.code",
+      "x-fhir-r6": "Observation.code",
+      "x-dicom-sr": "(121071, DCM, \"Finding\") in TID 1501",
+      "x-representation": "core"
+    },
+    "anatomic_site": {
+      "$ref": "#/$defs/site_coding",
+      "description": "Where, as this report states it.",
+      "x-fhir-r5": "BodyStructure.includedStructure.structure of the report's BodyStructure, which Observation.bodyStructure references",
+      "x-fhir-r6": "BodyStructure.includedStructure.structure of the report's BodyStructure, which Observation.bodyStructure.reference references",
+      "x-dicom-sr": "(363698007, SCT, \"Finding Site\") in TID 1419",
+      "x-representation": "idr-convention"
+    },
+    "attributes": {
+      "type": "object",
+      "properties": {
+        "presence": {
+          "enum": [
+            "present",
+            "absent"
+          ],
+          "description": "Whether the sentence states the finding present or absent.",
+          "x-fhir-r5": "Observation.valueCodeableConcept (SNOMED CT 260373001 Detected or 260415000 Not detected)",
+          "x-fhir-r6": "Observation.valueCodeableConcept (SNOMED CT 260373001 Detected or 260415000 Not detected)",
+          "x-dicom-sr": "(121052, DCM, \"Presence of property\") in TID 1350",
+          "x-representation": "core"
+        },
+        "confidence": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "presence",
+              "laterality",
+              "chronicity",
+              "temporal_status",
+              "severity",
+              "extent",
+              "distribution",
+              "integrity",
+              "position_status",
+              "clinical_context"
+            ]
+          },
+          "additionalProperties": {
+            "const": "hedged"
+          },
+          "minProperties": 1,
+          "description": "The attributes the radiologist hedged. An attribute left out is stated definitely.",
+          "x-fhir-r5": "cqf-certainty extension on the element it qualifies",
+          "x-fhir-r6": "cqf-certainty extension on the element it qualifies",
+          "x-dicom-sr": "(111012, DCM, \"Certainty of Finding\") in TID 4104",
+          "x-representation": "extension"
+        },
+        "laterality": {
+          "enum": [
+            "left",
+            "right",
+            "bilateral"
+          ],
+          "description": "The stated side.",
+          "x-fhir-r5": "BodyStructure.includedStructure.laterality",
+          "x-fhir-r6": "BodyStructure.includedStructure.laterality",
+          "x-dicom-sr": "(272741003, SCT, \"Laterality\"), a modifier of Finding Site in TID 1419",
+          "x-representation": "core"
+        },
+        "temporal_status": {
+          "description": "The change from prior: the radiologist's comparison of the finding with prior imaging.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "type": "array",
+          "items": {
+            "enum": [
+              "unchanged",
+              "new",
+              "resolved",
+              "larger",
+              "smaller",
+              "increased_extent",
+              "decreased_extent",
+              "more_conspicuous",
+              "less_conspicuous",
+              "increased_complexity",
+              "decreased_complexity"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "chronicity": {
+          "description": "The chronicity: the radiologist's time-course word.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "type": "array",
+          "items": {
+            "enum": [
+              "acute",
+              "subacute",
+              "chronic",
+              "remote",
+              "evolving",
+              "resolving",
+              "healing",
+              "healed"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "measurement": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "description": "The stated value.",
+                "x-fhir-r5": "Observation.component.valueQuantity.value",
+                "x-fhir-r6": "Observation.component.valueQuantity.value",
+                "x-dicom-sr": "the NUM content item's numeric value in TID 1501",
+                "x-representation": "core"
+              },
+              "unit": {
+                "enum": [
+                  "mm",
+                  "cm",
+                  "%",
+                  "mL"
+                ],
+                "description": "The stated unit, a UCUM code.",
+                "x-fhir-r5": "Observation.component.valueQuantity.code (UCUM)",
+                "x-fhir-r6": "Observation.component.valueQuantity.code (UCUM)",
+                "x-dicom-sr": "the NUM content item's UCUM units in TID 1501",
+                "x-representation": "core"
+              },
+              "property": {
+                "enum": [
+                  "height loss",
+                  "largest member"
+                ],
+                "description": "What the value measures, as the sentence states it, absent when the sentence doesn't say.",
+                "x-fhir-r5": "Observation.component.code",
+                "x-fhir-r6": "Observation.component.code",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              }
+            },
+            "required": [
+              "value",
+              "unit"
+            ],
+            "additionalProperties": false
+          },
+          "description": "The current measurements: the values the report states for this examination.",
+          "x-fhir-r5": "Observation.component.valueQuantity",
+          "x-fhir-r6": "Observation.component.valueQuantity",
+          "x-dicom-sr": "(410668003, SCT, \"Length\"), a NUM measurement in TID 1501",
+          "x-representation": "core"
+        },
+        "prior_measurement": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "description": "The stated value.",
+                "x-fhir-r5": "Observation.component.valueQuantity.value",
+                "x-fhir-r6": "Observation.component.valueQuantity.value",
+                "x-dicom-sr": "the NUM content item's numeric value in TID 1501",
+                "x-representation": "core"
+              },
+              "unit": {
+                "enum": [
+                  "mm",
+                  "cm",
+                  "%",
+                  "mL"
+                ],
+                "description": "The stated unit, a UCUM code.",
+                "x-fhir-r5": "Observation.component.valueQuantity.code (UCUM)",
+                "x-fhir-r6": "Observation.component.valueQuantity.code (UCUM)",
+                "x-dicom-sr": "the NUM content item's UCUM units in TID 1501",
+                "x-representation": "core"
+              },
+              "property": {
+                "enum": [
+                  "height loss",
+                  "largest member"
+                ],
+                "description": "What the value measures, as the sentence states it, absent when the sentence doesn't say.",
+                "x-fhir-r5": "Observation.component.code",
+                "x-fhir-r6": "Observation.component.code",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              }
+            },
+            "required": [
+              "value",
+              "unit"
+            ],
+            "additionalProperties": false
+          },
+          "description": "The prior measurements: the values the report states the finding had on an earlier examination, which the compiler checks against the entry's previous observation.",
+          "x-fhir-r5": "Observation.component.valueQuantity",
+          "x-fhir-r6": "Observation.component.valueQuantity",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "severity": {
+          "description": "The stated severity.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "enum": [
+            "mild",
+            "mild_to_moderate",
+            "moderate",
+            "moderate_to_severe",
+            "severe"
+          ]
+        },
+        "extent": {
+          "description": "The stated extent.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "enum": [
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "distribution": {
+          "description": "The stated distribution.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "enum": [
+            "diffuse"
+          ]
+        },
+        "aggregate": {
+          "description": "The statement covers a collection, such as gallstones.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "const": true
+        },
+        "features": {
+          "description": "Stated descriptive features, as the sentence words them.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        },
+        "position_status": {
+          "description": "The stated position of a device.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "enum": [
+            "satisfactory",
+            "malpositioned"
+          ]
+        },
+        "clinical_context": {
+          "description": "A cause or clinical state the radiologist named for the finding.",
+          "x-fhir-r5": "Observation.component",
+          "x-fhir-r6": "Observation.component",
+          "x-dicom-sr": "none",
+          "x-representation": "core",
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/oifm_coding"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "presence"
+      ],
+      "additionalProperties": false,
+      "description": "What the sentence states about the finding, in the OIDM annotator's attribute model.",
+      "x-fhir-r5": "Observation.value[x] and Observation.component",
+      "x-fhir-r6": "Observation.value[x] and Observation.component",
+      "x-dicom-sr": "TID 1501 qualitative evaluations",
+      "x-representation": "core"
+    },
+    "interpretations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "$ref": "#/$defs/oifm_coding",
+            "description": "A diagnosis the radiologist attached, such as cirrhosis.",
+            "x-fhir-r5": "Observation.component.valueCodeableConcept",
+            "x-fhir-r6": "Observation.component.valueCodeableConcept",
+            "x-dicom-sr": "(121073, DCM, \"Impression\")",
+            "x-representation": "core"
+          },
+          "assessment": {
+            "type": "object",
+            "properties": {
+              "system": {
+                "const": "ACR LI-RADS v2018",
+                "description": "The LI-RADS release.",
+                "x-fhir-r5": "Coding.system",
+                "x-fhir-r6": "Coding.system",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              },
+              "code": {
+                "enum": [
+                  "LR-1",
+                  "LR-2",
+                  "LR-3",
+                  "LR-4",
+                  "LR-5",
+                  "LR-M",
+                  "LR-TIV",
+                  "LR-NC"
+                ],
+                "description": "The LI-RADS category.",
+                "x-fhir-r5": "Coding.code",
+                "x-fhir-r6": "Coding.code",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              }
+            },
+            "required": [
+              "system",
+              "code"
+            ],
+            "additionalProperties": false,
+            "description": "A category the radiologist assigned.",
+            "x-fhir-r5": "Observation.component.valueCodeableConcept",
+            "x-fhir-r6": "Observation.component.valueCodeableConcept",
+            "x-dicom-sr": "none",
+            "x-representation": "core"
+          },
+          "hedged": {
+            "const": true,
+            "description": "The radiologist hedged the interpretation.",
+            "x-fhir-r5": "cqf-certainty extension",
+            "x-fhir-r6": "cqf-certainty extension",
+            "x-dicom-sr": "(111013, DCM, \"Certainty of Impression\") in TID 4002",
+            "x-representation": "extension"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "code"
+            ]
+          },
+          {
+            "required": [
+              "assessment"
+            ]
+          }
+        ],
+        "additionalProperties": false
+      },
+      "description": "Diagnoses or categories the radiologist attached.",
+      "x-fhir-r5": "Observation.component",
+      "x-fhir-r6": "Observation.component",
+      "x-dicom-sr": "(121073, DCM, \"Impression\")",
+      "x-representation": "core"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The report sentence or sentences the observation comes from.",
+      "x-fhir-r5": "Observation.note.text",
+      "x-fhir-r6": "Observation.note.text",
+      "x-dicom-sr": "(121106, DCM, \"Comment\")",
+      "x-representation": "core"
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "enum": [
+            "specification",
+            "structured_report",
+            "model",
+            "human_abstraction"
+          ],
+          "description": "What produced the observation.",
+          "x-fhir-r5": "Provenance.agent.type",
+          "x-fhir-r6": "Provenance.agent.type",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The report the observation came from.",
+          "x-fhir-r5": "Provenance.entity.what (role source)",
+          "x-fhir-r6": "Provenance.entity.what (role source)",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "sentences": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 1,
+          "description": "The numbers of the report sentences the observation came from.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        },
+        "site_words": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The words the sentence uses for the site, the evidence for the site code, which can be coarser than the words.",
+          "x-fhir-r5": "BodyStructure.description",
+          "x-fhir-r6": "BodyStructure.description",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "model": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The model's name.",
+              "x-fhir-r5": "Device.name.value",
+              "x-fhir-r6": "Device.name.value",
+              "x-dicom-sr": "(111001, DCM, \"Algorithm Name\") in TID 4019",
+              "x-representation": "core"
+            },
+            "version": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The model's version.",
+              "x-fhir-r5": "Device.version.value",
+              "x-fhir-r6": "Device.deviceVersion.value",
+              "x-dicom-sr": "(111003, DCM, \"Algorithm Version\") in TID 4019",
+              "x-representation": "core"
+            },
+            "run": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The run that produced the observation.",
+              "x-fhir-r5": "none",
+              "x-fhir-r6": "none",
+              "x-dicom-sr": "none",
+              "x-representation": "not-representable"
+            }
+          },
+          "required": [
+            "name",
+            "version",
+            "run"
+          ],
+          "additionalProperties": false,
+          "description": "The model that produced the observation, present only when a model did.",
+          "x-fhir-r5": "Provenance.agent.who (Device, type transformer)",
+          "x-fhir-r6": "Provenance.agent.who (Device, type transformer)",
+          "x-dicom-sr": "TID 4019 Algorithm Identification",
+          "x-representation": "core"
+        },
+        "review_status": {
+          "enum": [
+            "unreviewed",
+            "affirmed",
+            "rejected"
+          ],
+          "description": "The latest review: none, affirmed, or rejected.",
+          "x-fhir-r5": "Provenance.activity of the latest review, and Observation.status entered-in-error when rejected",
+          "x-fhir-r6": "Provenance.activity of the latest review, and Observation.status entered-in-error when rejected",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "action": {
+                "enum": [
+                  "affirm",
+                  "reject"
+                ],
+                "description": "What the reviewer did.",
+                "x-fhir-r5": "Provenance.activity (verify or deprecate)",
+                "x-fhir-r6": "Provenance.activity (verify or deprecate)",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              },
+              "reviewer": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Who reviewed.",
+                "x-fhir-r5": "Provenance.agent.who (type verifier)",
+                "x-fhir-r6": "Provenance.agent.who (type verifier)",
+                "x-dicom-sr": "(121008, DCM, \"Person Observer Name\") in TID 1003",
+                "x-representation": "core"
+              },
+              "date": {
+                "type": "string",
+                "format": "date",
+                "description": "When.",
+                "x-fhir-r5": "Provenance.recorded",
+                "x-fhir-r6": "Provenance.recorded",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              },
+              "note": {
+                "type": "string",
+                "description": "Why, in the reviewer's words.",
+                "x-fhir-r5": "none",
+                "x-fhir-r6": "Provenance.why",
+                "x-dicom-sr": "none",
+                "x-representation": "not-representable"
+              }
+            },
+            "required": [
+              "action",
+              "reviewer",
+              "date"
+            ],
+            "additionalProperties": false
+          },
+          "description": "Every review, oldest first, appended and never edited.",
+          "x-fhir-r5": "Provenance, one per review",
+          "x-fhir-r6": "Provenance, one per review",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        }
+      },
+      "required": [
+        "source",
+        "report_id",
+        "sentences",
+        "site_words",
+        "review_status",
+        "reviews"
+      ],
+      "additionalProperties": false,
+      "description": "Where the observation came from and how a radiologist reviewed it.",
+      "x-fhir-r5": "Provenance",
+      "x-fhir-r6": "Provenance",
+      "x-dicom-sr": "none",
+      "x-representation": "core",
+      "if": {
+        "properties": {
+          "source": {
+            "const": "model"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "model"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "model"
+          ]
+        }
+      }
+    },
+    "replaces": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9.-]*$",
+      "description": "The observation a correction replaces.",
+      "x-fhir-r5": "observation-replaces extension",
+      "x-fhir-r6": "observation-replaces extension",
+      "x-dicom-sr": "none",
+      "x-representation": "extension"
+    },
+    "derived": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "active",
+            "stable",
+            "resolved",
+            "excluded"
+          ],
+          "description": "The entry's status after this observation.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        },
+        "rule": {
+          "enum": [
+            "absent-never-present",
+            "absent-after-present",
+            "absent-after-resolved",
+            "stated-new",
+            "stated-change",
+            "stated-unchanged",
+            "first-stated-old",
+            "first-observation",
+            "present-after-absence",
+            "attribute-contradicts",
+            "nothing-contradicts"
+          ],
+          "description": "The status rule that set it.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        },
+        "contradicting_attribute": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The attribute whose stated value contradicted its last stated value, under the attribute-contradicts rule.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        },
+        "prior_measurement_check": {
+          "enum": [
+            "matches",
+            "differs",
+            "no-prior"
+          ],
+          "description": "How the prior measurement the observation states compares with the entry's previous observation, written for review and never setting the status.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        }
+      },
+      "required": [
+        "status",
+        "rule"
+      ],
+      "additionalProperties": false,
+      "description": "The status this observation set, absent when a radiologist rejected the observation.",
+      "x-fhir-r5": "none",
+      "x-fhir-r6": "none",
+      "x-dicom-sr": "none",
+      "x-representation": "not-representable"
+    }
+  },
+  "required": [
+    "observation_id",
+    "exam_id",
+    "report_id",
+    "exam_date",
+    "exam_modality",
+    "finding_code",
+    "anatomic_site",
+    "attributes",
+    "interpretations",
+    "text",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "oifm_coding": {
+      "type": "object",
+      "properties": {
+        "system": {
+          "const": "OIFM",
+          "description": "The Open Imaging Finding Model code system.",
+          "x-fhir-r5": "Coding.system, https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm, a URI under this repository because OIFM publishes no FHIR system URI",
+          "x-fhir-r6": "Coding.system, https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/oifm, a URI under this repository because OIFM publishes no FHIR system URI",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^OIFM_[A-Z]+_[0-9]{6}$",
+          "description": "The OIFM code.",
+          "x-fhir-r5": "Coding.code",
+          "x-fhir-r6": "Coding.code",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "display": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The concept's name.",
+          "x-fhir-r5": "Coding.display",
+          "x-fhir-r6": "Coding.display",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "source": {
+          "enum": [
+            "registry",
+            "minted",
+            "assigned"
+          ],
+          "description": "Where the code comes from: the OIFM registry, a definition minted for the exemplar, or a code assigned for this exemplar.",
+          "x-fhir-r5": "none",
+          "x-fhir-r6": "none",
+          "x-dicom-sr": "none",
+          "x-representation": "not-representable"
+        }
+      },
+      "required": [
+        "system",
+        "code",
+        "display",
+        "source"
+      ],
+      "additionalProperties": false,
+      "description": "A finding concept from the Imaging Findings Workbench taxonomy, coded in OIFM.",
+      "x-fhir-r5": "Coding",
+      "x-fhir-r6": "Coding",
+      "x-dicom-sr": "the value of a CODE content item",
+      "x-representation": "core"
+    },
+    "site_coding": {
+      "type": "object",
+      "properties": {
+        "system": {
+          "const": "Anatomic Locations Index 1.0.0",
+          "description": "The Anatomic Locations Index release.",
+          "x-fhir-r5": "Coding.system, https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations, a URI under this repository because the Anatomic Locations Index publishes no FHIR system URI",
+          "x-fhir-r6": "Coding.system, https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/anatomic-locations, a URI under this repository because the Anatomic Locations Index publishes no FHIR system URI",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "code": {
+          "type": "string",
+          "pattern": "^RID[0-9]+(_RID[0-9]+)*$",
+          "description": "The index's site identifier.",
+          "x-fhir-r5": "Coding.code",
+          "x-fhir-r6": "Coding.code",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "display": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The site's name in the index.",
+          "x-fhir-r5": "Coding.display",
+          "x-fhir-r6": "Coding.display",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "snomed": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]+$",
+          "description": "The SNOMED CT code the index gives the site, or null.",
+          "x-fhir-r5": "a second Coding in the same CodeableConcept",
+          "x-fhir-r6": "a second Coding in the same CodeableConcept",
+          "x-dicom-sr": "(363698007, SCT, \"Finding Site\") value, coded in SNOMED CT",
+          "x-representation": "core"
+        }
+      },
+      "required": [
+        "system",
+        "code",
+        "display",
+        "snomed"
+      ],
+      "additionalProperties": false,
+      "description": "An anatomic site from the Anatomic Locations Index.",
+      "x-fhir-r5": "Coding",
+      "x-fhir-r6": "Coding",
+      "x-dicom-sr": "the value of a CODE content item",
+      "x-representation": "core"
+    }
+  }
+}

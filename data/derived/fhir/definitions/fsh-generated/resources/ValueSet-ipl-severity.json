@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "IPLSeverityValueSet",
+  "id": "ipl-severity",
+  "title": "IPL severity",
+  "description": "The values of the severity attribute.",
+  "version": "1.0.0",
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/ValueSet/ipl-severity",
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "severity"
+          }
+        ]
+      }
+    ]
+  }
+}

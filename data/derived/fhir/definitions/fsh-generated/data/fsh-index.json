@@ -1,0 +1,138 @@
+[
+  {
+    "outputFile": "CodeSystem-ipl-attribute.json",
+    "fshName": "IPLAttribute",
+    "fshType": "CodeSystem",
+    "fshFile": "ipl.fsh",
+    "startLine": 49,
+    "endLine": 115
+  },
+  {
+    "outputFile": "CodeSystem-ipl-certainty.json",
+    "fshName": "IPLCertainty",
+    "fshType": "CodeSystem",
+    "fshFile": "ipl.fsh",
+    "startLine": 38,
+    "endLine": 47
+  },
+  {
+    "outputFile": "CodeSystem-ipl-status-rule.json",
+    "fshName": "IPLStatusRule",
+    "fshType": "CodeSystem",
+    "fshFile": "ipl.fsh",
+    "startLine": 17,
+    "endLine": 36
+  },
+  {
+    "outputFile": "CodeSystem-ipl-status.json",
+    "fshName": "IPLStatus",
+    "fshType": "CodeSystem",
+    "fshFile": "ipl.fsh",
+    "startLine": 3,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-entry-closed-by.json",
+    "fshName": "EntryClosedBy",
+    "fshType": "Extension",
+    "fshFile": "ipl.fsh",
+    "startLine": 216,
+    "endLine": 224
+  },
+  {
+    "outputFile": "StructureDefinition-entry-status-rule.json",
+    "fshName": "EntryStatusRule",
+    "fshType": "Extension",
+    "fshFile": "ipl.fsh",
+    "startLine": 205,
+    "endLine": 214
+  },
+  {
+    "outputFile": "ValueSet-ipl-chronicity.json",
+    "fshName": "IPLChronicityValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 157,
+    "endLine": 163
+  },
+  {
+    "outputFile": "ValueSet-ipl-distribution.json",
+    "fshName": "IPLDistributionValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 181,
+    "endLine": 187
+  },
+  {
+    "outputFile": "ValueSet-ipl-extent.json",
+    "fshName": "IPLExtentValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 173,
+    "endLine": 179
+  },
+  {
+    "outputFile": "ValueSet-ipl-integrity.json",
+    "fshName": "IPLIntegrityValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 197,
+    "endLine": 203
+  },
+  {
+    "outputFile": "ValueSet-ipl-laterality.json",
+    "fshName": "IPLLateralityValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 141,
+    "endLine": 147
+  },
+  {
+    "outputFile": "ValueSet-ipl-position-status.json",
+    "fshName": "IPLPositionStatusValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 189,
+    "endLine": 195
+  },
+  {
+    "outputFile": "ValueSet-ipl-presence.json",
+    "fshName": "IPLPresenceValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 133,
+    "endLine": 139
+  },
+  {
+    "outputFile": "ValueSet-ipl-severity.json",
+    "fshName": "IPLSeverityValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 165,
+    "endLine": 171
+  },
+  {
+    "outputFile": "ValueSet-ipl-status-rule.json",
+    "fshName": "IPLStatusRuleValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 117,
+    "endLine": 123
+  },
+  {
+    "outputFile": "ValueSet-ipl-status.json",
+    "fshName": "IPLStatusValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 125,
+    "endLine": 131
+  },
+  {
+    "outputFile": "ValueSet-ipl-temporal-status.json",
+    "fshName": "IPLTemporalStatusValueSet",
+    "fshType": "ValueSet",
+    "fshFile": "ipl.fsh",
+    "startLine": 149,
+    "endLine": 155
+  }
+]

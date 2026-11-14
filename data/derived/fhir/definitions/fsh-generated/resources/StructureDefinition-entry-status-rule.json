@@ -1,0 +1,62 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "entry-status-rule",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-bind"
+    }
+  ],
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/StructureDefinition/entry-status-rule",
+  "version": "1.0.0",
+  "name": "EntryStatusRule",
+  "title": "Entry status rule",
+  "status": "draft",
+  "experimental": false,
+  "description": "The rule that set an IPL entry's status, on the List entry whose flag carries the status.",
+  "fhirVersion": "5.0.0",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "List.entry"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Entry status rule",
+        "definition": "The rule that set an IPL entry's status, on the List entry whose flag carries the status."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://github.com/hoodcm/imaging-problem-list-exemplar/StructureDefinition/entry-status-rule"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://github.com/hoodcm/imaging-problem-list-exemplar/ValueSet/ipl-status-rule"
+        }
+      }
+    ]
+  }
+}

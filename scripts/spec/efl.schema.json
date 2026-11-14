@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hoodcm/imaging-problem-list-exemplar/schema/efl.schema.json",
+  "title": "Exam Finding List",
+  "description": "All observations on one examination, a near one-to-one translation of its report.",
+  "type": "object",
+  "properties": {
+    "report": {
+      "type": "object",
+      "properties": {
+        "report_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The report's identifier.",
+          "x-fhir-r5": "DiagnosticReport.identifier",
+          "x-fhir-r6": "DiagnosticReport.identifier",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "patient_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The patient's identifier.",
+          "x-fhir-r5": "DiagnosticReport.subject (Patient.identifier)",
+          "x-fhir-r6": "DiagnosticReport.subject (Patient.identifier)",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "exam_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The examination's identifier.",
+          "x-fhir-r5": "ImagingStudy.identifier",
+          "x-fhir-r6": "ImagingStudy.identifier",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "The examination's date.",
+          "x-fhir-r5": "DiagnosticReport.effectiveDateTime",
+          "x-fhir-r6": "DiagnosticReport.effectiveDateTime",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "modality": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The examination's modality.",
+          "x-fhir-r5": "ImagingStudy.modality",
+          "x-fhir-r6": "ImagingStudy.modality",
+          "x-dicom-sr": "none",
+          "x-representation": "core"
+        },
+        "procedure_code": {
+          "type": "object",
+          "properties": {
+            "system": {
+              "const": "LOINC",
+              "description": "LOINC.",
+              "x-fhir-r5": "Coding.system",
+              "x-fhir-r6": "Coding.system",
+              "x-dicom-sr": "none",
+              "x-representation": "core"
+            },
+            "code": {
+              "type": "string",
+              "pattern": "^[0-9]+-[0-9]$",
+              "description": "The LOINC code.",
+              "x-fhir-r5": "Coding.code",
+              "x-fhir-r6": "Coding.code",
+              "x-dicom-sr": "none",
+              "x-representation": "core"
+            },
+            "display": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The LOINC long name.",
+              "x-fhir-r5": "Coding.display",
+              "x-fhir-r6": "Coding.display",
+              "x-dicom-sr": "none",
+              "x-representation": "core"
+            }
+          },
+          "required": [
+            "system",
+            "code",
+            "display"
+          ],
+          "additionalProperties": false,
+          "description": "The procedure, coded in LOINC.",
+          "x-fhir-r5": "DiagnosticReport.code",
+          "x-fhir-r6": "DiagnosticReport.code",
+          "x-dicom-sr": "(121058, DCM, \"Procedure reported\") in TID 1500",
+          "x-representation": "core"
+        },
+        "indication": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Why the examination was ordered.",
+          "x-fhir-r5": "ServiceRequest.reason, which DiagnosticReport.basedOn references",
+          "x-fhir-r6": "ServiceRequest.reason, which DiagnosticReport.basedOn references",
+          "x-dicom-sr": "(121109, DCM, \"Indications for Procedure\")",
+          "x-representation": "core"
+        }
+      },
+      "required": [
+        "report_id",
+        "patient_id",
+        "exam_id",
+        "date",
+        "modality",
+        "procedure_code",
+        "indication"
+      ],
+      "additionalProperties": false,
+      "description": "The report and its examination.",
+      "x-fhir-r5": "DiagnosticReport",
+      "x-fhir-r6": "DiagnosticReport",
+      "x-dicom-sr": "TID 1500 Measurement Report",
+      "x-representation": "core"
+    },
+    "sentences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "The sentence's position in the report.",
+            "x-fhir-r5": "none",
+            "x-fhir-r6": "none",
+            "x-dicom-sr": "none",
+            "x-representation": "not-representable"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "The sentence.",
+            "x-fhir-r5": "DiagnosticReport.presentedForm",
+            "x-fhir-r6": "DiagnosticReport.presentedForm",
+            "x-dicom-sr": "none",
+            "x-representation": "core"
+          }
+        },
+        "required": [
+          "number",
+          "text"
+        ],
+        "additionalProperties": false
+      },
+      "description": "The report's sentences in order.",
+      "x-fhir-r5": "DiagnosticReport.presentedForm",
+      "x-fhir-r6": "DiagnosticReport.presentedForm",
+      "x-dicom-sr": "none",
+      "x-representation": "core"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "observation.schema.json"
+          },
+          {
+            "not": {
+              "required": [
+                "derived"
+              ]
+            }
+          }
+        ]
+      },
+      "description": "Every observation on the examination, findings and statements about its quality.",
+      "x-fhir-r5": "DiagnosticReport.result",
+      "x-fhir-r6": "DiagnosticReport.result",
+      "x-dicom-sr": "TID 1501 measurement and qualitative evaluation groups",
+      "x-representation": "core"
+    }
+  },
+  "required": [
+    "report",
+    "sentences",
+    "observations"
+  ],
+  "additionalProperties": false
+}

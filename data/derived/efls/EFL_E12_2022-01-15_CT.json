@@ -1,0 +1,269 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E12",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E12",
+    "date": "2022-01-15",
+    "modality": "CT",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "30799-1",
+      "display": "CT Head WO contrast"
+    },
+    "indication": "Fall, rule out intracranial hemorrhage"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Chronic lacunar infarcts in bilateral basal ganglia."
+    },
+    {
+      "number": 2,
+      "text": "Moderate chronic periventricular white matter hypodensities, compatible with small vessel ischemic disease."
+    },
+    {
+      "number": 3,
+      "text": "Old right medial orbital wall fracture with smooth corticated margins."
+    },
+    {
+      "number": 4,
+      "text": "No intracranial hemorrhage."
+    },
+    {
+      "number": 5,
+      "text": "No mass effect or hydrocephalus."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F21.E12",
+      "exam_id": "E12",
+      "report_id": "IPL-EXEMPLAR-001-E12",
+      "exam_date": "2022-01-15",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_251340",
+        "display": "lacunar infarct",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID6537",
+        "display": "set of basal ganglia",
+        "snomed": null
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "bilateral",
+        "chronicity": [
+          "chronic"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Chronic lacunar infarcts in bilateral basal ganglia.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E12",
+        "sentences": [
+          1
+        ],
+        "site_words": "bilateral basal ganglia",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F22.E12",
+      "exam_id": "E12",
+      "report_id": "IPL-EXEMPLAR-001-E12",
+      "exam_date": "2022-01-15",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_381117",
+        "display": "hypoattenuation",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID13857",
+        "display": "cerebral hemisphere",
+        "snomed": "372073000"
+      },
+      "attributes": {
+        "presence": "present",
+        "severity": "moderate",
+        "chronicity": [
+          "chronic"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_MGB_693165",
+            "display": "small vessel ischemic disease",
+            "source": "assigned"
+          }
+        }
+      ],
+      "text": "Moderate chronic periventricular white matter hypodensities, compatible with small vessel ischemic disease.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E12",
+        "sentences": [
+          2
+        ],
+        "site_words": "periventricular white matter",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F23.E12",
+      "exam_id": "E12",
+      "report_id": "IPL-EXEMPLAR-001-E12",
+      "exam_date": "2022-01-15",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_444719",
+        "display": "medial orbital wall fracture",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID9573_RID5825",
+        "display": "right orbit",
+        "snomed": "721897003"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "right",
+        "chronicity": [
+          "remote"
+        ],
+        "features": [
+          "smooth corticated margins"
+        ]
+      },
+      "interpretations": [],
+      "text": "Old right medial orbital wall fracture with smooth corticated margins.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E12",
+        "sentences": [
+          3
+        ],
+        "site_words": "right medial orbital wall",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F35.E12",
+      "exam_id": "E12",
+      "report_id": "IPL-EXEMPLAR-001-E12",
+      "exam_date": "2022-01-15",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_797056",
+        "display": "intracranial hemorrhage",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID6383_RID9080",
+        "display": "cranial cavity",
+        "snomed": "1101003"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No intracranial hemorrhage.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E12",
+        "sentences": [
+          4
+        ],
+        "site_words": "intracranial",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F36.E12",
+      "exam_id": "E12",
+      "report_id": "IPL-EXEMPLAR-001-E12",
+      "exam_date": "2022-01-15",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_113253",
+        "display": "mass effect",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID6383_RID9080",
+        "display": "cranial cavity",
+        "snomed": "1101003"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No mass effect or hydrocephalus.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E12",
+        "sentences": [
+          5
+        ],
+        "site_words": "mass effect",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F58.E12",
+      "exam_id": "E12",
+      "report_id": "IPL-EXEMPLAR-001-E12",
+      "exam_date": "2022-01-15",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_007816",
+        "display": "hydrocephalus",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID6383_RID9080",
+        "display": "cranial cavity",
+        "snomed": "1101003"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No mass effect or hydrocephalus.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E12",
+        "sentences": [
+          5
+        ],
+        "site_words": "hydrocephalus",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

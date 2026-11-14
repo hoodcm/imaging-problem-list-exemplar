@@ -1,0 +1,657 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E13",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E13",
+    "date": "2022-04-10",
+    "modality": "US",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "24558-9",
+      "display": "US Abdomen"
+    },
+    "indication": "Cirrhosis surveillance, portal vein assessment"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January."
+    },
+    {
+      "number": 2,
+      "text": "Segment 6 hepatic lesion measures 1.7 cm, stable."
+    },
+    {
+      "number": 3,
+      "text": "Mild ascites, decreased from prior."
+    },
+    {
+      "number": 4,
+      "text": "Non-occlusive portal vein thrombus, unchanged."
+    },
+    {
+      "number": 5,
+      "text": "Probable pancreatic body cyst, incompletely evaluated due to overlying bowel gas."
+    },
+    {
+      "number": 6,
+      "text": "Nodular liver surface, unchanged, consistent with cirrhosis."
+    },
+    {
+      "number": 7,
+      "text": "Spleen measures 15.4 cm, enlarged."
+    },
+    {
+      "number": 8,
+      "text": "Multiple gallstones, unchanged."
+    },
+    {
+      "number": 9,
+      "text": "Bilateral simple renal cysts, stable."
+    },
+    {
+      "number": 10,
+      "text": "Left renal calculus, 3 mm, stable."
+    },
+    {
+      "number": 11,
+      "text": "No hydronephrosis."
+    },
+    {
+      "number": 12,
+      "text": "No biliary ductal dilation."
+    },
+    {
+      "number": 13,
+      "text": "No new focal hepatic lesion."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F01.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_014057",
+        "display": "aortic aneurysm",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID905",
+        "display": "abdominal aorta",
+        "snomed": "7832008"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 4.5,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          1
+        ],
+        "site_words": "Infrarenal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F02.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID33242",
+        "display": "segment VI of liver",
+        "snomed": null
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 1.7,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Segment 6 hepatic lesion measures 1.7 cm, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          2
+        ],
+        "site_words": "Segment 6",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F03.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID397",
+        "display": "peritoneal cavity",
+        "snomed": "83670000"
+      },
+      "attributes": {
+        "presence": "present",
+        "severity": "mild",
+        "temporal_status": [
+          "decreased_extent"
+        ]
+      },
+      "interpretations": [],
+      "text": "Mild ascites, decreased from prior.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          3
+        ],
+        "site_words": "ascites",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F04.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_425154",
+        "display": "portal vein thrombus",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1208",
+        "display": "portal vein",
+        "snomed": "32764006"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "features": [
+          "non-occlusive"
+        ]
+      },
+      "interpretations": [],
+      "text": "Non-occlusive portal vein thrombus, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          4
+        ],
+        "site_words": "portal vein",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F05.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_588034",
+        "display": "pancreatic cystic lesion",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID174",
+        "display": "body of pancreas",
+        "snomed": "40133006"
+      },
+      "attributes": {
+        "presence": "present",
+        "confidence": {
+          "presence": "hedged"
+        }
+      },
+      "interpretations": [],
+      "text": "Probable pancreatic body cyst, incompletely evaluated due to overlying bowel gas.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          5
+        ],
+        "site_words": "pancreatic body",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F11.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID86",
+        "display": "spleen",
+        "snomed": "78961009"
+      },
+      "attributes": {
+        "presence": "present",
+        "measurement": [
+          {
+            "value": 15.4,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Spleen measures 15.4 cm, enlarged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          7
+        ],
+        "site_words": "Spleen",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F12.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Multiple gallstones, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          8
+        ],
+        "site_words": "gallstones",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F13.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_210162",
+        "display": "simple renal cyst",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29663",
+        "display": "left kidney",
+        "snomed": "18639004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Bilateral simple renal cysts, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          9
+        ],
+        "site_words": "renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F14.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "renal calculus",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29663",
+        "display": "left kidney",
+        "snomed": "18639004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 3,
+            "unit": "mm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Left renal calculus, 3 mm, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          10
+        ],
+        "site_words": "Left renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F43.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_210162",
+        "display": "simple renal cyst",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29662",
+        "display": "right kidney",
+        "snomed": "9846003"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "right",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Bilateral simple renal cysts, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          9
+        ],
+        "site_words": "renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F44.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_816014",
+        "display": "nodular liver contour",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022460",
+            "display": "cirrhosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Nodular liver surface, unchanged, consistent with cirrhosis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          6
+        ],
+        "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "L01.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_299896",
+        "display": "limited examination",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID170",
+        "display": "pancreas",
+        "snomed": "15776009"
+      },
+      "attributes": {
+        "presence": "present"
+      },
+      "interpretations": [],
+      "text": "Probable pancreatic body cyst, incompletely evaluated due to overlying bowel gas.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          5
+        ],
+        "site_words": "pancreatic body",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F28.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID205",
+        "display": "kidney",
+        "snomed": "64033007"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No hydronephrosis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          11
+        ],
+        "site_words": "hydronephrosis",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F29.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "biliary ductal dilation",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID33652",
+        "display": "biliary tree",
+        "snomed": "34707002"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No biliary ductal dilation.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          12
+        ],
+        "site_words": "biliary",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F31.E13",
+      "exam_id": "E13",
+      "report_id": "IPL-EXEMPLAR-001-E13",
+      "exam_date": "2022-04-10",
+      "exam_modality": "US",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "absent",
+        "temporal_status": [
+          "new"
+        ]
+      },
+      "interpretations": [],
+      "text": "No new focal hepatic lesion.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E13",
+        "sentences": [
+          13
+        ],
+        "site_words": "hepatic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

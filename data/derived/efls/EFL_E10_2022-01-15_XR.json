@@ -1,0 +1,177 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E10",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E10",
+    "date": "2022-01-15",
+    "modality": "XR",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "37622-8",
+      "display": "XR Pelvis AP"
+    },
+    "indication": "Fall, trauma screening"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Left total hip arthroplasty, unchanged."
+    },
+    {
+      "number": 2,
+      "text": "Bones are diffusely osteopenic."
+    },
+    {
+      "number": 3,
+      "text": "No pelvic fracture."
+    },
+    {
+      "number": 4,
+      "text": "No periprosthetic fracture."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F19.E10",
+      "exam_id": "E10",
+      "report_id": "IPL-EXEMPLAR-001-E10",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_169189",
+        "display": "total hip arthroplasty",
+        "source": "minted"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID2640_RID5824",
+        "display": "left hip joint",
+        "snomed": "362907004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [],
+      "text": "Left total hip arthroplasty, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E10",
+        "sentences": [
+          1
+        ],
+        "site_words": "hip",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F56.E10",
+      "exam_id": "E10",
+      "report_id": "IPL-EXEMPLAR-001-E10",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_391931",
+        "display": "osteopenia",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID13209",
+        "display": "musculoskeletal system",
+        "snomed": "26107004"
+      },
+      "attributes": {
+        "presence": "present",
+        "distribution": "diffuse"
+      },
+      "interpretations": [],
+      "text": "Bones are diffusely osteopenic.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E10",
+        "sentences": [
+          2
+        ],
+        "site_words": "Bones",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F38.E10",
+      "exam_id": "E10",
+      "report_id": "IPL-EXEMPLAR-001-E10",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_437803",
+        "display": "pelvic fracture",
+        "source": "minted"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID2507",
+        "display": "pelvis",
+        "snomed": "609617007"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No pelvic fracture.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E10",
+        "sentences": [
+          3
+        ],
+        "site_words": "pelvic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F53.E10",
+      "exam_id": "E10",
+      "report_id": "IPL-EXEMPLAR-001-E10",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_117059",
+        "display": "periprosthetic fracture",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID2640_RID5824",
+        "display": "left hip joint",
+        "snomed": "362907004"
+      },
+      "attributes": {
+        "presence": "absent",
+        "laterality": "left"
+      },
+      "interpretations": [],
+      "text": "No periprosthetic fracture.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E10",
+        "sentences": [
+          4
+        ],
+        "site_words": "periprosthetic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

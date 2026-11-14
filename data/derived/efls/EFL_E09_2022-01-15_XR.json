@@ -1,0 +1,219 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E09",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E09",
+    "date": "2022-01-15",
+    "modality": "XR",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36589-0",
+      "display": "Portable XR Chest AP single view"
+    },
+    "indication": "Fall, trauma screening"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Acute nondisplaced fractures of the left 7th and 8th ribs."
+    },
+    {
+      "number": 2,
+      "text": "No pleural effusion."
+    },
+    {
+      "number": 3,
+      "text": "Normal heart size."
+    },
+    {
+      "number": 4,
+      "text": "No pneumothorax."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F07.E09",
+      "exam_id": "E09",
+      "report_id": "IPL-EXEMPLAR-001-E09",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID28591_RID6157_RID5824",
+        "display": "left seventh rib",
+        "snomed": "1354728009"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "chronicity": [
+          "acute"
+        ],
+        "features": [
+          "nondisplaced"
+        ]
+      },
+      "interpretations": [],
+      "text": "Acute nondisplaced fractures of the left 7th and 8th ribs.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E09",
+        "sentences": [
+          1
+        ],
+        "site_words": "left 7th and 8th ribs",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F42.E09",
+      "exam_id": "E09",
+      "report_id": "IPL-EXEMPLAR-001-E09",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID28591_RID6158_RID5824",
+        "display": "left eighth rib",
+        "snomed": "1354733008"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "chronicity": [
+          "acute"
+        ],
+        "features": [
+          "nondisplaced"
+        ]
+      },
+      "interpretations": [],
+      "text": "Acute nondisplaced fractures of the left 7th and 8th ribs.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E09",
+        "sentences": [
+          1
+        ],
+        "site_words": "left 7th and 8th ribs",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F24.E09",
+      "exam_id": "E09",
+      "report_id": "IPL-EXEMPLAR-001-E09",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000254",
+        "display": "pleural effusion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1362",
+        "display": "pleura",
+        "snomed": "3120008"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No pleural effusion.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E09",
+        "sentences": [
+          2
+        ],
+        "site_words": "pleural",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F26.E09",
+      "exam_id": "E09",
+      "report_id": "IPL-EXEMPLAR-001-E09",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022537",
+        "display": "cardiomegaly",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1385",
+        "display": "heart",
+        "snomed": "80891009"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "Normal heart size.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E09",
+        "sentences": [
+          3
+        ],
+        "site_words": "heart",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F27.E09",
+      "exam_id": "E09",
+      "report_id": "IPL-EXEMPLAR-001-E09",
+      "exam_date": "2022-01-15",
+      "exam_modality": "XR",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_023339",
+        "display": "pneumothorax",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1362",
+        "display": "pleura",
+        "snomed": "3120008"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No pneumothorax.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E09",
+        "sentences": [
+          4
+        ],
+        "site_words": "pneumothorax",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

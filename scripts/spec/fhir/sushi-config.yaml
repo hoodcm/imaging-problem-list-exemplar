@@ -1,0 +1,10 @@
+# SUSHI compiles input/fsh/ipl.fsh into the IPL code systems, value sets, and
+# extensions that the worked FHIR example uses.
+canonical: https://github.com/hoodcm/imaging-problem-list-exemplar
+fhirVersion: 5.0.0
+FSHOnly: true
+status: draft
+version: 1.0.0
+dependencies:
+  hl7.terminology.r5: 7.5.0
+  hl7.fhir.uv.extensions.r5: 5.4.0

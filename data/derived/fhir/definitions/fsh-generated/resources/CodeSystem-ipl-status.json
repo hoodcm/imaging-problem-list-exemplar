@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "IPLStatus",
+  "id": "ipl-status",
+  "title": "IPL entry status",
+  "description": "The status an IPL entry derives from its observation history.",
+  "version": "1.0.0",
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-status",
+  "concept": [
+    {
+      "code": "active",
+      "display": "active",
+      "definition": "The latest observation states the finding new or changed."
+    },
+    {
+      "code": "stable",
+      "display": "stable",
+      "definition": "The latest observation states the finding present and unchanged."
+    },
+    {
+      "code": "resolved",
+      "display": "resolved",
+      "definition": "The latest observation states the finding absent after it was present."
+    },
+    {
+      "code": "excluded",
+      "display": "excluded",
+      "definition": "Every observation states the finding absent."
+    },
+    {
+      "code": "closed",
+      "display": "closed",
+      "definition": "Every observation states the finding absent, and a finding of its kind was later reported within its site."
+    }
+  ],
+  "caseSensitive": true,
+  "experimental": false,
+  "count": 5
+}

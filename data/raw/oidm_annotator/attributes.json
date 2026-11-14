@@ -1,0 +1,146 @@
+{
+  "presence": {
+    "type": "enum",
+    "description": "Finding presence status (polarity only \u2014 which way the radiologist leans)",
+    "values": [
+      "present",
+      "absent"
+    ]
+  },
+  "confidence": {
+    "type": "map",
+    "description": "Assertion modality: which axes the radiologist hedged (omitted = definite)",
+    "values": [],
+    "allowed_axes": [
+      "presence",
+      "laterality",
+      "chronicity",
+      "temporal_status",
+      "severity",
+      "extent",
+      "distribution",
+      "integrity",
+      "position_status"
+    ],
+    "value": "hedged"
+  },
+  "laterality": {
+    "type": "enum",
+    "description": "Which side of the body",
+    "values": [
+      "left",
+      "right",
+      "bilateral"
+    ]
+  },
+  "temporal_status": {
+    "type": "enum",
+    "description": "How finding compares to prior studies",
+    "values": [
+      "unchanged",
+      "new",
+      "resolved",
+      "larger",
+      "smaller",
+      "increased_extent",
+      "decreased_extent",
+      "more_conspicuous",
+      "less_conspicuous",
+      "increased_complexity",
+      "decreased_complexity"
+    ],
+    "multi_value": true
+  },
+  "chronicity": {
+    "type": "enum",
+    "description": "Time course or disease stage",
+    "values": [
+      "acute",
+      "subacute",
+      "chronic",
+      "remote",
+      "evolving",
+      "resolving",
+      "healing",
+      "healed"
+    ],
+    "multi_value": true
+  },
+  "size": {
+    "type": "text",
+    "description": "Quantitative measurements",
+    "values": []
+  },
+  "severity": {
+    "type": "enum",
+    "description": "Clinical intensity grade",
+    "values": [
+      "mild",
+      "mild_to_moderate",
+      "moderate",
+      "moderate_to_severe",
+      "severe"
+    ]
+  },
+  "extent": {
+    "type": "enum",
+    "description": "Qualitative physical size of a finding",
+    "values": [
+      "small",
+      "medium",
+      "large"
+    ]
+  },
+  "distribution": {
+    "type": "enum",
+    "description": "Coverage: involvement throughout the finding's own reference region (the region is finding-relative \u2014 a wall, a disc, the imaged skeleton). Nominal mark, not a cross-finding scale.",
+    "values": [
+      "diffuse"
+    ]
+  },
+  "anatomic_site": {
+    "type": "text",
+    "description": "Compound anatomic terms",
+    "values": []
+  },
+  "features": {
+    "type": "array",
+    "description": "Finding-specific descriptive properties that cannot exist independently",
+    "values": []
+  },
+  "aggregate": {
+    "type": "boolean",
+    "description": "Marks a finding row as representing a non-discrete collection rather than a single discrete instance",
+    "values": []
+  },
+  "insertion_site": {
+    "type": "text",
+    "description": "Where the device enters",
+    "values": [],
+    "cluster": "device"
+  },
+  "tip_location": {
+    "type": "text",
+    "description": "Where device tip terminates",
+    "values": [],
+    "cluster": "device"
+  },
+  "position_status": {
+    "type": "enum",
+    "description": "Device positioning assessment",
+    "values": [
+      "satisfactory",
+      "malpositioned"
+    ],
+    "cluster": "device"
+  },
+  "integrity": {
+    "type": "enum",
+    "description": "Device structural integrity",
+    "values": [
+      "intact",
+      "discontinuous"
+    ],
+    "cluster": "device"
+  }
+}

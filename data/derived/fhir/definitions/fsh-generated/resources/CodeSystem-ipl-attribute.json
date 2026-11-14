@@ -1,0 +1,288 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "IPLAttribute",
+  "id": "ipl-attribute",
+  "title": "IPL attribute",
+  "description": "The OIDM report findings annotator's attributes, each with its values beneath it, its size attribute named measurement, plus the IPL's prior measurement, clinical context, and interpretation.",
+  "version": "1.0.0",
+  "url": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+  "concept": [
+    {
+      "code": "presence",
+      "display": "presence",
+      "definition": "Finding presence status (polarity only — which way the radiologist leans)",
+      "concept": [
+        {
+          "code": "present",
+          "display": "present"
+        },
+        {
+          "code": "absent",
+          "display": "absent"
+        }
+      ]
+    },
+    {
+      "code": "confidence",
+      "display": "confidence",
+      "definition": "Assertion modality: which axes the radiologist hedged (omitted = definite)"
+    },
+    {
+      "code": "laterality",
+      "display": "laterality",
+      "definition": "Which side of the body",
+      "concept": [
+        {
+          "code": "left",
+          "display": "left"
+        },
+        {
+          "code": "right",
+          "display": "right"
+        },
+        {
+          "code": "bilateral",
+          "display": "bilateral"
+        }
+      ]
+    },
+    {
+      "code": "temporal_status",
+      "display": "change from prior",
+      "definition": "How finding compares to prior studies",
+      "concept": [
+        {
+          "code": "unchanged",
+          "display": "unchanged"
+        },
+        {
+          "code": "new",
+          "display": "new"
+        },
+        {
+          "code": "resolved",
+          "display": "resolved"
+        },
+        {
+          "code": "larger",
+          "display": "larger"
+        },
+        {
+          "code": "smaller",
+          "display": "smaller"
+        },
+        {
+          "code": "increased_extent",
+          "display": "increased extent"
+        },
+        {
+          "code": "decreased_extent",
+          "display": "decreased extent"
+        },
+        {
+          "code": "more_conspicuous",
+          "display": "more conspicuous"
+        },
+        {
+          "code": "less_conspicuous",
+          "display": "less conspicuous"
+        },
+        {
+          "code": "increased_complexity",
+          "display": "increased complexity"
+        },
+        {
+          "code": "decreased_complexity",
+          "display": "decreased complexity"
+        }
+      ]
+    },
+    {
+      "code": "chronicity",
+      "display": "chronicity",
+      "definition": "Time course or disease stage",
+      "concept": [
+        {
+          "code": "acute",
+          "display": "acute"
+        },
+        {
+          "code": "subacute",
+          "display": "subacute"
+        },
+        {
+          "code": "chronic",
+          "display": "chronic"
+        },
+        {
+          "code": "remote",
+          "display": "remote"
+        },
+        {
+          "code": "evolving",
+          "display": "evolving"
+        },
+        {
+          "code": "resolving",
+          "display": "resolving"
+        },
+        {
+          "code": "healing",
+          "display": "healing"
+        },
+        {
+          "code": "healed",
+          "display": "healed"
+        }
+      ]
+    },
+    {
+      "code": "measurement",
+      "display": "current measurement",
+      "definition": "The values the report states for this examination",
+      "concept": [
+        {
+          "code": "height-loss",
+          "display": "height loss"
+        },
+        {
+          "code": "largest-member",
+          "display": "largest member"
+        }
+      ]
+    },
+    {
+      "code": "prior_measurement",
+      "display": "prior measurement",
+      "definition": "The values the report states the finding had on an earlier examination"
+    },
+    {
+      "code": "severity",
+      "display": "severity",
+      "definition": "Clinical intensity grade",
+      "concept": [
+        {
+          "code": "mild",
+          "display": "mild"
+        },
+        {
+          "code": "mild_to_moderate",
+          "display": "mild to moderate"
+        },
+        {
+          "code": "moderate",
+          "display": "moderate"
+        },
+        {
+          "code": "moderate_to_severe",
+          "display": "moderate to severe"
+        },
+        {
+          "code": "severe",
+          "display": "severe"
+        }
+      ]
+    },
+    {
+      "code": "extent",
+      "display": "extent",
+      "definition": "Qualitative physical size of a finding",
+      "concept": [
+        {
+          "code": "small",
+          "display": "small"
+        },
+        {
+          "code": "medium",
+          "display": "medium"
+        },
+        {
+          "code": "large",
+          "display": "large"
+        }
+      ]
+    },
+    {
+      "code": "distribution",
+      "display": "distribution",
+      "definition": "Coverage: involvement throughout the finding's own reference region (the region is finding-relative — a wall, a disc, the imaged skeleton). Nominal mark, not a cross-finding scale.",
+      "concept": [
+        {
+          "code": "diffuse",
+          "display": "diffuse"
+        }
+      ]
+    },
+    {
+      "code": "anatomic_site",
+      "display": "anatomic site",
+      "definition": "Compound anatomic terms"
+    },
+    {
+      "code": "features",
+      "display": "features",
+      "definition": "Finding-specific descriptive properties that cannot exist independently"
+    },
+    {
+      "code": "aggregate",
+      "display": "aggregate",
+      "definition": "Marks a finding row as representing a non-discrete collection rather than a single discrete instance"
+    },
+    {
+      "code": "insertion_site",
+      "display": "insertion site",
+      "definition": "Where the device enters"
+    },
+    {
+      "code": "tip_location",
+      "display": "tip location",
+      "definition": "Where device tip terminates"
+    },
+    {
+      "code": "position_status",
+      "display": "position status",
+      "definition": "Device positioning assessment",
+      "concept": [
+        {
+          "code": "satisfactory",
+          "display": "satisfactory"
+        },
+        {
+          "code": "malpositioned",
+          "display": "malpositioned"
+        }
+      ]
+    },
+    {
+      "code": "integrity",
+      "display": "integrity",
+      "definition": "Device structural integrity",
+      "concept": [
+        {
+          "code": "intact",
+          "display": "intact"
+        },
+        {
+          "code": "discontinuous",
+          "display": "discontinuous"
+        }
+      ]
+    },
+    {
+      "code": "clinical_context",
+      "display": "clinical context",
+      "definition": "A cause or clinical state the radiologist named for the finding."
+    },
+    {
+      "code": "interpretation",
+      "display": "interpretation",
+      "definition": "A diagnosis or category the radiologist attached to the finding."
+    }
+  ],
+  "caseSensitive": true,
+  "experimental": false,
+  "hierarchyMeaning": "is-a",
+  "count": 58
+}

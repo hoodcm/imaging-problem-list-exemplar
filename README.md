@@ -1,54 +1,91 @@
 # Imaging Problem List exemplar
 
-Synthetic patient data for the Imaging Problem List (IPL) framework paper: one patient, 15 imaging examinations from 2017 to 2024, 41 findings, and 223 observations. The `build_exemplar.py` script generates every data file in this repository.
+This repository specifies the Imaging Problem List (IPL) data model and holds one synthetic patient built to it. It accompanies the paper "The Imaging Problem List: A Data Model for Longitudinal Tracking of Imaging Findings" by Michael Hood, Dorothy A. Sippo, Stacy D. O'Connor, Neil Bhatia, Joel K. R. Samuel, Kevin O'Donnell, and Tarik Alkasab, in the Journal of Imaging Informatics in Medicine. Nothing here describes a real patient.
 
-## Contents
+## The model
 
-- `build_exemplar.py`: the specification of every finding and observation, and the rules that derive the data files.
-- `efls/`: one Exam Finding List (EFL) per examination.
-- `imaging_problem_list.json`: the aggregated Imaging Problem List.
-- `swimlane_data.csv`: the observations of the tracked findings, for plotting.
-- `finding_models/`: definitions for five of the finding codes.
+An IPL entry holds one finding a radiologist reports, such as one aortic aneurysm, across the examinations that describe it. The entry's identity is the finding's code and anatomic site. Its history holds each observation of the finding, recorded from one report sentence with that sentence's provenance and any review. The compiler derives the entry's status from that history by stated rules. The observations of one examination form its Exam Finding List (EFL).
 
-## Regenerate the data
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/fig_s01_entry_anatomy.dark.png">
+  <img alt="The aortic aneurysm entry: its identity, eight observations from 2017 to 2024 on a timeline, the status active, and the 2023 observation opened to its report sentence, values, and provenance." src="docs/fig_s01_entry_anatomy.png">
+</picture>
 
-To regenerate the data files in place, run the script with Python 3:
+Each observation records coded values, never the report's words, except for the site words that its provenance keeps as the evidence for the site code:
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/fig_s02_sentence_decomposition.dark.png">
+  <img alt="The 2023 aneurysm sentence with each span bracketed to the field it becomes: site, finding, current measurement, change from prior, and prior measurement." src="docs/fig_s02_sentence_decomposition.png">
+</picture>
+
+## What the repository holds
+
+| Path | Contents |
+|---|---|
+| `scripts/spec/` | The JSON Schema for an observation, an EFL, and the IPL, and the FHIR code systems and extensions in FHIR Shorthand |
+| `scripts/exemplar.py` | What each synthetic report says: the patient, examinations, concepts, and findings |
+| `scripts/build_exemplar.py` | The rules that group observations into entries and derive each status, and the writers |
+| `scripts/field_table.py` | Renders the field table from the schema |
+| `scripts/fhir_example.py` | Builds the worked FHIR example of the aneurysm entry |
+| `data/raw/` | The inputs, each with its source and licence in `data/README.md` |
+| `data/derived/` | What the scripts write: the EFLs, the IPL, the field table, and the FHIR definitions and worked example |
+| `docs/` | The figures in this README |
+
+The field table, `data/derived/field_table.md`, gives each element its meaning, cardinality, binding, FHIR R5 and R6 paths, DICOM SR concept, and whether core FHIR, an IHE IDR convention, an IPL extension, or nothing yet represents it.
+
+## Build and check
+
+Install the two libraries the build uses, which needs Python 3.11 or later:
 
 ```
-python3 build_exemplar.py
+python3 -m pip install -r requirements.txt
 ```
 
-The script uses only the standard library. It prints summary statistics and rewrites `efls/`, `imaging_problem_list.json`, and `swimlane_data.csv`.
+1. Build the EFLs and the IPL. The script validates every file against the schema and exits nonzero on the first failure:
 
-## Data model
+   ```
+   python3 scripts/build_exemplar.py
+   ```
 
-An observation is one documented assessment of a finding on one examination, recorded as the report stated it. Each observation carries the following fields:
+2. Render the field table:
 
-- `presence`: `present` or `absent`.
-- `measurement` and `characterization`: the measured value or descriptive terms as stated.
-- `temporal_status`: the radiologist's stated comparison to prior imaging.
-- `chronicity`: the radiologist's stated time course.
-- `confidence`: the attributes the radiologist hedged.
-- `text`: the report sentence.
+   ```
+   python3 scripts/field_table.py
+   ```
 
-An EFL lists the observations of one examination, with the examination's LOINC procedure code. Each finding carries an Open Imaging Finding Model (OIFM) code and its stated anatomic site.
+3. Compile the FHIR code systems and extensions with SUSHI, which needs Node.js:
 
-The IPL groups observations by finding and anatomic site into entries. An entry holds its observation history and a `status` derived from that history:
+   ```
+   npx --yes fsh-sushi@3.21.0 build scripts/spec/fhir -o data/derived/fhir/definitions
+   ```
 
-- `excluded`: assessed and never present.
-- `resolved`: present before, and absent on the most recent assessment.
-- `active`: present, and either newly present or carrying a stated change on the most recent observation.
-- `stable`: present and otherwise unchanged. A finding first documented as chronic or remote is stable from its first observation.
+4. Build the worked FHIR example, a Bundle of the aneurysm entry's reports, observations, BodyStructures, List, and Provenance:
 
-A distinct sequela of a resolved finding is its own entry, linked to the finding it succeeded by a `sequela_of` linkage.
+   ```
+   python3 scripts/fhir_example.py
+   ```
+
+5. Check the worked example with the HL7 FHIR validator 7.0.5, `validator_cli.jar` from the [HAPI FHIR core releases](https://github.com/hapifhir/org.hl7.fhir.core/releases/tag/7.0.5), which needs Java:
+
+   ```
+   java -jar validator_cli.jar -version 5.0.0 \
+     -ig data/raw/fhir/hl7.terminology.r5-7.5.0.tgz \
+     -ig data/raw/fhir/hl7.fhir.uv.extensions.r5-5.4.0.tgz \
+     -ig data/derived/fhir/definitions/fsh-generated/resources \
+     data/derived/fhir/aneurysm-example.json
+   ```
+
+   The validator reports no errors. Its warnings name the OIFM and Anatomic Locations Index code systems, which it can't load, so it leaves their codes unchecked.
+
+The worked example's review history is illustrative, since no model read the synthetic reports, and each resource's narrative says so.
 
 ## Codes
 
-Finding codes are OIFM identifiers from the [Open Imaging Finding Models registry](https://github.com/openimagingdata/findingmodels). The definitions for the five codes in `finding_models/` follow the registry's schema. Procedure codes are LOINC codes.
+Finding codes come from the [Open Imaging Finding Models registry](https://github.com/openimagingdata/findingmodels), with definitions in `data/raw/finding_models/` for codes the registry doesn't publish. Anatomic sites come from the [Anatomic Locations Index](https://www.anatomiclocations.org) 1.0.0, procedures from LOINC, presence from SNOMED CT, and units from UCUM. The field table's DICOM concepts follow DICOM PS3.16 2026d, which this repository doesn't redistribute.
 
 ## License
 
-The code is licensed under the Apache License 2.0, in the `LICENSE` file. The data files are licensed under CC BY 4.0, in the `LICENSE-DATA` file.
+The code is licensed under the Apache License 2.0, in the `LICENSE` file, and the data under CC BY 4.0, in the `LICENSE-DATA` file. Each input in `data/raw/` keeps its own licence, as `data/README.md` lists.
 
 ## Citation
 

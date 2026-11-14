@@ -1,0 +1,1282 @@
+{
+  "report": {
+    "report_id": "IPL-EXEMPLAR-001-E14",
+    "patient_id": "IPL-EXEMPLAR-001",
+    "exam_id": "E14",
+    "date": "2023-03-28",
+    "modality": "CT",
+    "procedure_code": {
+      "system": "LOINC",
+      "code": "36813-4",
+      "display": "CT Abdomen and Pelvis W contrast IV"
+    },
+    "indication": "Abdominal aortic aneurysm and cirrhosis surveillance"
+  },
+  "sentences": [
+    {
+      "number": 1,
+      "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
+    },
+    {
+      "number": 2,
+      "text": "Segment 6 hepatic lesion measures 1.6 cm, stable."
+    },
+    {
+      "number": 3,
+      "text": "LI-RADS 2."
+    },
+    {
+      "number": 4,
+      "text": "Ascites has resolved."
+    },
+    {
+      "number": 5,
+      "text": "Chronic non-occlusive portal vein thrombus."
+    },
+    {
+      "number": 6,
+      "text": "Pancreatic body cystic lesion measures 1.2 cm, unchanged, side-branch IPMN."
+    },
+    {
+      "number": 7,
+      "text": "Healed left 7th and 8th rib fractures with callus formation."
+    },
+    {
+      "number": 8,
+      "text": "Healed L4 compression fracture with 20% height loss."
+    },
+    {
+      "number": 9,
+      "text": "Large esophageal varices, increased."
+    },
+    {
+      "number": 10,
+      "text": "Right lower lobe scarring, unchanged."
+    },
+    {
+      "number": 11,
+      "text": "Cirrhotic liver morphology, stable."
+    },
+    {
+      "number": 12,
+      "text": "Splenomegaly, 15.8 cm."
+    },
+    {
+      "number": 13,
+      "text": "Cholelithiasis, stable."
+    },
+    {
+      "number": 14,
+      "text": "Bilateral simple renal cysts, unchanged."
+    },
+    {
+      "number": 15,
+      "text": "Left renal calculus, 3 mm, stable."
+    },
+    {
+      "number": 16,
+      "text": "Degenerative changes of the thoracic spine, stable."
+    },
+    {
+      "number": 17,
+      "text": "Lumbar degenerative changes, stable."
+    },
+    {
+      "number": 18,
+      "text": "Abdominal aortic atherosclerotic calcifications."
+    },
+    {
+      "number": 19,
+      "text": "Enlarged prostate, 4.6 cm, stable."
+    },
+    {
+      "number": 20,
+      "text": "Left total hip arthroplasty, unchanged."
+    },
+    {
+      "number": 21,
+      "text": "Status post appendectomy."
+    },
+    {
+      "number": 22,
+      "text": "No hydronephrosis."
+    },
+    {
+      "number": 23,
+      "text": "No biliary ductal dilation."
+    },
+    {
+      "number": 24,
+      "text": "Pancreatic duct normal in caliber."
+    },
+    {
+      "number": 25,
+      "text": "No new hepatic lesion."
+    },
+    {
+      "number": 26,
+      "text": "No abdominal lymphadenopathy."
+    },
+    {
+      "number": 27,
+      "text": "No small bowel obstruction."
+    },
+    {
+      "number": 28,
+      "text": "No pneumoperitoneum."
+    }
+  ],
+  "observations": [
+    {
+      "observation_id": "F01.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_014057",
+        "display": "aortic aneurysm",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID905",
+        "display": "abdominal aorta",
+        "snomed": "7832008"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "larger"
+        ],
+        "measurement": [
+          {
+            "value": 4.8,
+            "unit": "cm"
+          }
+        ],
+        "prior_measurement": [
+          {
+            "value": 4.5,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          1
+        ],
+        "site_words": "Infrarenal abdominal aortic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F02.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID33242",
+        "display": "segment VI of liver",
+        "snomed": null
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 1.6,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [
+        {
+          "assessment": {
+            "system": "ACR LI-RADS v2018",
+            "code": "LR-2"
+          }
+        }
+      ],
+      "text": "Segment 6 hepatic lesion measures 1.6 cm, stable. LI-RADS 2.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          2,
+          3
+        ],
+        "site_words": "Segment 6",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F04.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_425154",
+        "display": "portal vein thrombus",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1208",
+        "display": "portal vein",
+        "snomed": "32764006"
+      },
+      "attributes": {
+        "presence": "present",
+        "chronicity": [
+          "chronic"
+        ],
+        "features": [
+          "non-occlusive"
+        ]
+      },
+      "interpretations": [],
+      "text": "Chronic non-occlusive portal vein thrombus.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          5
+        ],
+        "site_words": "portal vein",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F05.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_588034",
+        "display": "pancreatic cystic lesion",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID174",
+        "display": "body of pancreas",
+        "snomed": "40133006"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 1.2,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_MGB_219857",
+            "display": "branch duct intraductal papillary mucinous neoplasm",
+            "source": "assigned"
+          }
+        }
+      ],
+      "text": "Pancreatic body cystic lesion measures 1.2 cm, unchanged, side-branch IPMN.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          6
+        ],
+        "site_words": "Pancreatic body",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F07.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID28591_RID6157_RID5824",
+        "display": "left seventh rib",
+        "snomed": "1354728009"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "chronicity": [
+          "healed"
+        ],
+        "features": [
+          "callus"
+        ]
+      },
+      "interpretations": [],
+      "text": "Healed left 7th and 8th rib fractures with callus formation.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          7
+        ],
+        "site_words": "left 7th and 8th rib",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F08.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000230",
+        "display": "vertebral compression fracture",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29196",
+        "display": "fourth lumbar vertebra",
+        "snomed": "11994002"
+      },
+      "attributes": {
+        "presence": "present",
+        "chronicity": [
+          "healed"
+        ],
+        "measurement": [
+          {
+            "value": 20,
+            "unit": "%",
+            "property": "height loss"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Healed L4 compression fracture with 20% height loss.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          8
+        ],
+        "site_words": "L4",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F09.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000249",
+        "display": "esophageal varices",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID95",
+        "display": "esophagus",
+        "snomed": "32849002"
+      },
+      "attributes": {
+        "presence": "present",
+        "extent": "large",
+        "temporal_status": [
+          "larger"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Large esophageal varices, increased.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          9
+        ],
+        "site_words": "esophageal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F10.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_433540",
+        "display": "cirrhotic liver morphology",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022460",
+            "display": "cirrhosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Cirrhotic liver morphology, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          11
+        ],
+        "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F11.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_003565",
+        "display": "splenomegaly",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID86",
+        "display": "spleen",
+        "snomed": "78961009"
+      },
+      "attributes": {
+        "presence": "present",
+        "measurement": [
+          {
+            "value": 15.8,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Splenomegaly, 15.8 cm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          12
+        ],
+        "site_words": "Splenomegaly",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F12.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Cholelithiasis, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          13
+        ],
+        "site_words": "Cholelithiasis",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F13.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_210162",
+        "display": "simple renal cyst",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29663",
+        "display": "left kidney",
+        "snomed": "18639004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Bilateral simple renal cysts, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          14
+        ],
+        "site_words": "renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F14.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_319506",
+        "display": "renal calculus",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29663",
+        "display": "left kidney",
+        "snomed": "18639004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 3,
+            "unit": "mm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Left renal calculus, 3 mm, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          15
+        ],
+        "site_words": "Left renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F15.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_873240",
+        "display": "spinal degeneration",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID34572",
+        "display": "thoracic vertebral column",
+        "snomed": "122495006"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [],
+      "text": "Degenerative changes of the thoracic spine, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          16
+        ],
+        "site_words": "thoracic spine",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F16.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_873240",
+        "display": "spinal degeneration",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID34573",
+        "display": "lumbar vertebral column",
+        "snomed": "122496007"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [],
+      "text": "Lumbar degenerative changes, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          17
+        ],
+        "site_words": "Lumbar",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F17.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022512",
+        "display": "arterial calcification",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID905",
+        "display": "abdominal aorta",
+        "snomed": "7832008"
+      },
+      "attributes": {
+        "presence": "present",
+        "aggregate": true
+      },
+      "interpretations": [
+        {
+          "code": {
+            "system": "OIFM",
+            "code": "OIFM_MGB_650866",
+            "display": "aortic atherosclerosis",
+            "source": "registry"
+          }
+        }
+      ],
+      "text": "Abdominal aortic atherosclerotic calcifications.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          18
+        ],
+        "site_words": "Abdominal aortic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F18.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_017620",
+        "display": "prostate enlargement",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID343",
+        "display": "prostate",
+        "snomed": "41216001"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 4.6,
+            "unit": "cm"
+          }
+        ]
+      },
+      "interpretations": [],
+      "text": "Enlarged prostate, 4.6 cm, stable.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          19
+        ],
+        "site_words": "prostate",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F19.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_169189",
+        "display": "total hip arthroplasty",
+        "source": "minted"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID2640_RID5824",
+        "display": "left hip joint",
+        "snomed": "362907004"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [],
+      "text": "Left total hip arthroplasty, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          20
+        ],
+        "site_words": "hip",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F20.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_285678",
+        "display": "appendectomy",
+        "source": "minted"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID168",
+        "display": "appendix",
+        "snomed": "66754008"
+      },
+      "attributes": {
+        "presence": "present"
+      },
+      "interpretations": [],
+      "text": "Status post appendectomy.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          21
+        ],
+        "site_words": "appendectomy",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F41.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_745898",
+        "display": "pulmonary scarring",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID1315",
+        "display": "lower lobe of right lung",
+        "snomed": "266005"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ]
+      },
+      "interpretations": [],
+      "text": "Right lower lobe scarring, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          10
+        ],
+        "site_words": "Right lower lobe",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F42.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_944849",
+        "display": "rib fracture",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID28591_RID6158_RID5824",
+        "display": "left eighth rib",
+        "snomed": "1354733008"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "left",
+        "chronicity": [
+          "healed"
+        ],
+        "features": [
+          "callus"
+        ]
+      },
+      "interpretations": [],
+      "text": "Healed left 7th and 8th rib fractures with callus formation.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          7
+        ],
+        "site_words": "left 7th and 8th rib",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F43.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_210162",
+        "display": "simple renal cyst",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID29662",
+        "display": "right kidney",
+        "snomed": "9846003"
+      },
+      "attributes": {
+        "presence": "present",
+        "laterality": "right",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "aggregate": true
+      },
+      "interpretations": [],
+      "text": "Bilateral simple renal cysts, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          14
+        ],
+        "site_words": "renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F03.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_000480",
+        "display": "ascites",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID397",
+        "display": "peritoneal cavity",
+        "snomed": "83670000"
+      },
+      "attributes": {
+        "presence": "absent",
+        "temporal_status": [
+          "resolved"
+        ]
+      },
+      "interpretations": [],
+      "text": "Ascites has resolved.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          4
+        ],
+        "site_words": "Ascites",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F28.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_874812",
+        "display": "hydronephrosis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID205",
+        "display": "kidney",
+        "snomed": "64033007"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No hydronephrosis.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          22
+        ],
+        "site_words": "hydronephrosis",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F29.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_005226",
+        "display": "biliary ductal dilation",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID33652",
+        "display": "biliary tree",
+        "snomed": "34707002"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No biliary ductal dilation.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          23
+        ],
+        "site_words": "biliary",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F30.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_002674",
+        "display": "pancreatic ductal dilation",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID177",
+        "display": "main pancreatic duct",
+        "snomed": "1230031000"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "Pancreatic duct normal in caliber.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          24
+        ],
+        "site_words": "Pancreatic duct",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F31.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_OIDM_160831",
+        "display": "hepatic lesion",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID58",
+        "display": "liver",
+        "snomed": "10200004"
+      },
+      "attributes": {
+        "presence": "absent",
+        "temporal_status": [
+          "new"
+        ]
+      },
+      "interpretations": [],
+      "text": "No new hepatic lesion.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          25
+        ],
+        "site_words": "hepatic",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F32.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_MGB_391371",
+        "display": "lymph node enlargement",
+        "source": "assigned"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID28854",
+        "display": "abdominal lymph node group",
+        "snomed": "245284000"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No abdominal lymphadenopathy.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          26
+        ],
+        "site_words": "abdominal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F33.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000178",
+        "display": "small bowel obstruction",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID132",
+        "display": "small intestine",
+        "snomed": "30315005"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No small bowel obstruction.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          27
+        ],
+        "site_words": "small bowel",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F34.E14",
+      "exam_id": "E14",
+      "report_id": "IPL-EXEMPLAR-001-E14",
+      "exam_date": "2023-03-28",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_CDE_000228",
+        "display": "pneumoperitoneum",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID397",
+        "display": "peritoneal cavity",
+        "snomed": "83670000"
+      },
+      "attributes": {
+        "presence": "absent"
+      },
+      "interpretations": [],
+      "text": "No pneumoperitoneum.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E14",
+        "sentences": [
+          28
+        ],
+        "site_words": "pneumoperitoneum",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    }
+  ]
+}

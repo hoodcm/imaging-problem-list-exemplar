@@ -493,6 +493,12 @@ def validate():
                 assert name == LR or name in CONCEPTS, f"{f['id']}: unknown interpretation {name}"
             for c in as_list(o.get("context")):
                 assert (c[0] if isinstance(c, tuple) else c) in CONCEPTS, f"{f['id']}: unknown clinical context {c}"
+            # The contradiction rule reads a value's stated digit from the typed
+            # number, so each number must be typed as its sentence writes it.
+            for key in ("measurement", "prior_measurement"):
+                for value, *_ in o.get(key, []):
+                    assert re.search(rf"(?<![\d.]){re.escape(repr(value))}(?![\d])", o["text"]), \
+                        f"{f['id']} {o['exam_id']}: {value!r} is not written in its sentence as typed"
             # A negation joins only an entry of its own kind at its own site, never a narrower one.
             assert o["presence"] == "present" or code == f["code"] or code not in CONCEPTS[f["code"]]["path"], \
                 f"{f['id']} {o['exam_id']}: a negation of {code} is broader than the entry's {f['code']}"

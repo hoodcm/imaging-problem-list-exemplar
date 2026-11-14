@@ -18,7 +18,7 @@ Each observation records coded values, never the report's words, except for the 
   <img alt="The 2023 aneurysm sentence with each span bracketed to the field it becomes: site, finding, current measurement, change from prior, and prior measurement." src="docs/fig_s02_sentence_decomposition.png">
 </picture>
 
-## What the repository holds
+## Repository contents
 
 | Path | Contents |
 |---|---|
@@ -75,7 +75,7 @@ python3 -m pip install -r requirements.txt
      data/derived/fhir/aneurysm-example.json
    ```
 
-   The validator reports no errors. Its warnings name the OIFM and Anatomic Locations Index code systems, which it can't load, so it leaves their codes unchecked.
+   The validator reports no errors. It warns that it can't load the Open Imaging Finding Model (OIFM) and Anatomic Locations Index code systems, so it doesn't check codes from either one.
 
 The worked example's review history is illustrative, since no model read the synthetic reports, and each resource's narrative says so.
 

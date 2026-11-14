@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Build the worked FHIR example of the aneurysm entry.
 
-The script reads entry F01 from data/derived/imaging_problem_list.json and its
-reports from data/derived/efls/, and writes a FHIR R5 Bundle of type collection
+The script reads entry F01 from data/derived/imaging_problem_list.json, its
+reports from data/derived/efls/, and the attribute displays from the IPL code
+system SUSHI compiles into data/derived/fhir/definitions/, and writes a FHIR R5 Bundle of type collection
 to data/derived/fhir/aneurysm-example.json. Each report gets a DiagnosticReport,
 a BodyStructure that holds the site as that report gave it, and an Observation
 that references the BodyStructure. The entry's Tracking UID ties the
@@ -10,6 +11,8 @@ BodyStructures together, and an anchor BodyStructure stands for the entry on the
 patient's List. The review history is illustrative, because no model read the
 synthetic reports: a model extracts each observation, a radiologist affirms the
 2024 observation, rejects the model's 2023 reading of 4.5 cm, and enters 4.8 cm.
+The model's reading takes the prior value as the current one and records no
+prior measurement.
 
 Usage: python3 scripts/fhir_example.py
 """
@@ -20,6 +23,8 @@ import os
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DERIVED_DIR = os.path.join(PROJECT_DIR, "data", "derived")
+ATTRIBUTE_CODE_SYSTEM = os.path.join(DERIVED_DIR, "fhir", "definitions", "fsh-generated", "resources",
+                                     "CodeSystem-ipl-attribute.json")
 BASE = "https://github.com/hoodcm/imaging-problem-list-exemplar"
 FULL_URL = "http://example.org/fhir"
 SYSTEMS = {
@@ -33,6 +38,24 @@ LIFECYCLE = "http://terminology.hl7.org/CodeSystem/iso-21089-lifecycle"
 PARTICIPANT = "http://terminology.hl7.org/CodeSystem/provenance-participant-type"
 ILLUSTRATIVE = "Illustrative: no model read the synthetic reports, so this review history shows the structure only."
 REJECTED_EXAM, AFFIRMED_EXAM, MISREAD_CM = "E14", "E15", 4.5
+
+
+def attribute_displays():
+    """-> {code: display} for every code in the compiled IPL attribute code system."""
+    def walk(concepts):
+        for c in concepts:
+            yield c["code"], c["display"]
+            yield from walk(c.get("concept", []))
+    with open(ATTRIBUTE_CODE_SYSTEM) as fh:
+        return dict(walk(json.load(fh)["concept"]))
+
+
+DISPLAYS = attribute_displays()
+
+
+def attribute(code):
+    """-> a Coding from the IPL attribute code system, with its compiled display."""
+    return {"system": ATTRIBUTE, "code": code, "display": DISPLAYS[code]}
 
 
 def coding(c):
@@ -68,16 +91,16 @@ def body_structure(rid, entry_like, uid, site_words, text):
                     patient=ref("Patient", "patient"))
 
 
-def observation(o, rid, size_cm, text, status="final", replaces=None):
+def observation(o, rid, text, status="final", replaces=None):
     a = o["attributes"]
-    components = [{"code": concept({"system": ATTRIBUTE, "code": "measurement", "display": "current measurement"}),
-                   "valueQuantity": {"value": size_cm, "unit": "cm", "system": UCUM, "code": "cm"}}]
-    for m in a.get("prior_measurement", []):
-        components.append({"code": concept({"system": ATTRIBUTE, "code": "prior_measurement", "display": "prior measurement"}),
-                           "valueQuantity": {"value": m["value"], "unit": m["unit"], "system": UCUM, "code": m["unit"]}})
+    components = []
+    for key in ("measurement", "prior_measurement"):
+        for m in a.get(key, []):
+            assert "property" not in m, f"{o['observation_id']}: the worked example gives a measurement's property no form"
+            components.append({"code": concept(attribute(key)),
+                               "valueQuantity": {"value": m["value"], "unit": m["unit"], "system": UCUM, "code": m["unit"]}})
     for word in a.get("temporal_status", []):
-        components.append({"code": concept({"system": ATTRIBUTE, "code": "temporal_status", "display": "change from prior"}),
-                           "valueCodeableConcept": concept({"system": ATTRIBUTE, "code": word, "display": word})})
+        components.append({"code": concept(attribute("temporal_status")), "valueCodeableConcept": concept(attribute(word))})
     detected = {"system": SNOMED, "code": "260373001", "display": "Detected"}
     return resource("Observation", rid, text,
                     **({"extension": [{"url": "http://hl7.org/fhir/StructureDefinition/observation-replaces",
@@ -113,14 +136,17 @@ def bundle(ipl, reports):
         exam, report = o["exam_id"], reports[o["exam_id"]]["report"]
         result = [ref("Observation", o["observation_id"])]
         if exam == REJECTED_EXAM:
-            out.append(observation(o, rejected_id, MISREAD_CM, f"The model's reading of the {o['exam_date'][:4]} sentence as {MISREAD_CM} cm, rejected. {ILLUSTRATIVE}",
+            misread = {k: v for k, v in o["attributes"].items() if k != "prior_measurement"}
+            misread["measurement"] = [{"value": MISREAD_CM, "unit": "cm"}]
+            out.append(observation({**o, "attributes": misread}, rejected_id,
+                                   f"The model's reading of the {o['exam_date'][:4]} sentence as {MISREAD_CM} cm, rejected. {ILLUSTRATIVE}",
                                    status="entered-in-error"))
-            out.append(observation(o, o["observation_id"], o["attributes"]["measurement"][0]["value"],
+            out.append(observation(o, o["observation_id"],
                                    f"The radiologist's replacement, {o['attributes']['measurement'][0]['value']} cm. {ILLUSTRATIVE}", replaces=rejected_id))
             result.insert(0, ref("Observation", rejected_id))
             extracted.append(rejected_id)
         else:
-            out.append(observation(o, o["observation_id"], o["attributes"]["measurement"][0]["value"], f"The aneurysm as the {o['exam_date']} report states it."))
+            out.append(observation(o, o["observation_id"], f"The aneurysm as the {o['exam_date']} report states it."))
             extracted.append(o["observation_id"])
         out.append(body_structure(f"{exam}-F01", o, uid, o["provenance"]["site_words"], f"The aneurysm's site as the {o['exam_date']} report gives it."))
         out.append(resource("DiagnosticReport", f"report-{exam}", f"The {o['exam_date']} report.",

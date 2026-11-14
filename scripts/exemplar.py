@@ -201,7 +201,7 @@ def finding(fid, code, site_id, words, status, observations, laterality=None):
 finding("F01", "aortic_aneurysm", "RID905", "infrarenal abdominal aortic", "active", [
     obs("E01", "present", "Infrarenal abdominal aortic aneurysm measuring 3.2 cm.", measurement=[(3.2, "cm")]),
     obs("E02", "present", "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017.",
-        measurement=[(3.5, "cm")], temporal="larger"),
+        measurement=[(3.5, "cm")], prior_measurement=[(3.2, "cm")], temporal="larger"),
     obs("E06", "present", "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
         measurement=[(3.9, "cm")], prior_measurement=[(3.5, "cm")], temporal="larger"),
     obs("E08", "present", "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA.", words="infrarenal aortic",

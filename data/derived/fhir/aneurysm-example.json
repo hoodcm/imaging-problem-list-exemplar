@@ -349,6 +349,23 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
+                  "code": "prior_measurement",
+                  "display": "prior measurement"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 3.2,
+              "unit": "cm",
+              "system": "http://unitsofmeasure.org",
+              "code": "cm"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
                   "code": "temporal_status",
                   "display": "change from prior"
                 }
@@ -1245,23 +1262,6 @@
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
                   "code": "measurement",
                   "display": "current measurement"
-                }
-              ]
-            },
-            "valueQuantity": {
-              "value": 4.5,
-              "unit": "cm",
-              "system": "http://unitsofmeasure.org",
-              "code": "cm"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "prior_measurement",
-                  "display": "prior measurement"
                 }
               ]
             },

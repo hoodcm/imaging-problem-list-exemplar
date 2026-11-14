@@ -102,6 +102,12 @@
                 "value": 3.5,
                 "unit": "cm"
               }
+            ],
+            "prior_measurement": [
+              {
+                "value": 3.2,
+                "unit": "cm"
+              }
             ]
           },
           "interpretations": [],
@@ -118,7 +124,8 @@
           },
           "derived": {
             "status": "active",
-            "rule": "stated-change"
+            "rule": "stated-change",
+            "prior_measurement_check": "matches"
           }
         },
         {

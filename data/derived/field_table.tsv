@@ -64,7 +64,7 @@ observation: derived	The status this observation set, absent when a radiologist 
 observation: derived.status	The entry's status after this observation.	1..1	active, stable, resolved, excluded	none	none	none	not-representable
 observation: derived.rule	The status rule that set it.	1..1	absent-never-present, absent-after-present, absent-after-resolved, stated-new, stated-change, stated-unchanged, first-stated-old, first-observation, present-after-absence, attribute-contradicts, nothing-contradicts	none	none	none	not-representable
 observation: derived.contradicting_attribute	The attribute whose stated value contradicted its last stated value, under the attribute-contradicts rule.	0..1	string	none	none	none	not-representable
-observation: derived.prior_measurement_check	How the prior measurement the observation states compares with the entry's previous observation, written for review and never setting the status.	0..1	matches, differs, no-prior	none	none	none	not-representable
+observation: derived.prior_measurement_check	How the prior measurement the observation states compares with the entry's previous observation, written for review and never setting the status. A stated prior matches when it agrees within the tolerance the contradiction rules use.	0..1	matches, differs, no-prior	none	none	none	not-representable
 efl: report	The report and its examination.	1..1	object	DiagnosticReport	DiagnosticReport	TID 1500 Measurement Report	core
 efl: report.report_id	The report's identifier.	1..1	string	DiagnosticReport.identifier	DiagnosticReport.identifier	none	core
 efl: report.patient_id	The patient's identifier.	1..1	string	DiagnosticReport.subject (Patient.identifier)	DiagnosticReport.subject (Patient.identifier)	none	core

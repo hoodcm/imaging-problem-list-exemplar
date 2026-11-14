@@ -205,15 +205,17 @@ GRADE_BANDS = {"small": {1}, "mild": {2}, "mild_to_moderate": {2, 3}, "moderate"
 
 # Descriptors that cannot describe one finding at once, in declared sets. Two
 # descriptions contradict when each names exactly one member
-# of a set and the members differ.
+# of a set and the members differ. A plain member's pattern refuses the
+# prefixes that make it another member, hyphenated or spaced, so "part solid"
+# and "non occlusive" name one member each.
 DESCRIPTOR_SETS = [
-    ("nodule composition", {"solid": r"(?<![-\w])solid\b", "part-solid": r"\bpart[- ]?solid\b|\bsemi[- ]?solid\b",
+    ("nodule composition", {"solid": r"(?<![-\w])(?<!part )(?<!semi )(?<!non )solid\b", "part-solid": r"\bpart[- ]?solid\b|\bsemi[- ]?solid\b",
                             "ground-glass": r"\bground[- ]?glass\b|\bnon[- ]?solid\b"}),
     ("shape", {"round or oval": r"\bround\b|\boval\b", "irregular": r"\birregular\b"}),
     ("margin", {"smooth": r"\bsmooth\b|\bwell[- ]circumscribed\b", "lobulated": r"\blobulated\b",
                 "irregular or spiculated": r"\birregular\b|\bspiculated\b"}),
-    ("calcification", {"calcified": r"(?<![-\w])calcified\b", "noncalcified": r"\bnon[- ]?calcified\b"}),
-    ("occlusion", {"occlusive": r"(?<![-\w])occlu(?:sive|ding)\b", "nonocclusive": r"\bnon[- ]?occlusive\b"}),
+    ("calcification", {"calcified": r"(?<![-\w])(?<!non )calcified\b", "noncalcified": r"\bnon[- ]?calcified\b"}),
+    ("occlusion", {"occlusive": r"(?<![-\w])(?<!non )occlu(?:sive|ding)\b", "nonocclusive": r"\bnon[- ]?occlusive\b"}),
     ("zone", {"upper": r"\bupper(?: lobe| lung| zone)?[- ]predominan",
               "lower": r"\b(?:lower(?: lobe| lung| zone)?|basilar|basal)[- ]predominan"}),
     ("number", {"one": r"\b(?:single|solitary)\b", "several": r"\b(?:multiple|several|numerous|innumerable)\b"}),
@@ -237,7 +239,12 @@ STATUS_RULES = {
 
 
 def _lengths_mm(a):
-    return tuple(sorted(s["value"] * MM_PER_UNIT[s["unit"]] for s in a.get("measurement", []) if s["unit"] in MM_PER_UNIT))
+    """-> {property: sorted lengths in mm}, so lengths of different properties never compare."""
+    lengths = defaultdict(list)
+    for s in a.get("measurement", []):
+        if s["unit"] in MM_PER_UNIT:
+            lengths[s.get("property")].append(s["value"] * MM_PER_UNIT[s["unit"]])
+    return {prop: tuple(sorted(v)) for prop, v in lengths.items()}
 
 
 def _stated_step(value):
@@ -263,8 +270,8 @@ def stated_values(o):
     """The attribute values an observation states, in the form the contradiction check compares."""
     a = o["attributes"]
     vals = {"code": o["finding_code"]["code"]}
-    if _lengths_mm(a):
-        vals["size"] = _lengths_mm(a)
+    for prop, lengths in _lengths_mm(a).items():
+        vals[("size", prop)] = lengths
     for s in a.get("measurement", []):
         if s["unit"] not in MM_PER_UNIT:
             vals[("measure", s["unit"], s.get("property"))] = (s["value"], _stated_step(s["value"]))
@@ -293,25 +300,25 @@ def contradiction(now, carried):
         return "time-course stage"
     if "grade" in now and "grade" in carried and not (now["grade"] & carried["grade"]):
         return "grade"
-    for key in [k for k in now if isinstance(k, tuple) and k in carried]:
+    shared = [k for k in now if isinstance(k, tuple) and k in carried]
+    for key in [k for k in shared if k[0] == "measure"]:
         (x, step_x), (y, step_y) = now[key], carried[key]
         if round(abs(x - y), 6) > max(step_x, step_y):
             return f"{key[2] or 'measurement'} in {key[1]}"
-    if "size" in now and "size" in carried:
-        a, b = now["size"], carried["size"]
+    for key in [k for k in shared if k[0] == "size"]:
+        a, b = now[key], carried[key]
         pairs = zip(a, b) if len(a) == len(b) else [(max(a), max(b))]
         if any(round(abs(x - y), 1) > SIZE_PRECISION_MM for x, y in pairs):
-            return "size"
+            return "size" if key[1] is None else f"size, {key[1]}"
     return None
 
 
 def _same_measurement(a, b):
-    """True when two measurements of one property state one value, in comparable units."""
-    if a.get("property") != b.get("property"):
-        return False
+    """True when two comparable measurements agree within the tolerance the contradiction rule uses."""
     if a["unit"] in MM_PER_UNIT and b["unit"] in MM_PER_UNIT:
-        return round(a["value"] * MM_PER_UNIT[a["unit"]], 6) == round(b["value"] * MM_PER_UNIT[b["unit"]], 6)
-    return a["unit"] == b["unit"] and a["value"] == b["value"]
+        diff = abs(a["value"] * MM_PER_UNIT[a["unit"]] - b["value"] * MM_PER_UNIT[b["unit"]])
+        return round(diff, 1) <= SIZE_PRECISION_MM
+    return round(abs(a["value"] - b["value"]), 6) <= max(_stated_step(a["value"]), _stated_step(b["value"]))
 
 
 def _comparable(a, b):
@@ -322,8 +329,8 @@ def _comparable(a, b):
 def prior_measurement_check(o, previous):
     """-> how the prior measurement an observation states compares with the entry's previous observation.
 
-    "matches" when each stated prior value equals a measurement the previous
-    observation records, "differs" when one doesn't, and "no-prior" when the
+    "matches" when each stated prior value agrees with a measurement the
+    previous observation records, within the tolerance contradiction() uses, "differs" when one doesn't, and "no-prior" when the
     previous observation records nothing to compare it with. The result is
     written on the record for review and never sets the status, since the
     record makes no clinical determination.
@@ -348,7 +355,8 @@ def derive_status(entry_observations):
     """
     status, rule, carried, previous = None, None, None, None
     for o in entry_observations:
-        if o["provenance"]["review_status"] == "rejected":
+        if rejected(o):
+            o.pop("derived", None)
             continue
         a = o["attributes"]
         words = set(a.get("temporal_status", []))
@@ -383,6 +391,11 @@ def derive_status(entry_observations):
         previous = o
     return status, rule
 
+def rejected(o):
+    """True when a radiologist rejected the observation, so it sets no status."""
+    return o["provenance"]["review_status"] == "rejected"
+
+
 def _sides_agree(a, b):
     return not ({a, b} <= {"left", "right"} and a != b)
 
@@ -392,18 +405,22 @@ def closing_observation(negation, entries):
 
     A finding of the negation's kind or a narrower one, reported present at a
     site within the negation's site after its last absence, closes it.
-    A negation scoped to new findings closes only on a finding stated new. The
-    two hierarchies relate the findings, so neither history changes.
+    A negation scoped to new findings closes only on a finding stated new. A
+    rejected observation counts on neither side. The two hierarchies relate the
+    findings, so neither history changes.
     """
     kind = CODE_CONCEPT[negation["finding_code"]["code"]]
     region = negation["anatomic_site"]["code"]
-    last = max(exam_order[o["exam_id"]] for o in negation["observations"])
-    scoped_new = all("new" in o["attributes"].get("temporal_status", []) for o in negation["observations"])
+    absences = [o for o in negation["observations"] if not rejected(o)]
+    last = max(exam_order[o["exam_id"]] for o in absences)
+    scoped_new = all("new" in o["attributes"].get("temporal_status", []) for o in absences)
     hits = []
     for e in entries:
         if e is negation:
             continue
         for o in e["observations"]:
+            if rejected(o):
+                continue
             a, code = o["attributes"], CODE_CONCEPT[o["finding_code"]["code"]]
             if (a["presence"] == "present" and exam_order[o["exam_id"]] > last
                     and (code == kind or kind in CONCEPTS[code]["path"])
@@ -564,27 +581,30 @@ def schema_validator(name):
     return Draft202012Validator(schemas[name], registry=registry, format_checker=Draft202012Validator.FORMAT_CHECKER)
 
 
-def write_valid(record, schema, path):
-    """Write a record as JSON after it validates, and exit nonzero on the first failure."""
-    error = next(iter(schema_validator(schema).iter_errors(record)), None)
-    if error:
-        sys.exit(f"{os.path.basename(path)} fails {schema}.schema.json at {error.json_path}: {error.message}")
-    with open(path, "w") as fh:
-        json.dump(record, fh, indent=2, ensure_ascii=False)
+def write_valid(files):
+    """Write each (record, schema, path) as JSON once every record validates.
+
+    The build exits nonzero on the first failure before it writes anything, so
+    a failing build leaves the last build's files as they were.
+    """
+    for record, schema, path in files:
+        error = next(iter(schema_validator(schema).iter_errors(record)), None)
+        if error:
+            sys.exit(f"{os.path.basename(path)} fails {schema}.schema.json at {error.json_path}: {error.message}")
+    for record, _, path in files:
+        with open(path, "w") as fh:
+            json.dump(record, fh, indent=2, ensure_ascii=False)
 
 
-def write_efls(entries, statements, reports):
-    """Write one Exam Finding List per examination."""
-    os.makedirs(EFL_DIR, exist_ok=True)
-    for old in os.listdir(EFL_DIR):
-        if old.startswith("EFL_") and old.endswith(".json"):
-            os.remove(os.path.join(EFL_DIR, old))
+def efl_files(entries, statements, reports):
+    """-> one Exam Finding List per examination, as (record, schema, path)."""
     by_exam = defaultdict(list)
     for e in entries:
         for o in e["observations"]:
             by_exam[o["exam_id"]].append({k: v for k, v in o.items() if k != "derived"})
     for s in statements:
         by_exam[s["exam_id"]].append(s)
+    files = []
     for exam in exams:
         observations = sorted(by_exam[exam["id"]],
                               key=lambda r: (0 if r["attributes"]["presence"] == "present" else 1, r["observation_id"]))
@@ -601,20 +621,31 @@ def write_efls(entries, statements, reports):
             "sentences": [{"number": i + 1, "text": s} for i, s in enumerate(reports[exam["id"]])],
             "observations": observations,
         }
-        write_valid(efl, "efl", os.path.join(EFL_DIR, f"EFL_{exam['id']}_{exam['date']}_{exam['modality']}.json"))
+        files.append((efl, "efl", os.path.join(EFL_DIR, f"EFL_{exam['id']}_{exam['date']}_{exam['modality']}.json")))
+    return files
 
 
-def write_ipl(entries):
-    """Write the Imaging Problem List."""
+def ipl_file(entries):
+    """-> the Imaging Problem List, as (record, schema, path)."""
     output = {"schema_version": SCHEMA_VERSION, "compiled_date": COMPILED_DATE, "patient": patient,
               "entries": entries}
-    write_valid(output, "ipl", os.path.join(OUTPUT_DIR, "imaging_problem_list.json"))
+    return output, "ipl", os.path.join(OUTPUT_DIR, "imaging_problem_list.json")
+
+
+def remove_stale_efls(files):
+    """Remove each EFL file a previous build wrote that this build did not."""
+    written = {os.path.basename(path) for _, _, path in files}
+    for old in os.listdir(EFL_DIR):
+        if old.startswith("EFL_") and old.endswith(".json") and old not in written:
+            os.remove(os.path.join(EFL_DIR, old))
 
 
 if __name__ == "__main__":
     entries, statements, reports = build()
-    write_efls(entries, statements, reports)
-    write_ipl(entries)
+    os.makedirs(EFL_DIR, exist_ok=True)
+    efls = efl_files(entries, statements, reports)
+    write_valid(efls + [ipl_file(entries)])
+    remove_stale_efls(efls)
     n_obs = sum(len(e["observations"]) for e in entries)
     print(f"{len(entries)} entries and {n_obs} observations from {len(exams)} examinations, "
           f"{len(statements)} examination statement{'' if len(statements) == 1 else 's'} kept in the EFLs, "

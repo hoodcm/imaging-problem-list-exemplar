@@ -704,7 +704,7 @@
             "differs",
             "no-prior"
           ],
-          "description": "How the prior measurement the observation states compares with the entry's previous observation, written for review and never setting the status.",
+          "description": "How the prior measurement the observation states compares with the entry's previous observation, written for review and never setting the status. A stated prior matches when it agrees within the tolerance the contradiction rules use.",
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",

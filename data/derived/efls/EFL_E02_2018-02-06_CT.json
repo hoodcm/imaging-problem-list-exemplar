@@ -139,6 +139,12 @@
             "value": 3.5,
             "unit": "cm"
           }
+        ],
+        "prior_measurement": [
+          {
+            "value": 3.2,
+            "unit": "cm"
+          }
         ]
       },
       "interpretations": [],

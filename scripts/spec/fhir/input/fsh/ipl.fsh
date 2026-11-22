@@ -22,18 +22,18 @@ Description: "The rule that set an IPL entry's status."
 * ^caseSensitive = true
 * ^content = #complete
 * ^experimental = false
-* #absent-never-present "absent never present" "An absence, and the finding has not been present."
-* #absent-after-present "absent after present" "An absence follows a presence."
-* #absent-after-resolved "absent after resolved" "An absence follows a resolution."
-* #stated-new "stated new" "The radiologist called the finding new."
+* #absent-never-present "absent never present" "The report states an absence, and no earlier report stated the finding present."
+* #absent-after-present "absent after present" "The report states an absence after an earlier presence."
+* #absent-after-resolved "absent after resolved" "The report states an absence after the entry has resolved."
+* #stated-new "stated new" "The radiologist reported the finding new."
 * #stated-change "stated change" "The radiologist stated a change."
 * #stated-unchanged "stated unchanged" "The radiologist stated no change."
-* #first-stated-old "first stated old" "First observation, or present after an absence, stated chronic, old, or healed."
-* #first-observation "first observation" "First observation, with no comparison wording and no stated age that predates it."
-* #present-after-absence "present after absence" "Present after an absence, with no comparison wording and no stated age that predates it."
-* #attribute-contradicts "attribute contradicts" "No comparison wording, and a stated attribute contradicts its last stated value."
-* #nothing-contradicts "nothing contradicts" "No comparison wording, and nothing stated contradicts the entry's last stated values."
-* #closed-by-subsequent-finding "closed by subsequent finding" "Only absences, and a finding of its type was later reported present within its site, so that finding's entry carries the status."
+* #first-stated-old "first stated old" "The radiologist stated the finding chronic, remote, or healed at its first observation or when present after an absence."
+* #first-observation "first observation" "The radiologist reported the finding for the first time, with no comparison wording and no stated age that predates the examination."
+* #present-after-absence "present after absence" "The radiologist reported the finding present after an absence, including a recurrence after resolution, with no comparison wording and no stated age that predates the examination."
+* #attribute-contradicts "attribute contradicts" "The radiologist wrote no comparison wording, and a stated attribute contradicts its last stated value."
+* #nothing-contradicts "nothing contradicts" "The radiologist wrote no comparison wording, and no stated attribute contradicts its last stated value."
+* #closed-by-subsequent-finding "closed by subsequent finding" "The entry holds only absences, and a radiologist reported a finding of its type present within its site after the last absence, so that finding's entry carries the status."
 
 CodeSystem: IPLCertainty
 Id: ipl-certainty

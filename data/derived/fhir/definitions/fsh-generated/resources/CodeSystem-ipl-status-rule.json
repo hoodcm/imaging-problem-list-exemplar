@@ -12,22 +12,22 @@
     {
       "code": "absent-never-present",
       "display": "absent never present",
-      "definition": "An absence, and the finding has not been present."
+      "definition": "The report states an absence, and no earlier report stated the finding present."
     },
     {
       "code": "absent-after-present",
       "display": "absent after present",
-      "definition": "An absence follows a presence."
+      "definition": "The report states an absence after an earlier presence."
     },
     {
       "code": "absent-after-resolved",
       "display": "absent after resolved",
-      "definition": "An absence follows a resolution."
+      "definition": "The report states an absence after the entry has resolved."
     },
     {
       "code": "stated-new",
       "display": "stated new",
-      "definition": "The radiologist called the finding new."
+      "definition": "The radiologist reported the finding new."
     },
     {
       "code": "stated-change",
@@ -42,32 +42,32 @@
     {
       "code": "first-stated-old",
       "display": "first stated old",
-      "definition": "First observation, or present after an absence, stated chronic, old, or healed."
+      "definition": "The radiologist stated the finding chronic, remote, or healed at its first observation or when present after an absence."
     },
     {
       "code": "first-observation",
       "display": "first observation",
-      "definition": "First observation, with no comparison wording and no stated age that predates it."
+      "definition": "The radiologist reported the finding for the first time, with no comparison wording and no stated age that predates the examination."
     },
     {
       "code": "present-after-absence",
       "display": "present after absence",
-      "definition": "Present after an absence, with no comparison wording and no stated age that predates it."
+      "definition": "The radiologist reported the finding present after an absence, including a recurrence after resolution, with no comparison wording and no stated age that predates the examination."
     },
     {
       "code": "attribute-contradicts",
       "display": "attribute contradicts",
-      "definition": "No comparison wording, and a stated attribute contradicts its last stated value."
+      "definition": "The radiologist wrote no comparison wording, and a stated attribute contradicts its last stated value."
     },
     {
       "code": "nothing-contradicts",
       "display": "nothing contradicts",
-      "definition": "No comparison wording, and nothing stated contradicts the entry's last stated values."
+      "definition": "The radiologist wrote no comparison wording, and no stated attribute contradicts its last stated value."
     },
     {
       "code": "closed-by-subsequent-finding",
       "display": "closed by subsequent finding",
-      "definition": "Only absences, and a finding of its type was later reported present within its site, so that finding's entry carries the status."
+      "definition": "The entry holds only absences, and a radiologist reported a finding of its type present within its site after the last absence, so that finding's entry carries the status."
     }
   ],
   "caseSensitive": true,

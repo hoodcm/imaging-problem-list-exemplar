@@ -3,7 +3,7 @@ message: If you use this dataset or the specification, cite the Imaging Problem 
 type: dataset
 title: Imaging Problem List exemplar
 version: 2.0.0
-date-released: 2026-11-14
+date-released: 2026-11-21
 license: CC-BY-4.0
 repository-code: https://github.com/hoodcm/imaging-problem-list-exemplar
 authors:
@@ -13,6 +13,7 @@ authors:
     affiliation: Mass General Brigham
   - family-names: Sippo
     given-names: Dorothy A.
+    orcid: https://orcid.org/0000-0003-1175-7263
     affiliation: Columbia University Irving Medical Center
   - family-names: O'Connor
     given-names: Stacy D.
@@ -28,6 +29,7 @@ authors:
     affiliation: Canon Medical Research USA
   - family-names: Alkasab
     given-names: Tarik
+    orcid: https://orcid.org/0000-0002-4433-9482
     affiliation: Mass General Brigham
 preferred-citation:
   type: article

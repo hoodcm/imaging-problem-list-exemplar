@@ -89,4 +89,4 @@ The code is licensed under the Apache License 2.0, in the `LICENSE` file, and th
 
 ## Citation
 
-For the citation, see the `CITATION.cff` file.
+Zenodo archives each release under the DOI [10.5281/zenodo.24444002](https://doi.org/10.5281/zenodo.24444002), which resolves to the newest version. Version 2.0.0, the release the paper describes, is [10.5281/zenodo.24444003](https://doi.org/10.5281/zenodo.24444003). For the citation, see the `CITATION.cff` file.

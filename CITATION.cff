@@ -6,6 +6,11 @@ version: 2.0.0
 date-released: 2026-11-21
 license: CC-BY-4.0
 repository-code: https://github.com/hoodcm/imaging-problem-list-exemplar
+doi: 10.5281/zenodo.24444002
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24444003
+    description: The archived v2.0.0 release
 authors:
   - family-names: Hood
     given-names: Michael

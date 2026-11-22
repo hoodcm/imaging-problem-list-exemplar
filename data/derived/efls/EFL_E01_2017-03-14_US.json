@@ -15,7 +15,7 @@
   "sentences": [
     {
       "number": 1,
-      "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm."
+      "text": "Abdominal aortic aneurysm measures 3.2 cm."
     },
     {
       "number": 2,
@@ -27,7 +27,7 @@
     },
     {
       "number": 4,
-      "text": "Nodular liver surface, cirrhosis."
+      "text": "Nodular liver surface, compatible with cirrhosis."
     },
     {
       "number": 5,
@@ -39,7 +39,7 @@
     },
     {
       "number": 7,
-      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm."
+      "text": "Simple cysts in bilateral kidneys."
     },
     {
       "number": 8,
@@ -83,14 +83,14 @@
         ]
       },
       "interpretations": [],
-      "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm.",
+      "text": "Abdominal aortic aneurysm measures 3.2 cm.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E01",
         "sentences": [
           1
         ],
-        "site_words": "Infrarenal abdominal aortic",
+        "site_words": "Abdominal aortic",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -156,7 +156,7 @@
       },
       "attributes": {
         "presence": "present",
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Cholelithiasis.",
@@ -192,17 +192,10 @@
       "attributes": {
         "presence": "present",
         "laterality": "left",
-        "measurement": [
-          {
-            "value": 1.4,
-            "unit": "cm",
-            "property": "largest member"
-          }
-        ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
-      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+      "text": "Simple cysts in bilateral kidneys.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E01",
@@ -273,17 +266,10 @@
       "attributes": {
         "presence": "present",
         "laterality": "right",
-        "measurement": [
-          {
-            "value": 0.8,
-            "unit": "cm",
-            "property": "largest member"
-          }
-        ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
-      "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+      "text": "Simple cysts in bilateral kidneys.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E01",
@@ -326,7 +312,7 @@
           }
         }
       ],
-      "text": "Nodular liver surface, cirrhosis.",
+      "text": "Nodular liver surface, compatible with cirrhosis.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E01",

@@ -12,7 +12,7 @@ Description: "The status an IPL entry derives from its observation history."
 * #stable "stable" "The latest observation states the finding present and unchanged."
 * #resolved "resolved" "The latest observation states the finding absent after it was present."
 * #excluded "excluded" "Every observation states the finding absent."
-* #closed "closed" "Every observation states the finding absent, and a finding of its kind was later reported within its site."
+* #closed "closed" "Every observation states the finding absent, and a finding of its type was later reported within its site."
 
 CodeSystem: IPLStatusRule
 Id: ipl-status-rule
@@ -33,7 +33,7 @@ Description: "The rule that set an IPL entry's status."
 * #present-after-absence "present after absence" "Present after an absence, with no comparison wording and no stated age that predates it."
 * #attribute-contradicts "attribute contradicts" "No comparison wording, and a stated attribute contradicts its last stated value."
 * #nothing-contradicts "nothing contradicts" "No comparison wording, and nothing stated contradicts the entry's last stated values."
-* #closed-by-finding-within "closed by finding within" "Only absences, and a finding of its kind was later reported present within its site, so that finding's entry carries the status."
+* #closed-by-subsequent-finding "closed by subsequent finding" "Only absences, and a finding of its type was later reported present within its site, so that finding's entry carries the status."
 
 CodeSystem: IPLCertainty
 Id: ipl-certainty
@@ -58,7 +58,7 @@ Description: "The OIDM report findings annotator's attributes, each with its val
 * #presence "presence" "Finding presence status (polarity only — which way the radiologist leans)"
   * #present "present"
   * #absent "absent"
-* #confidence "confidence" "Assertion modality: which axes the radiologist hedged (omitted = definite)"
+* #certainty "certainty" "Assertion modality: which axes the radiologist hedged (omitted = definite)"
 * #laterality "laterality" "Which side of the body"
   * #left "left"
   * #right "right"
@@ -67,14 +67,8 @@ Description: "The OIDM report findings annotator's attributes, each with its val
   * #unchanged "unchanged"
   * #new "new"
   * #resolved "resolved"
-  * #larger "larger"
-  * #smaller "smaller"
-  * #increased_extent "increased extent"
-  * #decreased_extent "decreased extent"
-  * #more_conspicuous "more conspicuous"
-  * #less_conspicuous "less conspicuous"
-  * #increased_complexity "increased complexity"
-  * #decreased_complexity "decreased complexity"
+  * #increased "increased"
+  * #decreased "decreased"
 * #chronicity "chronicity" "Time course or disease stage"
   * #acute "acute"
   * #subacute "subacute"
@@ -85,29 +79,20 @@ Description: "The OIDM report findings annotator's attributes, each with its val
   * #healing "healing"
   * #healed "healed"
 * #measurement "current measurement" "The values the report states for this examination"
-  * #height-loss "height loss"
-  * #largest-member "largest member"
 * #prior_measurement "prior measurement" "The values the report states the finding had on an earlier examination"
-* #severity "severity" "Clinical intensity grade"
+* #severity "severity" "The stated grade: a severity or size word"
+  * #small "small"
   * #mild "mild"
   * #mild_to_moderate "mild to moderate"
   * #moderate "moderate"
   * #moderate_to_severe "moderate to severe"
   * #severe "severe"
-* #extent "extent" "Qualitative physical size of a finding"
-  * #small "small"
-  * #medium "medium"
   * #large "large"
-* #distribution "distribution" "Coverage: involvement throughout the finding's own reference region (the region is finding-relative — a wall, a disc, the imaged skeleton). Nominal mark, not a cross-finding scale."
-  * #diffuse "diffuse"
 * #anatomic_site "anatomic site" "Compound anatomic terms"
 * #features "features" "Finding-specific descriptive properties that cannot exist independently"
-* #aggregate "aggregate" "Marks a finding row as representing a non-discrete collection rather than a single discrete instance"
+* #multiple "multiple" "The statement covers more than one finding of a type"
 * #insertion_site "insertion site" "Where the device enters"
 * #tip_location "tip location" "Where device tip terminates"
-* #position_status "position status" "Device positioning assessment"
-  * #satisfactory "satisfactory"
-  * #malpositioned "malpositioned"
 * #integrity "integrity" "Device structural integrity"
   * #intact "intact"
   * #discontinuous "discontinuous"
@@ -170,30 +155,6 @@ Description: "The values of the severity attribute."
 * ^experimental = false
 * include codes from system IPLAttribute where concept descendent-of #severity
 
-ValueSet: IPLExtentValueSet
-Id: ipl-extent
-Title: "IPL extent"
-Description: "The values of the extent attribute."
-* ^status = #draft
-* ^experimental = false
-* include codes from system IPLAttribute where concept descendent-of #extent
-
-ValueSet: IPLDistributionValueSet
-Id: ipl-distribution
-Title: "IPL distribution"
-Description: "The values of the distribution attribute."
-* ^status = #draft
-* ^experimental = false
-* include codes from system IPLAttribute where concept descendent-of #distribution
-
-ValueSet: IPLPositionStatusValueSet
-Id: ipl-position-status
-Title: "IPL position status"
-Description: "The values of the position status attribute."
-* ^status = #draft
-* ^experimental = false
-* include codes from system IPLAttribute where concept descendent-of #position_status
-
 ValueSet: IPLIntegrityValueSet
 Id: ipl-integrity
 Title: "IPL integrity"
@@ -216,7 +177,7 @@ Description: "The rule that set an IPL entry's status, on the List entry whose f
 Extension: EntryClosedBy
 Id: entry-closed-by
 Title: "Entry closed by"
-Description: "For an entry of only absences, the later observation of a finding of its kind within its site that closed it."
+Description: "For an entry of only absences, the later observation of a finding of its type within its site that closed it."
 * ^status = #draft
 * ^experimental = false
 * ^context[0].type = #element

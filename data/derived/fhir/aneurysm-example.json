@@ -168,7 +168,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm."
+            "text": "Abdominal aortic aneurysm measures 3.2 cm."
           }
         ],
         "bodyStructure": {
@@ -245,7 +245,7 @@
             }
           }
         ],
-        "description": "Infrarenal abdominal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -320,7 +320,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017."
+            "text": "Abdominal aortic aneurysm measures 3.5 cm, increased from 3.2 cm."
           }
         ],
         "bodyStructure": {
@@ -375,8 +375,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -434,7 +434,7 @@
             }
           }
         ],
-        "description": "Infrarenal abdominal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -509,7 +509,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm."
+            "text": "Abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm."
           }
         ],
         "bodyStructure": {
@@ -564,8 +564,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -623,7 +623,7 @@
             }
           }
         ],
-        "description": "Infrarenal abdominal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -698,7 +698,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA."
+            "text": "Abdominal aortic aneurysm measures 4.3 cm, increased from 3.9 cm."
           }
         ],
         "bodyStructure": {
@@ -753,8 +753,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -812,7 +812,7 @@
             }
           }
         ],
-        "description": "Infrarenal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -887,7 +887,7 @@
         },
         "note": [
           {
-            "text": "There is a 4.5 cm infrarenal abdominal aortic aneurysm, slightly increased from 4.3 cm on July 2021 CT."
+            "text": "Abdominal aortic aneurysm measures 4.5 cm, increased from 4.3 cm."
           }
         ],
         "bodyStructure": {
@@ -942,8 +942,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -1001,7 +1001,7 @@
             }
           }
         ],
-        "description": "infrarenal abdominal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -1076,7 +1076,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January."
+            "text": "Abdominal aortic aneurysm measures 4.5 cm, unchanged."
           }
         ],
         "bodyStructure": {
@@ -1173,7 +1173,7 @@
             }
           }
         ],
-        "description": "Infrarenal",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -1248,7 +1248,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
+            "text": "Abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
           }
         ],
         "bodyStructure": {
@@ -1286,8 +1286,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -1337,7 +1337,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
+            "text": "Abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm."
           }
         ],
         "bodyStructure": {
@@ -1392,8 +1392,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -1451,7 +1451,7 @@
             }
           }
         ],
-        "description": "Infrarenal abdominal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }
@@ -1529,7 +1529,7 @@
         },
         "note": [
           {
-            "text": "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study."
+            "text": "Abdominal aortic aneurysm measures 5.1 cm, increased from 4.8 cm."
           }
         ],
         "bodyStructure": {
@@ -1584,8 +1584,8 @@
               "coding": [
                 {
                   "system": "https://github.com/hoodcm/imaging-problem-list-exemplar/CodeSystem/ipl-attribute",
-                  "code": "larger",
-                  "display": "larger"
+                  "code": "increased",
+                  "display": "increased"
                 }
               ]
             }
@@ -1643,7 +1643,7 @@
             }
           }
         ],
-        "description": "Infrarenal abdominal aortic",
+        "description": "Abdominal aortic",
         "patient": {
           "reference": "Patient/patient"
         }

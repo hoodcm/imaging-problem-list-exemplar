@@ -19,35 +19,27 @@
     },
     {
       "number": 2,
-      "text": "Downgraded to LI-RADS 2."
-    },
-    {
-      "number": 3,
       "text": "Mild ascites, similar to prior."
     },
     {
-      "number": 4,
+      "number": 3,
       "text": "1.2 cm pancreatic body cystic lesion, stable, side-branch IPMN."
     },
     {
-      "number": 5,
+      "number": 4,
       "text": "Small esophageal varices, stable."
     },
     {
-      "number": 6,
+      "number": 5,
       "text": "Cirrhotic liver morphology."
     },
     {
-      "number": 7,
+      "number": 6,
       "text": "Splenomegaly, 14.8 cm."
     },
     {
-      "number": 8,
+      "number": 7,
       "text": "Cholelithiasis, unchanged."
-    },
-    {
-      "number": 9,
-      "text": "No new hepatic lesion."
     }
   ],
   "observations": [
@@ -66,7 +58,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "attributes": {
@@ -81,21 +73,13 @@
           }
         ]
       },
-      "interpretations": [
-        {
-          "assessment": {
-            "system": "ACR LI-RADS v2018",
-            "code": "LR-2"
-          }
-        }
-      ],
-      "text": "Segment 6 lesion 1.7 cm, stable >2 years. Downgraded to LI-RADS 2.",
+      "interpretations": [],
+      "text": "Segment 6 lesion 1.7 cm, stable >2 years.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          1,
-          2
+          1
         ],
         "site_words": "Segment 6",
         "review_status": "unreviewed",
@@ -133,7 +117,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          3
+          2
         ],
         "site_words": "ascites",
         "review_status": "unreviewed",
@@ -155,7 +139,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID174",
-        "display": "body of pancreas",
+        "display": "pancreatic body",
         "snomed": "40133006"
       },
       "attributes": {
@@ -185,7 +169,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          4
+          3
         ],
         "site_words": "pancreatic body",
         "review_status": "unreviewed",
@@ -212,11 +196,11 @@
       },
       "attributes": {
         "presence": "present",
-        "extent": "small",
+        "severity": "small",
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Small esophageal varices, stable.",
@@ -224,7 +208,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          5
+          4
         ],
         "site_words": "esophageal",
         "review_status": "unreviewed",
@@ -267,7 +251,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          6
+          5
         ],
         "site_words": "liver",
         "review_status": "unreviewed",
@@ -307,7 +291,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          7
+          6
         ],
         "site_words": "Splenomegaly",
         "review_status": "unreviewed",
@@ -337,7 +321,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Cholelithiasis, unchanged.",
@@ -345,46 +329,9 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E07",
         "sentences": [
-          8
+          7
         ],
         "site_words": "Cholelithiasis",
-        "review_status": "unreviewed",
-        "reviews": []
-      }
-    },
-    {
-      "observation_id": "F31.E07",
-      "exam_id": "E07",
-      "report_id": "IPL-EXEMPLAR-001-E07",
-      "exam_date": "2021-03-09",
-      "exam_modality": "MRI",
-      "finding_code": {
-        "system": "OIFM",
-        "code": "OIFM_OIDM_160831",
-        "display": "hepatic lesion",
-        "source": "registry"
-      },
-      "anatomic_site": {
-        "system": "Anatomic Locations Index 1.0.0",
-        "code": "RID58",
-        "display": "liver",
-        "snomed": "10200004"
-      },
-      "attributes": {
-        "presence": "absent",
-        "temporal_status": [
-          "new"
-        ]
-      },
-      "interpretations": [],
-      "text": "No new hepatic lesion.",
-      "provenance": {
-        "source": "specification",
-        "report_id": "IPL-EXEMPLAR-001-E07",
-        "sentences": [
-          9
-        ],
-        "site_words": "hepatic",
         "review_status": "unreviewed",
         "reviews": []
       }

@@ -15,7 +15,7 @@
   "sentences": [
     {
       "number": 1,
-      "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January."
+      "text": "Abdominal aortic aneurysm measures 4.5 cm, unchanged."
     },
     {
       "number": 2,
@@ -60,10 +60,6 @@
     {
       "number": 12,
       "text": "No biliary ductal dilation."
-    },
-    {
-      "number": 13,
-      "text": "No new focal hepatic lesion."
     }
   ],
   "observations": [
@@ -98,14 +94,14 @@
         ]
       },
       "interpretations": [],
-      "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January.",
+      "text": "Abdominal aortic aneurysm measures 4.5 cm, unchanged.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E13",
         "sentences": [
           1
         ],
-        "site_words": "Infrarenal",
+        "site_words": "Abdominal aortic",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -125,7 +121,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "attributes": {
@@ -175,7 +171,7 @@
         "presence": "present",
         "severity": "mild",
         "temporal_status": [
-          "decreased_extent"
+          "decreased"
         ]
       },
       "interpretations": [],
@@ -246,12 +242,12 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID174",
-        "display": "body of pancreas",
+        "display": "pancreatic body",
         "snomed": "40133006"
       },
       "attributes": {
         "presence": "present",
-        "confidence": {
+        "certainty": {
           "presence": "hedged"
         }
       },
@@ -331,7 +327,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Multiple gallstones, unchanged.",
@@ -370,7 +366,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Bilateral simple renal cysts, stable.",
@@ -453,7 +449,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Bilateral simple renal cysts, stable.",
@@ -612,43 +608,6 @@
           12
         ],
         "site_words": "biliary",
-        "review_status": "unreviewed",
-        "reviews": []
-      }
-    },
-    {
-      "observation_id": "F31.E13",
-      "exam_id": "E13",
-      "report_id": "IPL-EXEMPLAR-001-E13",
-      "exam_date": "2022-04-10",
-      "exam_modality": "US",
-      "finding_code": {
-        "system": "OIFM",
-        "code": "OIFM_OIDM_160831",
-        "display": "hepatic lesion",
-        "source": "registry"
-      },
-      "anatomic_site": {
-        "system": "Anatomic Locations Index 1.0.0",
-        "code": "RID58",
-        "display": "liver",
-        "snomed": "10200004"
-      },
-      "attributes": {
-        "presence": "absent",
-        "temporal_status": [
-          "new"
-        ]
-      },
-      "interpretations": [],
-      "text": "No new focal hepatic lesion.",
-      "provenance": {
-        "source": "specification",
-        "report_id": "IPL-EXEMPLAR-001-E13",
-        "sentences": [
-          13
-        ],
-        "site_words": "hepatic",
         "review_status": "unreviewed",
         "reviews": []
       }

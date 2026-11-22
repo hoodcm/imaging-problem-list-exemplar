@@ -25,8 +25,8 @@
       ]
     },
     {
-      "code": "confidence",
-      "display": "confidence",
+      "code": "certainty",
+      "display": "certainty",
       "definition": "Assertion modality: which axes the radiologist hedged (omitted = definite)"
     },
     {
@@ -66,36 +66,12 @@
           "display": "resolved"
         },
         {
-          "code": "larger",
-          "display": "larger"
+          "code": "increased",
+          "display": "increased"
         },
         {
-          "code": "smaller",
-          "display": "smaller"
-        },
-        {
-          "code": "increased_extent",
-          "display": "increased extent"
-        },
-        {
-          "code": "decreased_extent",
-          "display": "decreased extent"
-        },
-        {
-          "code": "more_conspicuous",
-          "display": "more conspicuous"
-        },
-        {
-          "code": "less_conspicuous",
-          "display": "less conspicuous"
-        },
-        {
-          "code": "increased_complexity",
-          "display": "increased complexity"
-        },
-        {
-          "code": "decreased_complexity",
-          "display": "decreased complexity"
+          "code": "decreased",
+          "display": "decreased"
         }
       ]
     },
@@ -141,17 +117,7 @@
     {
       "code": "measurement",
       "display": "current measurement",
-      "definition": "The values the report states for this examination",
-      "concept": [
-        {
-          "code": "height-loss",
-          "display": "height loss"
-        },
-        {
-          "code": "largest-member",
-          "display": "largest member"
-        }
-      ]
+      "definition": "The values the report states for this examination"
     },
     {
       "code": "prior_measurement",
@@ -161,8 +127,12 @@
     {
       "code": "severity",
       "display": "severity",
-      "definition": "Clinical intensity grade",
+      "definition": "The stated grade: a severity or size word",
       "concept": [
+        {
+          "code": "small",
+          "display": "small"
+        },
         {
           "code": "mild",
           "display": "mild"
@@ -182,36 +152,10 @@
         {
           "code": "severe",
           "display": "severe"
-        }
-      ]
-    },
-    {
-      "code": "extent",
-      "display": "extent",
-      "definition": "Qualitative physical size of a finding",
-      "concept": [
-        {
-          "code": "small",
-          "display": "small"
-        },
-        {
-          "code": "medium",
-          "display": "medium"
         },
         {
           "code": "large",
           "display": "large"
-        }
-      ]
-    },
-    {
-      "code": "distribution",
-      "display": "distribution",
-      "definition": "Coverage: involvement throughout the finding's own reference region (the region is finding-relative — a wall, a disc, the imaged skeleton). Nominal mark, not a cross-finding scale.",
-      "concept": [
-        {
-          "code": "diffuse",
-          "display": "diffuse"
         }
       ]
     },
@@ -226,9 +170,9 @@
       "definition": "Finding-specific descriptive properties that cannot exist independently"
     },
     {
-      "code": "aggregate",
-      "display": "aggregate",
-      "definition": "Marks a finding row as representing a non-discrete collection rather than a single discrete instance"
+      "code": "multiple",
+      "display": "multiple",
+      "definition": "The statement covers more than one finding of a type"
     },
     {
       "code": "insertion_site",
@@ -239,21 +183,6 @@
       "code": "tip_location",
       "display": "tip location",
       "definition": "Where device tip terminates"
-    },
-    {
-      "code": "position_status",
-      "display": "position status",
-      "definition": "Device positioning assessment",
-      "concept": [
-        {
-          "code": "satisfactory",
-          "display": "satisfactory"
-        },
-        {
-          "code": "malpositioned",
-          "display": "malpositioned"
-        }
-      ]
     },
     {
       "code": "integrity",
@@ -284,5 +213,5 @@
   "caseSensitive": true,
   "experimental": false,
   "hierarchyMeaning": "is-a",
-  "count": 58
+  "count": 43
 }

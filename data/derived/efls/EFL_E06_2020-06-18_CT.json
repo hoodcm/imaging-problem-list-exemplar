@@ -15,7 +15,7 @@
   "sentences": [
     {
       "number": 1,
-      "text": "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm."
+      "text": "Abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm."
     },
     {
       "number": 2,
@@ -47,7 +47,7 @@
     },
     {
       "number": 9,
-      "text": "Cholelithiasis, unchanged."
+      "text": "Cholelithiasis, largest stone 8 mm, unchanged."
     },
     {
       "number": 10,
@@ -91,22 +91,18 @@
     },
     {
       "number": 20,
-      "text": "No new hepatic lesion."
-    },
-    {
-      "number": 21,
       "text": "No abdominal lymphadenopathy."
     },
     {
-      "number": 22,
+      "number": 21,
       "text": "No small or large bowel obstruction."
     },
     {
-      "number": 23,
+      "number": 22,
       "text": "No pneumoperitoneum."
     },
     {
-      "number": 24,
+      "number": 23,
       "text": "No evidence of rupture or dissection."
     }
   ],
@@ -132,7 +128,7 @@
       "attributes": {
         "presence": "present",
         "temporal_status": [
-          "larger"
+          "increased"
         ],
         "measurement": [
           {
@@ -148,14 +144,14 @@
         ]
       },
       "interpretations": [],
-      "text": "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
+      "text": "Abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
           1
         ],
-        "site_words": "Infrarenal abdominal aortic",
+        "site_words": "Abdominal aortic",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -175,7 +171,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "attributes": {
@@ -256,7 +252,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID174",
-        "display": "body of pancreas",
+        "display": "pancreatic body",
         "snomed": "40133006"
       },
       "attributes": {
@@ -313,11 +309,11 @@
       },
       "attributes": {
         "presence": "present",
-        "extent": "small",
+        "severity": "small",
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Small esophageal varices, unchanged.",
@@ -399,7 +395,7 @@
       "attributes": {
         "presence": "present",
         "temporal_status": [
-          "larger"
+          "increased"
         ],
         "measurement": [
           {
@@ -444,10 +440,10 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
-      "text": "Cholelithiasis, unchanged.",
+      "text": "Cholelithiasis, largest stone 8 mm, unchanged.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
@@ -483,7 +479,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Bilateral simple renal cysts, stable.",
@@ -551,13 +547,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_873240",
-        "display": "spinal degeneration",
+        "display": "degenerative changes of the spine",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34573",
-        "display": "lumbar vertebral column",
+        "display": "lumbar spine",
         "snomed": "122496007"
       },
       "attributes": {
@@ -588,7 +584,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_022512",
-        "display": "arterial calcification",
+        "display": "atherosclerotic calcification",
         "source": "registry"
       },
       "anatomic_site": {
@@ -599,7 +595,7 @@
       },
       "attributes": {
         "presence": "present",
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [
         {
@@ -632,7 +628,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_017620",
-        "display": "prostate enlargement",
+        "display": "prostatomegaly",
         "source": "registry"
       },
       "anatomic_site": {
@@ -678,7 +674,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "attributes": {
@@ -759,7 +755,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Bilateral simple renal cysts, stable.",
@@ -770,6 +766,52 @@
           10
         ],
         "site_words": "renal",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F61.E06",
+      "exam_id": "E06",
+      "report_id": "IPL-EXEMPLAR-001-E06",
+      "exam_date": "2020-06-18",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "attributes": {
+        "presence": "present",
+        "temporal_status": [
+          "unchanged"
+        ],
+        "measurement": [
+          {
+            "value": 8,
+            "unit": "mm"
+          }
+        ],
+        "features": [
+          "largest"
+        ]
+      },
+      "interpretations": [],
+      "text": "Cholelithiasis, largest stone 8 mm, unchanged.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E06",
+        "sentences": [
+          9
+        ],
+        "site_words": "Cholelithiasis",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -911,43 +953,6 @@
       }
     },
     {
-      "observation_id": "F31.E06",
-      "exam_id": "E06",
-      "report_id": "IPL-EXEMPLAR-001-E06",
-      "exam_date": "2020-06-18",
-      "exam_modality": "CT",
-      "finding_code": {
-        "system": "OIFM",
-        "code": "OIFM_OIDM_160831",
-        "display": "hepatic lesion",
-        "source": "registry"
-      },
-      "anatomic_site": {
-        "system": "Anatomic Locations Index 1.0.0",
-        "code": "RID58",
-        "display": "liver",
-        "snomed": "10200004"
-      },
-      "attributes": {
-        "presence": "absent",
-        "temporal_status": [
-          "new"
-        ]
-      },
-      "interpretations": [],
-      "text": "No new hepatic lesion.",
-      "provenance": {
-        "source": "specification",
-        "report_id": "IPL-EXEMPLAR-001-E06",
-        "sentences": [
-          20
-        ],
-        "site_words": "hepatic",
-        "review_status": "unreviewed",
-        "reviews": []
-      }
-    },
-    {
       "observation_id": "F32.E06",
       "exam_id": "E06",
       "report_id": "IPL-EXEMPLAR-001-E06",
@@ -956,13 +961,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_391371",
-        "display": "lymph node enlargement",
+        "display": "lymphadenopathy",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID28854",
-        "display": "abdominal lymph node group",
+        "display": "abdominal lymph nodes",
         "snomed": "245284000"
       },
       "attributes": {
@@ -974,7 +979,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
-          21
+          20
         ],
         "site_words": "abdominal",
         "review_status": "unreviewed",
@@ -996,7 +1001,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID132",
-        "display": "small intestine",
+        "display": "small bowel",
         "snomed": "30315005"
       },
       "attributes": {
@@ -1008,7 +1013,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
-          22
+          21
         ],
         "site_words": "small or large bowel",
         "review_status": "unreviewed",
@@ -1042,7 +1047,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
-          23
+          22
         ],
         "site_words": "pneumoperitoneum",
         "review_status": "unreviewed",
@@ -1076,7 +1081,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
-          24
+          23
         ],
         "site_words": "rupture",
         "review_status": "unreviewed",
@@ -1110,7 +1115,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
-          24
+          23
         ],
         "site_words": "dissection",
         "review_status": "unreviewed",
@@ -1132,7 +1137,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID152",
-        "display": "large intestine",
+        "display": "colon",
         "snomed": "14742008"
       },
       "attributes": {
@@ -1144,7 +1149,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E06",
         "sentences": [
-          22
+          21
         ],
         "site_words": "large bowel",
         "review_status": "unreviewed",

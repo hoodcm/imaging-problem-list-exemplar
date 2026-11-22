@@ -15,7 +15,7 @@
   "sentences": [
     {
       "number": 1,
-      "text": "Right lower lobe consolidation, pneumonia."
+      "text": "Right lower lobe consolidation, compatible with pneumonia."
     },
     {
       "number": 2,
@@ -50,7 +50,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID1315",
-        "display": "lower lobe of right lung",
+        "display": "right lower lobe of lung",
         "snomed": "266005"
       },
       "attributes": {
@@ -66,7 +66,7 @@
           }
         }
       ],
-      "text": "Right lower lobe consolidation, pneumonia.",
+      "text": "Right lower lobe consolidation, compatible with pneumonia.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E04",

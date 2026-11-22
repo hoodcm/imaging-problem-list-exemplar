@@ -15,98 +15,94 @@
   "sentences": [
     {
       "number": 1,
-      "text": "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017."
+      "text": "Abdominal aortic aneurysm measures 3.5 cm, increased from 3.2 cm."
     },
     {
       "number": 2,
-      "text": "1.8 cm arterially enhancing segment 6 lesion."
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement."
     },
     {
       "number": 3,
-      "text": "LI-RADS 3."
-    },
-    {
-      "number": 4,
       "text": "No ascites."
     },
     {
-      "number": 5,
+      "number": 4,
       "text": "No portal vein thrombus."
     },
     {
-      "number": 6,
+      "number": 5,
       "text": "1.2 cm pancreatic body cyst communicating with main pancreatic duct, side-branch IPMN."
     },
     {
-      "number": 7,
+      "number": 6,
       "text": "Small esophageal varices."
     },
     {
-      "number": 8,
-      "text": "Nodular liver contour and capsular retraction, cirrhosis."
+      "number": 7,
+      "text": "Nodular liver contour and capsular retraction, compatible with cirrhosis."
     },
     {
-      "number": 9,
+      "number": 8,
       "text": "Splenomegaly, 13.8 cm."
     },
     {
-      "number": 10,
+      "number": 9,
       "text": "Cholelithiasis, largest stone 8 mm."
     },
     {
-      "number": 11,
-      "text": "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm."
+      "number": 10,
+      "text": "Simple renal cysts bilaterally."
     },
     {
-      "number": 12,
+      "number": 11,
       "text": "2 mm left renal calculus."
     },
     {
-      "number": 13,
+      "number": 12,
       "text": "Lumbar degenerative changes."
     },
     {
-      "number": 14,
+      "number": 13,
       "text": "Atherosclerotic calcifications of the abdominal aorta."
     },
     {
-      "number": 15,
+      "number": 14,
       "text": "Enlarged prostate, 4.5 cm."
     },
     {
-      "number": 16,
+      "number": 15,
       "text": "Left total hip arthroplasty in expected position."
     },
     {
-      "number": 17,
+      "number": 16,
       "text": "Status post appendectomy."
     },
     {
-      "number": 18,
+      "number": 17,
       "text": "No hydronephrosis."
     },
     {
-      "number": 19,
+      "number": 18,
       "text": "No biliary ductal dilation."
     },
     {
-      "number": 20,
+      "number": 19,
       "text": "Main pancreatic duct is normal in caliber."
     },
     {
-      "number": 21,
+      "number": 20,
       "text": "No abdominal lymphadenopathy."
     },
     {
-      "number": 22,
+      "number": 21,
       "text": "No small bowel obstruction."
     },
     {
-      "number": 23,
+      "number": 22,
       "text": "No pneumoperitoneum."
     },
     {
-      "number": 24,
+      "number": 23,
       "text": "No gallbladder wall thickening."
     }
   ],
@@ -132,7 +128,7 @@
       "attributes": {
         "presence": "present",
         "temporal_status": [
-          "larger"
+          "increased"
         ],
         "measurement": [
           {
@@ -148,14 +144,14 @@
         ]
       },
       "interpretations": [],
-      "text": "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017.",
+      "text": "Abdominal aortic aneurysm measures 3.5 cm, increased from 3.2 cm.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
           1
         ],
-        "site_words": "Infrarenal abdominal aortic",
+        "site_words": "Abdominal aortic",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -175,7 +171,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "attributes": {
@@ -190,21 +186,13 @@
           "arterial phase hyperenhancement"
         ]
       },
-      "interpretations": [
-        {
-          "assessment": {
-            "system": "ACR LI-RADS v2018",
-            "code": "LR-3"
-          }
-        }
-      ],
-      "text": "1.8 cm arterially enhancing segment 6 lesion. LI-RADS 3.",
+      "interpretations": [],
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          2,
-          3
+          2
         ],
         "site_words": "segment 6",
         "review_status": "unreviewed",
@@ -226,7 +214,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID174",
-        "display": "body of pancreas",
+        "display": "pancreatic body",
         "snomed": "40133006"
       },
       "attributes": {
@@ -256,7 +244,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          6
+          5
         ],
         "site_words": "pancreatic body",
         "review_status": "unreviewed",
@@ -283,8 +271,8 @@
       },
       "attributes": {
         "presence": "present",
-        "extent": "small",
-        "aggregate": true
+        "severity": "small",
+        "multiple": true
       },
       "interpretations": [],
       "text": "Small esophageal varices.",
@@ -292,7 +280,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          7
+          6
         ],
         "site_words": "esophageal",
         "review_status": "unreviewed",
@@ -332,7 +320,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          9
+          8
         ],
         "site_words": "Splenomegaly",
         "review_status": "unreviewed",
@@ -359,14 +347,7 @@
       },
       "attributes": {
         "presence": "present",
-        "measurement": [
-          {
-            "value": 8,
-            "unit": "mm",
-            "property": "largest member"
-          }
-        ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Cholelithiasis, largest stone 8 mm.",
@@ -374,7 +355,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          10
+          9
         ],
         "site_words": "Cholelithiasis",
         "review_status": "unreviewed",
@@ -402,22 +383,15 @@
       "attributes": {
         "presence": "present",
         "laterality": "left",
-        "measurement": [
-          {
-            "value": 1.5,
-            "unit": "cm",
-            "property": "largest member"
-          }
-        ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
-      "text": "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm.",
+      "text": "Simple renal cysts bilaterally.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          11
+          10
         ],
         "site_words": "renal",
         "review_status": "unreviewed",
@@ -458,7 +432,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          12
+          11
         ],
         "site_words": "left renal",
         "review_status": "unreviewed",
@@ -474,13 +448,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_873240",
-        "display": "spinal degeneration",
+        "display": "degenerative changes of the spine",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34573",
-        "display": "lumbar vertebral column",
+        "display": "lumbar spine",
         "snomed": "122496007"
       },
       "attributes": {
@@ -492,7 +466,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          13
+          12
         ],
         "site_words": "Lumbar",
         "review_status": "unreviewed",
@@ -508,7 +482,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_022512",
-        "display": "arterial calcification",
+        "display": "atherosclerotic calcification",
         "source": "registry"
       },
       "anatomic_site": {
@@ -519,7 +493,7 @@
       },
       "attributes": {
         "presence": "present",
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [
         {
@@ -536,7 +510,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          14
+          13
         ],
         "site_words": "abdominal aorta",
         "review_status": "unreviewed",
@@ -552,7 +526,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_017620",
-        "display": "prostate enlargement",
+        "display": "prostatomegaly",
         "source": "registry"
       },
       "anatomic_site": {
@@ -576,7 +550,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          15
+          14
         ],
         "site_words": "prostate",
         "review_status": "unreviewed",
@@ -598,13 +572,15 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "attributes": {
         "presence": "present",
         "laterality": "left",
-        "position_status": "satisfactory"
+        "features": [
+          "expected position"
+        ]
       },
       "interpretations": [],
       "text": "Left total hip arthroplasty in expected position.",
@@ -612,7 +588,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          16
+          15
         ],
         "site_words": "hip",
         "review_status": "unreviewed",
@@ -646,7 +622,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          17
+          16
         ],
         "site_words": "appendectomy",
         "review_status": "unreviewed",
@@ -674,22 +650,15 @@
       "attributes": {
         "presence": "present",
         "laterality": "right",
-        "measurement": [
-          {
-            "value": 0.8,
-            "unit": "cm",
-            "property": "largest member"
-          }
-        ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
-      "text": "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm.",
+      "text": "Simple renal cysts bilaterally.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          11
+          10
         ],
         "site_words": "renal",
         "review_status": "unreviewed",
@@ -727,12 +696,12 @@
           }
         }
       ],
-      "text": "Nodular liver contour and capsular retraction, cirrhosis.",
+      "text": "Nodular liver contour and capsular retraction, compatible with cirrhosis.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          8
+          7
         ],
         "site_words": "liver",
         "review_status": "unreviewed",
@@ -770,14 +739,57 @@
           }
         }
       ],
-      "text": "Nodular liver contour and capsular retraction, cirrhosis.",
+      "text": "Nodular liver contour and capsular retraction, compatible with cirrhosis.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          8
+          7
         ],
         "site_words": "liver",
+        "review_status": "unreviewed",
+        "reviews": []
+      }
+    },
+    {
+      "observation_id": "F61.E02",
+      "exam_id": "E02",
+      "report_id": "IPL-EXEMPLAR-001-E02",
+      "exam_date": "2018-02-06",
+      "exam_modality": "CT",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "attributes": {
+        "presence": "present",
+        "measurement": [
+          {
+            "value": 8,
+            "unit": "mm"
+          }
+        ],
+        "features": [
+          "largest"
+        ]
+      },
+      "interpretations": [],
+      "text": "Cholelithiasis, largest stone 8 mm.",
+      "provenance": {
+        "source": "specification",
+        "report_id": "IPL-EXEMPLAR-001-E02",
+        "sentences": [
+          9
+        ],
+        "site_words": "Cholelithiasis",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -809,7 +821,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          4
+          3
         ],
         "site_words": "ascites",
         "review_status": "unreviewed",
@@ -843,7 +855,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          5
+          4
         ],
         "site_words": "portal vein",
         "review_status": "unreviewed",
@@ -877,7 +889,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          18
+          17
         ],
         "site_words": "hydronephrosis",
         "review_status": "unreviewed",
@@ -911,7 +923,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          19
+          18
         ],
         "site_words": "biliary",
         "review_status": "unreviewed",
@@ -945,7 +957,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          20
+          19
         ],
         "site_words": "Main pancreatic duct",
         "review_status": "unreviewed",
@@ -961,13 +973,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_391371",
-        "display": "lymph node enlargement",
+        "display": "lymphadenopathy",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID28854",
-        "display": "abdominal lymph node group",
+        "display": "abdominal lymph nodes",
         "snomed": "245284000"
       },
       "attributes": {
@@ -979,7 +991,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          21
+          20
         ],
         "site_words": "abdominal",
         "review_status": "unreviewed",
@@ -1001,7 +1013,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID132",
-        "display": "small intestine",
+        "display": "small bowel",
         "snomed": "30315005"
       },
       "attributes": {
@@ -1013,7 +1025,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          22
+          21
         ],
         "site_words": "small bowel",
         "review_status": "unreviewed",
@@ -1047,7 +1059,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          23
+          22
         ],
         "site_words": "pneumoperitoneum",
         "review_status": "unreviewed",
@@ -1081,7 +1093,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E02",
         "sentences": [
-          24
+          23
         ],
         "site_words": "gallbladder",
         "review_status": "unreviewed",

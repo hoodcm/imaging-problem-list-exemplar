@@ -50,7 +50,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6537",
-        "display": "set of basal ganglia",
+        "display": "basal ganglia",
         "snomed": null
       },
       "attributes": {
@@ -59,7 +59,7 @@
         "chronicity": [
           "chronic"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Chronic lacunar infarcts in bilateral basal ganglia.",
@@ -83,7 +83,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_OIDM_381117",
-        "display": "hypoattenuation",
+        "display": "white matter hypoattenuation",
         "source": "registry"
       },
       "anatomic_site": {
@@ -98,7 +98,7 @@
         "chronicity": [
           "chronic"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [
         {
@@ -178,7 +178,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6383_RID9080",
-        "display": "cranial cavity",
+        "display": "intracranial",
         "snomed": "1101003"
       },
       "attributes": {
@@ -212,7 +212,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6383_RID9080",
-        "display": "cranial cavity",
+        "display": "intracranial",
         "snomed": "1101003"
       },
       "attributes": {
@@ -246,7 +246,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6383_RID9080",
-        "display": "cranial cavity",
+        "display": "intracranial",
         "snomed": "1101003"
       },
       "attributes": {

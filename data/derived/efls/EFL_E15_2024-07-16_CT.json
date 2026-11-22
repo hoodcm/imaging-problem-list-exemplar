@@ -15,7 +15,7 @@
   "sentences": [
     {
       "number": 1,
-      "text": "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study."
+      "text": "Abdominal aortic aneurysm measures 5.1 cm, increased from 4.8 cm."
     },
     {
       "number": 2,
@@ -31,7 +31,7 @@
     },
     {
       "number": 5,
-      "text": "Stable 1.2 cm side-branch IPMN cyst, pancreatic body."
+      "text": "Stable 1.2 cm pancreatic body cystic lesion, side-branch IPMN."
     },
     {
       "number": 6,
@@ -107,18 +107,14 @@
     },
     {
       "number": 24,
-      "text": "No new focal hepatic lesion."
-    },
-    {
-      "number": 25,
       "text": "No abdominal lymphadenopathy."
     },
     {
-      "number": 26,
+      "number": 25,
       "text": "No small bowel obstruction."
     },
     {
-      "number": 27,
+      "number": 26,
       "text": "No pneumoperitoneum."
     }
   ],
@@ -144,7 +140,7 @@
       "attributes": {
         "presence": "present",
         "temporal_status": [
-          "larger"
+          "increased"
         ],
         "measurement": [
           {
@@ -160,14 +156,14 @@
         ]
       },
       "interpretations": [],
-      "text": "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study.",
+      "text": "Abdominal aortic aneurysm measures 5.1 cm, increased from 4.8 cm.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E15",
         "sentences": [
           1
         ],
-        "site_words": "Infrarenal abdominal aortic",
+        "site_words": "Abdominal aortic",
         "review_status": "unreviewed",
         "reviews": []
       }
@@ -187,7 +183,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "attributes": {
@@ -308,7 +304,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID174",
-        "display": "body of pancreas",
+        "display": "pancreatic body",
         "snomed": "40133006"
       },
       "attributes": {
@@ -333,7 +329,7 @@
           }
         }
       ],
-      "text": "Stable 1.2 cm side-branch IPMN cyst, pancreatic body.",
+      "text": "Stable 1.2 cm pancreatic body cystic lesion, side-branch IPMN.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E15",
@@ -416,7 +412,7 @@
           {
             "value": 20,
             "unit": "%",
-            "property": "height loss"
+            "measured_quantity": "height loss"
           }
         ]
       },
@@ -453,11 +449,11 @@
       },
       "attributes": {
         "presence": "present",
-        "extent": "large",
+        "severity": "large",
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Large esophageal varices, stable.",
@@ -539,7 +535,7 @@
       "attributes": {
         "presence": "present",
         "temporal_status": [
-          "larger"
+          "increased"
         ],
         "measurement": [
           {
@@ -581,7 +577,7 @@
       },
       "attributes": {
         "presence": "present",
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Cholelithiasis.",
@@ -620,7 +616,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Stable bilateral simple renal cysts.",
@@ -657,7 +653,7 @@
         "presence": "present",
         "laterality": "left",
         "temporal_status": [
-          "larger"
+          "increased"
         ],
         "measurement": [
           {
@@ -688,13 +684,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_873240",
-        "display": "spinal degeneration",
+        "display": "degenerative changes of the spine",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34572",
-        "display": "thoracic vertebral column",
+        "display": "thoracic spine",
         "snomed": "122495006"
       },
       "attributes": {
@@ -725,13 +721,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_873240",
-        "display": "spinal degeneration",
+        "display": "degenerative changes of the spine",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34573",
-        "display": "lumbar vertebral column",
+        "display": "lumbar spine",
         "snomed": "122496007"
       },
       "attributes": {
@@ -762,7 +758,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_022512",
-        "display": "arterial calcification",
+        "display": "atherosclerotic calcification",
         "source": "registry"
       },
       "anatomic_site": {
@@ -776,7 +772,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [
         {
@@ -809,7 +805,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_017620",
-        "display": "prostate enlargement",
+        "display": "prostatomegaly",
         "source": "registry"
       },
       "anatomic_site": {
@@ -855,7 +851,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "attributes": {
@@ -927,7 +923,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID1315",
-        "display": "lower lobe of right lung",
+        "display": "right lower lobe of lung",
         "snomed": "266005"
       },
       "attributes": {
@@ -1014,7 +1010,7 @@
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Stable bilateral simple renal cysts.",
@@ -1132,43 +1128,6 @@
       }
     },
     {
-      "observation_id": "F31.E15",
-      "exam_id": "E15",
-      "report_id": "IPL-EXEMPLAR-001-E15",
-      "exam_date": "2024-07-16",
-      "exam_modality": "CT",
-      "finding_code": {
-        "system": "OIFM",
-        "code": "OIFM_OIDM_160831",
-        "display": "hepatic lesion",
-        "source": "registry"
-      },
-      "anatomic_site": {
-        "system": "Anatomic Locations Index 1.0.0",
-        "code": "RID58",
-        "display": "liver",
-        "snomed": "10200004"
-      },
-      "attributes": {
-        "presence": "absent",
-        "temporal_status": [
-          "new"
-        ]
-      },
-      "interpretations": [],
-      "text": "No new focal hepatic lesion.",
-      "provenance": {
-        "source": "specification",
-        "report_id": "IPL-EXEMPLAR-001-E15",
-        "sentences": [
-          24
-        ],
-        "site_words": "hepatic",
-        "review_status": "unreviewed",
-        "reviews": []
-      }
-    },
-    {
       "observation_id": "F32.E15",
       "exam_id": "E15",
       "report_id": "IPL-EXEMPLAR-001-E15",
@@ -1177,13 +1136,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_391371",
-        "display": "lymph node enlargement",
+        "display": "lymphadenopathy",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID28854",
-        "display": "abdominal lymph node group",
+        "display": "abdominal lymph nodes",
         "snomed": "245284000"
       },
       "attributes": {
@@ -1195,7 +1154,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E15",
         "sentences": [
-          25
+          24
         ],
         "site_words": "abdominal",
         "review_status": "unreviewed",
@@ -1217,7 +1176,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID132",
-        "display": "small intestine",
+        "display": "small bowel",
         "snomed": "30315005"
       },
       "attributes": {
@@ -1229,7 +1188,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E15",
         "sentences": [
-          26
+          25
         ],
         "site_words": "small bowel",
         "review_status": "unreviewed",
@@ -1263,7 +1222,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E15",
         "sentences": [
-          27
+          26
         ],
         "site_words": "pneumoperitoneum",
         "review_status": "unreviewed",

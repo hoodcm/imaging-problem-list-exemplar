@@ -134,7 +134,7 @@
             "x-fhir-r5": "none",
             "x-fhir-r6": "none",
             "x-dicom-sr": "none",
-            "x-representation": "not-representable"
+            "x-representation": "none-defined"
           },
           "text": {
             "type": "string",

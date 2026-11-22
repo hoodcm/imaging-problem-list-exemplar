@@ -13,7 +13,7 @@
   "title": "Entry closed by",
   "status": "draft",
   "experimental": false,
-  "description": "For an entry of only absences, the later observation of a finding of its kind within its site that closed it.",
+  "description": "For an entry of only absences, the later observation of a finding of its type within its site that closed it.",
   "fhirVersion": "5.0.0",
   "kind": "complex-type",
   "abstract": false,
@@ -32,7 +32,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Entry closed by",
-        "definition": "For an entry of only absences, the later observation of a finding of its kind within its site that closed it."
+        "definition": "For an entry of only absences, the later observation of a finding of its type within its site that closed it."
       },
       {
         "id": "Extension.extension",

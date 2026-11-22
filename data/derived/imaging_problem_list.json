@@ -58,14 +58,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal abdominal aortic aneurysm measuring 3.2 cm.",
+          "text": "Abdominal aortic aneurysm measures 3.2 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E01",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal abdominal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -95,7 +95,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -111,14 +111,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017.",
+          "text": "Abdominal aortic aneurysm measures 3.5 cm, increased from 3.2 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal abdominal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -149,7 +149,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -165,14 +165,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
+          "text": "Abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal abdominal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -203,7 +203,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -219,14 +219,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA.",
+          "text": "Abdominal aortic aneurysm measures 4.3 cm, increased from 3.9 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -257,7 +257,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -273,14 +273,14 @@
             ]
           },
           "interpretations": [],
-          "text": "There is a 4.5 cm infrarenal abdominal aortic aneurysm, slightly increased from 4.3 cm on July 2021 CT.",
+          "text": "Abdominal aortic aneurysm measures 4.5 cm, increased from 4.3 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
               1
             ],
-            "site_words": "infrarenal abdominal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -321,14 +321,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January.",
+          "text": "Abdominal aortic aneurysm measures 4.5 cm, unchanged.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E13",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -358,7 +358,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -374,14 +374,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm.",
+          "text": "Abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal abdominal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -412,7 +412,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -428,14 +428,14 @@
             ]
           },
           "interpretations": [],
-          "text": "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study.",
+          "text": "Abdominal aortic aneurysm measures 5.1 cm, increased from 4.8 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E15",
             "sentences": [
               1
             ],
-            "site_words": "Infrarenal abdominal aortic",
+            "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
             "reviews": []
           },
@@ -460,7 +460,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "status": "stable",
@@ -481,7 +481,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -496,21 +496,13 @@
               "arterial phase hyperenhancement"
             ]
           },
-          "interpretations": [
-            {
-              "assessment": {
-                "system": "ACR LI-RADS v2018",
-                "code": "LR-3"
-              }
-            }
-          ],
-          "text": "1.8 cm arterially enhancing segment 6 lesion. LI-RADS 3.",
+          "interpretations": [],
+          "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              2,
-              3
+              2
             ],
             "site_words": "segment 6",
             "review_status": "unreviewed",
@@ -536,7 +528,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -553,24 +545,16 @@
             "features": [
               "arterial phase hyperenhancement",
               "no washout",
-              "no capsule appearance"
+              "no capsule"
             ]
           },
-          "interpretations": [
-            {
-              "assessment": {
-                "system": "ACR LI-RADS v2018",
-                "code": "LR-3"
-              }
-            }
-          ],
-          "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule appearance. LI-RADS 3.",
+          "interpretations": [],
+          "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              1,
-              2
+              1
             ],
             "site_words": "segment 6",
             "review_status": "unreviewed",
@@ -596,7 +580,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -643,7 +627,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -658,21 +642,13 @@
               }
             ]
           },
-          "interpretations": [
-            {
-              "assessment": {
-                "system": "ACR LI-RADS v2018",
-                "code": "LR-2"
-              }
-            }
-          ],
-          "text": "Segment 6 lesion 1.7 cm, stable >2 years. Downgraded to LI-RADS 2.",
+          "interpretations": [],
+          "text": "Segment 6 lesion 1.7 cm, stable >2 years.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              1,
-              2
+              1
             ],
             "site_words": "Segment 6",
             "review_status": "unreviewed",
@@ -698,7 +674,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -713,21 +689,13 @@
               }
             ]
           },
-          "interpretations": [
-            {
-              "assessment": {
-                "system": "ACR LI-RADS v2018",
-                "code": "LR-2"
-              }
-            }
-          ],
-          "text": "Segment 6 lesion stable at 1.7 cm. LI-RADS 2.",
+          "interpretations": [],
+          "text": "Segment 6 lesion stable at 1.7 cm.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              2,
-              3
+              2
             ],
             "site_words": "Segment 6",
             "review_status": "unreviewed",
@@ -753,7 +721,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -800,7 +768,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -847,7 +815,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -862,21 +830,13 @@
               }
             ]
           },
-          "interpretations": [
-            {
-              "assessment": {
-                "system": "ACR LI-RADS v2018",
-                "code": "LR-2"
-              }
-            }
-          ],
-          "text": "Segment 6 hepatic lesion measures 1.6 cm, stable. LI-RADS 2.",
+          "interpretations": [],
+          "text": "Segment 6 hepatic lesion measures 1.6 cm, stable.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              2,
-              3
+              2
             ],
             "site_words": "Segment 6",
             "review_status": "unreviewed",
@@ -902,7 +862,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID33242",
-            "display": "segment VI of liver",
+            "display": "hepatic segment 6",
             "snomed": null
           },
           "attributes": {
@@ -1020,7 +980,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              4
+              3
             ],
             "site_words": "ascites",
             "review_status": "unreviewed",
@@ -1058,7 +1018,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              3
+              2
             ],
             "site_words": "ascites",
             "review_status": "unreviewed",
@@ -1142,7 +1102,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              3
+              2
             ],
             "site_words": "ascites",
             "review_status": "unreviewed",
@@ -1175,7 +1135,7 @@
             "presence": "present",
             "severity": "moderate",
             "temporal_status": [
-              "increased_extent"
+              "increased"
             ]
           },
           "interpretations": [],
@@ -1184,7 +1144,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              4
+              3
             ],
             "site_words": "ascites",
             "review_status": "unreviewed",
@@ -1256,7 +1216,7 @@
             "presence": "present",
             "severity": "mild",
             "temporal_status": [
-              "decreased_extent"
+              "decreased"
             ]
           },
           "interpretations": [],
@@ -1306,7 +1266,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              4
+              3
             ],
             "site_words": "Ascites",
             "review_status": "unreviewed",
@@ -1445,7 +1405,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              5
+              4
             ],
             "site_words": "portal vein",
             "review_status": "unreviewed",
@@ -1521,7 +1481,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              5
+              4
             ],
             "site_words": "portal vein",
             "review_status": "unreviewed",
@@ -1656,7 +1616,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              5
+              4
             ],
             "site_words": "portal vein",
             "review_status": "unreviewed",
@@ -1727,7 +1687,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID174",
-        "display": "body of pancreas",
+        "display": "pancreatic body",
         "snomed": "40133006"
       },
       "status": "stable",
@@ -1748,7 +1708,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -1778,7 +1738,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              6
+              5
             ],
             "site_words": "pancreatic body",
             "review_status": "unreviewed",
@@ -1804,7 +1764,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -1860,7 +1820,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -1890,7 +1850,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              4
+              3
             ],
             "site_words": "pancreatic body",
             "review_status": "unreviewed",
@@ -1916,7 +1876,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -1947,7 +1907,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              6
+              5
             ],
             "site_words": "Pancreatic body",
             "review_status": "unreviewed",
@@ -1973,7 +1933,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -2029,12 +1989,12 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
             "presence": "present",
-            "confidence": {
+            "certainty": {
               "presence": "hedged"
             }
           },
@@ -2070,7 +2030,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -2100,7 +2060,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              6
+              5
             ],
             "site_words": "Pancreatic body",
             "review_status": "unreviewed",
@@ -2126,7 +2086,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID174",
-            "display": "body of pancreas",
+            "display": "pancreatic body",
             "snomed": "40133006"
           },
           "attributes": {
@@ -2151,7 +2111,7 @@
               }
             }
           ],
-          "text": "Stable 1.2 cm side-branch IPMN cyst, pancreatic body.",
+          "text": "Stable 1.2 cm pancreatic body cystic lesion, side-branch IPMN.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E15",
@@ -2182,7 +2142,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID1315",
-        "display": "lower lobe of right lung",
+        "display": "right lower lobe of lung",
         "snomed": "266005"
       },
       "status": "resolved",
@@ -2203,7 +2163,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID1315",
-            "display": "lower lobe of right lung",
+            "display": "right lower lobe of lung",
             "snomed": "266005"
           },
           "attributes": {
@@ -2219,7 +2179,7 @@
               }
             }
           ],
-          "text": "Right lower lobe consolidation, pneumonia.",
+          "text": "Right lower lobe consolidation, compatible with pneumonia.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E04",
@@ -2250,7 +2210,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID1315",
-            "display": "lower lobe of right lung",
+            "display": "right lower lobe of lung",
             "snomed": "266005"
           },
           "attributes": {
@@ -2421,7 +2381,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              7
+              6
             ],
             "site_words": "left 7th and 8th rib",
             "review_status": "unreviewed",
@@ -2624,7 +2584,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              7
+              6
             ],
             "site_words": "left 7th and 8th rib",
             "review_status": "unreviewed",
@@ -2730,7 +2690,7 @@
               {
                 "value": 20,
                 "unit": "%",
-                "property": "height loss"
+                "measured_quantity": "height loss"
               }
             ]
           },
@@ -2778,7 +2738,7 @@
               {
                 "value": 20,
                 "unit": "%",
-                "property": "height loss"
+                "measured_quantity": "height loss"
               }
             ]
           },
@@ -2788,7 +2748,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              8
+              7
             ],
             "site_words": "L4",
             "review_status": "unreviewed",
@@ -2830,7 +2790,7 @@
               {
                 "value": 20,
                 "unit": "%",
-                "property": "height loss"
+                "measured_quantity": "height loss"
               }
             ]
           },
@@ -2892,8 +2852,8 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "small",
-            "aggregate": true
+            "severity": "small",
+            "multiple": true
           },
           "interpretations": [],
           "text": "Small esophageal varices.",
@@ -2901,7 +2861,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              7
+              6
             ],
             "site_words": "esophageal",
             "review_status": "unreviewed",
@@ -2932,11 +2892,11 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "small",
+            "severity": "small",
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Small esophageal varices, unchanged.",
@@ -2944,7 +2904,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              4
+              3
             ],
             "site_words": "esophageal",
             "review_status": "unreviewed",
@@ -2975,11 +2935,11 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "small",
+            "severity": "small",
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Small esophageal varices, unchanged.",
@@ -3018,11 +2978,11 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "small",
+            "severity": "small",
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Small esophageal varices, stable.",
@@ -3030,7 +2990,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              5
+              4
             ],
             "site_words": "esophageal",
             "review_status": "unreviewed",
@@ -3061,19 +3021,19 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "medium",
+            "severity": "moderate",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Medium-sized esophageal varices, increased from small.",
+          "text": "Moderate esophageal varices, increased from small.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              7
+              6
             ],
             "site_words": "esophageal",
             "review_status": "unreviewed",
@@ -3104,11 +3064,11 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "medium",
-            "aggregate": true
+            "severity": "moderate",
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Medium-sized esophageal varices.",
+          "text": "Moderate esophageal varices.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
@@ -3144,11 +3104,11 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "large",
+            "severity": "large",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Large esophageal varices, increased.",
@@ -3156,7 +3116,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              9
+              8
             ],
             "site_words": "esophageal",
             "review_status": "unreviewed",
@@ -3187,11 +3147,11 @@
           },
           "attributes": {
             "presence": "present",
-            "extent": "large",
+            "severity": "large",
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Large esophageal varices, stable.",
@@ -3225,7 +3185,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID1315",
-        "display": "lower lobe of right lung",
+        "display": "right lower lobe of lung",
         "snomed": "266005"
       },
       "status": "stable",
@@ -3246,7 +3206,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID1315",
-            "display": "lower lobe of right lung",
+            "display": "right lower lobe of lung",
             "snomed": "266005"
           },
           "attributes": {
@@ -3298,7 +3258,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID1315",
-            "display": "lower lobe of right lung",
+            "display": "right lower lobe of lung",
             "snomed": "266005"
           },
           "attributes": {
@@ -3313,7 +3273,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              10
+              9
             ],
             "site_words": "Right lower lobe",
             "review_status": "unreviewed",
@@ -3339,7 +3299,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID1315",
-            "display": "lower lobe of right lung",
+            "display": "right lower lobe of lung",
             "snomed": "266005"
           },
           "attributes": {
@@ -3422,7 +3382,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              5
+              4
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -3519,7 +3479,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              6
+              5
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -3569,7 +3529,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              8
+              7
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -3666,7 +3626,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              11
+              10
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -3779,7 +3739,7 @@
               }
             }
           ],
-          "text": "Nodular liver surface, cirrhosis.",
+          "text": "Nodular liver surface, compatible with cirrhosis.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E01",
@@ -3826,12 +3786,12 @@
               }
             }
           ],
-          "text": "Nodular liver contour and capsular retraction, cirrhosis.",
+          "text": "Nodular liver contour and capsular retraction, compatible with cirrhosis.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              8
+              7
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -3878,7 +3838,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              5
+              4
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -3991,12 +3951,12 @@
               }
             }
           ],
-          "text": "Nodular liver contour and capsular retraction, cirrhosis.",
+          "text": "Nodular liver contour and capsular retraction, compatible with cirrhosis.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              8
+              7
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -4043,7 +4003,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              5
+              4
             ],
             "site_words": "liver",
             "review_status": "unreviewed",
@@ -4153,7 +4113,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              9
+              8
             ],
             "site_words": "Splenomegaly",
             "review_status": "unreviewed",
@@ -4198,7 +4158,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              6
+              5
             ],
             "site_words": "Splenomegaly",
             "review_status": "unreviewed",
@@ -4231,7 +4191,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -4290,7 +4250,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              7
+              6
             ],
             "site_words": "Splenomegaly",
             "review_status": "unreviewed",
@@ -4323,7 +4283,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -4338,7 +4298,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              9
+              8
             ],
             "site_words": "Splenomegaly",
             "review_status": "unreviewed",
@@ -4472,7 +4432,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              12
+              11
             ],
             "site_words": "Splenomegaly",
             "review_status": "unreviewed",
@@ -4505,7 +4465,7 @@
           "attributes": {
             "presence": "present",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -4572,7 +4532,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis.",
@@ -4611,14 +4571,7 @@
           },
           "attributes": {
             "presence": "present",
-            "measurement": [
-              {
-                "value": 8,
-                "unit": "mm",
-                "property": "largest member"
-              }
-            ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis, largest stone 8 mm.",
@@ -4626,7 +4579,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              10
+              9
             ],
             "site_words": "Cholelithiasis",
             "review_status": "unreviewed",
@@ -4657,7 +4610,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis.",
@@ -4665,7 +4618,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E03",
             "sentences": [
-              7
+              6
             ],
             "site_words": "Cholelithiasis",
             "review_status": "unreviewed",
@@ -4699,10 +4652,10 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Cholelithiasis, unchanged.",
+          "text": "Cholelithiasis, largest stone 8 mm, unchanged.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
@@ -4741,7 +4694,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis, unchanged.",
@@ -4749,7 +4702,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E07",
             "sentences": [
-              8
+              7
             ],
             "site_words": "Cholelithiasis",
             "review_status": "unreviewed",
@@ -4780,7 +4733,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis.",
@@ -4788,7 +4741,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              10
+              9
             ],
             "site_words": "Cholelithiasis",
             "review_status": "unreviewed",
@@ -4819,7 +4772,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis.",
@@ -4861,7 +4814,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Multiple gallstones, unchanged.",
@@ -4903,7 +4856,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis, stable.",
@@ -4911,7 +4864,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              13
+              12
             ],
             "site_words": "Cholelithiasis",
             "review_status": "unreviewed",
@@ -4942,7 +4895,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Cholelithiasis.",
@@ -4959,6 +4912,124 @@
           "derived": {
             "status": "stable",
             "rule": "nothing-contradicts"
+          }
+        }
+      ],
+      "corrections": []
+    },
+    {
+      "finding_id": "F61",
+      "tracking_uid": "2.25.203514330049341477754692493587840685177",
+      "finding_code": {
+        "system": "OIFM",
+        "code": "OIFM_GMTS_022482",
+        "display": "cholelithiasis",
+        "source": "registry"
+      },
+      "anatomic_site": {
+        "system": "Anatomic Locations Index 1.0.0",
+        "code": "RID187",
+        "display": "gallbladder",
+        "snomed": "28231008"
+      },
+      "status": "stable",
+      "status_rule": "stated-unchanged",
+      "observations": [
+        {
+          "observation_id": "F61.E02",
+          "exam_id": "E02",
+          "report_id": "IPL-EXEMPLAR-001-E02",
+          "exam_date": "2018-02-06",
+          "exam_modality": "CT",
+          "finding_code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022482",
+            "display": "cholelithiasis",
+            "source": "registry"
+          },
+          "anatomic_site": {
+            "system": "Anatomic Locations Index 1.0.0",
+            "code": "RID187",
+            "display": "gallbladder",
+            "snomed": "28231008"
+          },
+          "attributes": {
+            "presence": "present",
+            "measurement": [
+              {
+                "value": 8,
+                "unit": "mm"
+              }
+            ],
+            "features": [
+              "largest"
+            ]
+          },
+          "interpretations": [],
+          "text": "Cholelithiasis, largest stone 8 mm.",
+          "provenance": {
+            "source": "specification",
+            "report_id": "IPL-EXEMPLAR-001-E02",
+            "sentences": [
+              9
+            ],
+            "site_words": "Cholelithiasis",
+            "review_status": "unreviewed",
+            "reviews": []
+          },
+          "derived": {
+            "status": "active",
+            "rule": "first-observation"
+          }
+        },
+        {
+          "observation_id": "F61.E06",
+          "exam_id": "E06",
+          "report_id": "IPL-EXEMPLAR-001-E06",
+          "exam_date": "2020-06-18",
+          "exam_modality": "CT",
+          "finding_code": {
+            "system": "OIFM",
+            "code": "OIFM_GMTS_022482",
+            "display": "cholelithiasis",
+            "source": "registry"
+          },
+          "anatomic_site": {
+            "system": "Anatomic Locations Index 1.0.0",
+            "code": "RID187",
+            "display": "gallbladder",
+            "snomed": "28231008"
+          },
+          "attributes": {
+            "presence": "present",
+            "temporal_status": [
+              "unchanged"
+            ],
+            "measurement": [
+              {
+                "value": 8,
+                "unit": "mm"
+              }
+            ],
+            "features": [
+              "largest"
+            ]
+          },
+          "interpretations": [],
+          "text": "Cholelithiasis, largest stone 8 mm, unchanged.",
+          "provenance": {
+            "source": "specification",
+            "report_id": "IPL-EXEMPLAR-001-E06",
+            "sentences": [
+              9
+            ],
+            "site_words": "Cholelithiasis",
+            "review_status": "unreviewed",
+            "reviews": []
+          },
+          "derived": {
+            "status": "stable",
+            "rule": "stated-unchanged"
           }
         }
       ],
@@ -5003,17 +5074,10 @@
           "attributes": {
             "presence": "present",
             "laterality": "left",
-            "measurement": [
-              {
-                "value": 1.4,
-                "unit": "cm",
-                "property": "largest member"
-              }
-            ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+          "text": "Simple cysts in bilateral kidneys.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E01",
@@ -5050,22 +5114,15 @@
           "attributes": {
             "presence": "present",
             "laterality": "left",
-            "measurement": [
-              {
-                "value": 1.5,
-                "unit": "cm",
-                "property": "largest member"
-              }
-            ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm.",
+          "text": "Simple renal cysts bilaterally.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              11
+              10
             ],
             "site_words": "renal",
             "review_status": "unreviewed",
@@ -5100,7 +5157,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5143,7 +5200,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5151,7 +5208,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              11
+              10
             ],
             "site_words": "renal",
             "review_status": "unreviewed",
@@ -5186,7 +5243,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5229,7 +5286,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5272,7 +5329,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, unchanged.",
@@ -5280,7 +5337,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              14
+              13
             ],
             "site_words": "renal",
             "review_status": "unreviewed",
@@ -5315,7 +5372,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Stable bilateral simple renal cysts.",
@@ -5377,17 +5434,10 @@
           "attributes": {
             "presence": "present",
             "laterality": "right",
-            "measurement": [
-              {
-                "value": 0.8,
-                "unit": "cm",
-                "property": "largest member"
-              }
-            ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.",
+          "text": "Simple cysts in bilateral kidneys.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E01",
@@ -5424,22 +5474,15 @@
           "attributes": {
             "presence": "present",
             "laterality": "right",
-            "measurement": [
-              {
-                "value": 0.8,
-                "unit": "cm",
-                "property": "largest member"
-              }
-            ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
-          "text": "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm.",
+          "text": "Simple renal cysts bilaterally.",
           "provenance": {
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              11
+              10
             ],
             "site_words": "renal",
             "review_status": "unreviewed",
@@ -5474,7 +5517,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5517,7 +5560,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5525,7 +5568,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              11
+              10
             ],
             "site_words": "renal",
             "review_status": "unreviewed",
@@ -5560,7 +5603,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5603,7 +5646,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, stable.",
@@ -5646,7 +5689,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Bilateral simple renal cysts, unchanged.",
@@ -5654,7 +5697,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              14
+              13
             ],
             "site_words": "renal",
             "review_status": "unreviewed",
@@ -5689,7 +5732,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Stable bilateral simple renal cysts.",
@@ -5806,7 +5849,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              12
+              11
             ],
             "site_words": "left renal",
             "review_status": "unreviewed",
@@ -5887,7 +5930,7 @@
             "presence": "present",
             "laterality": "left",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -5902,7 +5945,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              12
+              11
             ],
             "site_words": "Left renal",
             "review_status": "unreviewed",
@@ -6046,7 +6089,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              15
+              14
             ],
             "site_words": "Left renal",
             "review_status": "unreviewed",
@@ -6079,7 +6122,7 @@
             "presence": "present",
             "laterality": "left",
             "temporal_status": [
-              "larger"
+              "increased"
             ],
             "measurement": [
               {
@@ -6115,13 +6158,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_873240",
-        "display": "spinal degeneration",
+        "display": "degenerative changes of the spine",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34572",
-        "display": "thoracic vertebral column",
+        "display": "thoracic spine",
         "snomed": "122495006"
       },
       "status": "stable",
@@ -6136,13 +6179,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34572",
-            "display": "thoracic vertebral column",
+            "display": "thoracic spine",
             "snomed": "122495006"
           },
           "attributes": {
@@ -6174,13 +6217,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34572",
-            "display": "thoracic vertebral column",
+            "display": "thoracic spine",
             "snomed": "122495006"
           },
           "attributes": {
@@ -6195,7 +6238,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              16
+              15
             ],
             "site_words": "thoracic spine",
             "review_status": "unreviewed",
@@ -6215,13 +6258,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34572",
-            "display": "thoracic vertebral column",
+            "display": "thoracic spine",
             "snomed": "122495006"
           },
           "attributes": {
@@ -6256,13 +6299,13 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_873240",
-        "display": "spinal degeneration",
+        "display": "degenerative changes of the spine",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34573",
-        "display": "lumbar vertebral column",
+        "display": "lumbar spine",
         "snomed": "122496007"
       },
       "status": "stable",
@@ -6277,13 +6320,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34573",
-            "display": "lumbar vertebral column",
+            "display": "lumbar spine",
             "snomed": "122496007"
           },
           "attributes": {
@@ -6295,7 +6338,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              13
+              12
             ],
             "site_words": "Lumbar",
             "review_status": "unreviewed",
@@ -6315,13 +6358,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34573",
-            "display": "lumbar vertebral column",
+            "display": "lumbar spine",
             "snomed": "122496007"
           },
           "attributes": {
@@ -6356,13 +6399,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34573",
-            "display": "lumbar vertebral column",
+            "display": "lumbar spine",
             "snomed": "122496007"
           },
           "attributes": {
@@ -6374,7 +6417,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              13
+              12
             ],
             "site_words": "lumbar",
             "review_status": "unreviewed",
@@ -6394,13 +6437,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34573",
-            "display": "lumbar vertebral column",
+            "display": "lumbar spine",
             "snomed": "122496007"
           },
           "attributes": {
@@ -6435,13 +6478,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34573",
-            "display": "lumbar vertebral column",
+            "display": "lumbar spine",
             "snomed": "122496007"
           },
           "attributes": {
@@ -6456,7 +6499,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              17
+              16
             ],
             "site_words": "Lumbar",
             "review_status": "unreviewed",
@@ -6476,13 +6519,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_873240",
-            "display": "spinal degeneration",
+            "display": "degenerative changes of the spine",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34573",
-            "display": "lumbar vertebral column",
+            "display": "lumbar spine",
             "snomed": "122496007"
           },
           "attributes": {
@@ -6517,7 +6560,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_022512",
-        "display": "arterial calcification",
+        "display": "atherosclerotic calcification",
         "source": "registry"
       },
       "anatomic_site": {
@@ -6538,7 +6581,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_022512",
-            "display": "arterial calcification",
+            "display": "atherosclerotic calcification",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6549,7 +6592,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -6566,7 +6609,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              14
+              13
             ],
             "site_words": "abdominal aorta",
             "review_status": "unreviewed",
@@ -6586,7 +6629,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_022512",
-            "display": "arterial calcification",
+            "display": "atherosclerotic calcification",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6597,7 +6640,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -6634,7 +6677,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_022512",
-            "display": "arterial calcification",
+            "display": "atherosclerotic calcification",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6645,7 +6688,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -6662,7 +6705,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              14
+              13
             ],
             "site_words": "abdominal aorta",
             "review_status": "unreviewed",
@@ -6682,7 +6725,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_022512",
-            "display": "arterial calcification",
+            "display": "atherosclerotic calcification",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6693,7 +6736,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -6730,7 +6773,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_022512",
-            "display": "arterial calcification",
+            "display": "atherosclerotic calcification",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6741,7 +6784,7 @@
           },
           "attributes": {
             "presence": "present",
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -6758,7 +6801,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              18
+              17
             ],
             "site_words": "Abdominal aortic",
             "review_status": "unreviewed",
@@ -6778,7 +6821,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_022512",
-            "display": "arterial calcification",
+            "display": "atherosclerotic calcification",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6792,7 +6835,7 @@
             "temporal_status": [
               "unchanged"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -6829,7 +6872,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_GMTS_017620",
-        "display": "prostate enlargement",
+        "display": "prostatomegaly",
         "source": "registry"
       },
       "anatomic_site": {
@@ -6850,7 +6893,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_017620",
-            "display": "prostate enlargement",
+            "display": "prostatomegaly",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6874,7 +6917,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              15
+              14
             ],
             "site_words": "prostate",
             "review_status": "unreviewed",
@@ -6894,7 +6937,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_017620",
-            "display": "prostate enlargement",
+            "display": "prostatomegaly",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6938,7 +6981,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_017620",
-            "display": "prostate enlargement",
+            "display": "prostatomegaly",
             "source": "registry"
           },
           "anatomic_site": {
@@ -6962,7 +7005,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              15
+              14
             ],
             "site_words": "prostate",
             "review_status": "unreviewed",
@@ -6982,7 +7025,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_017620",
-            "display": "prostate enlargement",
+            "display": "prostatomegaly",
             "source": "registry"
           },
           "anatomic_site": {
@@ -7026,7 +7069,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_017620",
-            "display": "prostate enlargement",
+            "display": "prostatomegaly",
             "source": "registry"
           },
           "anatomic_site": {
@@ -7053,7 +7096,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              19
+              18
             ],
             "site_words": "prostate",
             "review_status": "unreviewed",
@@ -7073,7 +7116,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_GMTS_017620",
-            "display": "prostate enlargement",
+            "display": "prostatomegaly",
             "source": "registry"
           },
           "anatomic_site": {
@@ -7123,7 +7166,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "status": "stable",
@@ -7144,13 +7187,15 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
             "presence": "present",
             "laterality": "left",
-            "position_status": "satisfactory"
+            "features": [
+              "expected position"
+            ]
           },
           "interpretations": [],
           "text": "Left total hip arthroplasty in expected position.",
@@ -7158,7 +7203,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              16
+              15
             ],
             "site_words": "hip",
             "review_status": "unreviewed",
@@ -7184,7 +7229,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
@@ -7226,13 +7271,15 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
             "presence": "present",
             "laterality": "left",
-            "position_status": "satisfactory"
+            "features": [
+              "in place"
+            ]
           },
           "interpretations": [],
           "text": "Left total hip arthroplasty in place.",
@@ -7240,7 +7287,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              16
+              15
             ],
             "site_words": "hip",
             "review_status": "unreviewed",
@@ -7266,7 +7313,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
@@ -7308,7 +7355,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
@@ -7350,7 +7397,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
@@ -7366,7 +7413,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              20
+              19
             ],
             "site_words": "hip",
             "review_status": "unreviewed",
@@ -7392,7 +7439,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
@@ -7468,7 +7515,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              17
+              16
             ],
             "site_words": "appendectomy",
             "review_status": "unreviewed",
@@ -7544,7 +7591,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              17
+              16
             ],
             "site_words": "appendectomy",
             "review_status": "unreviewed",
@@ -7620,7 +7667,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              21
+              20
             ],
             "site_words": "appendectomy",
             "review_status": "unreviewed",
@@ -7684,7 +7731,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6537",
-        "display": "set of basal ganglia",
+        "display": "basal ganglia",
         "snomed": null
       },
       "status": "stable",
@@ -7705,7 +7752,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID6537",
-            "display": "set of basal ganglia",
+            "display": "basal ganglia",
             "snomed": null
           },
           "attributes": {
@@ -7714,7 +7761,7 @@
             "chronicity": [
               "chronic"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [],
           "text": "Chronic lacunar infarcts in bilateral basal ganglia.",
@@ -7743,7 +7790,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_OIDM_381117",
-        "display": "hypoattenuation",
+        "display": "white matter hypoattenuation",
         "source": "registry"
       },
       "anatomic_site": {
@@ -7764,7 +7811,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_OIDM_381117",
-            "display": "hypoattenuation",
+            "display": "white matter hypoattenuation",
             "source": "registry"
           },
           "anatomic_site": {
@@ -7779,7 +7826,7 @@
             "chronicity": [
               "chronic"
             ],
-            "aggregate": true
+            "multiple": true
           },
           "interpretations": [
             {
@@ -7889,7 +7936,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID13209",
-        "display": "musculoskeletal system",
+        "display": "bones",
         "snomed": "26107004"
       },
       "status": "stable",
@@ -7910,12 +7957,14 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID13209",
-            "display": "musculoskeletal system",
+            "display": "bones",
             "snomed": "26107004"
           },
           "attributes": {
             "presence": "present",
-            "distribution": "diffuse"
+            "features": [
+              "diffuse"
+            ]
           },
           "interpretations": [],
           "text": "Bones are diffusely osteopenic.",
@@ -7949,12 +7998,14 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID13209",
-            "display": "musculoskeletal system",
+            "display": "bones",
             "snomed": "26107004"
           },
           "attributes": {
             "presence": "present",
-            "distribution": "diffuse"
+            "features": [
+              "diffuse"
+            ]
           },
           "interpretations": [],
           "text": "Diffuse osteopenia.",
@@ -8675,7 +8726,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              18
+              17
             ],
             "site_words": "hydronephrosis",
             "review_status": "unreviewed",
@@ -8751,7 +8802,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              18
+              17
             ],
             "site_words": "hydronephrosis",
             "review_status": "unreviewed",
@@ -8865,7 +8916,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              22
+              21
             ],
             "site_words": "hydronephrosis",
             "review_status": "unreviewed",
@@ -9000,7 +9051,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              19
+              18
             ],
             "site_words": "biliary",
             "review_status": "unreviewed",
@@ -9076,7 +9127,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              19
+              18
             ],
             "site_words": "Bile ducts",
             "review_status": "unreviewed",
@@ -9190,7 +9241,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              23
+              22
             ],
             "site_words": "biliary",
             "review_status": "unreviewed",
@@ -9287,7 +9338,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              20
+              19
             ],
             "site_words": "Main pancreatic duct",
             "review_status": "unreviewed",
@@ -9363,7 +9414,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              20
+              19
             ],
             "site_words": "Main pancreatic duct",
             "review_status": "unreviewed",
@@ -9439,7 +9490,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              24
+              23
             ],
             "site_words": "Pancreatic duct",
             "review_status": "unreviewed",
@@ -9492,326 +9543,18 @@
       "corrections": []
     },
     {
-      "finding_id": "F31",
-      "tracking_uid": "2.25.3269349255830121906121423771028791014",
-      "finding_code": {
-        "system": "OIFM",
-        "code": "OIFM_OIDM_160831",
-        "display": "hepatic lesion",
-        "source": "registry"
-      },
-      "anatomic_site": {
-        "system": "Anatomic Locations Index 1.0.0",
-        "code": "RID58",
-        "display": "liver",
-        "snomed": "10200004"
-      },
-      "status": "excluded",
-      "status_rule": "absent-never-present",
-      "observations": [
-        {
-          "observation_id": "F31.E06",
-          "exam_id": "E06",
-          "report_id": "IPL-EXEMPLAR-001-E06",
-          "exam_date": "2020-06-18",
-          "exam_modality": "CT",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E06",
-            "sentences": [
-              20
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        },
-        {
-          "observation_id": "F31.E07",
-          "exam_id": "E07",
-          "report_id": "IPL-EXEMPLAR-001-E07",
-          "exam_date": "2021-03-09",
-          "exam_modality": "MRI",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E07",
-            "sentences": [
-              9
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        },
-        {
-          "observation_id": "F31.E08",
-          "exam_id": "E08",
-          "report_id": "IPL-EXEMPLAR-001-E08",
-          "exam_date": "2021-07-22",
-          "exam_modality": "CT",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new focal hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E08",
-            "sentences": [
-              21
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        },
-        {
-          "observation_id": "F31.E11",
-          "exam_id": "E11",
-          "report_id": "IPL-EXEMPLAR-001-E11",
-          "exam_date": "2022-01-15",
-          "exam_modality": "CT",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E11",
-            "sentences": [
-              29
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        },
-        {
-          "observation_id": "F31.E13",
-          "exam_id": "E13",
-          "report_id": "IPL-EXEMPLAR-001-E13",
-          "exam_date": "2022-04-10",
-          "exam_modality": "US",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new focal hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E13",
-            "sentences": [
-              13
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        },
-        {
-          "observation_id": "F31.E14",
-          "exam_id": "E14",
-          "report_id": "IPL-EXEMPLAR-001-E14",
-          "exam_date": "2023-03-28",
-          "exam_modality": "CT",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E14",
-            "sentences": [
-              25
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        },
-        {
-          "observation_id": "F31.E15",
-          "exam_id": "E15",
-          "report_id": "IPL-EXEMPLAR-001-E15",
-          "exam_date": "2024-07-16",
-          "exam_modality": "CT",
-          "finding_code": {
-            "system": "OIFM",
-            "code": "OIFM_OIDM_160831",
-            "display": "hepatic lesion",
-            "source": "registry"
-          },
-          "anatomic_site": {
-            "system": "Anatomic Locations Index 1.0.0",
-            "code": "RID58",
-            "display": "liver",
-            "snomed": "10200004"
-          },
-          "attributes": {
-            "presence": "absent",
-            "temporal_status": [
-              "new"
-            ]
-          },
-          "interpretations": [],
-          "text": "No new focal hepatic lesion.",
-          "provenance": {
-            "source": "specification",
-            "report_id": "IPL-EXEMPLAR-001-E15",
-            "sentences": [
-              24
-            ],
-            "site_words": "hepatic",
-            "review_status": "unreviewed",
-            "reviews": []
-          },
-          "derived": {
-            "status": "excluded",
-            "rule": "absent-never-present"
-          }
-        }
-      ],
-      "corrections": []
-    },
-    {
       "finding_id": "F32",
       "tracking_uid": "2.25.281359968056391630443470258051202678594",
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_391371",
-        "display": "lymph node enlargement",
+        "display": "lymphadenopathy",
         "source": "assigned"
       },
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID28854",
-        "display": "abdominal lymph node group",
+        "display": "abdominal lymph nodes",
         "snomed": "245284000"
       },
       "status": "excluded",
@@ -9826,13 +9569,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_391371",
-            "display": "lymph node enlargement",
+            "display": "lymphadenopathy",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID28854",
-            "display": "abdominal lymph node group",
+            "display": "abdominal lymph nodes",
             "snomed": "245284000"
           },
           "attributes": {
@@ -9844,7 +9587,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              21
+              20
             ],
             "site_words": "abdominal",
             "review_status": "unreviewed",
@@ -9864,13 +9607,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_391371",
-            "display": "lymph node enlargement",
+            "display": "lymphadenopathy",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID28854",
-            "display": "abdominal lymph node group",
+            "display": "abdominal lymph nodes",
             "snomed": "245284000"
           },
           "attributes": {
@@ -9882,7 +9625,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
-              21
+              20
             ],
             "site_words": "abdominal",
             "review_status": "unreviewed",
@@ -9902,13 +9645,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_391371",
-            "display": "lymph node enlargement",
+            "display": "lymphadenopathy",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID28854",
-            "display": "abdominal lymph node group",
+            "display": "abdominal lymph nodes",
             "snomed": "245284000"
           },
           "attributes": {
@@ -9920,7 +9663,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              22
+              20
             ],
             "site_words": "abdominal",
             "review_status": "unreviewed",
@@ -9940,13 +9683,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_391371",
-            "display": "lymph node enlargement",
+            "display": "lymphadenopathy",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID28854",
-            "display": "abdominal lymph node group",
+            "display": "abdominal lymph nodes",
             "snomed": "245284000"
           },
           "attributes": {
@@ -9958,7 +9701,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              30
+              29
             ],
             "site_words": "abdominal",
             "review_status": "unreviewed",
@@ -9978,13 +9721,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_391371",
-            "display": "lymph node enlargement",
+            "display": "lymphadenopathy",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID28854",
-            "display": "abdominal lymph node group",
+            "display": "abdominal lymph nodes",
             "snomed": "245284000"
           },
           "attributes": {
@@ -9996,7 +9739,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              26
+              24
             ],
             "site_words": "abdominal",
             "review_status": "unreviewed",
@@ -10016,13 +9759,13 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_391371",
-            "display": "lymph node enlargement",
+            "display": "lymphadenopathy",
             "source": "assigned"
           },
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID28854",
-            "display": "abdominal lymph node group",
+            "display": "abdominal lymph nodes",
             "snomed": "245284000"
           },
           "attributes": {
@@ -10034,7 +9777,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E15",
             "sentences": [
-              25
+              24
             ],
             "site_words": "abdominal",
             "review_status": "unreviewed",
@@ -10060,7 +9803,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID132",
-        "display": "small intestine",
+        "display": "small bowel",
         "snomed": "30315005"
       },
       "status": "excluded",
@@ -10081,7 +9824,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID132",
-            "display": "small intestine",
+            "display": "small bowel",
             "snomed": "30315005"
           },
           "attributes": {
@@ -10093,7 +9836,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              22
+              21
             ],
             "site_words": "small bowel",
             "review_status": "unreviewed",
@@ -10119,7 +9862,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID132",
-            "display": "small intestine",
+            "display": "small bowel",
             "snomed": "30315005"
           },
           "attributes": {
@@ -10131,7 +9874,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
-              22
+              21
             ],
             "site_words": "small or large bowel",
             "review_status": "unreviewed",
@@ -10157,7 +9900,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID132",
-            "display": "small intestine",
+            "display": "small bowel",
             "snomed": "30315005"
           },
           "attributes": {
@@ -10169,7 +9912,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              23
+              21
             ],
             "site_words": "small bowel",
             "review_status": "unreviewed",
@@ -10195,7 +9938,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID132",
-            "display": "small intestine",
+            "display": "small bowel",
             "snomed": "30315005"
           },
           "attributes": {
@@ -10207,7 +9950,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              31
+              30
             ],
             "site_words": "small bowel",
             "review_status": "unreviewed",
@@ -10233,7 +9976,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID132",
-            "display": "small intestine",
+            "display": "small bowel",
             "snomed": "30315005"
           },
           "attributes": {
@@ -10245,7 +9988,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              27
+              25
             ],
             "site_words": "small bowel",
             "review_status": "unreviewed",
@@ -10271,7 +10014,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID132",
-            "display": "small intestine",
+            "display": "small bowel",
             "snomed": "30315005"
           },
           "attributes": {
@@ -10283,7 +10026,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E15",
             "sentences": [
-              26
+              25
             ],
             "site_words": "small bowel",
             "review_status": "unreviewed",
@@ -10309,7 +10052,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID152",
-        "display": "large intestine",
+        "display": "colon",
         "snomed": "14742008"
       },
       "status": "excluded",
@@ -10330,7 +10073,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID152",
-            "display": "large intestine",
+            "display": "colon",
             "snomed": "14742008"
           },
           "attributes": {
@@ -10342,7 +10085,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
-              22
+              21
             ],
             "site_words": "large bowel",
             "review_status": "unreviewed",
@@ -10401,7 +10144,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              31
+              30
             ],
             "site_words": "perforation",
             "review_status": "unreviewed",
@@ -10460,7 +10203,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              23
+              22
             ],
             "site_words": "pneumoperitoneum",
             "review_status": "unreviewed",
@@ -10498,7 +10241,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
-              23
+              22
             ],
             "site_words": "pneumoperitoneum",
             "review_status": "unreviewed",
@@ -10536,7 +10279,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E08",
             "sentences": [
-              24
+              22
             ],
             "site_words": "pneumoperitoneum",
             "review_status": "unreviewed",
@@ -10574,7 +10317,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              32
+              31
             ],
             "site_words": "pneumoperitoneum",
             "review_status": "unreviewed",
@@ -10612,7 +10355,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E14",
             "sentences": [
-              28
+              26
             ],
             "site_words": "pneumoperitoneum",
             "review_status": "unreviewed",
@@ -10650,7 +10393,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E15",
             "sentences": [
-              27
+              26
             ],
             "site_words": "pneumoperitoneum",
             "review_status": "unreviewed",
@@ -10709,7 +10452,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E02",
             "sentences": [
-              24
+              23
             ],
             "site_words": "gallbladder",
             "review_status": "unreviewed",
@@ -10768,7 +10511,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
-              24
+              23
             ],
             "site_words": "rupture",
             "review_status": "unreviewed",
@@ -10827,7 +10570,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E06",
             "sentences": [
-              24
+              23
             ],
             "site_words": "dissection",
             "review_status": "unreviewed",
@@ -10853,7 +10596,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID431",
-        "display": "retroperitoneal space",
+        "display": "retroperitoneum",
         "snomed": "82849001"
       },
       "status": "excluded",
@@ -10874,7 +10617,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID431",
-            "display": "retroperitoneal space",
+            "display": "retroperitoneum",
             "snomed": "82849001"
           },
           "attributes": {
@@ -10886,7 +10629,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              33
+              32
             ],
             "site_words": "periaortic",
             "review_status": "unreviewed",
@@ -10912,7 +10655,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6383_RID9080",
-        "display": "cranial cavity",
+        "display": "intracranial",
         "snomed": "1101003"
       },
       "status": "excluded",
@@ -10933,7 +10676,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID6383_RID9080",
-            "display": "cranial cavity",
+            "display": "intracranial",
             "snomed": "1101003"
           },
           "attributes": {
@@ -10971,7 +10714,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6383_RID9080",
-        "display": "cranial cavity",
+        "display": "intracranial",
         "snomed": "1101003"
       },
       "status": "excluded",
@@ -10992,7 +10735,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID6383_RID9080",
-            "display": "cranial cavity",
+            "display": "intracranial",
             "snomed": "1101003"
           },
           "attributes": {
@@ -11030,7 +10773,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID6383_RID9080",
-        "display": "cranial cavity",
+        "display": "intracranial",
         "snomed": "1101003"
       },
       "status": "excluded",
@@ -11051,7 +10794,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID6383_RID9080",
-            "display": "cranial cavity",
+            "display": "intracranial",
             "snomed": "1101003"
           },
           "attributes": {
@@ -11122,7 +10865,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              34
+              33
             ],
             "site_words": "hepatic",
             "review_status": "unreviewed",
@@ -11181,7 +10924,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              34
+              33
             ],
             "site_words": "splenic",
             "review_status": "unreviewed",
@@ -11201,7 +10944,7 @@
       "finding_code": {
         "system": "OIFM",
         "code": "OIFM_MGB_672036",
-        "display": "arterial contrast extravasation",
+        "display": "active contrast extravasation",
         "source": "assigned"
       },
       "anatomic_site": {
@@ -11222,7 +10965,7 @@
           "finding_code": {
             "system": "OIFM",
             "code": "OIFM_MGB_672036",
-            "display": "arterial contrast extravasation",
+            "display": "active contrast extravasation",
             "source": "assigned"
           },
           "anatomic_site": {
@@ -11240,7 +10983,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              35
+              34
             ],
             "site_words": "extravasation",
             "review_status": "unreviewed",
@@ -11337,7 +11080,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              36
+              35
             ],
             "site_words": "pelvic",
             "review_status": "unreviewed",
@@ -11363,7 +11106,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "status": "excluded",
@@ -11384,7 +11127,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID2640_RID5824",
-            "display": "left hip joint",
+            "display": "left hip",
             "snomed": "362907004"
           },
           "attributes": {
@@ -11457,7 +11200,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              37
+              36
             ],
             "site_words": "sternal",
             "review_status": "unreviewed",
@@ -11483,7 +11226,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID34572",
-        "display": "thoracic vertebral column",
+        "display": "thoracic spine",
         "snomed": "122495006"
       },
       "status": "excluded",
@@ -11504,7 +11247,7 @@
           "anatomic_site": {
             "system": "Anatomic Locations Index 1.0.0",
             "code": "RID34572",
-            "display": "thoracic vertebral column",
+            "display": "thoracic spine",
             "snomed": "122495006"
           },
           "attributes": {
@@ -11516,7 +11259,7 @@
             "source": "specification",
             "report_id": "IPL-EXEMPLAR-001-E11",
             "sentences": [
-              38
+              37
             ],
             "site_words": "thoracic spine",
             "review_status": "unreviewed",

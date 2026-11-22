@@ -24,7 +24,7 @@ from functools import cache
 from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
-from exemplar import (CONCEPTS, LR, PROCEDURE_CODES, SPECTRA, exam_map, examination_statements, exams,
+from exemplar import (CONCEPT_DISPLAY, CONCEPTS, PROCEDURE_CODES, SITE_DISPLAY, SPECTRA, exam_map, examination_statements, exams,
                       findings, patient)
 
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -58,7 +58,7 @@ def report_id(exam_id):
 def concept_code(name):
     """-> the OIFM coding of a concept, with the source of its code."""
     c = CONCEPTS[name]
-    return {"system": "OIFM", "code": c["oifm"], "display": name.replace("_", " "), "source": c["source"]}
+    return {"system": "OIFM", "code": c["oifm"], "display": CONCEPT_DISPLAY.get(name, name.replace("_", " ")), "source": c["source"]}
 
 
 def on_one_path(a, b):
@@ -89,7 +89,7 @@ def site(radlex_id):
     b = AL[radlex_id]
     snomed = next((c["code"] for c in b.get("codes", []) if c["system"] == "SNOMED"), None)
     return {"system": "Anatomic Locations Index 1.0.0", "code": radlex_id,
-            "display": b["description"], "snomed": snomed}
+            "display": SITE_DISPLAY.get(radlex_id, b["description"]), "snomed": snomed}
 
 
 def site_within(inner, outer):
@@ -122,14 +122,12 @@ def measurement_record(t):
     value, unit = t[0], t[1]
     rec = {"value": value, "unit": unit}
     if len(t) > 2:
-        rec["property"] = t[2]
+        rec["measured_quantity"] = t[2]
     return rec
 
 
 def interpretation_record(i):
-    """-> an interpretation as a coded concept or a LI-RADS category, with its hedge."""
-    if isinstance(i, tuple) and i[0] == LR:
-        return {"assessment": {"system": "ACR LI-RADS v2018", "code": i[1]}}
+    """-> an interpretation as a coded concept, with its hedge."""
     name, hedged = (i, False) if isinstance(i, str) else (i[0], i[1] == "hedged")
     rec = {"code": concept_code(name)}
     if hedged:
@@ -141,11 +139,10 @@ def attributes(o):
     """The annotator's attribute model, omitting what the sentence does not state."""
     a = {"presence": o["presence"]}
     if o.get("hedged"):
-        a["confidence"] = {axis: "hedged" for axis in o["hedged"]}
-    for key, field in (("laterality", "laterality"), ("severity", "severity"), ("extent", "extent"),
-                       ("distribution", "distribution"), ("position_status", "position_status")):
+        a["certainty"] = {axis: "hedged" for axis in o["hedged"]}
+    for key in ("laterality", "severity"):
         if o.get(key):
-            a[field] = o[key]
+            a[key] = o[key]
     if o.get("temporal"):
         a["temporal_status"] = as_list(o["temporal"])
     if o.get("chronicity"):
@@ -154,15 +151,15 @@ def attributes(o):
         a["measurement"] = [measurement_record(t) for t in o["measurement"]]
     if o.get("prior_measurement"):
         a["prior_measurement"] = [measurement_record(t) for t in o["prior_measurement"]]
-    if o.get("aggregate"):
-        a["aggregate"] = True
+    if o.get("multiple"):
+        a["multiple"] = True
     if o.get("features"):
         a["features"] = list(o["features"])
     if o.get("context"):
         causes = [c if isinstance(c, tuple) else (c, None) for c in o["context"]]
         a["clinical_context"] = [concept_code(name) for name, _ in causes]
         if any(h == "hedged" for _, h in causes):
-            a.setdefault("confidence", {})["clinical_context"] = "hedged"
+            a.setdefault("certainty", {})["clinical_context"] = "hedged"
     return a
 
 # ============================================================
@@ -176,8 +173,7 @@ def attributes(o):
 # so it never sets the status. Each rule has a short key the status decision
 # table cites.
 
-CHANGE_WORDS = {"new", "resolved", "larger", "smaller", "increased_extent", "decreased_extent",
-                "more_conspicuous", "less_conspicuous", "increased_complexity", "decreased_complexity"}
+CHANGE_WORDS = {"new", "resolved", "increased", "decreased"}
 NO_CHANGE_WORDS = {"unchanged"}
 
 # The stage each stated time-course word names, the annotator's chronicity
@@ -190,18 +186,17 @@ STATED_OLD = {w for w, stage in TIME_COURSE_STAGES.items() if stage == "old"}
 
 # Reports give sizes to the nearest millimetre, so lengths 1 mm apart or closer
 # do not contradict. Another measurement compares only
-# with one in the same unit of the same property, and contradicts when the two
+# with one in the same unit of the same measured quantity, and contradicts when the two
 # differ by more than one step of the coarser stated digit.
 SIZE_PRECISION_MM = 1.0
 MM_PER_UNIT = {"mm": 1.0, "cm": 10.0}  # a fixed fact of the units
 
-# Grade words on one ordinal scale of four severity bands. The Imaging Findings
-# Workbench files a finding's grade under severity or extent, and both read on
-# this one scale. A value naming a range covers the whole span, and two grades
-# contradict only when their spans are disjoint. The annotator's "medium" takes
-# moderate's band.
+# Grade words on one ordinal scale of four severity bands. The model records
+# every grade word, a severity or a size word, as severity. A value naming a
+# range covers the whole span, and two grades contradict only when their spans
+# are disjoint.
 GRADE_BANDS = {"small": {1}, "mild": {2}, "mild_to_moderate": {2, 3}, "moderate": {3},
-               "moderate_to_severe": {3, 4}, "severe": {4}, "medium": {3}, "large": {4}}
+               "moderate_to_severe": {3, 4}, "severe": {4}, "large": {4}}
 
 # Descriptors that cannot describe one finding at once, in declared sets. Two
 # descriptions contradict when each names exactly one member
@@ -222,28 +217,28 @@ DESCRIPTOR_SETS = [
 ]
 
 STATUS_RULES = {
-    "absent-never-present": ("excluded", "An absence, and the finding has not been present."),
-    "absent-after-present": ("resolved", "An absence follows a presence."),
-    "absent-after-resolved": ("resolved", "An absence follows a resolution."),
-    "stated-new": ("active", "The radiologist called the finding new."),
+    "absent-never-present": ("excluded", "The report states an absence, and no earlier report stated the finding present."),
+    "absent-after-present": ("resolved", "The report states an absence after an earlier presence."),
+    "absent-after-resolved": ("resolved", "The report states an absence after the entry has resolved."),
+    "stated-new": ("active", "The radiologist reported the finding new."),
     "stated-change": ("active", "The radiologist stated a change."),
     "stated-unchanged": ("stable", "The radiologist stated no change."),
-    "first-stated-old": ("stable", "First observation, or present after an absence, stated chronic, old, or healed."),
-    "first-observation": ("active", "First observation, with no comparison wording and no stated age that predates it."),
-    "present-after-absence": ("active", "Present after an absence, with no comparison wording and no stated age that predates it."),
-    "attribute-contradicts": ("active", "No comparison wording, and a stated attribute contradicts its last stated value."),
-    "nothing-contradicts": ("stable", "No comparison wording, and nothing stated contradicts the entry's last stated values."),
-    "closed-by-finding-within": ("closed", "Only absences, and a finding of its kind was later reported present within its "
-                                       "site, so that finding's entry carries the status."),
+    "first-stated-old": ("stable", "The radiologist stated the finding chronic, remote, or healed at its first observation or when present after an absence."),
+    "first-observation": ("active", "The radiologist reported the finding for the first time, with no comparison wording and no stated age that predates the examination."),
+    "present-after-absence": ("active", "The radiologist reported the finding present after an absence, including a recurrence after resolution, with no comparison wording and no stated age that predates the examination."),
+    "attribute-contradicts": ("active", "The radiologist wrote no comparison wording, and a stated attribute contradicts its last stated value."),
+    "nothing-contradicts": ("stable", "The radiologist wrote no comparison wording, and no stated attribute contradicts its last stated value."),
+    "closed-by-subsequent-finding": ("closed", "The entry holds only absences, and a radiologist reported a finding of its type present within "
+                                           "its site after the last absence, so that finding's entry carries the status."),
 }
 
 
 def _lengths_mm(a):
-    """-> {property: sorted lengths in mm}, so lengths of different properties never compare."""
+    """-> {measured quantity: sorted lengths in mm}, so lengths of different quantities never compare."""
     lengths = defaultdict(list)
     for s in a.get("measurement", []):
         if s["unit"] in MM_PER_UNIT:
-            lengths[s.get("property")].append(s["value"] * MM_PER_UNIT[s["unit"]])
+            lengths[s.get("measured_quantity")].append(s["value"] * MM_PER_UNIT[s["unit"]])
     return {prop: tuple(sorted(v)) for prop, v in lengths.items()}
 
 
@@ -254,7 +249,7 @@ def _stated_step(value):
 
 
 def _grade_band(a):
-    return set().union(*(GRADE_BANDS.get(a.get(k), set()) for k in ("severity", "extent")))
+    return GRADE_BANDS.get(a.get("severity"), set())
 
 
 def _descriptor_conflict(now, was):
@@ -274,7 +269,7 @@ def stated_values(o):
         vals[("size", prop)] = lengths
     for s in a.get("measurement", []):
         if s["unit"] not in MM_PER_UNIT:
-            vals[("measure", s["unit"], s.get("property"))] = (s["value"], _stated_step(s["value"]))
+            vals[("measure", s["unit"], s.get("measured_quantity"))] = (s["value"], _stated_step(s["value"]))
     if _grade_band(a):
         vals["grade"] = _grade_band(a)
     if a.get("features"):
@@ -322,7 +317,7 @@ def _same_measurement(a, b):
 
 
 def _comparable(a, b):
-    return a.get("property") == b.get("property") and (
+    return a.get("measured_quantity") == b.get("measured_quantity") and (
         a["unit"] == b["unit"] or {a["unit"], b["unit"]} <= set(MM_PER_UNIT))
 
 
@@ -403,17 +398,15 @@ def _sides_agree(a, b):
 def closing_observation(negation, entries):
     """-> the earliest observation that closes an entry of only absences, or None.
 
-    A finding of the negation's kind or a narrower one, reported present at a
-    site within the negation's site after its last absence, closes it.
-    A negation scoped to new findings closes only on a finding stated new. A
+    A finding of the negation's type or a narrower one, reported present at a
+    site within the negation's site after its last absence, closes it. A
     rejected observation counts on neither side. The two hierarchies relate the
     findings, so neither history changes.
     """
-    kind = CODE_CONCEPT[negation["finding_code"]["code"]]
+    finding_type = CODE_CONCEPT[negation["finding_code"]["code"]]
     region = negation["anatomic_site"]["code"]
     absences = [o for o in negation["observations"] if not rejected(o)]
     last = max(exam_order[o["exam_id"]] for o in absences)
-    scoped_new = all("new" in o["attributes"].get("temporal_status", []) for o in absences)
     hits = []
     for e in entries:
         if e is negation:
@@ -423,10 +416,9 @@ def closing_observation(negation, entries):
                 continue
             a, code = o["attributes"], CODE_CONCEPT[o["finding_code"]["code"]]
             if (a["presence"] == "present" and exam_order[o["exam_id"]] > last
-                    and (code == kind or kind in CONCEPTS[code]["path"])
+                    and (code == finding_type or finding_type in CONCEPTS[code]["path"])
                     and site_within(o["anatomic_site"]["code"], region)
-                    and _sides_agree(a.get("laterality"), negation.get("laterality"))
-                    and (not scoped_new or "new" in a.get("temporal_status", []))):
+                    and _sides_agree(a.get("laterality"), negation.get("laterality"))):
                 hits.append(o)
     return min(hits, key=lambda o: exam_order[o["exam_id"]]) if hits else None
 
@@ -438,7 +430,7 @@ def close_negations(entries):
             continue
         o = closing_observation(e, entries)
         if o:
-            e["status"], e["status_rule"] = STATUS_RULES["closed-by-finding-within"][0], "closed-by-finding-within"
+            e["status"], e["status_rule"] = STATUS_RULES["closed-by-subsequent-finding"][0], "closed-by-subsequent-finding"
             e["closed"] = {"observation_id": o["observation_id"], "exam_id": o["exam_id"]}
 
 
@@ -490,7 +482,7 @@ def validate():
             assert site_within(o.get("site", f["site"]), f["site"]), f"{f['id']} {o['exam_id']}: site outside the entry's"
             for i in as_list(o.get("interp")):
                 name = i[0] if isinstance(i, tuple) else i
-                assert name == LR or name in CONCEPTS, f"{f['id']}: unknown interpretation {name}"
+                assert name in CONCEPTS, f"{f['id']}: unknown interpretation {name}"
             for c in as_list(o.get("context")):
                 assert (c[0] if isinstance(c, tuple) else c) in CONCEPTS, f"{f['id']}: unknown clinical context {c}"
             # The contradiction rule reads a value's stated digit from the typed
@@ -499,7 +491,7 @@ def validate():
                 for value, *_ in o.get(key, []):
                     assert re.search(rf"(?<![\d.]){re.escape(repr(value))}(?![\d])", o["text"]), \
                         f"{f['id']} {o['exam_id']}: {value!r} is not written in its sentence as typed"
-            # A negation joins only an entry of its own kind at its own site, never a narrower one.
+            # A negation joins only an entry of its own type at its own site, never a narrower one.
             assert o["presence"] == "present" or code == f["code"] or code not in CONCEPTS[f["code"]]["path"], \
                 f"{f['id']} {o['exam_id']}: a negation of {code} is broader than the entry's {f['code']}"
         orders = [exam_order[o["exam_id"]] for o in f["observations"]]

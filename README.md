@@ -7,15 +7,15 @@ This repository specifies the Imaging Problem List (IPL) data model and holds on
 An IPL entry holds one finding a radiologist reports, such as one aortic aneurysm, across the examinations that describe it. The entry's identity is the finding's code and anatomic site. Its history holds each observation of the finding, recorded from one report sentence with that sentence's provenance and any review. The compiler derives the entry's status from that history by stated rules. The observations of one examination form its Exam Finding List (EFL).
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/fig_s01_entry_anatomy.dark.png">
-  <img alt="The aortic aneurysm entry: its identity, eight observations from 2017 to 2024 on a timeline, the status active, and the 2023 observation opened to its report sentence, values, and provenance." src="docs/fig_s01_entry_anatomy.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/fig_02_entry_anatomy.dark.png">
+  <img alt="The abdominal aortic aneurysm entry: its finding and site, its observations from 2017 to 2024 on a timeline, the status active with the rule that set it, and the 2024 observation opened to its source report text, coded fields, and provenance." src="docs/fig_02_entry_anatomy.png">
 </picture>
 
 Each observation records coded values, never the report's words, except for the site words that its provenance keeps as the evidence for the site code:
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/fig_s02_sentence_decomposition.dark.png">
-  <img alt="The 2023 aneurysm sentence with each span bracketed to the field it becomes: site, finding, current measurement, change from prior, and prior measurement." src="docs/fig_s02_sentence_decomposition.png">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/fig_03_sentence_coding.dark.png">
+  <img alt="Four report sentences from the exemplar, each coded into Exam Finding List observations: a column for each observation and a row for each field, with its coded value." src="docs/fig_03_sentence_coding.png">
 </picture>
 
 ## Repository contents

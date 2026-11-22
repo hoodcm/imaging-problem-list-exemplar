@@ -32,7 +32,7 @@
     {
       "code": "closed",
       "display": "closed",
-      "definition": "Every observation states the finding absent, and a finding of its kind was later reported within its site."
+      "definition": "Every observation states the finding absent, and a finding of its type was later reported within its site."
     }
   ],
   "caseSensitive": true,

@@ -20,7 +20,7 @@
       "description": "The examination the observation comes from.",
       "x-fhir-r5": "ImagingStudy.identifier",
       "x-fhir-r6": "ImagingStudy.identifier",
-      "x-dicom-sr": "none",
+      "x-dicom-sr": "Study Instance UID (0020,000D) and Accession Number (0008,0050) in the SR document header",
       "x-representation": "core"
     },
     "report_id": {
@@ -74,13 +74,13 @@
             "present",
             "absent"
           ],
-          "description": "Whether the sentence states the finding present or absent.",
+          "description": "The report states the finding present or absent.",
           "x-fhir-r5": "Observation.valueCodeableConcept (SNOMED CT 260373001 Detected or 260415000 Not detected)",
           "x-fhir-r6": "Observation.valueCodeableConcept (SNOMED CT 260373001 Detected or 260415000 Not detected)",
           "x-dicom-sr": "(121052, DCM, \"Presence of property\") in TID 1350",
           "x-representation": "core"
         },
-        "confidence": {
+        "certainty": {
           "type": "object",
           "propertyNames": {
             "enum": [
@@ -89,10 +89,7 @@
               "chronicity",
               "temporal_status",
               "severity",
-              "extent",
-              "distribution",
               "integrity",
-              "position_status",
               "clinical_context"
             ]
           },
@@ -100,7 +97,7 @@
             "const": "hedged"
           },
           "minProperties": 1,
-          "description": "The attributes the radiologist hedged. An attribute left out is stated definitely.",
+          "description": "The radiologist hedged the attributes listed here and stated every other attribute definitely.",
           "x-fhir-r5": "cqf-certainty extension on the element it qualifies",
           "x-fhir-r6": "cqf-certainty extension on the element it qualifies",
           "x-dicom-sr": "(111012, DCM, \"Certainty of Finding\") in TID 4104",
@@ -112,14 +109,14 @@
             "right",
             "bilateral"
           ],
-          "description": "The stated side.",
+          "description": "The report states the side.",
           "x-fhir-r5": "BodyStructure.includedStructure.laterality",
           "x-fhir-r6": "BodyStructure.includedStructure.laterality",
           "x-dicom-sr": "(272741003, SCT, \"Laterality\"), a modifier of Finding Site in TID 1419",
           "x-representation": "core"
         },
         "temporal_status": {
-          "description": "The change from prior: the radiologist's comparison of the finding with prior imaging.",
+          "description": "The change from prior: the radiologist compares the finding with prior imaging.",
           "x-fhir-r5": "Observation.component",
           "x-fhir-r6": "Observation.component",
           "x-dicom-sr": "none",
@@ -130,21 +127,15 @@
               "unchanged",
               "new",
               "resolved",
-              "larger",
-              "smaller",
-              "increased_extent",
-              "decreased_extent",
-              "more_conspicuous",
-              "less_conspicuous",
-              "increased_complexity",
-              "decreased_complexity"
+              "increased",
+              "decreased"
             ]
           },
           "minItems": 1,
           "uniqueItems": true
         },
         "chronicity": {
-          "description": "The chronicity: the radiologist's time-course word.",
+          "description": "The chronicity: the radiologist describes the finding's time course with a word such as acute or healed.",
           "x-fhir-r5": "Observation.component",
           "x-fhir-r6": "Observation.component",
           "x-dicom-sr": "none",
@@ -173,7 +164,6 @@
             "properties": {
               "value": {
                 "type": "number",
-                "exclusiveMinimum": 0,
                 "description": "The stated value.",
                 "x-fhir-r5": "Observation.component.valueQuantity.value",
                 "x-fhir-r6": "Observation.component.valueQuantity.value",
@@ -181,26 +171,33 @@
                 "x-representation": "core"
               },
               "unit": {
-                "enum": [
-                  "mm",
-                  "cm",
-                  "%",
-                  "mL"
-                ],
-                "description": "The stated unit, a UCUM code.",
+                "type": "string",
+                "minLength": 1,
+                "description": "The stated unit, a UCUM code, such as cm, mm, %, mL, or 1 for a number with no unit.",
                 "x-fhir-r5": "Observation.component.valueQuantity.code (UCUM)",
                 "x-fhir-r6": "Observation.component.valueQuantity.code (UCUM)",
                 "x-dicom-sr": "the NUM content item's UCUM units in TID 1501",
                 "x-representation": "core"
               },
-              "property": {
-                "enum": [
-                  "height loss",
-                  "largest member"
-                ],
-                "description": "What the value measures, as the sentence states it, absent when the sentence doesn't say.",
+              "measured_quantity": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The measured quantity: what the value measures, as the sentence states it, such as height loss or short axis. Absent when the sentence doesn't say.",
                 "x-fhir-r5": "Observation.component.code",
                 "x-fhir-r6": "Observation.component.code",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              },
+              "comparator": {
+                "enum": [
+                  "<",
+                  "<=",
+                  ">=",
+                  ">"
+                ],
+                "description": "The stated bound, for a value given as less than, at most, at least, or greater than. Absent for an exact value.",
+                "x-fhir-r5": "Observation.component.valueQuantity.comparator",
+                "x-fhir-r6": "Observation.component.valueQuantity.comparator",
                 "x-dicom-sr": "none",
                 "x-representation": "core"
               }
@@ -211,7 +208,7 @@
             ],
             "additionalProperties": false
           },
-          "description": "The current measurements: the values the report states for this examination.",
+          "description": "The current measurements: the report states the value(s) for this examination.",
           "x-fhir-r5": "Observation.component.valueQuantity",
           "x-fhir-r6": "Observation.component.valueQuantity",
           "x-dicom-sr": "(410668003, SCT, \"Length\"), a NUM measurement in TID 1501",
@@ -225,7 +222,6 @@
             "properties": {
               "value": {
                 "type": "number",
-                "exclusiveMinimum": 0,
                 "description": "The stated value.",
                 "x-fhir-r5": "Observation.component.valueQuantity.value",
                 "x-fhir-r6": "Observation.component.valueQuantity.value",
@@ -233,26 +229,33 @@
                 "x-representation": "core"
               },
               "unit": {
-                "enum": [
-                  "mm",
-                  "cm",
-                  "%",
-                  "mL"
-                ],
-                "description": "The stated unit, a UCUM code.",
+                "type": "string",
+                "minLength": 1,
+                "description": "The stated unit, a UCUM code, such as cm, mm, %, mL, or 1 for a number with no unit.",
                 "x-fhir-r5": "Observation.component.valueQuantity.code (UCUM)",
                 "x-fhir-r6": "Observation.component.valueQuantity.code (UCUM)",
                 "x-dicom-sr": "the NUM content item's UCUM units in TID 1501",
                 "x-representation": "core"
               },
-              "property": {
-                "enum": [
-                  "height loss",
-                  "largest member"
-                ],
-                "description": "What the value measures, as the sentence states it, absent when the sentence doesn't say.",
+              "measured_quantity": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The measured quantity: what the value measures, as the sentence states it, such as height loss or short axis. Absent when the sentence doesn't say.",
                 "x-fhir-r5": "Observation.component.code",
                 "x-fhir-r6": "Observation.component.code",
+                "x-dicom-sr": "none",
+                "x-representation": "core"
+              },
+              "comparator": {
+                "enum": [
+                  "<",
+                  "<=",
+                  ">=",
+                  ">"
+                ],
+                "description": "The stated bound, for a value given as less than, at most, at least, or greater than. Absent for an exact value.",
+                "x-fhir-r5": "Observation.component.valueQuantity.comparator",
+                "x-fhir-r6": "Observation.component.valueQuantity.comparator",
                 "x-dicom-sr": "none",
                 "x-representation": "core"
               }
@@ -263,50 +266,30 @@
             ],
             "additionalProperties": false
           },
-          "description": "The prior measurements: the values the report states the finding had on an earlier examination, which the compiler checks against the entry's previous observation.",
+          "description": "The prior measurements: the report states the value(s) from an earlier examination, and the compiler checks them against the entry's previous observation.",
           "x-fhir-r5": "Observation.component.valueQuantity",
           "x-fhir-r6": "Observation.component.valueQuantity",
           "x-dicom-sr": "none",
           "x-representation": "core"
         },
         "severity": {
-          "description": "The stated severity.",
-          "x-fhir-r5": "Observation.component",
-          "x-fhir-r6": "Observation.component",
-          "x-dicom-sr": "none",
-          "x-representation": "core",
-          "enum": [
-            "mild",
-            "mild_to_moderate",
-            "moderate",
-            "moderate_to_severe",
-            "severe"
-          ]
-        },
-        "extent": {
-          "description": "The stated extent.",
+          "description": "The radiologist grades the finding with a severity or size word, such as mild or large.",
           "x-fhir-r5": "Observation.component",
           "x-fhir-r6": "Observation.component",
           "x-dicom-sr": "none",
           "x-representation": "core",
           "enum": [
             "small",
-            "medium",
+            "mild",
+            "mild_to_moderate",
+            "moderate",
+            "moderate_to_severe",
+            "severe",
             "large"
           ]
         },
-        "distribution": {
-          "description": "The stated distribution.",
-          "x-fhir-r5": "Observation.component",
-          "x-fhir-r6": "Observation.component",
-          "x-dicom-sr": "none",
-          "x-representation": "core",
-          "enum": [
-            "diffuse"
-          ]
-        },
-        "aggregate": {
-          "description": "The statement covers a collection, such as gallstones.",
+        "multiple": {
+          "description": "The radiologist describes more than one finding of a type in one statement, such as gallstones.",
           "x-fhir-r5": "Observation.component",
           "x-fhir-r6": "Observation.component",
           "x-dicom-sr": "none",
@@ -314,7 +297,7 @@
           "const": true
         },
         "features": {
-          "description": "Stated descriptive features, as the sentence words them.",
+          "description": "The radiologist states other descriptive features, recorded as conveyed by the report text.",
           "x-fhir-r5": "Observation.component",
           "x-fhir-r6": "Observation.component",
           "x-dicom-sr": "none",
@@ -326,19 +309,8 @@
           },
           "minItems": 1
         },
-        "position_status": {
-          "description": "The stated position of a device.",
-          "x-fhir-r5": "Observation.component",
-          "x-fhir-r6": "Observation.component",
-          "x-dicom-sr": "none",
-          "x-representation": "core",
-          "enum": [
-            "satisfactory",
-            "malpositioned"
-          ]
-        },
         "clinical_context": {
-          "description": "A cause or clinical state the radiologist named for the finding.",
+          "description": "The radiologist names a cause or clinical state for the finding.",
           "x-fhir-r5": "Observation.component",
           "x-fhir-r6": "Observation.component",
           "x-dicom-sr": "none",
@@ -354,7 +326,7 @@
         "presence"
       ],
       "additionalProperties": false,
-      "description": "What the sentence states about the finding, in the OIDM annotator's attribute model.",
+      "description": "What the sentence states about the finding.",
       "x-fhir-r5": "Observation.value[x] and Observation.component",
       "x-fhir-r6": "Observation.value[x] and Observation.component",
       "x-dicom-sr": "TID 1501 qualitative evaluations",
@@ -377,25 +349,18 @@
             "type": "object",
             "properties": {
               "system": {
-                "const": "ACR LI-RADS v2018",
-                "description": "The LI-RADS release.",
+                "type": "string",
+                "minLength": 1,
+                "description": "The named category scale, such as BI-RADS, Bosniak, or TI-RADS, with its release.",
                 "x-fhir-r5": "Coding.system",
                 "x-fhir-r6": "Coding.system",
                 "x-dicom-sr": "none",
                 "x-representation": "core"
               },
               "code": {
-                "enum": [
-                  "LR-1",
-                  "LR-2",
-                  "LR-3",
-                  "LR-4",
-                  "LR-5",
-                  "LR-M",
-                  "LR-TIV",
-                  "LR-NC"
-                ],
-                "description": "The LI-RADS category.",
+                "type": "string",
+                "minLength": 1,
+                "description": "The category on that scale.",
                 "x-fhir-r5": "Coding.code",
                 "x-fhir-r6": "Coding.code",
                 "x-dicom-sr": "none",
@@ -407,7 +372,7 @@
               "code"
             ],
             "additionalProperties": false,
-            "description": "A category the radiologist assigned.",
+            "description": "A category the radiologist assigned on a named scale.",
             "x-fhir-r5": "Observation.component.valueCodeableConcept",
             "x-fhir-r6": "Observation.component.valueCodeableConcept",
             "x-dicom-sr": "none",
@@ -436,7 +401,7 @@
         ],
         "additionalProperties": false
       },
-      "description": "Diagnoses or categories the radiologist attached.",
+      "description": "The radiologist attaches a diagnosis or category to the finding.",
       "x-fhir-r5": "Observation.component",
       "x-fhir-r6": "Observation.component",
       "x-dicom-sr": "(121073, DCM, \"Impression\")",
@@ -470,7 +435,7 @@
         "report_id": {
           "type": "string",
           "minLength": 1,
-          "description": "The report the observation came from.",
+          "description": "The observation was recorded from this report.",
           "x-fhir-r5": "Provenance.entity.what (role source)",
           "x-fhir-r6": "Provenance.entity.what (role source)",
           "x-dicom-sr": "none",
@@ -483,11 +448,11 @@
             "minimum": 1
           },
           "minItems": 1,
-          "description": "The numbers of the report sentences the observation came from.",
+          "description": "The observation was recorded from these numbered sentences of the report.",
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         },
         "site_words": {
           "type": "string",
@@ -526,7 +491,7 @@
               "x-fhir-r5": "none",
               "x-fhir-r6": "none",
               "x-dicom-sr": "none",
-              "x-representation": "not-representable"
+              "x-representation": "none-defined"
             }
           },
           "required": [
@@ -547,7 +512,7 @@
             "affirmed",
             "rejected"
           ],
-          "description": "The latest review: none, affirmed, or rejected.",
+          "description": "The latest reviewer affirmed or rejected the observation, or no one has reviewed it.",
           "x-fhir-r5": "Provenance.activity of the latest review, and Observation.status entered-in-error when rejected",
           "x-fhir-r6": "Provenance.activity of the latest review, and Observation.status entered-in-error when rejected",
           "x-dicom-sr": "none",
@@ -593,7 +558,7 @@
                 "x-fhir-r5": "none",
                 "x-fhir-r6": "Provenance.why",
                 "x-dicom-sr": "none",
-                "x-representation": "not-representable"
+                "x-representation": "none-defined"
               }
             },
             "required": [
@@ -603,7 +568,7 @@
             ],
             "additionalProperties": false
           },
-          "description": "Every review, oldest first, appended and never edited.",
+          "description": "Each review is appended, oldest first, and none is edited.",
           "x-fhir-r5": "Provenance, one per review",
           "x-fhir-r6": "Provenance, one per review",
           "x-dicom-sr": "none",
@@ -667,7 +632,7 @@
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         },
         "rule": {
           "enum": [
@@ -687,7 +652,7 @@
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         },
         "contradicting_attribute": {
           "type": "string",
@@ -696,7 +661,7 @@
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         },
         "prior_measurement_check": {
           "enum": [
@@ -708,7 +673,7 @@
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         }
       },
       "required": [
@@ -720,7 +685,7 @@
       "x-fhir-r5": "none",
       "x-fhir-r6": "none",
       "x-dicom-sr": "none",
-      "x-representation": "not-representable"
+      "x-representation": "none-defined"
     }
   },
   "required": [
@@ -777,7 +742,7 @@
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         }
       },
       "required": [

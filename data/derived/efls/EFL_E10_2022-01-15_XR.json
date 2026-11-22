@@ -46,7 +46,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "attributes": {
@@ -84,12 +84,14 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID13209",
-        "display": "musculoskeletal system",
+        "display": "bones",
         "snomed": "26107004"
       },
       "attributes": {
         "presence": "present",
-        "distribution": "diffuse"
+        "features": [
+          "diffuse"
+        ]
       },
       "interpretations": [],
       "text": "Bones are diffusely osteopenic.",
@@ -153,7 +155,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID2640_RID5824",
-        "display": "left hip joint",
+        "display": "left hip",
         "snomed": "362907004"
       },
       "attributes": {

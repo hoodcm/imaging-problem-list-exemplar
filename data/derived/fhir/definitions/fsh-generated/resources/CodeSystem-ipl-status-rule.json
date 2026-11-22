@@ -65,9 +65,9 @@
       "definition": "No comparison wording, and nothing stated contradicts the entry's last stated values."
     },
     {
-      "code": "closed-by-finding-within",
-      "display": "closed by finding within",
-      "definition": "Only absences, and a finding of its kind was later reported present within its site, so that finding's entry carries the status."
+      "code": "closed-by-subsequent-finding",
+      "display": "closed by subsequent finding",
+      "definition": "Only absences, and a finding of its type was later reported present within its site, so that finding's entry carries the status."
     }
   ],
   "caseSensitive": true,

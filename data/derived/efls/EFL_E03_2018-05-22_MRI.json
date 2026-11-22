@@ -15,30 +15,26 @@
   "sentences": [
     {
       "number": 1,
-      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule appearance."
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule."
     },
     {
       "number": 2,
-      "text": "LI-RADS 3."
-    },
-    {
-      "number": 3,
       "text": "No ascites."
     },
     {
-      "number": 4,
+      "number": 3,
       "text": "Small esophageal varices, unchanged."
     },
     {
-      "number": 5,
+      "number": 4,
       "text": "Cirrhotic liver morphology with nodular contour and capsular retraction."
     },
     {
-      "number": 6,
+      "number": 5,
       "text": "Splenomegaly, 14.0 cm."
     },
     {
-      "number": 7,
+      "number": 6,
       "text": "Cholelithiasis."
     }
   ],
@@ -58,7 +54,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID33242",
-        "display": "segment VI of liver",
+        "display": "hepatic segment 6",
         "snomed": null
       },
       "attributes": {
@@ -75,24 +71,16 @@
         "features": [
           "arterial phase hyperenhancement",
           "no washout",
-          "no capsule appearance"
+          "no capsule"
         ]
       },
-      "interpretations": [
-        {
-          "assessment": {
-            "system": "ACR LI-RADS v2018",
-            "code": "LR-3"
-          }
-        }
-      ],
-      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule appearance. LI-RADS 3.",
+      "interpretations": [],
+      "text": "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule.",
       "provenance": {
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          1,
-          2
+          1
         ],
         "site_words": "segment 6",
         "review_status": "unreviewed",
@@ -119,11 +107,11 @@
       },
       "attributes": {
         "presence": "present",
-        "extent": "small",
+        "severity": "small",
         "temporal_status": [
           "unchanged"
         ],
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Small esophageal varices, unchanged.",
@@ -131,7 +119,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          4
+          3
         ],
         "site_words": "esophageal",
         "review_status": "unreviewed",
@@ -174,7 +162,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          5
+          4
         ],
         "site_words": "liver",
         "review_status": "unreviewed",
@@ -214,7 +202,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          6
+          5
         ],
         "site_words": "Splenomegaly",
         "review_status": "unreviewed",
@@ -241,7 +229,7 @@
       },
       "attributes": {
         "presence": "present",
-        "aggregate": true
+        "multiple": true
       },
       "interpretations": [],
       "text": "Cholelithiasis.",
@@ -249,7 +237,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          7
+          6
         ],
         "site_words": "Cholelithiasis",
         "review_status": "unreviewed",
@@ -292,7 +280,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          5
+          4
         ],
         "site_words": "liver",
         "review_status": "unreviewed",
@@ -335,7 +323,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          5
+          4
         ],
         "site_words": "liver",
         "review_status": "unreviewed",
@@ -369,7 +357,7 @@
         "source": "specification",
         "report_id": "IPL-EXEMPLAR-001-E03",
         "sentences": [
-          3
+          2
         ],
         "site_words": "ascites",
         "review_status": "unreviewed",

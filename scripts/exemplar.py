@@ -24,11 +24,11 @@ patient = {
 exams = [
     {"id": "E01", "date": "2017-03-14", "time": "09:40", "type": "US Abdomen",                              "modality": "US",  "body_region": "ABDOMEN",       "setting": "Outpatient", "indication": "Cirrhosis surveillance"},
     {"id": "E02", "date": "2018-02-06", "time": "10:15", "type": "CT Abdomen/Pelvis with contrast",          "modality": "CT",  "body_region": "ABDOMEN_PELVIS","setting": "Outpatient", "indication": "Elevated AFP, hepatic lesion workup"},
-    {"id": "E03", "date": "2018-05-22", "time": "13:30", "type": "MRI Abdomen with contrast (LI-RADS)",      "modality": "MRI", "body_region": "ABDOMEN",       "setting": "Outpatient", "indication": "Hepatic lesion characterization"},
+    {"id": "E03", "date": "2018-05-22", "time": "13:30", "type": "MRI Abdomen with contrast",      "modality": "MRI", "body_region": "ABDOMEN",       "setting": "Outpatient", "indication": "Hepatic lesion characterization"},
     {"id": "E04", "date": "2019-09-12", "time": "16:20", "type": "CXR (PA and lateral)",                     "modality": "XR",  "body_region": "CHEST",         "setting": "Urgent care","indication": "Cough and fever, rule out pneumonia"},
     {"id": "E05", "date": "2019-10-29", "time": "11:05", "type": "CXR (PA and lateral)",                     "modality": "XR",  "body_region": "CHEST",         "setting": "Outpatient", "indication": "Follow-up pneumonia"},
     {"id": "E06", "date": "2020-06-18", "time": "08:50", "type": "CTA Abdomen/Pelvis",                       "modality": "CT",  "body_region": "ABDOMEN_PELVIS","setting": "Outpatient", "indication": "Abdominal aortic aneurysm surveillance, cirrhosis follow-up"},
-    {"id": "E07", "date": "2021-03-09", "time": "14:10", "type": "MRI Abdomen with contrast (LI-RADS)",      "modality": "MRI", "body_region": "ABDOMEN",       "setting": "Outpatient", "indication": "Hepatic lesion follow-up, >2 yr from initial"},
+    {"id": "E07", "date": "2021-03-09", "time": "14:10", "type": "MRI Abdomen with contrast",      "modality": "MRI", "body_region": "ABDOMEN",       "setting": "Outpatient", "indication": "Hepatic lesion follow-up, >2 yr from initial"},
     {"id": "E08", "date": "2021-07-22", "time": "09:25", "type": "CT Abdomen/Pelvis with contrast",          "modality": "CT",  "body_region": "ABDOMEN_PELVIS","setting": "Outpatient", "indication": "Cirrhosis follow-up, worsening LFTs"},
     {"id": "E09", "date": "2022-01-15", "time": "14:05", "type": "XR Chest (portable, supine)",              "modality": "XR",  "body_region": "CHEST",         "setting": "ED",         "indication": "Fall, trauma screening"},
     {"id": "E10", "date": "2022-01-15", "time": "14:12", "type": "XR Pelvis (AP)",                           "modality": "XR",  "body_region": "PELVIS",        "setting": "ED",         "indication": "Fall, trauma screening"},
@@ -49,7 +49,7 @@ PROCEDURE_CODES = {
     "CTA Abdomen/Pelvis":                    ("87854-6", "CT Abdomen and Pelvis and CT angiogram Abdominal aorta W contrast IV"),
     "CT Chest/Abdomen/Pelvis with contrast": ("72254-6", "CT Chest and Abdomen and Pelvis W contrast IV"),
     "CT Head without contrast":              ("30799-1", "CT Head WO contrast"),
-    "MRI Abdomen with contrast (LI-RADS)":   ("36134-5", "MR Abdomen W contrast IV"),
+    "MRI Abdomen with contrast":             ("36134-5", "MR Abdomen W contrast IV"),
     "CXR (PA and lateral)":                  ("42272-5", "XR Chest PA and Lateral"),
     "XR Chest (portable, supine)":           ("36589-0", "Portable XR Chest AP single view"),
     "XR Pelvis (AP)":                        ("37622-8", "XR Pelvis AP"),
@@ -144,6 +144,34 @@ CONCEPTS = {
     "limited_examination":              C("image_quality_issue", "OIFM_MGB_299896", "assigned"),
 }
 
+# The name a report gives a concept, where the registry's name is not a report's word.
+CONCEPT_DISPLAY = {
+    "lymph_node_enlargement": "lymphadenopathy",
+    "prostate_enlargement": "prostatomegaly",
+    "spinal_degeneration": "degenerative changes of the spine",
+    "arterial_calcification": "atherosclerotic calcification",
+    "arterial_contrast_extravasation": "active contrast extravasation",
+    "hypoattenuation": "white matter hypoattenuation",
+}
+
+# The name a report gives a site, by its Anatomic Locations Index id, where the
+# index's description is an anatomy term no report uses.
+SITE_DISPLAY = {
+    "RID6537": "basal ganglia",
+    "RID28854": "abdominal lymph nodes",
+    "RID34573": "lumbar spine",
+    "RID34572": "thoracic spine",
+    "RID152": "colon",
+    "RID132": "small bowel",
+    "RID1315": "right lower lobe of lung",
+    "RID33242": "hepatic segment 6",
+    "RID174": "pancreatic body",
+    "RID6383_RID9080": "intracranial",
+    "RID431": "retroperitoneum",
+    "RID13209": "bones",
+    "RID2640_RID5824": "left hip",
+}
+
 # Codes that name one finding at different asserted severities, least to most
 # severe. A step between them within one entry is a change, as along the
 # aortic caliber spectrum from dilation to aneurysm.
@@ -161,10 +189,10 @@ def obs(exam_id, presence, text, **attrs):
     other than the entry's), words (the site as this sentence states it, where
     it differs from the entry's), laterality, temporal (str or list), chronicity
     (str or list), measurement (list of (value, unit) or (value, unit,
-    property)), prior_measurement (the same, for a prior examination's value),
-    severity, extent, distribution, aggregate, features (list), hedged (list of
-    axes), position_status, interp (list of interpretations, each a concept
-    name, ("concept", "hedged"), or ("LI-RADS", category)), and context (list of
+    measured quantity)), prior_measurement (the same, for a prior examination's value),
+    severity, multiple, features (list), hedged (list of
+    axes), interp (list of interpretations, each a concept
+    name or ("concept", "hedged")), and context (list of
     stated causes, each a concept name or ("concept", "hedged")).
     """
     return {"exam_id": exam_id, "presence": presence, "text": text, **attrs}
@@ -198,40 +226,39 @@ def finding(fid, code, site_id, words, status, observations, laterality=None):
 # SHOWCASE FINDINGS
 # --------------------------------------------------
 
-finding("F01", "aortic_aneurysm", "RID905", "infrarenal abdominal aortic", "active", [
-    obs("E01", "present", "Infrarenal abdominal aortic aneurysm measuring 3.2 cm.", measurement=[(3.2, "cm")]),
-    obs("E02", "present", "Infrarenal abdominal aortic aneurysm measuring 3.5 cm, mildly increased compared to 3.2 cm on the prior ultrasound from March 2017.",
-        measurement=[(3.5, "cm")], prior_measurement=[(3.2, "cm")], temporal="larger"),
-    obs("E06", "present", "Infrarenal abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
-        measurement=[(3.9, "cm")], prior_measurement=[(3.5, "cm")], temporal="larger"),
-    obs("E08", "present", "Infrarenal aortic aneurysm measures 4.3 cm, increased from 3.9 cm on the prior CTA.", words="infrarenal aortic",
-        measurement=[(4.3, "cm")], prior_measurement=[(3.9, "cm")], temporal="larger"),
-    obs("E11", "present", "There is a 4.5 cm infrarenal abdominal aortic aneurysm, slightly increased from 4.3 cm on July 2021 CT.",
-        measurement=[(4.5, "cm")], prior_measurement=[(4.3, "cm")], temporal="larger"),
-    obs("E13", "present", "Infrarenal AAA measures 4.5 cm, unchanged compared to the recent CT from January.", words="infrarenal",
+finding("F01", "aortic_aneurysm", "RID905", "abdominal aortic", "active", [
+    obs("E01", "present", "Abdominal aortic aneurysm measures 3.2 cm.", measurement=[(3.2, "cm")]),
+    obs("E02", "present", "Abdominal aortic aneurysm measures 3.5 cm, increased from 3.2 cm.",
+        measurement=[(3.5, "cm")], prior_measurement=[(3.2, "cm")], temporal="increased"),
+    obs("E06", "present", "Abdominal aortic aneurysm measures 3.9 cm, increased from 3.5 cm.",
+        measurement=[(3.9, "cm")], prior_measurement=[(3.5, "cm")], temporal="increased"),
+    obs("E08", "present", "Abdominal aortic aneurysm measures 4.3 cm, increased from 3.9 cm.",
+        measurement=[(4.3, "cm")], prior_measurement=[(3.9, "cm")], temporal="increased"),
+    obs("E11", "present", "Abdominal aortic aneurysm measures 4.5 cm, increased from 4.3 cm.",
+        measurement=[(4.5, "cm")], prior_measurement=[(4.3, "cm")], temporal="increased"),
+    obs("E13", "present", "Abdominal aortic aneurysm measures 4.5 cm, unchanged.",
         measurement=[(4.5, "cm")], temporal="unchanged"),
-    obs("E14", "present", "Infrarenal abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm.",
-        measurement=[(4.8, "cm")], prior_measurement=[(4.5, "cm")], temporal="larger"),
-    obs("E15", "present", "Infrarenal abdominal aortic aneurysm has increased to 5.1 cm from 4.8 cm on the 2023 study.",
-        measurement=[(5.1, "cm")], prior_measurement=[(4.8, "cm")], temporal="larger"),
+    obs("E14", "present", "Abdominal aortic aneurysm measures 4.8 cm, increased from 4.5 cm.",
+        measurement=[(4.8, "cm")], prior_measurement=[(4.5, "cm")], temporal="increased"),
+    obs("E15", "present", "Abdominal aortic aneurysm measures 5.1 cm, increased from 4.8 cm.",
+        measurement=[(5.1, "cm")], prior_measurement=[(4.8, "cm")], temporal="increased"),
 ])
 
-LR = "LI-RADS"
 finding("F02", "hepatic_lesion", "RID33242", "segment 6", "stable", [
-    obs("E02", "present", "1.8 cm arterially enhancing segment 6 lesion. LI-RADS 3.",
-        measurement=[(1.8, "cm")], features=["arterial phase hyperenhancement"], interp=[(LR, "LR-3")]),
-    obs("E03", "present", "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule appearance. LI-RADS 3.",
+    obs("E02", "present", "1.8 cm segment 6 lesion with arterial phase hyperenhancement.",
+        measurement=[(1.8, "cm")], features=["arterial phase hyperenhancement"]),
+    obs("E03", "present", "1.8 cm segment 6 lesion with arterial phase hyperenhancement, unchanged, without washout or capsule.",
         measurement=[(1.8, "cm")], temporal="unchanged",
-        features=["arterial phase hyperenhancement", "no washout", "no capsule appearance"], interp=[(LR, "LR-3")]),
+        features=["arterial phase hyperenhancement", "no washout", "no capsule"]),
     obs("E06", "present", "Segment 6 hepatic lesion measures 1.7 cm, stable.", measurement=[(1.7, "cm")], temporal="unchanged"),
-    obs("E07", "present", "Segment 6 lesion 1.7 cm, stable >2 years. Downgraded to LI-RADS 2.",
-        measurement=[(1.7, "cm")], temporal="unchanged", interp=[(LR, "LR-2")]),
-    obs("E08", "present", "Segment 6 lesion stable at 1.7 cm. LI-RADS 2.",
-        measurement=[(1.7, "cm")], temporal="unchanged", interp=[(LR, "LR-2")]),
+    obs("E07", "present", "Segment 6 lesion 1.7 cm, stable >2 years.",
+        measurement=[(1.7, "cm")], temporal="unchanged"),
+    obs("E08", "present", "Segment 6 lesion stable at 1.7 cm.",
+        measurement=[(1.7, "cm")], temporal="unchanged"),
     obs("E11", "present", "Segment 6 hepatic lesion, stable at 1.7 cm.", measurement=[(1.7, "cm")], temporal="unchanged"),
     obs("E13", "present", "Segment 6 hepatic lesion measures 1.7 cm, stable.", measurement=[(1.7, "cm")], temporal="unchanged"),
-    obs("E14", "present", "Segment 6 hepatic lesion measures 1.6 cm, stable. LI-RADS 2.",
-        measurement=[(1.6, "cm")], temporal="unchanged", interp=[(LR, "LR-2")]),
+    obs("E14", "present", "Segment 6 hepatic lesion measures 1.6 cm, stable.",
+        measurement=[(1.6, "cm")], temporal="unchanged"),
     obs("E15", "present", "Segment 6 lesion stable at 1.6 cm.", measurement=[(1.6, "cm")], temporal="unchanged"),
 ])
 
@@ -241,9 +268,9 @@ finding("F03", "ascites", "RID397", "ascites", "active", [
     obs("E03", "absent", "No ascites."),
     obs("E06", "present", "Mild ascites, new.", severity="mild", temporal="new"),
     obs("E07", "present", "Mild ascites, similar to prior.", severity="mild", temporal="unchanged"),
-    obs("E08", "present", "Moderate ascites, increased from prior.", severity="moderate", temporal="increased_extent"),
+    obs("E08", "present", "Moderate ascites, increased from prior.", severity="moderate", temporal="increased"),
     obs("E11", "present", "Moderate ascites.", severity="moderate"),
-    obs("E13", "present", "Mild ascites, decreased from prior.", severity="mild", temporal="decreased_extent"),
+    obs("E13", "present", "Mild ascites, decreased from prior.", severity="mild", temporal="decreased"),
     obs("E14", "absent", "Ascites has resolved.", temporal="resolved"),
     obs("E15", "present", "Mild ascites, new.", severity="mild", temporal="new"),
 ])
@@ -278,12 +305,12 @@ finding("F05", "pancreatic_cystic_lesion", "RID174", "pancreatic body", "stable"
         hedged=["presence"]),
     obs("E14", "present", "Pancreatic body cystic lesion measures 1.2 cm, unchanged, side-branch IPMN.",
         measurement=[(1.2, "cm")], temporal="unchanged", interp=[IPMN]),
-    obs("E15", "present", "Stable 1.2 cm side-branch IPMN cyst, pancreatic body.",
+    obs("E15", "present", "Stable 1.2 cm pancreatic body cystic lesion, side-branch IPMN.",
         measurement=[(1.2, "cm")], temporal="unchanged", interp=[IPMN]),
 ])
 
 finding("F06", "consolidation", "RID1315", "right lower lobe", "resolved", [
-    obs("E04", "present", "Right lower lobe consolidation, pneumonia.", interp=["pneumonia"]),
+    obs("E04", "present", "Right lower lobe consolidation, compatible with pneumonia.", interp=["pneumonia"]),
     obs("E05", "absent", "Prior right lower lobe consolidation has resolved.", temporal="resolved"),
 ])
 
@@ -314,18 +341,18 @@ finding("F08", "vertebral_compression_fracture", "RID29196", "L4", "stable", [
 ])
 
 finding("F09", "esophageal_varices", "RID95", "esophageal", "stable", [
-    obs("E02", "present", "Small esophageal varices.", extent="small", aggregate=True),
-    obs("E03", "present", "Small esophageal varices, unchanged.", extent="small", temporal="unchanged", aggregate=True),
-    obs("E06", "present", "Small esophageal varices, unchanged.", extent="small", temporal="unchanged", aggregate=True),
-    obs("E07", "present", "Small esophageal varices, stable.", extent="small", temporal="unchanged", aggregate=True),
-    obs("E08", "present", "Medium-sized esophageal varices, increased from small.", extent="medium", temporal="larger", aggregate=True),
-    obs("E11", "present", "Medium-sized esophageal varices.", extent="medium", aggregate=True),
-    obs("E14", "present", "Large esophageal varices, increased.", extent="large", temporal="larger", aggregate=True),
-    obs("E15", "present", "Large esophageal varices, stable.", extent="large", temporal="unchanged", aggregate=True),
+    obs("E02", "present", "Small esophageal varices.", severity="small", multiple=True),
+    obs("E03", "present", "Small esophageal varices, unchanged.", severity="small", temporal="unchanged", multiple=True),
+    obs("E06", "present", "Small esophageal varices, unchanged.", severity="small", temporal="unchanged", multiple=True),
+    obs("E07", "present", "Small esophageal varices, stable.", severity="small", temporal="unchanged", multiple=True),
+    obs("E08", "present", "Moderate esophageal varices, increased from small.", severity="moderate", temporal="increased", multiple=True),
+    obs("E11", "present", "Moderate esophageal varices.", severity="moderate", multiple=True),
+    obs("E14", "present", "Large esophageal varices, increased.", severity="large", temporal="increased", multiple=True),
+    obs("E15", "present", "Large esophageal varices, stable.", severity="large", temporal="unchanged", multiple=True),
 ])
 
 # --------------------------------------------------
-# A DIFFERENT KIND OF FINDING AFTER A RESOLVED ONE: the scarring is its own
+# A DIFFERENT TYPE OF FINDING AFTER A RESOLVED ONE: the scarring is its own
 # entry, since it is not the consolidation in another phase, as each fracture
 # above is one fracture in two phases. The cause the radiologist named stays on
 # the observation as clinical context, and no link joins the two entries.
@@ -339,7 +366,7 @@ finding("F41", "pulmonary_scarring", "RID1315", "right lower lobe", "stable", [
 ])
 
 # --------------------------------------------------
-# BACKGROUND AND CHRONIC FINDINGS
+# BACKGROUND FINDINGS
 # --------------------------------------------------
 
 # Each liver observation the reports state is its own entry, each interpreted as
@@ -355,15 +382,15 @@ finding("F10", "cirrhotic_liver_morphology", "RID58", "liver", "stable", [
 ])
 
 finding("F44", "nodular_liver_contour", "RID58", "liver", "stable", [
-    obs("E01", "present", "Nodular liver surface, cirrhosis.", interp=["cirrhosis"]),
-    obs("E02", "present", "Nodular liver contour and capsular retraction, cirrhosis.", interp=["cirrhosis"]),
+    obs("E01", "present", "Nodular liver surface, compatible with cirrhosis.", interp=["cirrhosis"]),
+    obs("E02", "present", "Nodular liver contour and capsular retraction, compatible with cirrhosis.", interp=["cirrhosis"]),
     obs("E03", "present", "Cirrhotic liver morphology with nodular contour and capsular retraction.", interp=["cirrhosis"]),
     obs("E13", "present", "Nodular liver surface, unchanged, consistent with cirrhosis.",
         temporal="unchanged", interp=["cirrhosis"]),
 ])
 
 finding("F45", "hepatic_capsular_retraction", "RID58", "liver", "stable", [
-    obs("E02", "present", "Nodular liver contour and capsular retraction, cirrhosis.", interp=["cirrhosis"]),
+    obs("E02", "present", "Nodular liver contour and capsular retraction, compatible with cirrhosis.", interp=["cirrhosis"]),
     obs("E03", "present", "Cirrhotic liver morphology with nodular contour and capsular retraction.", interp=["cirrhosis"]),
 ])
 
@@ -371,48 +398,53 @@ finding("F11", "splenomegaly", "RID86", "splenomegaly", "active", [
     obs("E01", "present", "Spleen measures 13.2 cm, mildly enlarged.", words="spleen", measurement=[(13.2, "cm")], severity="mild"),
     obs("E02", "present", "Splenomegaly, 13.8 cm.", measurement=[(13.8, "cm")]),
     obs("E03", "present", "Splenomegaly, 14.0 cm.", measurement=[(14.0, "cm")]),
-    obs("E06", "present", "Splenomegaly, 14.5 cm, mildly increased.", measurement=[(14.5, "cm")], temporal="larger"),
+    obs("E06", "present", "Splenomegaly, 14.5 cm, mildly increased.", measurement=[(14.5, "cm")], temporal="increased"),
     obs("E07", "present", "Splenomegaly, 14.8 cm.", measurement=[(14.8, "cm")]),
-    obs("E08", "present", "Splenomegaly, 15.0 cm, mildly increased.", measurement=[(15.0, "cm")], temporal="larger"),
+    obs("E08", "present", "Splenomegaly, 15.0 cm, mildly increased.", measurement=[(15.0, "cm")], temporal="increased"),
     obs("E11", "present", "Splenomegaly, 15.2 cm.", measurement=[(15.2, "cm")]),
     obs("E13", "present", "Spleen measures 15.4 cm, enlarged.", words="spleen", measurement=[(15.4, "cm")]),
     obs("E14", "present", "Splenomegaly, 15.8 cm.", measurement=[(15.8, "cm")]),
-    obs("E15", "present", "Splenomegaly, 16.1 cm, increased.", measurement=[(16.1, "cm")], temporal="larger"),
+    obs("E15", "present", "Splenomegaly, 16.1 cm, increased.", measurement=[(16.1, "cm")], temporal="increased"),
 ])
 
-# A collection keeps the size of its largest member on the collection's entry.
 finding("F12", "cholelithiasis", "RID187", "cholelithiasis", "stable", [
-    obs("E01", "present", "Cholelithiasis.", aggregate=True),
-    obs("E02", "present", "Cholelithiasis, largest stone 8 mm.", measurement=[(8, "mm", "largest member")], aggregate=True),
-    obs("E03", "present", "Cholelithiasis.", aggregate=True),
-    obs("E06", "present", "Cholelithiasis, unchanged.", temporal="unchanged", aggregate=True),
-    obs("E07", "present", "Cholelithiasis, unchanged.", temporal="unchanged", aggregate=True),
-    obs("E08", "present", "Cholelithiasis.", aggregate=True),
-    obs("E11", "present", "Cholelithiasis.", aggregate=True),
-    obs("E13", "present", "Multiple gallstones, unchanged.", words="gallstones", temporal="unchanged", aggregate=True),
-    obs("E14", "present", "Cholelithiasis, stable.", temporal="unchanged", aggregate=True),
-    obs("E15", "present", "Cholelithiasis.", aggregate=True),
+    obs("E01", "present", "Cholelithiasis.", multiple=True),
+    obs("E02", "present", "Cholelithiasis, largest stone 8 mm.", multiple=True),
+    obs("E03", "present", "Cholelithiasis.", multiple=True),
+    obs("E06", "present", "Cholelithiasis, largest stone 8 mm, unchanged.", temporal="unchanged", multiple=True),
+    obs("E07", "present", "Cholelithiasis, unchanged.", temporal="unchanged", multiple=True),
+    obs("E08", "present", "Cholelithiasis.", multiple=True),
+    obs("E11", "present", "Cholelithiasis.", multiple=True),
+    obs("E13", "present", "Multiple gallstones, unchanged.", words="gallstones", temporal="unchanged", multiple=True),
+    obs("E14", "present", "Cholelithiasis, stable.", temporal="unchanged", multiple=True),
+    obs("E15", "present", "Cholelithiasis.", multiple=True),
+])
+
+# A collection is one entry, and a member the sentence names is another: the
+# largest stone is its own observation, with its size.
+finding("F61", "cholelithiasis", "RID187", "cholelithiasis", "stable", [
+    obs("E02", "present", "Cholelithiasis, largest stone 8 mm.", measurement=[(8, "mm")], features=["largest"]),
+    obs("E06", "present", "Cholelithiasis, largest stone 8 mm, unchanged.",
+        measurement=[(8, "mm")], features=["largest"], temporal="unchanged"),
 ])
 
 # The kidneys are paired, so the bilateral cysts are one entry per side.
 RENAL_CYST_SENTENCES = [
-    ("E01", "Simple cysts in bilateral kidneys, largest left 1.4 cm, right 0.8 cm.", "simple_renal_cyst", None, (1.4, 0.8)),
-    ("E02", "Simple renal cysts bilaterally, largest left 1.5 cm, right 0.8 cm.", "simple_renal_cyst", None, (1.5, 0.8)),
-    ("E06", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged", None),
-    ("E08", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged", None),
-    ("E11", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged", None),
-    ("E13", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged", None),
-    ("E14", "Bilateral simple renal cysts, unchanged.", "simple_renal_cyst", "unchanged", None),
-    ("E15", "Stable bilateral simple renal cysts.", "simple_renal_cyst", "unchanged", None),
+    ("E01", "Simple cysts in bilateral kidneys.", "simple_renal_cyst", None),
+    ("E02", "Simple renal cysts bilaterally.", "simple_renal_cyst", None),
+    ("E06", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged"),
+    ("E08", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged"),
+    ("E11", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged"),
+    ("E13", "Bilateral simple renal cysts, stable.", "simple_renal_cyst", "unchanged"),
+    ("E14", "Bilateral simple renal cysts, unchanged.", "simple_renal_cyst", "unchanged"),
+    ("E15", "Stable bilateral simple renal cysts.", "simple_renal_cyst", "unchanged"),
 ]
-for cyst_id, side, site_id, i in (("F13", "left", "RID29663", 0), ("F43", "right", "RID29662", 1)):
+for cyst_id, side, site_id in (("F13", "left", "RID29663"), ("F43", "right", "RID29662")):
     cyst_obs = []
-    for e, t, code, temporal, sizes in RENAL_CYST_SENTENCES:
-        a = {"code": code, "laterality": side, "aggregate": True, **({"words": "kidneys"} if e == "E01" else {})}
+    for e, t, code, temporal in RENAL_CYST_SENTENCES:
+        a = {"code": code, "laterality": side, "multiple": True, **({"words": "kidneys"} if e == "E01" else {})}
         if temporal:
             a["temporal"] = temporal
-        if sizes:
-            a["measurement"] = [(sizes[i], "cm", "largest member")]
         cyst_obs.append(obs(e, "present", t, **a))
     finding(cyst_id, "simple_renal_cyst", site_id, "renal", "stable", cyst_obs, laterality=side)
 
@@ -420,11 +452,11 @@ finding("F14", "renal_calculus", "RID29663", "left renal", "active", [
     obs("E01", "present", "Punctate left renal calculus.", laterality="left", features=["punctate"]),
     obs("E02", "present", "2 mm left renal calculus.", laterality="left", measurement=[(2, "mm")]),
     obs("E06", "present", "2 mm left renal calculus, stable.", laterality="left", measurement=[(2, "mm")], temporal="unchanged"),
-    obs("E08", "present", "Left renal calculus measures 3 mm, slightly increased.", laterality="left", measurement=[(3, "mm")], temporal="larger"),
+    obs("E08", "present", "Left renal calculus measures 3 mm, slightly increased.", laterality="left", measurement=[(3, "mm")], temporal="increased"),
     obs("E11", "present", "3 mm left renal calculus, stable.", laterality="left", measurement=[(3, "mm")], temporal="unchanged"),
     obs("E13", "present", "Left renal calculus, 3 mm, stable.", laterality="left", measurement=[(3, "mm")], temporal="unchanged"),
     obs("E14", "present", "Left renal calculus, 3 mm, stable.", laterality="left", measurement=[(3, "mm")], temporal="unchanged"),
-    obs("E15", "present", "Left renal calculus measures 4 mm, mildly increased.", laterality="left", measurement=[(4, "mm")], temporal="larger"),
+    obs("E15", "present", "Left renal calculus measures 4 mm, mildly increased.", laterality="left", measurement=[(4, "mm")], temporal="increased"),
 ], laterality="left")
 
 finding("F15", "spinal_degeneration", "RID34572", "thoracic spine", "stable", [
@@ -444,12 +476,12 @@ finding("F16", "spinal_degeneration", "RID34573", "lumbar", "stable", [
 
 ATH = "aortic_atherosclerosis"
 finding("F17", "arterial_calcification", "RID905", "abdominal aorta", "stable", [
-    obs("E02", "present", "Atherosclerotic calcifications of the abdominal aorta.", aggregate=True, interp=[ATH]),
-    obs("E06", "present", "Atherosclerotic calcifications of the abdominal aorta.", aggregate=True, interp=[ATH]),
-    obs("E08", "present", "Atherosclerotic calcifications of the abdominal aorta.", aggregate=True, interp=[ATH]),
-    obs("E11", "present", "Atherosclerotic calcifications of the abdominal aorta.", aggregate=True, interp=[ATH]),
-    obs("E14", "present", "Abdominal aortic atherosclerotic calcifications.", words="abdominal aortic", aggregate=True, interp=[ATH]),
-    obs("E15", "present", "Atherosclerotic calcifications of the abdominal aorta, stable.", temporal="unchanged", aggregate=True, interp=[ATH]),
+    obs("E02", "present", "Atherosclerotic calcifications of the abdominal aorta.", multiple=True, interp=[ATH]),
+    obs("E06", "present", "Atherosclerotic calcifications of the abdominal aorta.", multiple=True, interp=[ATH]),
+    obs("E08", "present", "Atherosclerotic calcifications of the abdominal aorta.", multiple=True, interp=[ATH]),
+    obs("E11", "present", "Atherosclerotic calcifications of the abdominal aorta.", multiple=True, interp=[ATH]),
+    obs("E14", "present", "Abdominal aortic atherosclerotic calcifications.", words="abdominal aortic", multiple=True, interp=[ATH]),
+    obs("E15", "present", "Atherosclerotic calcifications of the abdominal aorta, stable.", temporal="unchanged", multiple=True, interp=[ATH]),
 ])
 
 finding("F18", "prostate_enlargement", "RID343", "prostate", "stable", [
@@ -462,9 +494,9 @@ finding("F18", "prostate_enlargement", "RID343", "prostate", "stable", [
 ])
 
 finding("F19", "total_hip_arthroplasty", "RID2640_RID5824", "hip", "stable", [
-    obs("E02", "present", "Left total hip arthroplasty in expected position.", laterality="left", position_status="satisfactory"),
+    obs("E02", "present", "Left total hip arthroplasty in expected position.", laterality="left", features=["expected position"]),
     obs("E06", "present", "Left total hip arthroplasty, unchanged.", laterality="left", temporal="unchanged"),
-    obs("E08", "present", "Left total hip arthroplasty in place.", laterality="left", position_status="satisfactory"),
+    obs("E08", "present", "Left total hip arthroplasty in place.", laterality="left", features=["in place"]),
     obs("E10", "present", "Left total hip arthroplasty, unchanged.", laterality="left", temporal="unchanged"),
     obs("E11", "present", "Left total hip arthroplasty, stable.", laterality="left", temporal="unchanged"),
     obs("E14", "present", "Left total hip arthroplasty, unchanged.", laterality="left", temporal="unchanged"),
@@ -483,12 +515,12 @@ finding("F20", "appendectomy", "RID168", "appendectomy", "stable", [
 # Head CT findings (E12 only)
 finding("F21", "lacunar_infarct", "RID6537", "bilateral basal ganglia", "stable", [
     obs("E12", "present", "Chronic lacunar infarcts in bilateral basal ganglia.",
-        laterality="bilateral", chronicity="chronic", aggregate=True),
+        laterality="bilateral", chronicity="chronic", multiple=True),
 ], laterality="bilateral")
 
 finding("F22", "hypoattenuation", "RID13857", "periventricular white matter", "stable", [
     obs("E12", "present", "Moderate chronic periventricular white matter hypodensities, compatible with small vessel ischemic disease.",
-        chronicity="chronic", severity="moderate", aggregate=True, interp=["small_vessel_ischemic_disease"]),
+        chronicity="chronic", severity="moderate", multiple=True, interp=["small_vessel_ischemic_disease"]),
 ])
 
 finding("F23", "medial_orbital_wall_fracture", "RID9573_RID5825", "right medial orbital wall", "stable", [
@@ -505,8 +537,8 @@ examination_statements = [
 ]
 
 finding("F56", "osteopenia", "RID13209", "osteopenia", "stable", [
-    obs("E10", "present", "Bones are diffusely osteopenic.", words="bones", distribution="diffuse"),
-    obs("E11", "present", "Diffuse osteopenia.", distribution="diffuse"),
+    obs("E10", "present", "Bones are diffusely osteopenic.", words="bones", features=["diffuse"]),
+    obs("E11", "present", "Diffuse osteopenia.", features=["diffuse"]),
 ])
 
 # --------------------------------------------------
@@ -570,18 +602,6 @@ finding("F30", "pancreatic_ductal_dilation", "RID177", "pancreatic ductal", "exc
     obs("E11", "absent", "No pancreatic ductal dilation."),
     obs("E14", "absent", "Pancreatic duct normal in caliber.", words="pancreatic duct"),
     obs("E15", "absent", "No pancreatic ductal dilation."),
-])
-
-# A negation scoped to new lesions is its own entry and never matches the named
-# segment VI lesion.
-finding("F31", "hepatic_lesion", "RID58", "hepatic", "excluded", [
-    obs("E06", "absent", "No new hepatic lesion.", temporal="new"),
-    obs("E07", "absent", "No new hepatic lesion.", temporal="new"),
-    obs("E08", "absent", "No new focal hepatic lesion.", temporal="new"),
-    obs("E11", "absent", "No new hepatic lesion.", temporal="new"),
-    obs("E13", "absent", "No new focal hepatic lesion.", temporal="new"),
-    obs("E14", "absent", "No new hepatic lesion.", temporal="new"),
-    obs("E15", "absent", "No new focal hepatic lesion.", temporal="new"),
 ])
 
 finding("F32", "lymph_node_enlargement", "RID28854", "abdominal", "excluded", [

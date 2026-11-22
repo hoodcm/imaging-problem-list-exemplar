@@ -11,7 +11,7 @@
       "x-fhir-r5": "none",
       "x-fhir-r6": "none",
       "x-dicom-sr": "none",
-      "x-representation": "not-representable"
+      "x-representation": "none-defined"
     },
     "compiled_date": {
       "type": "string",
@@ -50,7 +50,7 @@
           "x-fhir-r5": "none",
           "x-fhir-r6": "none",
           "x-dicom-sr": "none",
-          "x-representation": "not-representable"
+          "x-representation": "none-defined"
         },
         "clinical_profile": {
           "type": "string",
@@ -105,7 +105,7 @@
           "tracking_uid": {
             "type": "string",
             "pattern": "^2\\.25\\.[0-9]+$",
-            "description": "The entry's Tracking UID, kept across recompilations.",
+            "description": "The compiler assigns one identifier to the entry and keeps it when the record is recompiled.",
             "x-fhir-r5": "BodyStructure.identifier (type DICOM 112040) on the anchor and each report BodyStructure",
             "x-fhir-r6": "BodyStructure.identifier (type DICOM 112040) on the anchor and each report BodyStructure",
             "x-dicom-sr": "(112040, DCM, \"Tracking Unique Identifier\") in TID 4108, which TID 1410, TID 1411, and TID 1501 include",
@@ -113,15 +113,15 @@
           },
           "finding_code": {
             "$ref": "observation.schema.json#/$defs/oifm_coding",
-            "description": "The finding's kind, the most specific term the series uses.",
-            "x-fhir-r5": "BodyStructure.morphology of the anchor",
-            "x-fhir-r6": "BodyStructure.includedStructure.morphology of the anchor",
+            "description": "Radiologists named the finding, and the entry uses their most specific term.",
+            "x-fhir-r5": "BodyStructure.morphology of the anchor and of each report's BodyStructure",
+            "x-fhir-r6": "BodyStructure.includedStructure.morphology of the anchor and of each report's BodyStructure",
             "x-dicom-sr": "(121071, DCM, \"Finding\") in TID 1501",
             "x-representation": "idr-convention"
           },
           "anatomic_site": {
             "$ref": "observation.schema.json#/$defs/site_coding",
-            "description": "The entry's site.",
+            "description": "The finding is located at this anatomic site.",
             "x-fhir-r5": "BodyStructure.includedStructure.structure of the anchor",
             "x-fhir-r6": "BodyStructure.includedStructure.structure of the anchor",
             "x-dicom-sr": "(363698007, SCT, \"Finding Site\") in TID 1419",
@@ -147,7 +147,7 @@
               "excluded",
               "closed"
             ],
-            "description": "The status derived from the observation history.",
+            "description": "The compiler derives the status from the observation history.",
             "x-fhir-r5": "List.entry.flag (ipl-status)",
             "x-fhir-r6": "List.entry.flag (ipl-status)",
             "x-dicom-sr": "none",
@@ -166,9 +166,9 @@
               "present-after-absence",
               "attribute-contradicts",
               "nothing-contradicts",
-              "closed-by-finding-within"
+              "closed-by-subsequent-finding"
             ],
-            "description": "The rule that set the status.",
+            "description": "The compiler records the rule that set the status.",
             "x-fhir-r5": "List.entry extension entry-status-rule",
             "x-fhir-r6": "List.entry extension entry-status-rule",
             "x-dicom-sr": "none",
@@ -213,7 +213,7 @@
             "items": {
               "$ref": "observation.schema.json"
             },
-            "description": "The observation history, in examination order.",
+            "description": "The entry lists every observation of the finding in examination order.",
             "x-fhir-r5": "Observation, each referencing its report's BodyStructure, which carries the entry's Tracking UID",
             "x-fhir-r6": "Observation, each referencing its report's BodyStructure, which carries the entry's Tracking UID",
             "x-dicom-sr": "TID 1501 groups in each report's SR document, sharing the Tracking UID",
@@ -286,7 +286,7 @@
                   "x-fhir-r5": "none",
                   "x-fhir-r6": "Provenance.why",
                   "x-dicom-sr": "none",
-                  "x-representation": "not-representable"
+                  "x-representation": "none-defined"
                 }
               },
               "required": [

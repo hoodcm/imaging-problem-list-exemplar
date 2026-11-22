@@ -46,7 +46,7 @@
       "anatomic_site": {
         "system": "Anatomic Locations Index 1.0.0",
         "code": "RID1315",
-        "display": "lower lobe of right lung",
+        "display": "right lower lobe of lung",
         "snomed": "266005"
       },
       "attributes": {
